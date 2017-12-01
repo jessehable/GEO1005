@@ -1,0 +1,39 @@
+# This file contains metadata for your plugin. Since 
+# version 2.0 of QGIS this is the proper way to supply 
+# information about a plugin. The old method of 
+# embedding metadata in __init__.py will 
+# is no longer supported since version 2.0.
+
+# This file should be included when you package your plugin.# Mandatory items:
+
+[general]
+name=Suburbia
+qgisMinimumVersion=2.0
+description=The green housing search
+version=0.1
+author=Elias Vetter
+email=vetterelias@gmail.com
+
+about=This plugin provides support in the decion proces of finding sustainable housing in Rotterdam
+
+tracker=github.com
+repository=C:\Users\vette\OneDrive\Documents\GitHub\GEO1005_2017_G12_Suburbia
+# End of mandatory metadata
+
+# Recommended items:
+
+# Uncomment the following line and add your changelog:
+# changelog=
+
+# Tags are comma separated with spaces allowed
+tags=
+
+homepage=
+category=Plugins
+icon=icon.png
+# experimental flag
+experimental=True
+
+# deprecated flag (applies to the whole plugin, not just a single version)
+deprecated=False
+
