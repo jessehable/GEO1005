@@ -3,10 +3,10 @@
 #
 # The green housing search
 #							 -------------------
-#		begin				: 2017-12-01
+#		begin				: 2017-12-05
 #		git sha				: $Format:%H$
-#		copyright			: (C) 2017 by Elias Vetter
-#		email				: vetterelias@gmail.com
+#		copyright			: (C) 2017 by Elias Vetter/TU Delft
+#		email				: vetterelisa@gmail.com
 # ***************************************************************************/
 #
 #/***************************************************************************
@@ -38,15 +38,15 @@ LOCALES =
 # translation
 SOURCES = \
 	__init__.py \
-	suburbia.py suburbia_dialog.py
+	suburbia.py suburbia_dockwidget.py
 
 PLUGINNAME = Spatial
 
 PY_FILES = \
 	__init__.py \
-	suburbia.py suburbia_dialog.py
+	suburbia.py suburbia_dockwidget.py
 
-UI_FILES = suburbia_dialog_base.ui
+UI_FILES = suburbia_dockwidget_base.ui
 
 EXTRAS = metadata.txt icon.png
 

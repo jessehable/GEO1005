@@ -41,7 +41,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'Spatial'
-copyright = u'2013, Elias Vetter'
+copyright = u'2013, Elias Vetter/TU Delft'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -179,7 +179,7 @@ htmlhelp_basename = 'TemplateClassdoc'
 # (source start file, target name, title, author, documentclass [howto/manual]).
 latex_documents = [
   ('index', 'Spatial.tex', u'Spatial Documentation',
-   u'Elias Vetter', 'manual'),
+   u'Elias Vetter/TU Delft', 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
@@ -212,5 +212,5 @@ latex_documents = [
 # (source start file, name, description, authors, manual section).
 man_pages = [
     ('index', 'TemplateClass', u'Spatial Documentation',
-     [u'Elias Vetter'], 1)
+     [u'Elias Vetter/TU Delft'], 1)
 ]

@@ -5,10 +5,10 @@
                                  A QGIS plugin
  The green housing search
                               -------------------
-        begin                : 2017-12-01
+        begin                : 2017-12-05
         git sha              : $Format:%H$
-        copyright            : (C) 2017 by Elias Vetter
-        email                : vetterelias@gmail.com
+        copyright            : (C) 2017 by Elias Vetter/TU Delft
+        email                : vetterelisa@gmail.com
  ***************************************************************************/
 
 /***************************************************************************
@@ -20,12 +20,13 @@
  *                                                                         *
  ***************************************************************************/
 """
-from PyQt4.QtCore import QSettings, QTranslator, qVersion, QCoreApplication
+from PyQt4.QtCore import QSettings, QTranslator, qVersion, QCoreApplication, Qt
 from PyQt4.QtGui import QAction, QIcon
 # Initialize Qt resources from file resources.py
 import resources
-# Import the code for the dialog
-from suburbia_dialog import SpatialDialog
+
+# Import the code for the DockWidget
+from suburbia_dockwidget import SpatialDockWidget
 import os.path
 
 
@@ -42,8 +43,10 @@ class Spatial:
         """
         # Save reference to the QGIS interface
         self.iface = iface
+
         # initialize plugin directory
         self.plugin_dir = os.path.dirname(__file__)
+
         # initialize locale
         locale = QSettings().value('locale/userLocale')[0:2]
         locale_path = os.path.join(
@@ -58,13 +61,18 @@ class Spatial:
             if qVersion() > '4.3.3':
                 QCoreApplication.installTranslator(self.translator)
 
-
         # Declare instance attributes
         self.actions = []
         self.menu = self.tr(u'&Suburbia')
         # TODO: We are going to let the user set this up in a future iteration
         self.toolbar = self.iface.addToolBar(u'Spatial')
         self.toolbar.setObjectName(u'Spatial')
+
+        #print "** INITIALIZING Spatial"
+
+        self.pluginIsActive = False
+        self.dockwidget = None
+
 
     # noinspection PyMethodMayBeStatic
     def tr(self, message):
@@ -132,9 +140,6 @@ class Spatial:
         :rtype: QAction
         """
 
-        # Create the dialog (after translation) and keep reference
-        self.dlg = SpatialDialog()
-
         icon = QIcon(icon_path)
         action = QAction(icon, text, parent)
         action.triggered.connect(callback)
@@ -158,6 +163,7 @@ class Spatial:
 
         return action
 
+
     def initGui(self):
         """Create the menu entries and toolbar icons inside the QGIS GUI."""
 
@@ -168,9 +174,30 @@ class Spatial:
             callback=self.run,
             parent=self.iface.mainWindow())
 
+    #--------------------------------------------------------------------------
+
+    def onClosePlugin(self):
+        """Cleanup necessary items here when plugin dockwidget is closed"""
+
+        #print "** CLOSING Spatial"
+
+        # disconnects
+        self.dockwidget.closingPlugin.disconnect(self.onClosePlugin)
+
+        # remove this statement if dockwidget is to remain
+        # for reuse if plugin is reopened
+        # Commented next statement since it causes QGIS crashe
+        # when closing the docked window:
+        # self.dockwidget = None
+
+        self.pluginIsActive = False
+
 
     def unload(self):
         """Removes the plugin menu item and icon from QGIS GUI."""
+
+        #print "** UNLOAD Spatial"
+
         for action in self.actions:
             self.iface.removePluginMenu(
                 self.tr(u'&Suburbia'),
@@ -179,15 +206,28 @@ class Spatial:
         # remove the toolbar
         del self.toolbar
 
+    #--------------------------------------------------------------------------
 
     def run(self):
-        """Run method that performs all the real work"""
-        # show the dialog
-        self.dlg.show()
-        # Run the dialog event loop
-        result = self.dlg.exec_()
-        # See if OK was pressed
-        if result:
-            # Do something useful here - delete the line containing pass and
-            # substitute with your code.
-            pass
+        """Run method that loads and starts the plugin"""
+
+        if not self.pluginIsActive:
+            self.pluginIsActive = True
+
+            #print "** STARTING Spatial"
+
+            # dockwidget may not exist if:
+            #    first run of plugin
+            #    removed on close (see self.onClosePlugin method)
+            if self.dockwidget == None:
+                # Create the dockwidget (after translation) and keep reference
+                self.dockwidget = SpatialDockWidget()
+
+            # connect to provide cleanup on closing of dockwidget
+            self.dockwidget.closingPlugin.connect(self.onClosePlugin)
+
+            # show the dockwidget
+            # TODO: fix to allow choice of dock location
+            self.iface.addDockWidget(Qt.LeftDockWidgetArea, self.dockwidget)
+            self.dockwidget.show()
+

@@ -11,10 +11,10 @@ name=Suburbia
 qgisMinimumVersion=2.0
 description=The green housing search
 version=0.1
-author=Elias Vetter
-email=vetterelias@gmail.com
+author=Elias Vetter/TU Delft
+email=vetterelisa@gmail.com
 
-about=This plugin provides support in the decion proces of finding sustainable housing in Rotterdam
+about=It is really nice
 
 tracker=github.com
 repository=C:\Users\vette\OneDrive\Documents\GitHub\GEO1005_2017_G12_Suburbia
@@ -32,7 +32,7 @@ homepage=
 category=Plugins
 icon=icon.png
 # experimental flag
-experimental=True
+experimental=False
 
 # deprecated flag (applies to the whole plugin, not just a single version)
 deprecated=False
