@@ -34,7 +34,7 @@ class SpatialDockWidget(QtGui.QDockWidget, FORM_CLASS):
 
     closingPlugin = pyqtSignal()
 
-    def __init__(self, parent=None):
+    def __init__(self, iface, parent=None):
         """Constructor."""
         super(SpatialDockWidget, self).__init__(parent)
         # Set up the user interface from Designer.
@@ -44,7 +44,25 @@ class SpatialDockWidget(QtGui.QDockWidget, FORM_CLASS):
         # #widgets-and-dialogs-with-auto-connect
         self.setupUi(self)
 
+        # define globals
+        self.iface = iface
+        self.canvas = self.iface.mapCanvas()
+
+        # Bind mouse click to canvas for adding new events
+        self.map_canvas.mouseDoubleClickEvent = self.place_new_event
+
+        # Bind buttons to specific path finding methods
+
     def closeEvent(self, event):
         self.closingPlugin.emit()
         event.accept()
 
+  ######
+  #  Analysis functions
+  #####
+
+    def yayClicked(self, mapPoint, mouseButton):
+        if mapPoint:
+            self.x = mapPoint.x()
+            self.y = mapPoint.y()
+            self.defineName(self.x, self.y)
