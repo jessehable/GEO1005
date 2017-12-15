@@ -6,22 +6,182 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>232</width>
-    <height>141</height>
+    <width>391</width>
+    <height>562</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Suburbia</string>
   </property>
-  <widget class="QWidget" name="dockWidgetContents">
-   <layout class="QGridLayout" name="gridLayout">
-    <item row="0" column="0">
-     <widget class="QLabel" name="label">
-      <property name="text">
-       <string>Replace this QLabel
-with the desired
-plugin content.</string>
+  <widget class="QWidget" name="widget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QTabWidget" name="Tabs">
+      <property name="styleSheet">
+       <string notr="true">
+</string>
       </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="TabPreferences">
+       <attribute name="title">
+        <string>Preferences</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_2">
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_9">
+          <property name="text">
+           <string>Adjust your Preferences here!</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <layout class="QGridLayout" name="gridLayout">
+          <item row="5" column="1">
+           <widget class="QSlider" name="SliderSchools">
+            <property name="maximum">
+             <number>5</number>
+            </property>
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="1">
+           <widget class="QSlider" name="SliderPublicTransport">
+            <property name="maximum">
+             <number>5</number>
+            </property>
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="0">
+           <widget class="QLabel" name="LabelEVCharging">
+            <property name="text">
+             <string>EV Charging Facilities</string>
+            </property>
+           </widget>
+          </item>
+          <item row="8" column="0" colspan="2">
+           <widget class="QCommandLinkButton" name="ButtonSavePreferences">
+            <property name="text">
+             <string>Save Preferences</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="0">
+           <widget class="QLabel" name="LabelPublicTransport">
+            <property name="text">
+             <string>Public Transport Accesibility</string>
+            </property>
+           </widget>
+          </item>
+          <item row="6" column="0">
+           <widget class="QLabel" name="LabelGreenPlaces">
+            <property name="text">
+             <string>Many Green Spaces</string>
+            </property>
+           </widget>
+          </item>
+          <item row="6" column="1">
+           <widget class="QSlider" name="SliderGreenPlaces">
+            <property name="maximum">
+             <number>5</number>
+            </property>
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QLabel" name="LabelPriority">
+            <property name="text">
+             <string>Priority</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="1">
+           <widget class="QSlider" name="SliderEVCharging">
+            <property name="maximum">
+             <number>5</number>
+            </property>
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0" colspan="2">
+           <widget class="Line" name="line">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1">
+           <widget class="QSlider" name="SliderAirQuality">
+            <property name="maximum">
+             <number>5</number>
+            </property>
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0">
+           <widget class="QLabel" name="LabelIndicator">
+            <property name="text">
+             <string>Indicator</string>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="0">
+           <widget class="QLabel" name="LabelSchools">
+            <property name="text">
+             <string>Schools Closeby</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QLabel" name="LabelAirQuality">
+            <property name="text">
+             <string>Healthy Air Quality</string>
+            </property>
+           </widget>
+          </item>
+          <item row="7" column="1">
+           <widget class="QSlider" name="SliderHousingPrice">
+            <property name="maximum">
+             <number>5</number>
+            </property>
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+           </widget>
+          </item>
+          <item row="7" column="0">
+           <widget class="QLabel" name="LabelHousingPrice">
+            <property name="text">
+             <string>Low Housing Price</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="TabExplore">
+       <attribute name="title">
+        <string>Explore</string>
+       </attribute>
+      </widget>
+      <widget class="QWidget" name="TabLocate">
+       <attribute name="title">
+        <string>Locate</string>
+       </attribute>
+      </widget>
      </widget>
     </item>
    </layout>
