@@ -23,8 +23,27 @@
 
 import os
 
-from PyQt4 import QtGui, uic
-from PyQt4.QtCore import pyqtSignal
+from PyQt4 import QtGui, QtCore, uic
+from qgis.core import *
+from qgis.networkanalysis import *
+from qgis.gui import *
+
+#for visualisation
+import numpy
+import matplotlib.pyplot as plt
+from matplotlib.backends.backend_qt4agg import FigureCanvasQTAgg as FigureCanvas
+from matplotlib.figure import Figure
+import math as m
+
+# Initialize Qt resources from file resources.py
+import resources
+
+import processing
+import os
+import os.path
+import random
+import webbrowser
+import csv
 
 FORM_CLASS, _ = uic.loadUiType(os.path.join(
     os.path.dirname(__file__), 'suburbia_dockwidget_base.ui'))
@@ -48,6 +67,9 @@ class SpatialDockWidget(QtGui.QDockWidget, FORM_CLASS):
         self.iface = iface
         self.canvas = self.iface.mapCanvas()
 
+        # data
+        self.iface.connect(self.openDataRotterdam)
+
         # Bind mouse click to canvas for adding new events
         self.map_canvas.mouseDoubleClickEvent = self.place_new_event
 
@@ -66,3 +88,16 @@ class SpatialDockWidget(QtGui.QDockWidget, FORM_CLASS):
             self.x = mapPoint.x()
             self.y = mapPoint.y()
             self.defineName(self.x, self.y)
+
+    ######
+    #  Data Functions
+    #####
+
+
+    def loadDataRotterdam(self):
+        try:
+            data_path = os.path.join(os.path.dirname(__file__), 'sample_data','Rotterdam_Sample_Data.qgs')
+        except:
+            self.errorOccurs()
+        self.iface.addProject(data_path)
+        self.updateLayers()
