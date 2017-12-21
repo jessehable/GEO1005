@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="6b489d43-3b70-49c4-8125-1bd939938871" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/Spatial/.idea/Spatial.iml" afterPath="$PROJECT_DIR$/Spatial/.idea/Spatial.iml" />
       <change beforePath="$PROJECT_DIR$/Spatial/.idea/workspace.xml" afterPath="$PROJECT_DIR$/Spatial/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/Spatial/suburbia_dockwidget.py" afterPath="$PROJECT_DIR$/Spatial/suburbia_dockwidget.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
