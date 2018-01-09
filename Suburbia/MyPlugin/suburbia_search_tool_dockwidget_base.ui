@@ -1,27 +1,265 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>MyPluginDockWidgetBase</class>
- <widget class="QDockWidget" name="MyPluginDockWidgetBase">
+ <class>SpatialDockWidgetBase</class>
+ <widget class="QDockWidget" name="SpatialDockWidgetBase">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>232</width>
-    <height>141</height>
+    <width>423</width>
+    <height>562</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Suburbia</string>
   </property>
-  <widget class="QWidget" name="dockWidgetContents">
-   <layout class="QGridLayout" name="gridLayout">
-    <item row="0" column="0">
-     <widget class="QLabel" name="label">
-      <property name="text">
-       <string>Replace this QLabel
-with the desired
-plugin content.</string>
+  <widget class="QWidget" name="widget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QTabWidget" name="Tabs">
+      <property name="styleSheet">
+       <string notr="true"/>
       </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="TabTerms">
+       <attribute name="title">
+        <string>Terms</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_3">
+        <item row="1" column="0">
+         <widget class="QLabel" name="TermsGuide">
+          <property name="text">
+           <string>Explanation</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <layout class="QGridLayout" name="gridLayout_6">
+          <item row="0" column="1">
+           <widget class="QLineEdit" name="lineEdit_2"/>
+          </item>
+          <item row="2" column="1">
+           <widget class="QSpinBox" name="spinBox_2"/>
+          </item>
+          <item row="3" column="0">
+           <widget class="QLabel" name="label_4">
+            <property name="text">
+             <string>Ecuation Level</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QSpinBox" name="spinBox">
+            <property name="minimum">
+             <number>1</number>
+            </property>
+            <property name="maximum">
+             <number>120</number>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QLabel" name="label_3">
+            <property name="text">
+             <string>Gender</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="1">
+           <widget class="QCheckBox" name="checkBox">
+            <property name="text">
+             <string>YAS!</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0">
+           <widget class="QLabel" name="label_2">
+            <property name="text">
+             <string>Name</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="label">
+            <property name="text">
+             <string>Age</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="0">
+           <widget class="QLabel" name="label_5">
+            <property name="text">
+             <string>I agree to share my information</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="1">
+           <widget class="QSpinBox" name="spinBox_3">
+            <property name="value">
+             <number>0</number>
+            </property>
+            <property name="displayIntegerBase" stdset="0">
+             <number>7</number>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item row="4" column="0">
+         <widget class="QCommandLinkButton" name="commandLinkButton_2">
+          <property name="text">
+           <string>Confirm</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="TabPreferences">
+       <attribute name="title">
+        <string>Preferences</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_2">
+        <item row="0" column="0">
+         <widget class="QLabel" name="PreferencesGuide">
+          <property name="text">
+           <string>Explanation</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <layout class="QGridLayout" name="gridLayout">
+          <item row="6" column="1">
+           <layout class="QHBoxLayout" name="horizontalLayout">
+            <item>
+             <widget class="QLineEdit" name="lineEdit">
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pushButton">
+              <property name="text">
+               <string>Locate!</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="2" column="1">
+           <widget class="QSlider" name="SliderIndicator1">
+            <property name="maximum">
+             <number>5</number>
+            </property>
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="1">
+           <widget class="QSlider" name="SliderIndicator4">
+            <property name="maximum">
+             <number>5</number>
+            </property>
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="1">
+           <widget class="QSlider" name="SliderIndicator3">
+            <property name="maximum">
+             <number>5</number>
+            </property>
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="0">
+           <widget class="QLabel" name="LabelIndicator2">
+            <property name="text">
+             <string>Indicator2</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="0">
+           <widget class="QLabel" name="LabelIndicator3">
+            <property name="text">
+             <string>Indicator3</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QLabel" name="LabelPriority">
+            <property name="text">
+             <string>Priority</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="1">
+           <widget class="QSlider" name="SliderIndicator2">
+            <property name="maximum">
+             <number>5</number>
+            </property>
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0" colspan="2">
+           <widget class="Line" name="line">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0">
+           <widget class="QLabel" name="LabelIndicator">
+            <property name="text">
+             <string>Indicator</string>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="0">
+           <widget class="QLabel" name="LabelIndicator4">
+            <property name="text">
+             <string>Indicator4</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QLabel" name="LabelIndicator1">
+            <property name="text">
+             <string>Indicator1</string>
+            </property>
+           </widget>
+          </item>
+          <item row="6" column="0">
+           <widget class="QLabel" name="LabelPostalCode">
+            <property name="text">
+             <string>Postal Code of House</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item row="2" column="0">
+         <widget class="QPushButton" name="pushButton_2">
+          <property name="text">
+           <string>Explore!</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="TabVisualization">
+       <attribute name="title">
+        <string>Visualization</string>
+       </attribute>
+      </widget>
      </widget>
     </item>
    </layout>
