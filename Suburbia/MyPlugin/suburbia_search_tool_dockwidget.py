@@ -50,6 +50,7 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
 
         # define globals
         self.iface = iface
+        self.plugin_dir = os.path.dirname(__file__)
 
         #data
         self.loadDataRotterdam()
@@ -57,6 +58,7 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
         self.layers = self.iface.legendInterface().layers()
         self.layer_list = []
         for layer in self.layers:
+            print self.layer_list
             self.layer_list.append(layer.name())
 
 
@@ -79,11 +81,10 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
 
 
     def explore(self):
-        if People > 0:
-            Peop
+        print layer.namer
 
 
-#######
+    #######
 #   Data functions
 #######
     def loadDataRotterdam(self):
@@ -110,34 +111,3 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
         self.clearTable()
         self.updateTable()
 
-    def addLayer(self, features):
-        layers = self.iface.legendInterface().layers()
-        layer_list = []
-        for layer in layers:
-            layer_list.append(layer.name())
-        if 'Result' not in layer_list:
-            self.active_layer = self.iface.activeLayer()
-            if self.active_layer != None:
-                self.layercrs = self.active_layer.crs()
-            else:
-                self.layercrs = self.layers[0].crs()
-            #Create the memory layer for the result
-            layeruri = 'Polygon?'
-            #CRS needs to be specified
-            crstext = 'PROJ4:%s' % self.layercrs.toProj4()
-            layeruri = layeruri + 'crs=' + crstext
-            self.memresult = QgsVectorLayer(layeruri, 'Result', 'memory')
-            self.provider = self.memresult.dataProvider()
-            fields = []
-            self.memresult.startEditing()
-            for i in range(len(self.titleList)):
-                fields.append(QgsField(self.titleList[i], self.variantList[i]))
-            self.provider.addAttributes(fields)
-            self.memresult.setLayerTransparency(50)
-            self.memresult.updateFields()
-            self.memresult.commitChanges()
-            QgsMapLayerRegistry.instance().addMapLayers([self.memresult])
-        self.memresult.startEditing()
-        self.provider.addFeatures(features)
-        self.memresult.updateExtents()
-        self.memresult.commitChanges()
