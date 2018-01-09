@@ -5,36 +5,42 @@
   <evaluateDefaultValues active="0"/>
   <layer-tree-group expanded="1" checked="Qt::PartiallyChecked" name="">
     <customproperties/>
-    <layer-tree-group expanded="1" checked="Qt::PartiallyChecked" name="Maps">
+    <layer-tree-group expanded="1" checked="Qt::Checked" name="Maps">
       <customproperties/>
-      <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Unchecked" id="Neighborhood_outlines20180109140229582" source="D:/User/Mijn documenten/Github/GEO1005_2017_G12_Suburbia/Suburbia/MyPlugin/sampledata/Neighborhood outlines.shp" name="Neighborhood outlines">
+      <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="Neighborhood_outlines20180109140229582" source="D:/User/Mijn documenten/Github/GEO1005_2017_G12_Suburbia/Suburbia/MyPlugin/sampledata/Neighborhood outlines.shp" name="Neighborhood outlines">
         <customproperties/>
       </layer-tree-layer>
-      <layer-tree-layer expanded="0" providerKey="memory" checked="Qt::Checked" id="memory_20180109160229683" source="Polygon?uuid=4c348a7c-840f-4b7e-bd4a-707b932114d4&amp;crs=EPSG:28992&amp;field=BU_CODE:string&amp;field=BU_NAAM:string&amp;field=P_25_44_JR:integer&amp;field=P_HH_M_K:integer&amp;field=WOZ:integer&amp;field=AF_KDV:double&amp;field=AF_BSO:double&amp;field=AF_TREINST:double&amp;field=25_44_NORM:double&amp;field=HH_MK_NORM:double&amp;field=WOZ_NORM:double&amp;field=KDV_NORM:double&amp;field=BSO_NORM:double&amp;field=TREIN_NORM:double&amp;field=B1:double&amp;field=B2:double&amp;field=B3:double&amp;field=B4:double&amp;field=Score:double&amp;field=BU_CODE_1:string&amp;field=BU_NAAM_1:string&amp;field=WK_CODE:string&amp;field=GM_CODE:string&amp;field=GM_NAAM:string&amp;field=IND_WBI:integer&amp;field=WATER:string&amp;field=POSTCODE:string&amp;field=DEK_PERC:integer&amp;field=OAD:integer&amp;field=STED:integer&amp;field=AANT_INW:integer&amp;field=AANT_MAN:integer&amp;field=AANT_VROUW:integer&amp;field=P_00_14_JR:integer&amp;field=P_15_24_JR:integer&amp;field=P_25_44__1:integer&amp;field=P_45_64_JR:integer&amp;field=P_65_EO_JR:integer&amp;field=P_ONGEHUWD:integer&amp;field=P_GEHUWD:integer&amp;field=P_GESCHEID:integer&amp;field=P_VERWEDUW:integer&amp;field=GEBOO_TOT:integer&amp;field=P_GEBOO:integer&amp;field=STERFT_TOT:integer&amp;field=P_STERFT:integer&amp;field=BEV_DICHTH:integer&amp;field=AANTAL_HH:integer&amp;field=P_EENP_HH:integer&amp;field=P_HH_Z_K:integer&amp;field=P_HH_M_K_1:integer&amp;field=GEM_HH_GR:double&amp;field=P_WEST_AL:integer&amp;field=P_N_W_AL:integer&amp;field=P_MAROKKO:integer&amp;field=P_ANT_ARU:integer&amp;field=P_SURINAM:integer&amp;field=P_TURKIJE:integer&amp;field=P_OVER_NW:integer&amp;field=A_BED_A:integer&amp;field=A_BED_BF:integer&amp;field=A_BED_GI:integer&amp;field=A_BED_HJ:integer&amp;field=A_BED_KL:integer&amp;field=A_BED_MN:integer&amp;field=A_BED_RU:integer&amp;field=A_BEDV:integer&amp;field=WONINGEN:integer&amp;field=WOZ_1:integer&amp;field=P_1GEZW:integer&amp;field=P_MGEZW:integer&amp;field=P_BEWNDW:integer&amp;field=P_KOOPWON:integer&amp;field=P_HUURWON:integer&amp;field=P_HUURCORP:integer&amp;field=P_HUUROVVH:integer&amp;field=P_HUKO_ONB:integer&amp;field=P_WONT2000:integer&amp;field=P_WONV2000:integer&amp;field=P_LEEGSW:integer&amp;field=G_GAS_TOT:integer&amp;field=G_GAS_APP:integer&amp;field=G_GAS_TUS:integer&amp;field=G_GAS_HOEK:integer&amp;field=G_GAS_21K:integer&amp;field=G_GAS_VRY:integer&amp;field=G_GAS_HU:integer&amp;field=G_GAS_KO:integer&amp;field=P_STADVERW:integer&amp;field=G_ELEK_TOT:integer&amp;field=G_ELEK_APP:integer&amp;field=G_ELEK_TUS:integer&amp;field=G_ELEK_HOE:integer&amp;field=G_ELEK_21K:integer&amp;field=G_ELEK_VRY:integer&amp;field=G_ELE_HU:integer&amp;field=G_ELE_KO:integer&amp;field=AANT_INK:integer&amp;field=INK_ONTV:double&amp;field=INK_INW:double&amp;field=P_LAAGINKP:integer&amp;field=P_HOOGINKP:integer&amp;field=P_LAAGINKH:integer&amp;field=P_HOOGINKH:integer&amp;field=P_LKOOPKRH:integer&amp;field=P_SOCMINH:integer&amp;field=AO_UIT_TOT:integer&amp;field=WW_UIT_TOT:integer&amp;field=WWB_UITTOT:integer&amp;field=P_NIETACT:integer&amp;field=A_SOZ_OW:integer&amp;field=AUTO_TOT:integer&amp;field=AUTO_HH:double&amp;field=AUTO_LAND:integer&amp;field=BEDR_AUTO:integer&amp;field=MOTOR_2W:integer&amp;field=A_LFTJ6J:integer&amp;field=A_LFTO6J:integer&amp;field=A_BST_B:integer&amp;field=A_BST_NB:integer&amp;field=AF_ARTSPR:double&amp;field=AV1_ARTSPR:double&amp;field=AV3_ARTSPR:double&amp;field=AV5_ARTSPR:double&amp;field=AF_APOTH:double&amp;field=AF_ZIEK_I:double&amp;field=AV5_ZIEK_I:double&amp;field=AV10ZIEK_I:double&amp;field=AV20ZIEK_I:double&amp;field=AF_ZIEK_E:double&amp;field=AV5_ZIEK_E:double&amp;field=AV10ZIEK_E:double&amp;field=AV20ZIEK_E:double&amp;field=AF_SUPERM:double&amp;field=AV1_SUPERM:double&amp;field=AV3_SUPERM:double&amp;field=AV5_SUPERM:double&amp;field=AF_DAGLMD:double&amp;field=AV1_DAGLMD:double&amp;field=AV3_DAGLMD:double&amp;field=AV5_DAGLMD:double&amp;field=AF_WARENH:double&amp;field=AV5_WARENH:double&amp;field=AV10WARENH:double&amp;field=AV20WARENH:double&amp;field=AF_CAFE:double&amp;field=AV1_CAFE:double&amp;field=AV3_CAFE:double&amp;field=AV5_CAFE:double&amp;field=AF_CAFTAR:double&amp;field=AV1_CAFTAR:double&amp;field=AV3_CAFTAR:double&amp;field=AV5_CAFTAR:double&amp;field=AF_RESTAU:double&amp;field=AV1_RESTAU:double&amp;field=AV3_RESTAU:double&amp;field=AV5_RESTAU:double&amp;field=AF_HOTEL:double&amp;field=AV5_HOTEL:double&amp;field=AV10_HOTEL:double&amp;field=AV20_HOTEL:double&amp;field=AF_KDV_1:double&amp;field=AV1_KDV:double&amp;field=AV3_KDV:double&amp;field=AV5_KDV:double&amp;field=AF_BSO_1:double&amp;field=AV1_BSO:double&amp;field=AV3_BSO:double&amp;field=AV5_BSO:double&amp;field=AF_ONDBAS:double&amp;field=AV1_ONDBAS:double&amp;field=AV3_ONDBAS:double&amp;field=AV5_ONDBAS:double&amp;field=AF_ONDVRT:double&amp;field=AV3_ONDVRT:double&amp;field=AV5_ONDVRT:double&amp;field=AV10ONDVRT:double&amp;field=AF_ONDVMB:double&amp;field=AV3_ONDVMB:double&amp;field=AV5_ONDVMB:double&amp;field=AV10ONDVMB:double&amp;field=AF_ONDHV:double&amp;field=AV3_ONDHV:double&amp;field=AV5_ONDHV:double&amp;field=AV10_ONDHV:double&amp;field=AF_BRANDW:double&amp;field=AF_OPRITH:double&amp;field=AF_TREIN_1:double&amp;field=AF_OVERST:double&amp;field=AF_ZWEMB:double&amp;field=AF_IJSBAAN:double&amp;field=AF_BIBLIO:double&amp;field=AF_BIOS:double&amp;field=AV5_BIOS:double&amp;field=AV10_BIOS:double&amp;field=AV20_BIOS:double&amp;field=AF_SAUNA:double&amp;field=AF_ZONBNK:double&amp;field=AF_ATTRAC:double&amp;field=AV10ATTRAC:double&amp;field=AV20ATTRAC:double&amp;field=AV50ATTRAC:double&amp;field=AF_PODIUM:double&amp;field=AV5_PODIUM:double&amp;field=AV10PODIUM:double&amp;field=AV20PODIUM:double&amp;field=AF_POP:double&amp;field=OPP_TOT:integer&amp;field=OPP_LAND:integer&amp;field=OPP_WATER:integer" name="Editable layer">
+      <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="2018_01_09_Rotterdam_Selection20180109162946265" source="D:/User/Dropbox/01MSC EPA/Q2/GEO1005/2018-01-09_Rotterdam Selection.shp" name="2018-01-09_Rotterdam Selection">
         <customproperties/>
       </layer-tree-layer>
       <layer-tree-layer expanded="1" providerKey="gdal" checked="Qt::Checked" id="OpenStreetMap20171215111738261" source="&lt;GDAL_WMS>&#xa;  &lt;Service name=&quot;TMS&quot;>&#xa;    &lt;ServerUrl>http://tile.openstreetmap.org/${z}/${x}/${y}.png&lt;/ServerUrl>&#xa;  &lt;/Service>&#xa;  &lt;DataWindow>&#xa;    &lt;UpperLeftX>-20037508.34&lt;/UpperLeftX>&#xa;    &lt;UpperLeftY>20037508.34&lt;/UpperLeftY>&#xa;    &lt;LowerRightX>20037508.34&lt;/LowerRightX>&#xa;    &lt;LowerRightY>-20037508.34&lt;/LowerRightY>&#xa;    &lt;TileLevel>19&lt;/TileLevel>&#xa;    &lt;TileCountX>1&lt;/TileCountX>&#xa;    &lt;TileCountY>1&lt;/TileCountY>&#xa;    &lt;YOrigin>top&lt;/YOrigin>&#xa;  &lt;/DataWindow>&#xa;  &lt;Projection>EPSG:3857&lt;/Projection>&#xa;  &lt;BlockSizeX>256&lt;/BlockSizeX>&#xa;  &lt;BlockSizeY>256&lt;/BlockSizeY>&#xa;  &lt;BandsCount>3&lt;/BandsCount>&#xa;  &lt;Cache />&#xa;&lt;/GDAL_WMS>&#xa;" name="OpenStreetMap">
         <customproperties/>
       </layer-tree-layer>
     </layer-tree-group>
-    <layer-tree-group expanded="1" checked="Qt::Unchecked" name="Data">
+    <layer-tree-group expanded="1" checked="Qt::PartiallyChecked" name="Data">
       <customproperties/>
-      <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Unchecked" id="NWB_2016_Rotterdam_train_stations_WO20171201121004971" source="D:/User/Dropbox/01MSC EPA/Q2/GEO1005/Data/NWB_2016_Rotterdam_train_stations/NWB_2016_Rotterdam_train_stations_WO.dbf" name="NWB_2016_Rotterdam_train_stations_WO">
+      <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="NWB_2016_Rotterdam_train_stations_WO20171201121004971" source="D:/User/Dropbox/01MSC EPA/Q2/GEO1005/Data/NWB_2016_Rotterdam_train_stations/NWB_2016_Rotterdam_train_stations_WO.dbf" name="NWB_2016_Rotterdam_train_stations_WO">
         <customproperties/>
       </layer-tree-layer>
-      <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Unchecked" id="Rdam_Centre_all_attributes20180109155141391" source="D:/User/Dropbox/01MSC EPA/Q2/GEO1005/Data/Rdam Centre all attributes.shp" name="Rdam Centre all attributes">
+      <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Unchecked" id="Buurten_Rotterdam_Centrum_201620180109162114744" source="D:/User/Mijn documenten/Github/GEO1005_2017_G12_Suburbia/Suburbia/MyPlugin/sampledata/Buurten Rotterdam Centrum 2016.shp" name="Buurten Rotterdam Centrum 2016">
+        <customproperties/>
+      </layer-tree-layer>
+      <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="Rdam_Centre_all_attributes20180109155141391" source="D:/User/Dropbox/01MSC EPA/Q2/GEO1005/Data/Rdam Centre all attributes.shp" name="Rdam Centre all attributes">
         <customproperties/>
       </layer-tree-layer>
     </layer-tree-group>
+    <layer-tree-layer expanded="1" providerKey="memory" checked="Qt::Unchecked" id="memory_20180109162151947" source="Polygon?uuid=a53a16cb-8111-4685-96ba-8e42f9463725&amp;crs=EPSG:28992&amp;field=BU_CODE:string&amp;field=BU_NAAM:string&amp;field=P_25_44_JR:integer&amp;field=P_HH_M_K:integer&amp;field=WOZ:integer&amp;field=AF_KDV:double&amp;field=AF_BSO:double&amp;field=AF_TREINST:double&amp;field=25_44_NORM:double&amp;field=HH_MK_NORM:double&amp;field=WOZ_NORM:double&amp;field=KDV_NORM:double&amp;field=BSO_NORM:double&amp;field=TREIN_NORM:double&amp;field=B1:double&amp;field=B2:double&amp;field=B3:double&amp;field=B4:double&amp;field=Score:double&amp;field=BU_CODE_1:string&amp;field=BU_NAAM_1:string&amp;field=WK_CODE:string&amp;field=GM_CODE:string&amp;field=GM_NAAM:string&amp;field=IND_WBI:integer&amp;field=WATER:string&amp;field=POSTCODE:string&amp;field=DEK_PERC:integer&amp;field=OAD:integer&amp;field=STED:integer&amp;field=AANT_INW:integer&amp;field=AANT_MAN:integer&amp;field=AANT_VROUW:integer&amp;field=P_00_14_JR:integer&amp;field=P_15_24_JR:integer&amp;field=P_25_44__1:integer&amp;field=P_45_64_JR:integer&amp;field=P_65_EO_JR:integer&amp;field=P_ONGEHUWD:integer&amp;field=P_GEHUWD:integer&amp;field=P_GESCHEID:integer&amp;field=P_VERWEDUW:integer&amp;field=GEBOO_TOT:integer&amp;field=P_GEBOO:integer&amp;field=STERFT_TOT:integer&amp;field=P_STERFT:integer&amp;field=BEV_DICHTH:integer&amp;field=AANTAL_HH:integer&amp;field=P_EENP_HH:integer&amp;field=P_HH_Z_K:integer&amp;field=P_HH_M_K_1:integer&amp;field=GEM_HH_GR:double&amp;field=P_WEST_AL:integer&amp;field=P_N_W_AL:integer&amp;field=P_MAROKKO:integer&amp;field=P_ANT_ARU:integer&amp;field=P_SURINAM:integer&amp;field=P_TURKIJE:integer&amp;field=P_OVER_NW:integer&amp;field=A_BED_A:integer&amp;field=A_BED_BF:integer&amp;field=A_BED_GI:integer&amp;field=A_BED_HJ:integer&amp;field=A_BED_KL:integer&amp;field=A_BED_MN:integer&amp;field=A_BED_RU:integer&amp;field=A_BEDV:integer&amp;field=WONINGEN:integer&amp;field=WOZ_1:integer&amp;field=P_1GEZW:integer&amp;field=P_MGEZW:integer&amp;field=P_BEWNDW:integer&amp;field=P_KOOPWON:integer&amp;field=P_HUURWON:integer&amp;field=P_HUURCORP:integer&amp;field=P_HUUROVVH:integer&amp;field=P_HUKO_ONB:integer&amp;field=P_WONT2000:integer&amp;field=P_WONV2000:integer&amp;field=P_LEEGSW:integer&amp;field=G_GAS_TOT:integer&amp;field=G_GAS_APP:integer&amp;field=G_GAS_TUS:integer&amp;field=G_GAS_HOEK:integer&amp;field=G_GAS_21K:integer&amp;field=G_GAS_VRY:integer&amp;field=G_GAS_HU:integer&amp;field=G_GAS_KO:integer&amp;field=P_STADVERW:integer&amp;field=G_ELEK_TOT:integer&amp;field=G_ELEK_APP:integer&amp;field=G_ELEK_TUS:integer&amp;field=G_ELEK_HOE:integer&amp;field=G_ELEK_21K:integer&amp;field=G_ELEK_VRY:integer&amp;field=G_ELE_HU:integer&amp;field=G_ELE_KO:integer&amp;field=AANT_INK:integer&amp;field=INK_ONTV:double&amp;field=INK_INW:double&amp;field=P_LAAGINKP:integer&amp;field=P_HOOGINKP:integer&amp;field=P_LAAGINKH:integer&amp;field=P_HOOGINKH:integer&amp;field=P_LKOOPKRH:integer&amp;field=P_SOCMINH:integer&amp;field=AO_UIT_TOT:integer&amp;field=WW_UIT_TOT:integer&amp;field=WWB_UITTOT:integer&amp;field=P_NIETACT:integer&amp;field=A_SOZ_OW:integer&amp;field=AUTO_TOT:integer&amp;field=AUTO_HH:double&amp;field=AUTO_LAND:integer&amp;field=BEDR_AUTO:integer&amp;field=MOTOR_2W:integer&amp;field=A_LFTJ6J:integer&amp;field=A_LFTO6J:integer&amp;field=A_BST_B:integer&amp;field=A_BST_NB:integer&amp;field=AF_ARTSPR:double&amp;field=AV1_ARTSPR:double&amp;field=AV3_ARTSPR:double&amp;field=AV5_ARTSPR:double&amp;field=AF_APOTH:double&amp;field=AF_ZIEK_I:double&amp;field=AV5_ZIEK_I:double&amp;field=AV10ZIEK_I:double&amp;field=AV20ZIEK_I:double&amp;field=AF_ZIEK_E:double&amp;field=AV5_ZIEK_E:double&amp;field=AV10ZIEK_E:double&amp;field=AV20ZIEK_E:double&amp;field=AF_SUPERM:double&amp;field=AV1_SUPERM:double&amp;field=AV3_SUPERM:double&amp;field=AV5_SUPERM:double&amp;field=AF_DAGLMD:double&amp;field=AV1_DAGLMD:double&amp;field=AV3_DAGLMD:double&amp;field=AV5_DAGLMD:double&amp;field=AF_WARENH:double&amp;field=AV5_WARENH:double&amp;field=AV10WARENH:double&amp;field=AV20WARENH:double&amp;field=AF_CAFE:double&amp;field=AV1_CAFE:double&amp;field=AV3_CAFE:double&amp;field=AV5_CAFE:double&amp;field=AF_CAFTAR:double&amp;field=AV1_CAFTAR:double&amp;field=AV3_CAFTAR:double&amp;field=AV5_CAFTAR:double&amp;field=AF_RESTAU:double&amp;field=AV1_RESTAU:double&amp;field=AV3_RESTAU:double&amp;field=AV5_RESTAU:double&amp;field=AF_HOTEL:double&amp;field=AV5_HOTEL:double&amp;field=AV10_HOTEL:double&amp;field=AV20_HOTEL:double&amp;field=AF_KDV_1:double&amp;field=AV1_KDV:double&amp;field=AV3_KDV:double&amp;field=AV5_KDV:double&amp;field=AF_BSO_1:double&amp;field=AV1_BSO:double&amp;field=AV3_BSO:double&amp;field=AV5_BSO:double&amp;field=AF_ONDBAS:double&amp;field=AV1_ONDBAS:double&amp;field=AV3_ONDBAS:double&amp;field=AV5_ONDBAS:double&amp;field=AF_ONDVRT:double&amp;field=AV3_ONDVRT:double&amp;field=AV5_ONDVRT:double&amp;field=AV10ONDVRT:double&amp;field=AF_ONDVMB:double&amp;field=AV3_ONDVMB:double&amp;field=AV5_ONDVMB:double&amp;field=AV10ONDVMB:double&amp;field=AF_ONDHV:double&amp;field=AV3_ONDHV:double&amp;field=AV5_ONDHV:double&amp;field=AV10_ONDHV:double&amp;field=AF_BRANDW:double&amp;field=AF_OPRITH:double&amp;field=AF_TREIN_1:double&amp;field=AF_OVERST:double&amp;field=AF_ZWEMB:double&amp;field=AF_IJSBAAN:double&amp;field=AF_BIBLIO:double&amp;field=AF_BIOS:double&amp;field=AV5_BIOS:double&amp;field=AV10_BIOS:double&amp;field=AV20_BIOS:double&amp;field=AF_SAUNA:double&amp;field=AF_ZONBNK:double&amp;field=AF_ATTRAC:double&amp;field=AV10ATTRAC:double&amp;field=AV20ATTRAC:double&amp;field=AV50ATTRAC:double&amp;field=AF_PODIUM:double&amp;field=AV5_PODIUM:double&amp;field=AV10PODIUM:double&amp;field=AV20PODIUM:double&amp;field=AF_POP:double&amp;field=OPP_TOT:integer&amp;field=OPP_LAND:integer&amp;field=OPP_WATER:integer" name="Rotterdam Selection">
+      <customproperties/>
+    </layer-tree-layer>
   </layer-tree-group>
   <relations/>
   <mapcanvas>
     <units>meters</units>
     <extent>
-      <xmin>486972.63463847094681114</xmin>
-      <ymin>6771602.76201812550425529</ymin>
-      <xmax>513279.69080621318425983</xmax>
-      <ymax>6796888.34041352197527885</ymax>
+      <xmin>465788.25371452292893082</xmin>
+      <ymin>6754334.56213834322988987</ymin>
+      <xmax>492095.30988226516637951</xmax>
+      <ymax>6779620.14053373970091343</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>1</projections>
@@ -57,17 +63,20 @@
       <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:28992" srcDatumTransform="-1" destDatumTransform="-1" layerid="buurt_201520171221135510257"/>
       <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:28992" srcDatumTransform="-1" destDatumTransform="-1" layerid="memory_20171215113501002"/>
       <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:28992" srcDatumTransform="-1" destDatumTransform="-1" layerid="memory_20180109160229683"/>
+      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:28992" srcDatumTransform="-1" destDatumTransform="-1" layerid="Buurten_Rotterdam_Centrum_201620180109162114744"/>
       <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:28992" srcDatumTransform="-1" destDatumTransform="-1" layerid="WOZ_Rotterdam_2016_copy20171215123340833"/>
       <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3857" srcDatumTransform="-1" destDatumTransform="-1" layerid="OpenStreetMap20171215111738261"/>
       <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:28992" srcDatumTransform="-1" destDatumTransform="-1" layerid="Buurten_Rotterdam_Centrum_201620171215113720485"/>
       <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:28992" srcDatumTransform="-1" destDatumTransform="-1" layerid="Rotterdam_Centrum_RD_NEW20171215113116352"/>
       <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:28992" srcDatumTransform="-1" destDatumTransform="-1" layerid="memory_20180109155336070"/>
+      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:28992" srcDatumTransform="-1" destDatumTransform="-1" layerid="memory_20180109155745259"/>
       <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3857" srcDatumTransform="-1" destDatumTransform="-1" layerid="memory_20171215112548234"/>
       <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:28992" srcDatumTransform="-1" destDatumTransform="-1" layerid="Buurten_Rotterdam_Centrum_2016_copy20171215122714498"/>
       <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:28992" srcDatumTransform="-1" destDatumTransform="-1" layerid="memory_20171221135545512"/>
       <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3857" srcDatumTransform="-1" destDatumTransform="-1" layerid="memory_20171215112338265"/>
-      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:28992" srcDatumTransform="-1" destDatumTransform="-1" layerid="memory_20180109155745259"/>
       <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:28992" srcDatumTransform="-1" destDatumTransform="-1" layerid="buurt_201620171205135302129"/>
+      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:28992" srcDatumTransform="-1" destDatumTransform="-1" layerid="2018_01_09_Rotterdam_Selection20180109162946265"/>
+      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:28992" srcDatumTransform="-1" destDatumTransform="-1" layerid="memory_20180109162151947"/>
       <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3857" srcDatumTransform="-1" destDatumTransform="-1" layerid="Mask_OSM_17823700820171215104726558"/>
       <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:28992" srcDatumTransform="-1" destDatumTransform="-1" layerid="Rotterdam_Buurten_2016_copy20180109114430302"/>
       <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:28992" srcDatumTransform="-1" destDatumTransform="-1" layerid="Rotterdam_Buurten_2016_copy20180109121344156"/>
@@ -88,19 +97,21 @@
       <item>OpenStreetMap20171215111738261</item>
       <item>Neighborhood_outlines20180109140229582</item>
       <item>Rdam_Centre_all_attributes20180109155141391</item>
-      <item>memory_20180109160229683</item>
+      <item>Buurten_Rotterdam_Centrum_201620180109162114744</item>
+      <item>memory_20180109162151947</item>
+      <item>2018_01_09_Rotterdam_Selection20180109162946265</item>
     </custom-order>
   </layer-tree-canvas>
   <legend updateDrawingOrder="true">
-    <legendgroup open="true" checked="Qt::PartiallyChecked" name="Maps">
-      <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Neighborhood outlines" showFeatureCount="0">
+    <legendgroup open="true" checked="Qt::Checked" name="Maps">
+      <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Neighborhood outlines" showFeatureCount="0">
         <filegroup open="true" hidden="false">
-          <legendlayerfile isInOverview="0" layerid="Neighborhood_outlines20180109140229582" visible="0"/>
+          <legendlayerfile isInOverview="0" layerid="Neighborhood_outlines20180109140229582" visible="1"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="Editable layer" showFeatureCount="0">
-        <filegroup open="false" hidden="false">
-          <legendlayerfile isInOverview="0" layerid="memory_20180109160229683" visible="1"/>
+      <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="2018-01-09_Rotterdam Selection" showFeatureCount="0">
+        <filegroup open="true" hidden="false">
+          <legendlayerfile isInOverview="0" layerid="2018_01_09_Rotterdam_Selection20180109162946265" visible="1"/>
         </filegroup>
       </legendlayer>
       <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="OpenStreetMap" showFeatureCount="0">
@@ -109,20 +120,755 @@
         </filegroup>
       </legendlayer>
     </legendgroup>
-    <legendgroup open="true" checked="Qt::Unchecked" name="Data">
-      <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="NWB_2016_Rotterdam_train_stations_WO" showFeatureCount="0">
+    <legendgroup open="true" checked="Qt::PartiallyChecked" name="Data">
+      <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="NWB_2016_Rotterdam_train_stations_WO" showFeatureCount="0">
         <filegroup open="true" hidden="false">
-          <legendlayerfile isInOverview="0" layerid="NWB_2016_Rotterdam_train_stations_WO20171201121004971" visible="0"/>
+          <legendlayerfile isInOverview="0" layerid="NWB_2016_Rotterdam_train_stations_WO20171201121004971" visible="1"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Rdam Centre all attributes" showFeatureCount="0">
+      <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Buurten Rotterdam Centrum 2016" showFeatureCount="0">
         <filegroup open="true" hidden="false">
-          <legendlayerfile isInOverview="0" layerid="Rdam_Centre_all_attributes20180109155141391" visible="0"/>
+          <legendlayerfile isInOverview="0" layerid="Buurten_Rotterdam_Centrum_201620180109162114744" visible="0"/>
+        </filegroup>
+      </legendlayer>
+      <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Rdam Centre all attributes" showFeatureCount="0">
+        <filegroup open="true" hidden="false">
+          <legendlayerfile isInOverview="0" layerid="Rdam_Centre_all_attributes20180109155141391" visible="1"/>
         </filegroup>
       </legendlayer>
     </legendgroup>
+    <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Rotterdam Selection" showFeatureCount="0">
+      <filegroup open="true" hidden="false">
+        <legendlayerfile isInOverview="0" layerid="memory_20180109162151947" visible="0"/>
+      </filegroup>
+    </legendlayer>
   </legend>
   <projectlayers>
+    <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+      <id>2018_01_09_Rotterdam_Selection20180109162946265</id>
+      <datasource>../../../../../../Dropbox/01MSC EPA/Q2/GEO1005/2018-01-09_Rotterdam Selection.shp</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>2018-01-09_Rotterdam Selection</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=sterea +lat_0=52.15616055555555 +lon_0=5.38763888888889 +k=0.9999079 +x_0=155000 +y_0=463000 +ellps=bessel +towgs84=565.2369,50.0087,465.658,-0.406857,0.350733,-1.87035,4.0812 +units=m +no_defs</proj4>
+          <srsid>2517</srsid>
+          <srid>28992</srid>
+          <authid>EPSG:28992</authid>
+          <description>Amersfoort / RD New</description>
+          <projectionacronym>sterea</projectionacronym>
+          <ellipsoidacronym>bessel</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <provider encoding="UTF-8">ogr</provider>
+      <vectorjoins/>
+      <layerDependencies/>
+      <expressionfields/>
+      <map-layer-style-manager current="">
+        <map-layer-style name=""/>
+      </map-layer-style-manager>
+      <edittypes>
+        <edittype widgetv2type="TextEdit" name="BU_CODE">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="BU_NAAM">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="P_25_44_JR">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="P_HH_M_K">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="WOZ">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="AF_KDV">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="AF_BSO">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="AF_TREINST">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="25_44_NORM">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="HH_MK_NORM">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="WOZ_NORM">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="KDV_NORM">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="BSO_NORM">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="TREIN_NORM">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="B1">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="B2">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="B3">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="B4">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Score">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="POSTCODE">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="POSTCODE_I">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+      </edittypes>
+      <renderer-v2 attr="POSTCODE_I" forceraster="0" symbollevels="0" type="graduatedSymbol" graduatedMethod="GraduatedColor" enableorderby="0">
+        <ranges>
+          <range render="true" symbol="0" lower="2651.000000000000000" upper="3028.000000000000000" label=" 2651.0 - 3028.0 "/>
+          <range render="true" symbol="1" lower="3028.000000000000000" upper="3047.000000000000000" label=" 3028.0 - 3047.0 "/>
+          <range render="true" symbol="2" lower="3047.000000000000000" upper="3064.000000000000000" label=" 3047.0 - 3064.0 "/>
+          <range render="true" symbol="3" lower="3064.000000000000000" upper="3073.000000000000000" label=" 3064.0 - 3073.0 "/>
+          <range render="true" symbol="4" lower="3073.000000000000000" upper="3161.000000000000000" label=" 3073.0 - 3161.0 "/>
+        </ranges>
+        <symbols>
+          <symbol alpha="1" clip_to_extent="1" type="fill" name="0">
+            <layer pass="0" class="SimpleFill" locked="0">
+              <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="color" v="215,25,28,255"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0.26"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="style" v="solid"/>
+            </layer>
+          </symbol>
+          <symbol alpha="1" clip_to_extent="1" type="fill" name="1">
+            <layer pass="0" class="SimpleFill" locked="0">
+              <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="color" v="253,174,97,255"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0.26"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="style" v="solid"/>
+            </layer>
+          </symbol>
+          <symbol alpha="1" clip_to_extent="1" type="fill" name="2">
+            <layer pass="0" class="SimpleFill" locked="0">
+              <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="color" v="255,255,192,255"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0.26"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="style" v="solid"/>
+            </layer>
+          </symbol>
+          <symbol alpha="1" clip_to_extent="1" type="fill" name="3">
+            <layer pass="0" class="SimpleFill" locked="0">
+              <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="color" v="166,217,106,255"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0.26"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="style" v="solid"/>
+            </layer>
+          </symbol>
+          <symbol alpha="1" clip_to_extent="1" type="fill" name="4">
+            <layer pass="0" class="SimpleFill" locked="0">
+              <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="color" v="26,150,65,255"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0.26"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="style" v="solid"/>
+            </layer>
+          </symbol>
+        </symbols>
+        <source-symbol>
+          <symbol alpha="1" clip_to_extent="1" type="fill" name="0">
+            <layer pass="0" class="SimpleFill" locked="0">
+              <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="color" v="179,86,9,255"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0.26"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="style" v="solid"/>
+            </layer>
+          </symbol>
+        </source-symbol>
+        <colorramp type="gradient" name="[source]">
+          <prop k="color1" v="215,25,28,255"/>
+          <prop k="color2" v="26,150,65,255"/>
+          <prop k="discrete" v="0"/>
+          <prop k="stops" v="0.25;253,174,97,255:0.5;255,255,192,255:0.75;166,217,106,255"/>
+        </colorramp>
+        <invertedcolorramp value="0"/>
+        <mode name="quantile"/>
+        <rotation/>
+        <sizescale scalemethod="diameter"/>
+        <labelformat format=" %1 - %2 " trimtrailingzeroes="false" decimalplaces="1"/>
+      </renderer-v2>
+      <labeling type="simple"/>
+      <customproperties>
+        <property key="embeddedWidgets/count" value="0"/>
+        <property key="labeling" value="pal"/>
+        <property key="labeling/addDirectionSymbol" value="false"/>
+        <property key="labeling/angleOffset" value="0"/>
+        <property key="labeling/blendMode" value="0"/>
+        <property key="labeling/bufferBlendMode" value="0"/>
+        <property key="labeling/bufferColorA" value="255"/>
+        <property key="labeling/bufferColorB" value="255"/>
+        <property key="labeling/bufferColorG" value="255"/>
+        <property key="labeling/bufferColorR" value="255"/>
+        <property key="labeling/bufferDraw" value="false"/>
+        <property key="labeling/bufferJoinStyle" value="128"/>
+        <property key="labeling/bufferNoFill" value="false"/>
+        <property key="labeling/bufferSize" value="1"/>
+        <property key="labeling/bufferSizeInMapUnits" value="false"/>
+        <property key="labeling/bufferSizeMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/bufferTransp" value="0"/>
+        <property key="labeling/centroidInside" value="false"/>
+        <property key="labeling/centroidWhole" value="false"/>
+        <property key="labeling/decimals" value="3"/>
+        <property key="labeling/displayAll" value="false"/>
+        <property key="labeling/dist" value="0"/>
+        <property key="labeling/distInMapUnits" value="false"/>
+        <property key="labeling/distMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/drawLabels" value="false"/>
+        <property key="labeling/enabled" value="false"/>
+        <property key="labeling/fieldName" value=""/>
+        <property key="labeling/fitInPolygonOnly" value="false"/>
+        <property key="labeling/fontCapitals" value="0"/>
+        <property key="labeling/fontFamily" value="MS Shell Dlg 2"/>
+        <property key="labeling/fontItalic" value="false"/>
+        <property key="labeling/fontLetterSpacing" value="0"/>
+        <property key="labeling/fontLimitPixelSize" value="false"/>
+        <property key="labeling/fontMaxPixelSize" value="10000"/>
+        <property key="labeling/fontMinPixelSize" value="3"/>
+        <property key="labeling/fontSize" value="7.5"/>
+        <property key="labeling/fontSizeInMapUnits" value="false"/>
+        <property key="labeling/fontSizeMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/fontStrikeout" value="false"/>
+        <property key="labeling/fontUnderline" value="false"/>
+        <property key="labeling/fontWeight" value="50"/>
+        <property key="labeling/fontWordSpacing" value="0"/>
+        <property key="labeling/formatNumbers" value="false"/>
+        <property key="labeling/isExpression" value="true"/>
+        <property key="labeling/labelOffsetInMapUnits" value="true"/>
+        <property key="labeling/labelOffsetMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/labelPerPart" value="false"/>
+        <property key="labeling/leftDirectionSymbol" value="&lt;"/>
+        <property key="labeling/limitNumLabels" value="false"/>
+        <property key="labeling/maxCurvedCharAngleIn" value="25"/>
+        <property key="labeling/maxCurvedCharAngleOut" value="-25"/>
+        <property key="labeling/maxNumLabels" value="2000"/>
+        <property key="labeling/mergeLines" value="false"/>
+        <property key="labeling/minFeatureSize" value="0"/>
+        <property key="labeling/multilineAlign" value="4294967295"/>
+        <property key="labeling/multilineHeight" value="1"/>
+        <property key="labeling/namedStyle" value="Normal"/>
+        <property key="labeling/obstacle" value="true"/>
+        <property key="labeling/obstacleFactor" value="1"/>
+        <property key="labeling/obstacleType" value="0"/>
+        <property key="labeling/offsetType" value="0"/>
+        <property key="labeling/placeDirectionSymbol" value="0"/>
+        <property key="labeling/placement" value="1"/>
+        <property key="labeling/placementFlags" value="10"/>
+        <property key="labeling/plussign" value="false"/>
+        <property key="labeling/predefinedPositionOrder" value="TR,TL,BR,BL,R,L,TSR,BSR"/>
+        <property key="labeling/preserveRotation" value="true"/>
+        <property key="labeling/previewBkgrdColor" value="#ffffff"/>
+        <property key="labeling/priority" value="5"/>
+        <property key="labeling/quadOffset" value="4"/>
+        <property key="labeling/repeatDistance" value="0"/>
+        <property key="labeling/repeatDistanceMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/repeatDistanceUnit" value="1"/>
+        <property key="labeling/reverseDirectionSymbol" value="false"/>
+        <property key="labeling/rightDirectionSymbol" value=">"/>
+        <property key="labeling/scaleMax" value="10000000"/>
+        <property key="labeling/scaleMin" value="1"/>
+        <property key="labeling/scaleVisibility" value="false"/>
+        <property key="labeling/shadowBlendMode" value="6"/>
+        <property key="labeling/shadowColorB" value="0"/>
+        <property key="labeling/shadowColorG" value="0"/>
+        <property key="labeling/shadowColorR" value="0"/>
+        <property key="labeling/shadowDraw" value="false"/>
+        <property key="labeling/shadowOffsetAngle" value="135"/>
+        <property key="labeling/shadowOffsetDist" value="1"/>
+        <property key="labeling/shadowOffsetGlobal" value="true"/>
+        <property key="labeling/shadowOffsetMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/shadowOffsetUnits" value="1"/>
+        <property key="labeling/shadowRadius" value="1.5"/>
+        <property key="labeling/shadowRadiusAlphaOnly" value="false"/>
+        <property key="labeling/shadowRadiusMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/shadowRadiusUnits" value="1"/>
+        <property key="labeling/shadowScale" value="100"/>
+        <property key="labeling/shadowTransparency" value="30"/>
+        <property key="labeling/shadowUnder" value="0"/>
+        <property key="labeling/shapeBlendMode" value="0"/>
+        <property key="labeling/shapeBorderColorA" value="255"/>
+        <property key="labeling/shapeBorderColorB" value="128"/>
+        <property key="labeling/shapeBorderColorG" value="128"/>
+        <property key="labeling/shapeBorderColorR" value="128"/>
+        <property key="labeling/shapeBorderWidth" value="0"/>
+        <property key="labeling/shapeBorderWidthMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/shapeBorderWidthUnits" value="1"/>
+        <property key="labeling/shapeDraw" value="false"/>
+        <property key="labeling/shapeFillColorA" value="255"/>
+        <property key="labeling/shapeFillColorB" value="255"/>
+        <property key="labeling/shapeFillColorG" value="255"/>
+        <property key="labeling/shapeFillColorR" value="255"/>
+        <property key="labeling/shapeJoinStyle" value="64"/>
+        <property key="labeling/shapeOffsetMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/shapeOffsetUnits" value="1"/>
+        <property key="labeling/shapeOffsetX" value="0"/>
+        <property key="labeling/shapeOffsetY" value="0"/>
+        <property key="labeling/shapeRadiiMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/shapeRadiiUnits" value="1"/>
+        <property key="labeling/shapeRadiiX" value="0"/>
+        <property key="labeling/shapeRadiiY" value="0"/>
+        <property key="labeling/shapeRotation" value="0"/>
+        <property key="labeling/shapeRotationType" value="0"/>
+        <property key="labeling/shapeSVGFile" value=""/>
+        <property key="labeling/shapeSizeMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/shapeSizeType" value="0"/>
+        <property key="labeling/shapeSizeUnits" value="1"/>
+        <property key="labeling/shapeSizeX" value="0"/>
+        <property key="labeling/shapeSizeY" value="0"/>
+        <property key="labeling/shapeTransparency" value="0"/>
+        <property key="labeling/shapeType" value="0"/>
+        <property key="labeling/substitutions" value="&lt;substitutions/>"/>
+        <property key="labeling/textColorA" value="255"/>
+        <property key="labeling/textColorB" value="0"/>
+        <property key="labeling/textColorG" value="0"/>
+        <property key="labeling/textColorR" value="0"/>
+        <property key="labeling/textTransp" value="0"/>
+        <property key="labeling/upsidedownLabels" value="0"/>
+        <property key="labeling/useSubstitutions" value="false"/>
+        <property key="labeling/wrapChar" value=""/>
+        <property key="labeling/xOffset" value="0"/>
+        <property key="labeling/yOffset" value="0"/>
+        <property key="labeling/zIndex" value="0"/>
+        <property key="variableNames"/>
+        <property key="variableValues"/>
+      </customproperties>
+      <blendMode>0</blendMode>
+      <featureBlendMode>0</featureBlendMode>
+      <layerTransparency>30</layerTransparency>
+      <displayfield>BU_CODE</displayfield>
+      <label>0</label>
+      <labelattributes>
+        <label fieldname="" text="Label"/>
+        <family fieldname="" name="MS Shell Dlg 2"/>
+        <size fieldname="" units="pt" value="12"/>
+        <bold fieldname="" on="0"/>
+        <italic fieldname="" on="0"/>
+        <underline fieldname="" on="0"/>
+        <strikeout fieldname="" on="0"/>
+        <color fieldname="" red="0" blue="0" green="0"/>
+        <x fieldname=""/>
+        <y fieldname=""/>
+        <offset x="0" y="0" units="pt" yfieldname="" xfieldname=""/>
+        <angle fieldname="" value="0" auto="0"/>
+        <alignment fieldname="" value="center"/>
+        <buffercolor fieldname="" red="255" blue="255" green="255"/>
+        <buffersize fieldname="" units="pt" value="1"/>
+        <bufferenabled fieldname="" on=""/>
+        <multilineenabled fieldname="" on=""/>
+        <selectedonly on=""/>
+      </labelattributes>
+      <SingleCategoryDiagramRenderer diagramType="Histogram" sizeLegend="0" attributeLegend="1">
+        <DiagramCategory penColor="#000000" labelPlacementMethod="XHeight" penWidth="0" diagramOrientation="Up" sizeScale="0,0,0,0,0,0" minimumSize="0" barWidth="5" penAlpha="255" maxScaleDenominator="1e+08" backgroundColor="#ffffff" transparency="0" width="15" scaleDependency="Area" backgroundAlpha="255" angleOffset="1440" scaleBasedVisibility="0" enabled="0" height="15" lineSizeScale="0,0,0,0,0,0" sizeType="MM" lineSizeType="MM" minScaleDenominator="inf">
+          <fontProperties description="MS Shell Dlg 2,7.5,-1,5,50,0,0,0,0,0" style=""/>
+        </DiagramCategory>
+        <symbol alpha="1" clip_to_extent="1" type="marker" name="sizeSymbol">
+          <layer pass="0" class="SimpleMarker" locked="0">
+            <prop k="angle" v="0"/>
+            <prop k="color" v="255,0,0,255"/>
+            <prop k="horizontal_anchor_point" v="1"/>
+            <prop k="joinstyle" v="bevel"/>
+            <prop k="name" v="circle"/>
+            <prop k="offset" v="0,0"/>
+            <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+            <prop k="offset_unit" v="MM"/>
+            <prop k="outline_color" v="0,0,0,255"/>
+            <prop k="outline_style" v="solid"/>
+            <prop k="outline_width" v="0"/>
+            <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+            <prop k="outline_width_unit" v="MM"/>
+            <prop k="scale_method" v="diameter"/>
+            <prop k="size" v="2"/>
+            <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+            <prop k="size_unit" v="MM"/>
+            <prop k="vertical_anchor_point" v="1"/>
+          </layer>
+        </symbol>
+      </SingleCategoryDiagramRenderer>
+      <DiagramLayerSettings yPosColumn="-1" showColumn="-1" linePlacementFlags="10" placement="0" dist="0" xPosColumn="-1" priority="0" obstacle="0" zIndex="0" showAll="1"/>
+      <annotationform></annotationform>
+      <aliases>
+        <alias field="BU_CODE" index="0" name=""/>
+        <alias field="BU_NAAM" index="1" name=""/>
+        <alias field="P_25_44_JR" index="2" name=""/>
+        <alias field="P_HH_M_K" index="3" name=""/>
+        <alias field="WOZ" index="4" name=""/>
+        <alias field="AF_KDV" index="5" name=""/>
+        <alias field="AF_BSO" index="6" name=""/>
+        <alias field="AF_TREINST" index="7" name=""/>
+        <alias field="25_44_NORM" index="8" name=""/>
+        <alias field="HH_MK_NORM" index="9" name=""/>
+        <alias field="WOZ_NORM" index="10" name=""/>
+        <alias field="KDV_NORM" index="11" name=""/>
+        <alias field="BSO_NORM" index="12" name=""/>
+        <alias field="TREIN_NORM" index="13" name=""/>
+        <alias field="B1" index="14" name=""/>
+        <alias field="B2" index="15" name=""/>
+        <alias field="B3" index="16" name=""/>
+        <alias field="B4" index="17" name=""/>
+        <alias field="Score" index="18" name=""/>
+        <alias field="POSTCODE" index="19" name=""/>
+        <alias field="POSTCODE_I" index="20" name=""/>
+      </aliases>
+      <excludeAttributesWMS/>
+      <excludeAttributesWFS/>
+      <attributeactions default="-1"/>
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="839637888">
+        <columns>
+          <column width="-1" hidden="0" type="field" name="BU_CODE"/>
+          <column width="-1" hidden="0" type="field" name="BU_NAAM"/>
+          <column width="-1" hidden="0" type="field" name="P_25_44_JR"/>
+          <column width="-1" hidden="0" type="field" name="P_HH_M_K"/>
+          <column width="-1" hidden="0" type="field" name="WOZ"/>
+          <column width="-1" hidden="0" type="field" name="AF_KDV"/>
+          <column width="-1" hidden="0" type="field" name="AF_BSO"/>
+          <column width="-1" hidden="0" type="field" name="AF_TREINST"/>
+          <column width="-1" hidden="0" type="field" name="25_44_NORM"/>
+          <column width="-1" hidden="0" type="field" name="HH_MK_NORM"/>
+          <column width="-1" hidden="0" type="field" name="WOZ_NORM"/>
+          <column width="-1" hidden="0" type="field" name="KDV_NORM"/>
+          <column width="-1" hidden="0" type="field" name="BSO_NORM"/>
+          <column width="-1" hidden="0" type="field" name="TREIN_NORM"/>
+          <column width="-1" hidden="0" type="field" name="B1"/>
+          <column width="-1" hidden="0" type="field" name="B2"/>
+          <column width="-1" hidden="0" type="field" name="B3"/>
+          <column width="-1" hidden="0" type="field" name="B4"/>
+          <column width="-1" hidden="0" type="field" name="Score"/>
+          <column width="-1" hidden="0" type="field" name="POSTCODE"/>
+          <column width="-1" hidden="0" type="field" name="POSTCODE_I"/>
+          <column width="-1" hidden="1" type="actions"/>
+        </columns>
+      </attributetableconfig>
+      <editform></editform>
+      <editforminit/>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath></editforminitfilepath>
+      <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
+"""
+QGIS forms can have a Python function that is called when the form is
+opened.
+
+Use this function to add extra logic to your forms.
+
+Enter the name of the function in the "Python Init function"
+field.
+An example follows:
+"""
+from qgis.PyQt.QtWidgets import QWidget
+
+def my_form_open(dialog, layer, feature):
+	geom = feature.geometry()
+	control = dialog.findChild(QWidget, "MyLineEdit")
+]]></editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <widgets/>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
+      <defaults>
+        <default field="BU_CODE" expression=""/>
+        <default field="BU_NAAM" expression=""/>
+        <default field="P_25_44_JR" expression=""/>
+        <default field="P_HH_M_K" expression=""/>
+        <default field="WOZ" expression=""/>
+        <default field="AF_KDV" expression=""/>
+        <default field="AF_BSO" expression=""/>
+        <default field="AF_TREINST" expression=""/>
+        <default field="25_44_NORM" expression=""/>
+        <default field="HH_MK_NORM" expression=""/>
+        <default field="WOZ_NORM" expression=""/>
+        <default field="KDV_NORM" expression=""/>
+        <default field="BSO_NORM" expression=""/>
+        <default field="TREIN_NORM" expression=""/>
+        <default field="B1" expression=""/>
+        <default field="B2" expression=""/>
+        <default field="B3" expression=""/>
+        <default field="B4" expression=""/>
+        <default field="Score" expression=""/>
+        <default field="POSTCODE" expression=""/>
+        <default field="POSTCODE_I" expression=""/>
+      </defaults>
+      <previewExpression>COALESCE( "BU_CODE", '&lt;NULL>' )</previewExpression>
+    </maplayer>
+    <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+      <id>Buurten_Rotterdam_Centrum_201620180109162114744</id>
+      <datasource>./Buurten Rotterdam Centrum 2016.shp</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>Buurten Rotterdam Centrum 2016</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=sterea +lat_0=52.15616055555555 +lon_0=5.38763888888889 +k=0.9999079 +x_0=155000 +y_0=463000 +ellps=bessel +towgs84=565.2369,50.0087,465.658,-0.406857,0.350733,-1.87035,4.0812 +units=m +no_defs</proj4>
+          <srsid>2517</srsid>
+          <srid>28992</srid>
+          <authid>EPSG:28992</authid>
+          <description>Amersfoort / RD New</description>
+          <projectionacronym>sterea</projectionacronym>
+          <ellipsoidacronym>bessel</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <provider encoding="System">ogr</provider>
+      <vectorjoins/>
+      <layerDependencies/>
+      <expressionfields/>
+      <map-layer-style-manager current="">
+        <map-layer-style name=""/>
+      </map-layer-style-manager>
+      <edittypes>
+        <edittype widgetv2type="TextEdit" name="BU_CODE">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="BU_NAAM">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="P_25_44_JR">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="P_HH_M_K">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="WOZ">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="AF_KDV">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="AF_BSO">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="AF_TREINST">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="25_44_NORM">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="HH_MK_NORM">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="WOZ_NORM">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="KDV_NORM">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="BSO_NORM">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="TREIN_NORM">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="B1">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="B2">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="B3">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="B4">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Score">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+      </edittypes>
+      <renderer-v2 forceraster="0" symbollevels="0" type="singleSymbol" enableorderby="0">
+        <symbols>
+          <symbol alpha="1" clip_to_extent="1" type="fill" name="0">
+            <layer pass="0" class="SimpleFill" locked="0">
+              <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="color" v="220,155,154,255"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0.26"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="style" v="solid"/>
+            </layer>
+          </symbol>
+        </symbols>
+        <rotation/>
+        <sizescale scalemethod="diameter"/>
+      </renderer-v2>
+      <labeling type="simple"/>
+      <customproperties/>
+      <blendMode>0</blendMode>
+      <featureBlendMode>0</featureBlendMode>
+      <layerTransparency>0</layerTransparency>
+      <displayfield>BU_CODE</displayfield>
+      <label>0</label>
+      <labelattributes>
+        <label fieldname="" text="Label"/>
+        <family fieldname="" name="MS Shell Dlg 2"/>
+        <size fieldname="" units="pt" value="12"/>
+        <bold fieldname="" on="0"/>
+        <italic fieldname="" on="0"/>
+        <underline fieldname="" on="0"/>
+        <strikeout fieldname="" on="0"/>
+        <color fieldname="" red="0" blue="0" green="0"/>
+        <x fieldname=""/>
+        <y fieldname=""/>
+        <offset x="0" y="0" units="pt" yfieldname="" xfieldname=""/>
+        <angle fieldname="" value="0" auto="0"/>
+        <alignment fieldname="" value="center"/>
+        <buffercolor fieldname="" red="255" blue="255" green="255"/>
+        <buffersize fieldname="" units="pt" value="1"/>
+        <bufferenabled fieldname="" on=""/>
+        <multilineenabled fieldname="" on=""/>
+        <selectedonly on=""/>
+      </labelattributes>
+      <annotationform></annotationform>
+      <aliases>
+        <alias field="BU_CODE" index="0" name=""/>
+        <alias field="BU_NAAM" index="1" name=""/>
+        <alias field="P_25_44_JR" index="2" name=""/>
+        <alias field="P_HH_M_K" index="3" name=""/>
+        <alias field="WOZ" index="4" name=""/>
+        <alias field="AF_KDV" index="5" name=""/>
+        <alias field="AF_BSO" index="6" name=""/>
+        <alias field="AF_TREINST" index="7" name=""/>
+        <alias field="25_44_NORM" index="8" name=""/>
+        <alias field="HH_MK_NORM" index="9" name=""/>
+        <alias field="WOZ_NORM" index="10" name=""/>
+        <alias field="KDV_NORM" index="11" name=""/>
+        <alias field="BSO_NORM" index="12" name=""/>
+        <alias field="TREIN_NORM" index="13" name=""/>
+        <alias field="B1" index="14" name=""/>
+        <alias field="B2" index="15" name=""/>
+        <alias field="B3" index="16" name=""/>
+        <alias field="B4" index="17" name=""/>
+        <alias field="Score" index="18" name=""/>
+      </aliases>
+      <excludeAttributesWMS/>
+      <excludeAttributesWFS/>
+      <attributeactions default="-1"/>
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="815071896">
+        <columns>
+          <column width="-1" hidden="0" type="field" name="BU_CODE"/>
+          <column width="-1" hidden="0" type="field" name="BU_NAAM"/>
+          <column width="-1" hidden="0" type="field" name="P_25_44_JR"/>
+          <column width="-1" hidden="0" type="field" name="P_HH_M_K"/>
+          <column width="-1" hidden="0" type="field" name="WOZ"/>
+          <column width="-1" hidden="0" type="field" name="AF_KDV"/>
+          <column width="-1" hidden="0" type="field" name="AF_BSO"/>
+          <column width="-1" hidden="0" type="field" name="AF_TREINST"/>
+          <column width="-1" hidden="0" type="field" name="25_44_NORM"/>
+          <column width="-1" hidden="0" type="field" name="HH_MK_NORM"/>
+          <column width="-1" hidden="0" type="field" name="WOZ_NORM"/>
+          <column width="-1" hidden="0" type="field" name="KDV_NORM"/>
+          <column width="-1" hidden="0" type="field" name="BSO_NORM"/>
+          <column width="-1" hidden="0" type="field" name="TREIN_NORM"/>
+          <column width="-1" hidden="0" type="field" name="B1"/>
+          <column width="-1" hidden="0" type="field" name="B2"/>
+          <column width="-1" hidden="0" type="field" name="B3"/>
+          <column width="-1" hidden="0" type="field" name="B4"/>
+          <column width="-1" hidden="0" type="field" name="Score"/>
+          <column width="-1" hidden="1" type="actions"/>
+        </columns>
+      </attributetableconfig>
+      <editform></editform>
+      <editforminit/>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath></editforminitfilepath>
+      <editforminitcode><![CDATA[]]></editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <widgets/>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
+      <defaults>
+        <default field="BU_CODE" expression=""/>
+        <default field="BU_NAAM" expression=""/>
+        <default field="P_25_44_JR" expression=""/>
+        <default field="P_HH_M_K" expression=""/>
+        <default field="WOZ" expression=""/>
+        <default field="AF_KDV" expression=""/>
+        <default field="AF_BSO" expression=""/>
+        <default field="AF_TREINST" expression=""/>
+        <default field="25_44_NORM" expression=""/>
+        <default field="HH_MK_NORM" expression=""/>
+        <default field="WOZ_NORM" expression=""/>
+        <default field="KDV_NORM" expression=""/>
+        <default field="BSO_NORM" expression=""/>
+        <default field="TREIN_NORM" expression=""/>
+        <default field="B1" expression=""/>
+        <default field="B2" expression=""/>
+        <default field="B3" expression=""/>
+        <default field="B4" expression=""/>
+        <default field="Score" expression=""/>
+      </defaults>
+      <previewExpression>COALESCE( "BU_CODE", '&lt;NULL>' )</previewExpression>
+    </maplayer>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
       <id>NWB_2016_Rotterdam_train_stations_WO20171201121004971</id>
       <datasource>../../../../../../Dropbox/01MSC EPA/Q2/GEO1005/Data/NWB_2016_Rotterdam_train_stations/NWB_2016_Rotterdam_train_stations_WO.dbf</datasource>
@@ -1175,7 +1921,7 @@
         <multilineenabled fieldname="" on=""/>
         <selectedonly on=""/>
       </labelattributes>
-      <annotationform></annotationform>
+      <annotationform>.</annotationform>
       <aliases>
         <alias field="BU_CODE" index="0" name=""/>
         <alias field="BU_NAAM" index="1" name=""/>
@@ -1568,10 +2314,10 @@
           <column width="-1" hidden="1" type="actions"/>
         </columns>
       </attributetableconfig>
-      <editform></editform>
+      <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath></editforminitfilepath>
+      <editforminitfilepath>.</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -1776,12 +2522,18 @@
       <previewExpression>COALESCE( "P_GESCHEID", '&lt;NULL>' )</previewExpression>
     </maplayer>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
-      <id>memory_20180109160229683</id>
-      <datasource>memory?geometry=Polygon&amp;crs=EPSG:28992&amp;field=BU_CODE:string(255,0)&amp;field=BU_NAAM:string(255,0)&amp;field=P_25_44_JR:integer(-1,0)&amp;field=P_HH_M_K:integer(-1,0)&amp;field=WOZ:integer(-1,0)&amp;field=AF_KDV:double(20,5)&amp;field=AF_BSO:double(20,5)&amp;field=AF_TREINST:double(20,5)&amp;field=25_44_NORM:double(20,5)&amp;field=HH_MK_NORM:double(20,5)&amp;field=WOZ_NORM:double(20,5)&amp;field=KDV_NORM:double(20,5)&amp;field=BSO_NORM:double(20,5)&amp;field=TREIN_NORM:double(20,5)&amp;field=B1:double(20,5)&amp;field=B2:double(20,5)&amp;field=B3:double(20,5)&amp;field=B4:double(20,5)&amp;field=Score:double(20,5)&amp;field=POSTCODE:string(255,0)&amp;field=POSTCODE_int:integer(2,0)</datasource>
+      <extent>
+        <xmin>85730.99583866739703808</xmin>
+        <ymin>430742.05999755859375</ymin>
+        <xmax>101032.59388056711759418</xmax>
+        <ymax>445396.52977774647297338</ymax>
+      </extent>
+      <id>memory_20180109162151947</id>
+      <datasource>memory?geometry=Polygon&amp;crs=EPSG:28992&amp;field=BU_CODE:string(255,0)&amp;field=BU_NAAM:string(255,0)&amp;field=P_25_44_JR:integer(-1,0)&amp;field=P_HH_M_K:integer(-1,0)&amp;field=WOZ:integer(-1,0)&amp;field=AF_KDV:double(20,5)&amp;field=AF_BSO:double(20,5)&amp;field=AF_TREINST:double(20,5)&amp;field=25_44_NORM:double(20,5)&amp;field=HH_MK_NORM:double(20,5)&amp;field=WOZ_NORM:double(20,5)&amp;field=KDV_NORM:double(20,5)&amp;field=BSO_NORM:double(20,5)&amp;field=TREIN_NORM:double(20,5)&amp;field=B1:double(20,5)&amp;field=B2:double(20,5)&amp;field=B3:double(20,5)&amp;field=B4:double(20,5)&amp;field=Score:double(20,5)&amp;field=POSTCODE:string(255,0)&amp;field=POSTCODE_INT:integer(10,0)</datasource>
       <keywordList>
         <value></value>
       </keywordList>
-      <layername>Editable layer</layername>
+      <layername>Rotterdam Selection</layername>
       <srs>
         <spatialrefsys>
           <proj4>+proj=sterea +lat_0=52.15616055555555 +lon_0=5.38763888888889 +k=0.9999079 +x_0=155000 +y_0=463000 +ellps=bessel +towgs84=565.2369,50.0087,465.658,-0.406857,0.350733,-1.87035,4.0812 +units=m +no_defs</proj4>
@@ -1862,691 +2614,16 @@
         <edittype widgetv2type="TextEdit" name="POSTCODE">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
-        <edittype widgetv2type="TextEdit" name="POSTCODE_int">
+        <edittype widgetv2type="TextEdit" name="POSTCODE_INT">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
       </edittypes>
-      <renderer-v2 attr="POSTCODE_int" forceraster="0" symbollevels="0" type="categorizedSymbol" enableorderby="0">
-        <categories>
-          <category render="true" symbol="0" value="2651" label="2651"/>
-          <category render="true" symbol="1" value="2761" label="2761"/>
-          <category render="true" symbol="2" value="2906" label="2906"/>
-          <category render="true" symbol="3" value="2908" label="2908"/>
-          <category render="true" symbol="4" value="2909" label="2909"/>
-          <category render="true" symbol="5" value="2913" label="2913"/>
-          <category render="true" symbol="6" value="2988" label="2988"/>
-          <category render="true" symbol="7" value="2992" label="2992"/>
-          <category render="true" symbol="8" value="2993" label="2993"/>
-          <category render="true" symbol="9" value="3015" label="3015"/>
-          <category render="true" symbol="10" value="3027" label="3027"/>
-          <category render="true" symbol="11" value="3028" label="3028"/>
-          <category render="true" symbol="12" value="3032" label="3032"/>
-          <category render="true" symbol="13" value="3035" label="3035"/>
-          <category render="true" symbol="14" value="3039" label="3039"/>
-          <category render="true" symbol="15" value="3042" label="3042"/>
-          <category render="true" symbol="16" value="3043" label="3043"/>
-          <category render="true" symbol="17" value="3046" label="3046"/>
-          <category render="true" symbol="18" value="3047" label="3047"/>
-          <category render="true" symbol="19" value="3053" label="3053"/>
-          <category render="true" symbol="20" value="3056" label="3056"/>
-          <category render="true" symbol="21" value="3059" label="3059"/>
-          <category render="true" symbol="22" value="3063" label="3063"/>
-          <category render="true" symbol="23" value="3064" label="3064"/>
-          <category render="true" symbol="24" value="3065" label="3065"/>
-          <category render="true" symbol="25" value="3067" label="3067"/>
-          <category render="true" symbol="26" value="3068" label="3068"/>
-          <category render="true" symbol="27" value="3071" label="3071"/>
-          <category render="true" symbol="28" value="3072" label="3072"/>
-          <category render="true" symbol="29" value="3073" label="3073"/>
-          <category render="true" symbol="30" value="3074" label="3074"/>
-          <category render="true" symbol="31" value="3077" label="3077"/>
-          <category render="true" symbol="32" value="3079" label="3079"/>
-          <category render="true" symbol="33" value="3082" label="3082"/>
-          <category render="true" symbol="34" value="3083" label="3083"/>
-          <category render="true" symbol="35" value="3084" label="3084"/>
-          <category render="true" symbol="36" value="3089" label="3089"/>
-          <category render="true" symbol="37" value="3112" label="3112"/>
-          <category render="true" symbol="38" value="3113" label="3113"/>
-          <category render="true" symbol="39" value="3115" label="3115"/>
-          <category render="true" symbol="40" value="3125" label="3125"/>
-          <category render="true" symbol="41" value="3161" label="3161"/>
-          <category render="true" symbol="42" value="" label=""/>
-        </categories>
+      <renderer-v2 forceraster="0" symbollevels="0" type="singleSymbol" enableorderby="0">
         <symbols>
           <symbol alpha="1" clip_to_extent="1" type="fill" name="0">
             <layer pass="0" class="SimpleFill" locked="0">
               <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="color" v="215,25,28,255"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,255"/>
-              <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.26"/>
-              <prop k="outline_width_unit" v="MM"/>
-              <prop k="style" v="solid"/>
-            </layer>
-          </symbol>
-          <symbol alpha="1" clip_to_extent="1" type="fill" name="1">
-            <layer pass="0" class="SimpleFill" locked="0">
-              <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="color" v="219,39,34,255"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,255"/>
-              <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.26"/>
-              <prop k="outline_width_unit" v="MM"/>
-              <prop k="style" v="solid"/>
-            </layer>
-          </symbol>
-          <symbol alpha="1" clip_to_extent="1" type="fill" name="10">
-            <layer pass="0" class="SimpleFill" locked="0">
-              <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="color" v="252,167,94,255"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,255"/>
-              <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.26"/>
-              <prop k="outline_width_unit" v="MM"/>
-              <prop k="style" v="solid"/>
-            </layer>
-          </symbol>
-          <symbol alpha="1" clip_to_extent="1" type="fill" name="11">
-            <layer pass="0" class="SimpleFill" locked="0">
-              <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="color" v="254,178,101,255"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,255"/>
-              <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.26"/>
-              <prop k="outline_width_unit" v="MM"/>
-              <prop k="style" v="solid"/>
-            </layer>
-          </symbol>
-          <symbol alpha="1" clip_to_extent="1" type="fill" name="12">
-            <layer pass="0" class="SimpleFill" locked="0">
-              <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="color" v="254,186,110,255"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,255"/>
-              <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.26"/>
-              <prop k="outline_width_unit" v="MM"/>
-              <prop k="style" v="solid"/>
-            </layer>
-          </symbol>
-          <symbol alpha="1" clip_to_extent="1" type="fill" name="13">
-            <layer pass="0" class="SimpleFill" locked="0">
-              <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="color" v="254,194,119,255"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,255"/>
-              <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.26"/>
-              <prop k="outline_width_unit" v="MM"/>
-              <prop k="style" v="solid"/>
-            </layer>
-          </symbol>
-          <symbol alpha="1" clip_to_extent="1" type="fill" name="14">
-            <layer pass="0" class="SimpleFill" locked="0">
-              <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="color" v="254,201,128,255"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,255"/>
-              <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.26"/>
-              <prop k="outline_width_unit" v="MM"/>
-              <prop k="style" v="solid"/>
-            </layer>
-          </symbol>
-          <symbol alpha="1" clip_to_extent="1" type="fill" name="15">
-            <layer pass="0" class="SimpleFill" locked="0">
-              <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="color" v="254,209,137,255"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,255"/>
-              <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.26"/>
-              <prop k="outline_width_unit" v="MM"/>
-              <prop k="style" v="solid"/>
-            </layer>
-          </symbol>
-          <symbol alpha="1" clip_to_extent="1" type="fill" name="16">
-            <layer pass="0" class="SimpleFill" locked="0">
-              <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="color" v="255,217,146,255"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,255"/>
-              <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.26"/>
-              <prop k="outline_width_unit" v="MM"/>
-              <prop k="style" v="solid"/>
-            </layer>
-          </symbol>
-          <symbol alpha="1" clip_to_extent="1" type="fill" name="17">
-            <layer pass="0" class="SimpleFill" locked="0">
-              <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="color" v="255,225,155,255"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,255"/>
-              <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.26"/>
-              <prop k="outline_width_unit" v="MM"/>
-              <prop k="style" v="solid"/>
-            </layer>
-          </symbol>
-          <symbol alpha="1" clip_to_extent="1" type="fill" name="18">
-            <layer pass="0" class="SimpleFill" locked="0">
-              <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="color" v="255,232,164,255"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,255"/>
-              <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.26"/>
-              <prop k="outline_width_unit" v="MM"/>
-              <prop k="style" v="solid"/>
-            </layer>
-          </symbol>
-          <symbol alpha="1" clip_to_extent="1" type="fill" name="19">
-            <layer pass="0" class="SimpleFill" locked="0">
-              <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="color" v="255,240,173,255"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,255"/>
-              <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.26"/>
-              <prop k="outline_width_unit" v="MM"/>
-              <prop k="style" v="solid"/>
-            </layer>
-          </symbol>
-          <symbol alpha="1" clip_to_extent="1" type="fill" name="2">
-            <layer pass="0" class="SimpleFill" locked="0">
-              <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="color" v="223,53,41,255"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,255"/>
-              <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.26"/>
-              <prop k="outline_width_unit" v="MM"/>
-              <prop k="style" v="solid"/>
-            </layer>
-          </symbol>
-          <symbol alpha="1" clip_to_extent="1" type="fill" name="20">
-            <layer pass="0" class="SimpleFill" locked="0">
-              <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="color" v="255,248,182,255"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,255"/>
-              <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.26"/>
-              <prop k="outline_width_unit" v="MM"/>
-              <prop k="style" v="solid"/>
-            </layer>
-          </symbol>
-          <symbol alpha="1" clip_to_extent="1" type="fill" name="21">
-            <layer pass="0" class="SimpleFill" locked="0">
-              <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="color" v="255,255,191,255"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,255"/>
-              <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.26"/>
-              <prop k="outline_width_unit" v="MM"/>
-              <prop k="style" v="solid"/>
-            </layer>
-          </symbol>
-          <symbol alpha="1" clip_to_extent="1" type="fill" name="22">
-            <layer pass="0" class="SimpleFill" locked="0">
-              <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="color" v="247,252,195,255"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,255"/>
-              <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.26"/>
-              <prop k="outline_width_unit" v="MM"/>
-              <prop k="style" v="solid"/>
-            </layer>
-          </symbol>
-          <symbol alpha="1" clip_to_extent="1" type="fill" name="23">
-            <layer pass="0" class="SimpleFill" locked="0">
-              <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="color" v="239,248,199,255"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,255"/>
-              <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.26"/>
-              <prop k="outline_width_unit" v="MM"/>
-              <prop k="style" v="solid"/>
-            </layer>
-          </symbol>
-          <symbol alpha="1" clip_to_extent="1" type="fill" name="24">
-            <layer pass="0" class="SimpleFill" locked="0">
-              <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="color" v="231,245,203,255"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,255"/>
-              <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.26"/>
-              <prop k="outline_width_unit" v="MM"/>
-              <prop k="style" v="solid"/>
-            </layer>
-          </symbol>
-          <symbol alpha="1" clip_to_extent="1" type="fill" name="25">
-            <layer pass="0" class="SimpleFill" locked="0">
-              <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="color" v="223,241,207,255"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,255"/>
-              <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.26"/>
-              <prop k="outline_width_unit" v="MM"/>
-              <prop k="style" v="solid"/>
-            </layer>
-          </symbol>
-          <symbol alpha="1" clip_to_extent="1" type="fill" name="26">
-            <layer pass="0" class="SimpleFill" locked="0">
-              <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="color" v="215,237,211,255"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,255"/>
-              <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.26"/>
-              <prop k="outline_width_unit" v="MM"/>
-              <prop k="style" v="solid"/>
-            </layer>
-          </symbol>
-          <symbol alpha="1" clip_to_extent="1" type="fill" name="27">
-            <layer pass="0" class="SimpleFill" locked="0">
-              <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="color" v="207,234,215,255"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,255"/>
-              <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.26"/>
-              <prop k="outline_width_unit" v="MM"/>
-              <prop k="style" v="solid"/>
-            </layer>
-          </symbol>
-          <symbol alpha="1" clip_to_extent="1" type="fill" name="28">
-            <layer pass="0" class="SimpleFill" locked="0">
-              <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="color" v="199,230,219,255"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,255"/>
-              <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.26"/>
-              <prop k="outline_width_unit" v="MM"/>
-              <prop k="style" v="solid"/>
-            </layer>
-          </symbol>
-          <symbol alpha="1" clip_to_extent="1" type="fill" name="29">
-            <layer pass="0" class="SimpleFill" locked="0">
-              <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="color" v="191,226,223,255"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,255"/>
-              <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.26"/>
-              <prop k="outline_width_unit" v="MM"/>
-              <prop k="style" v="solid"/>
-            </layer>
-          </symbol>
-          <symbol alpha="1" clip_to_extent="1" type="fill" name="3">
-            <layer pass="0" class="SimpleFill" locked="0">
-              <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="color" v="226,67,47,255"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,255"/>
-              <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.26"/>
-              <prop k="outline_width_unit" v="MM"/>
-              <prop k="style" v="solid"/>
-            </layer>
-          </symbol>
-          <symbol alpha="1" clip_to_extent="1" type="fill" name="30">
-            <layer pass="0" class="SimpleFill" locked="0">
-              <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="color" v="183,223,227,255"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,255"/>
-              <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.26"/>
-              <prop k="outline_width_unit" v="MM"/>
-              <prop k="style" v="solid"/>
-            </layer>
-          </symbol>
-          <symbol alpha="1" clip_to_extent="1" type="fill" name="31">
-            <layer pass="0" class="SimpleFill" locked="0">
-              <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="color" v="175,219,231,255"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,255"/>
-              <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.26"/>
-              <prop k="outline_width_unit" v="MM"/>
-              <prop k="style" v="solid"/>
-            </layer>
-          </symbol>
-          <symbol alpha="1" clip_to_extent="1" type="fill" name="32">
-            <layer pass="0" class="SimpleFill" locked="0">
-              <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="color" v="165,213,231,255"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,255"/>
-              <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.26"/>
-              <prop k="outline_width_unit" v="MM"/>
-              <prop k="style" v="solid"/>
-            </layer>
-          </symbol>
-          <symbol alpha="1" clip_to_extent="1" type="fill" name="33">
-            <layer pass="0" class="SimpleFill" locked="0">
-              <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="color" v="153,204,226,255"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,255"/>
-              <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.26"/>
-              <prop k="outline_width_unit" v="MM"/>
-              <prop k="style" v="solid"/>
-            </layer>
-          </symbol>
-          <symbol alpha="1" clip_to_extent="1" type="fill" name="34">
-            <layer pass="0" class="SimpleFill" locked="0">
-              <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="color" v="141,195,221,255"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,255"/>
-              <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.26"/>
-              <prop k="outline_width_unit" v="MM"/>
-              <prop k="style" v="solid"/>
-            </layer>
-          </symbol>
-          <symbol alpha="1" clip_to_extent="1" type="fill" name="35">
-            <layer pass="0" class="SimpleFill" locked="0">
-              <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="color" v="129,186,216,255"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,255"/>
-              <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.26"/>
-              <prop k="outline_width_unit" v="MM"/>
-              <prop k="style" v="solid"/>
-            </layer>
-          </symbol>
-          <symbol alpha="1" clip_to_extent="1" type="fill" name="36">
-            <layer pass="0" class="SimpleFill" locked="0">
-              <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="color" v="117,177,211,255"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,255"/>
-              <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.26"/>
-              <prop k="outline_width_unit" v="MM"/>
-              <prop k="style" v="solid"/>
-            </layer>
-          </symbol>
-          <symbol alpha="1" clip_to_extent="1" type="fill" name="37">
-            <layer pass="0" class="SimpleFill" locked="0">
-              <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="color" v="104,168,207,255"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,255"/>
-              <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.26"/>
-              <prop k="outline_width_unit" v="MM"/>
-              <prop k="style" v="solid"/>
-            </layer>
-          </symbol>
-          <symbol alpha="1" clip_to_extent="1" type="fill" name="38">
-            <layer pass="0" class="SimpleFill" locked="0">
-              <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="color" v="92,159,202,255"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,255"/>
-              <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.26"/>
-              <prop k="outline_width_unit" v="MM"/>
-              <prop k="style" v="solid"/>
-            </layer>
-          </symbol>
-          <symbol alpha="1" clip_to_extent="1" type="fill" name="39">
-            <layer pass="0" class="SimpleFill" locked="0">
-              <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="color" v="80,150,197,255"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,255"/>
-              <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.26"/>
-              <prop k="outline_width_unit" v="MM"/>
-              <prop k="style" v="solid"/>
-            </layer>
-          </symbol>
-          <symbol alpha="1" clip_to_extent="1" type="fill" name="4">
-            <layer pass="0" class="SimpleFill" locked="0">
-              <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="color" v="230,82,54,255"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,255"/>
-              <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.26"/>
-              <prop k="outline_width_unit" v="MM"/>
-              <prop k="style" v="solid"/>
-            </layer>
-          </symbol>
-          <symbol alpha="1" clip_to_extent="1" type="fill" name="40">
-            <layer pass="0" class="SimpleFill" locked="0">
-              <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="color" v="68,141,192,255"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,255"/>
-              <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.26"/>
-              <prop k="outline_width_unit" v="MM"/>
-              <prop k="style" v="solid"/>
-            </layer>
-          </symbol>
-          <symbol alpha="1" clip_to_extent="1" type="fill" name="41">
-            <layer pass="0" class="SimpleFill" locked="0">
-              <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="color" v="56,132,187,255"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,255"/>
-              <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.26"/>
-              <prop k="outline_width_unit" v="MM"/>
-              <prop k="style" v="solid"/>
-            </layer>
-          </symbol>
-          <symbol alpha="1" clip_to_extent="1" type="fill" name="42">
-            <layer pass="0" class="SimpleFill" locked="0">
-              <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="color" v="44,123,182,255"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,255"/>
-              <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.26"/>
-              <prop k="outline_width_unit" v="MM"/>
-              <prop k="style" v="solid"/>
-            </layer>
-          </symbol>
-          <symbol alpha="1" clip_to_extent="1" type="fill" name="5">
-            <layer pass="0" class="SimpleFill" locked="0">
-              <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="color" v="234,96,61,255"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,255"/>
-              <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.26"/>
-              <prop k="outline_width_unit" v="MM"/>
-              <prop k="style" v="solid"/>
-            </layer>
-          </symbol>
-          <symbol alpha="1" clip_to_extent="1" type="fill" name="6">
-            <layer pass="0" class="SimpleFill" locked="0">
-              <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="color" v="237,110,67,255"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,255"/>
-              <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.26"/>
-              <prop k="outline_width_unit" v="MM"/>
-              <prop k="style" v="solid"/>
-            </layer>
-          </symbol>
-          <symbol alpha="1" clip_to_extent="1" type="fill" name="7">
-            <layer pass="0" class="SimpleFill" locked="0">
-              <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="color" v="241,124,74,255"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,255"/>
-              <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.26"/>
-              <prop k="outline_width_unit" v="MM"/>
-              <prop k="style" v="solid"/>
-            </layer>
-          </symbol>
-          <symbol alpha="1" clip_to_extent="1" type="fill" name="8">
-            <layer pass="0" class="SimpleFill" locked="0">
-              <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="color" v="244,139,80,255"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,255"/>
-              <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.26"/>
-              <prop k="outline_width_unit" v="MM"/>
-              <prop k="style" v="solid"/>
-            </layer>
-          </symbol>
-          <symbol alpha="1" clip_to_extent="1" type="fill" name="9">
-            <layer pass="0" class="SimpleFill" locked="0">
-              <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="color" v="248,153,87,255"/>
+              <prop k="color" v="99,236,61,255"/>
               <prop k="joinstyle" v="bevel"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
@@ -2559,30 +2636,6 @@
             </layer>
           </symbol>
         </symbols>
-        <source-symbol>
-          <symbol alpha="1" clip_to_extent="1" type="fill" name="0">
-            <layer pass="0" class="SimpleFill" locked="0">
-              <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="color" v="215,25,28,255"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,255"/>
-              <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.26"/>
-              <prop k="outline_width_unit" v="MM"/>
-              <prop k="style" v="solid"/>
-            </layer>
-          </symbol>
-        </source-symbol>
-        <colorramp type="gradient" name="[source]">
-          <prop k="color1" v="215,25,28,255"/>
-          <prop k="color2" v="44,123,182,255"/>
-          <prop k="discrete" v="0"/>
-          <prop k="stops" v="0.25;253,174,97,255:0.5;255,255,191,255:0.75;171,217,233,255"/>
-        </colorramp>
-        <invertedcolorramp value="0"/>
         <rotation/>
         <sizescale scalemethod="diameter"/>
       </renderer-v2>
@@ -2732,7 +2785,7 @@
       </customproperties>
       <blendMode>0</blendMode>
       <featureBlendMode>0</featureBlendMode>
-      <layerTransparency>40</layerTransparency>
+      <layerTransparency>60</layerTransparency>
       <displayfield>P_GESCHEID</displayfield>
       <label>0</label>
       <labelattributes>
@@ -2805,12 +2858,12 @@
         <alias field="B4" index="17" name=""/>
         <alias field="Score" index="18" name=""/>
         <alias field="POSTCODE" index="19" name=""/>
-        <alias field="POSTCODE_int" index="20" name=""/>
+        <alias field="POSTCODE_INT" index="20" name=""/>
       </aliases>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions default="-1"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="&quot;BU_CODE_1&quot;" sortOrder="0">
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="&quot;GM_NAAM&quot;" sortOrder="0">
         <columns>
           <column width="-1" hidden="0" type="field" name="BU_CODE"/>
           <column width="-1" hidden="0" type="field" name="BU_NAAM"/>
@@ -2833,7 +2886,7 @@
           <column width="-1" hidden="0" type="field" name="Score"/>
           <column width="-1" hidden="0" type="field" name="POSTCODE"/>
           <column width="-1" hidden="1" type="actions"/>
-          <column width="-1" hidden="0" type="field" name="POSTCODE_int"/>
+          <column width="-1" hidden="0" type="field" name="POSTCODE_INT"/>
         </columns>
       </attributetableconfig>
       <editform></editform>
@@ -2885,7 +2938,7 @@ def my_form_open(dialog, layer, feature):
         <default field="B4" expression=""/>
         <default field="Score" expression=""/>
         <default field="POSTCODE" expression=""/>
-        <default field="POSTCODE_int" expression=""/>
+        <default field="POSTCODE_INT" expression=""/>
       </defaults>
       <previewExpression>COALESCE( "P_GESCHEID", '&lt;NULL>' )</previewExpression>
     </maplayer>
@@ -2947,9 +3000,11 @@ def my_form_open(dialog, layer, feature):
         <value>NWB_2016_Rotterdam_train_stations_WO20171201121004971</value>
         <value>Neighborhood_outlines20180109140229582</value>
         <value>Rdam_Centre_all_attributes20180109155141391</value>
-        <value>memory_20180109160229683</value>
+        <value>Buurten_Rotterdam_Centrum_201620180109162114744</value>
+        <value>memory_20180109162151947</value>
       </LayerSnappingList>
       <LayerSnappingEnabledList type="QStringList">
+        <value>disabled</value>
         <value>disabled</value>
         <value>disabled</value>
         <value>disabled</value>
@@ -2962,8 +3017,10 @@ def my_form_open(dialog, layer, feature):
         <value>2</value>
         <value>2</value>
         <value>2</value>
+        <value>2</value>
       </LayerSnappingToleranceUnitList>
       <LayerSnapToList type="QStringList">
+        <value>to_vertex_and_segment</value>
         <value>to_vertex_and_segment</value>
         <value>to_vertex_and_segment</value>
         <value>to_vertex_and_segment</value>
@@ -2972,6 +3029,7 @@ def my_form_open(dialog, layer, feature):
       <DefaultSnapType type="QString">off</DefaultSnapType>
       <DefaultSnapTolerance type="double">0</DefaultSnapTolerance>
       <LayerSnappingToleranceList type="QStringList">
+        <value>0.000000</value>
         <value>0.000000</value>
         <value>0.000000</value>
         <value>0.000000</value>
