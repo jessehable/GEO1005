@@ -7,12 +7,10 @@
     <customproperties/>
     <layer-tree-group expanded="1" checked="Qt::PartiallyChecked" name="Maps">
       <customproperties/>
-      <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="WOZ_Rotterdam_2016_copy20171215123340833" source="D:/User/Dropbox/01MSC EPA/Q2/GEO1005/Buurten Rotterdam Centrum 2016.shp" name="Rotterdam Buurten 2016">
-        <customproperties>
-          <property key="showFeatureCount" value="1"/>
-        </customproperties>
+      <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="Neighborhood_outlines20180109140229582" source="D:/User/Mijn documenten/Github/GEO1005_2017_G12_Suburbia/Suburbia/MyPlugin/sampledata/Neighborhood outlines.shp" name="Neighborhood outlines">
+        <customproperties/>
       </layer-tree-layer>
-      <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Unchecked" id="Rotterdam_Buurten_2016_copy20180109121442918" source="D:/User/Dropbox/01MSC EPA/Q2/GEO1005/Buurten Rotterdam Centrum 2016.shp" name="25-44jaar">
+      <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="Rotterdam_Buurten_2016_copy20180109121442918" source="D:/User/Dropbox/01MSC EPA/Q2/GEO1005/Buurten Rotterdam Centrum 2016.shp" name="25-44jaar">
         <customproperties/>
       </layer-tree-layer>
       <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Unchecked" id="Rotterdam_Buurten_2016_copy20180109121344156" source="D:/User/Dropbox/01MSC EPA/Q2/GEO1005/Buurten Rotterdam Centrum 2016.shp" name="Score">
@@ -22,9 +20,9 @@
         <customproperties/>
       </layer-tree-layer>
     </layer-tree-group>
-    <layer-tree-group expanded="1" checked="Qt::Checked" name="Data">
+    <layer-tree-group expanded="1" checked="Qt::Unchecked" name="Data">
       <customproperties/>
-      <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="NWB_2016_Rotterdam_train_stations_WO20171201121004971" source="D:/User/Dropbox/01MSC EPA/Q2/GEO1005/Data/NWB_2016_Rotterdam_train_stations/NWB_2016_Rotterdam_train_stations_WO.dbf" name="NWB_2016_Rotterdam_train_stations_WO">
+      <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Unchecked" id="NWB_2016_Rotterdam_train_stations_WO20171201121004971" source="D:/User/Dropbox/01MSC EPA/Q2/GEO1005/Data/NWB_2016_Rotterdam_train_stations/NWB_2016_Rotterdam_train_stations_WO.dbf" name="NWB_2016_Rotterdam_train_stations_WO">
         <customproperties/>
       </layer-tree-layer>
     </layer-tree-group>
@@ -75,6 +73,8 @@
       <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:28992" srcDatumTransform="-1" destDatumTransform="-1" layerid="Rotterdam_Buurten_2016_copy20180109121442918"/>
       <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="OSM_17823700820171215105023791"/>
       <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:28992" srcDatumTransform="-1" destDatumTransform="-1" layerid="NWB_2016_Rotterdam_train_stations_WO20171201121004971"/>
+      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:28992" srcDatumTransform="-1" destDatumTransform="-1" layerid="Neighborhood_outlines20180109140229582"/>
+      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:28992" srcDatumTransform="-1" destDatumTransform="-1" layerid="memory_20180109140102658"/>
       <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3857" srcDatumTransform="-1" destDatumTransform="-1" layerid="OSM_17823700820171215112644521"/>
     </layer_coordinate_transform_info>
   </mapcanvas>
@@ -82,21 +82,21 @@
     <custom-order enabled="0">
       <item>NWB_2016_Rotterdam_train_stations_WO20171201121004971</item>
       <item>OpenStreetMap20171215111738261</item>
-      <item>WOZ_Rotterdam_2016_copy20171215123340833</item>
       <item>Rotterdam_Buurten_2016_copy20180109121344156</item>
       <item>Rotterdam_Buurten_2016_copy20180109121442918</item>
+      <item>Neighborhood_outlines20180109140229582</item>
     </custom-order>
   </layer-tree-canvas>
   <legend updateDrawingOrder="true">
     <legendgroup open="true" checked="Qt::PartiallyChecked" name="Maps">
-      <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Rotterdam Buurten 2016" showFeatureCount="1">
+      <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Neighborhood outlines" showFeatureCount="0">
         <filegroup open="true" hidden="false">
-          <legendlayerfile isInOverview="0" layerid="WOZ_Rotterdam_2016_copy20171215123340833" visible="1"/>
+          <legendlayerfile isInOverview="0" layerid="Neighborhood_outlines20180109140229582" visible="1"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="25-44jaar" showFeatureCount="0">
+      <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="25-44jaar" showFeatureCount="0">
         <filegroup open="true" hidden="false">
-          <legendlayerfile isInOverview="0" layerid="Rotterdam_Buurten_2016_copy20180109121442918" visible="0"/>
+          <legendlayerfile isInOverview="0" layerid="Rotterdam_Buurten_2016_copy20180109121442918" visible="1"/>
         </filegroup>
       </legendlayer>
       <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Score" showFeatureCount="0">
@@ -110,10 +110,10 @@
         </filegroup>
       </legendlayer>
     </legendgroup>
-    <legendgroup open="true" checked="Qt::Checked" name="Data">
-      <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="NWB_2016_Rotterdam_train_stations_WO" showFeatureCount="0">
+    <legendgroup open="true" checked="Qt::Unchecked" name="Data">
+      <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="NWB_2016_Rotterdam_train_stations_WO" showFeatureCount="0">
         <filegroup open="true" hidden="false">
-          <legendlayerfile isInOverview="0" layerid="NWB_2016_Rotterdam_train_stations_WO20171201121004971" visible="1"/>
+          <legendlayerfile isInOverview="0" layerid="NWB_2016_Rotterdam_train_stations_WO20171201121004971" visible="0"/>
         </filegroup>
       </legendlayer>
     </legendgroup>
@@ -244,6 +244,206 @@
         <default field="svk_id" expression=""/>
         <default field="id" expression=""/>
         <default field="naam" expression=""/>
+      </defaults>
+      <previewExpression></previewExpression>
+    </maplayer>
+    <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Line" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+      <id>Neighborhood_outlines20180109140229582</id>
+      <datasource>./Neighborhood outlines.shp</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>Neighborhood outlines</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=sterea +lat_0=52.15616055555555 +lon_0=5.38763888888889 +k=0.9999079 +x_0=155000 +y_0=463000 +ellps=bessel +towgs84=565.2369,50.0087,465.658,-0.406857,0.350733,-1.87035,4.0812 +units=m +no_defs</proj4>
+          <srsid>2517</srsid>
+          <srid>28992</srid>
+          <authid>EPSG:28992</authid>
+          <description>Amersfoort / RD New</description>
+          <projectionacronym>sterea</projectionacronym>
+          <ellipsoidacronym>bessel</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <provider encoding="UTF-8">ogr</provider>
+      <vectorjoins/>
+      <layerDependencies/>
+      <expressionfields/>
+      <map-layer-style-manager current="">
+        <map-layer-style name=""/>
+      </map-layer-style-manager>
+      <edittypes>
+        <edittype widgetv2type="TextEdit" name="BU_CODE">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="BU_NAAM">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="P_25_44_JR">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="P_HH_M_K">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="WOZ">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="AF_KDV">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="AF_BSO">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="AF_TREINST">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="25_44_NORM">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="HH_MK_NORM">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="WOZ_NORM">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="KDV_NORM">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="BSO_NORM">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="TREIN_NORM">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="B1">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="B2">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="B3">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="B4">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Score">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+      </edittypes>
+      <renderer-v2 forceraster="0" symbollevels="0" type="singleSymbol" enableorderby="0">
+        <symbols>
+          <symbol alpha="1" clip_to_extent="1" type="line" name="0">
+            <layer pass="0" class="SimpleLine" locked="0">
+              <prop k="capstyle" v="square"/>
+              <prop k="customdash" v="5;2"/>
+              <prop k="customdash_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="customdash_unit" v="MM"/>
+              <prop k="draw_inside_polygon" v="0"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="line_color" v="215,49,157,255"/>
+              <prop k="line_style" v="solid"/>
+              <prop k="line_width" v="0.26"/>
+              <prop k="line_width_unit" v="MM"/>
+              <prop k="offset" v="0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="use_custom_dash" v="0"/>
+              <prop k="width_map_unit_scale" v="0,0,0,0,0,0"/>
+            </layer>
+          </symbol>
+        </symbols>
+        <rotation/>
+        <sizescale scalemethod="diameter"/>
+      </renderer-v2>
+      <labeling type="simple"/>
+      <customproperties/>
+      <blendMode>0</blendMode>
+      <featureBlendMode>0</featureBlendMode>
+      <layerTransparency>0</layerTransparency>
+      <displayfield>BU_CODE</displayfield>
+      <label>0</label>
+      <labelattributes>
+        <label fieldname="" text="Label"/>
+        <family fieldname="" name="MS Shell Dlg 2"/>
+        <size fieldname="" units="pt" value="12"/>
+        <bold fieldname="" on="0"/>
+        <italic fieldname="" on="0"/>
+        <underline fieldname="" on="0"/>
+        <strikeout fieldname="" on="0"/>
+        <color fieldname="" red="0" blue="0" green="0"/>
+        <x fieldname=""/>
+        <y fieldname=""/>
+        <offset x="0" y="0" units="pt" yfieldname="" xfieldname=""/>
+        <angle fieldname="" value="0" auto="0"/>
+        <alignment fieldname="" value="center"/>
+        <buffercolor fieldname="" red="255" blue="255" green="255"/>
+        <buffersize fieldname="" units="pt" value="1"/>
+        <bufferenabled fieldname="" on=""/>
+        <multilineenabled fieldname="" on=""/>
+        <selectedonly on=""/>
+      </labelattributes>
+      <annotationform></annotationform>
+      <aliases>
+        <alias field="BU_CODE" index="0" name=""/>
+        <alias field="BU_NAAM" index="1" name=""/>
+        <alias field="P_25_44_JR" index="2" name=""/>
+        <alias field="P_HH_M_K" index="3" name=""/>
+        <alias field="WOZ" index="4" name=""/>
+        <alias field="AF_KDV" index="5" name=""/>
+        <alias field="AF_BSO" index="6" name=""/>
+        <alias field="AF_TREINST" index="7" name=""/>
+        <alias field="25_44_NORM" index="8" name=""/>
+        <alias field="HH_MK_NORM" index="9" name=""/>
+        <alias field="WOZ_NORM" index="10" name=""/>
+        <alias field="KDV_NORM" index="11" name=""/>
+        <alias field="BSO_NORM" index="12" name=""/>
+        <alias field="TREIN_NORM" index="13" name=""/>
+        <alias field="B1" index="14" name=""/>
+        <alias field="B2" index="15" name=""/>
+        <alias field="B3" index="16" name=""/>
+        <alias field="B4" index="17" name=""/>
+        <alias field="Score" index="18" name=""/>
+      </aliases>
+      <excludeAttributesWMS/>
+      <excludeAttributesWFS/>
+      <attributeactions default="-1"/>
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="573317703">
+        <columns/>
+      </attributetableconfig>
+      <editform></editform>
+      <editforminit/>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath></editforminitfilepath>
+      <editforminitcode><![CDATA[]]></editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <widgets/>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
+      <defaults>
+        <default field="BU_CODE" expression=""/>
+        <default field="BU_NAAM" expression=""/>
+        <default field="P_25_44_JR" expression=""/>
+        <default field="P_HH_M_K" expression=""/>
+        <default field="WOZ" expression=""/>
+        <default field="AF_KDV" expression=""/>
+        <default field="AF_BSO" expression=""/>
+        <default field="AF_TREINST" expression=""/>
+        <default field="25_44_NORM" expression=""/>
+        <default field="HH_MK_NORM" expression=""/>
+        <default field="WOZ_NORM" expression=""/>
+        <default field="KDV_NORM" expression=""/>
+        <default field="BSO_NORM" expression=""/>
+        <default field="TREIN_NORM" expression=""/>
+        <default field="B1" expression=""/>
+        <default field="B2" expression=""/>
+        <default field="B3" expression=""/>
+        <default field="B4" expression=""/>
+        <default field="Score" expression=""/>
       </defaults>
       <previewExpression></previewExpression>
     </maplayer>
@@ -1310,495 +1510,6 @@ def my_form_open(dialog, layer, feature):
       </defaults>
       <previewExpression>COALESCE( "P_GESCHEID", '&lt;NULL>' )</previewExpression>
     </maplayer>
-    <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
-      <extent>
-        <xmin>85730.99583866739703808</xmin>
-        <ymin>430742.05650998349301517</ymin>
-        <xmax>101032.59388056711759418</xmax>
-        <ymax>445396.52977774647297338</ymax>
-      </extent>
-      <id>WOZ_Rotterdam_2016_copy20171215123340833</id>
-      <datasource>../../../../../../Dropbox/01MSC EPA/Q2/GEO1005/Buurten Rotterdam Centrum 2016.shp</datasource>
-      <keywordList>
-        <value></value>
-      </keywordList>
-      <layername>Rotterdam Buurten 2016</layername>
-      <srs>
-        <spatialrefsys>
-          <proj4>+proj=sterea +lat_0=52.15616055555555 +lon_0=5.38763888888889 +k=0.9999079 +x_0=155000 +y_0=463000 +ellps=bessel +towgs84=565.2369,50.0087,465.658,-0.406857,0.350733,-1.87035,4.0812 +units=m +no_defs</proj4>
-          <srsid>2517</srsid>
-          <srid>28992</srid>
-          <authid>EPSG:28992</authid>
-          <description>Amersfoort / RD New</description>
-          <projectionacronym>sterea</projectionacronym>
-          <ellipsoidacronym>bessel</ellipsoidacronym>
-          <geographicflag>false</geographicflag>
-        </spatialrefsys>
-      </srs>
-      <provider encoding="System">ogr</provider>
-      <vectorjoins/>
-      <layerDependencies/>
-      <expressionfields/>
-      <map-layer-style-manager current="">
-        <map-layer-style name=""/>
-      </map-layer-style-manager>
-      <edittypes>
-        <edittype widgetv2type="TextEdit" name="BU_CODE">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="BU_NAAM">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="P_25_44_JR">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="P_HH_M_K">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="WOZ">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="AF_KDV">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="AF_BSO">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="AF_TREINST">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="25_44_NORM">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="HH_MK_NORM">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="WOZ_NORM">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="KDV_NORM">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="BSO_NORM">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="TREIN_NORM">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="B1">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="B2">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="B3">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="B4">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="Score">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-      </edittypes>
-      <renderer-v2 forceraster="0" symbollevels="0" type="singleSymbol" enableorderby="0">
-        <symbols>
-          <symbol alpha="1" clip_to_extent="1" type="fill" name="0">
-            <layer pass="0" class="SimpleFill" locked="0">
-              <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="color" v="250,132,108,255"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,255"/>
-              <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.26"/>
-              <prop k="outline_width_unit" v="MM"/>
-              <prop k="style" v="solid"/>
-            </layer>
-          </symbol>
-        </symbols>
-        <rotation/>
-        <sizescale scalemethod="diameter"/>
-      </renderer-v2>
-      <labeling type="simple"/>
-      <customproperties>
-        <property key="embeddedWidgets/count" value="0"/>
-        <property key="labeling" value="pal"/>
-        <property key="labeling/addDirectionSymbol" value="false"/>
-        <property key="labeling/angleOffset" value="0"/>
-        <property key="labeling/blendMode" value="0"/>
-        <property key="labeling/bufferBlendMode" value="0"/>
-        <property key="labeling/bufferColorA" value="255"/>
-        <property key="labeling/bufferColorB" value="255"/>
-        <property key="labeling/bufferColorG" value="255"/>
-        <property key="labeling/bufferColorR" value="255"/>
-        <property key="labeling/bufferDraw" value="false"/>
-        <property key="labeling/bufferJoinStyle" value="128"/>
-        <property key="labeling/bufferNoFill" value="false"/>
-        <property key="labeling/bufferSize" value="1"/>
-        <property key="labeling/bufferSizeInMapUnits" value="false"/>
-        <property key="labeling/bufferSizeMapUnitScale" value="0,0,0,0,0,0"/>
-        <property key="labeling/bufferTransp" value="0"/>
-        <property key="labeling/centroidInside" value="false"/>
-        <property key="labeling/centroidWhole" value="false"/>
-        <property key="labeling/decimals" value="3"/>
-        <property key="labeling/displayAll" value="false"/>
-        <property key="labeling/dist" value="0"/>
-        <property key="labeling/distInMapUnits" value="false"/>
-        <property key="labeling/distMapUnitScale" value="0,0,0,0,0,0"/>
-        <property key="labeling/drawLabels" value="false"/>
-        <property key="labeling/enabled" value="false"/>
-        <property key="labeling/fieldName" value=""/>
-        <property key="labeling/fitInPolygonOnly" value="false"/>
-        <property key="labeling/fontCapitals" value="0"/>
-        <property key="labeling/fontFamily" value="MS Shell Dlg 2"/>
-        <property key="labeling/fontItalic" value="false"/>
-        <property key="labeling/fontLetterSpacing" value="0"/>
-        <property key="labeling/fontLimitPixelSize" value="false"/>
-        <property key="labeling/fontMaxPixelSize" value="10000"/>
-        <property key="labeling/fontMinPixelSize" value="3"/>
-        <property key="labeling/fontSize" value="8.25"/>
-        <property key="labeling/fontSizeInMapUnits" value="false"/>
-        <property key="labeling/fontSizeMapUnitScale" value="0,0,0,0,0,0"/>
-        <property key="labeling/fontStrikeout" value="false"/>
-        <property key="labeling/fontUnderline" value="false"/>
-        <property key="labeling/fontWeight" value="50"/>
-        <property key="labeling/fontWordSpacing" value="0"/>
-        <property key="labeling/formatNumbers" value="false"/>
-        <property key="labeling/isExpression" value="true"/>
-        <property key="labeling/labelOffsetInMapUnits" value="true"/>
-        <property key="labeling/labelOffsetMapUnitScale" value="0,0,0,0,0,0"/>
-        <property key="labeling/labelPerPart" value="false"/>
-        <property key="labeling/leftDirectionSymbol" value="&lt;"/>
-        <property key="labeling/limitNumLabels" value="false"/>
-        <property key="labeling/maxCurvedCharAngleIn" value="25"/>
-        <property key="labeling/maxCurvedCharAngleOut" value="-25"/>
-        <property key="labeling/maxNumLabels" value="2000"/>
-        <property key="labeling/mergeLines" value="false"/>
-        <property key="labeling/minFeatureSize" value="0"/>
-        <property key="labeling/multilineAlign" value="4294967295"/>
-        <property key="labeling/multilineHeight" value="1"/>
-        <property key="labeling/namedStyle" value="Normal"/>
-        <property key="labeling/obstacle" value="true"/>
-        <property key="labeling/obstacleFactor" value="1"/>
-        <property key="labeling/obstacleType" value="0"/>
-        <property key="labeling/offsetType" value="0"/>
-        <property key="labeling/placeDirectionSymbol" value="0"/>
-        <property key="labeling/placement" value="1"/>
-        <property key="labeling/placementFlags" value="10"/>
-        <property key="labeling/plussign" value="false"/>
-        <property key="labeling/predefinedPositionOrder" value="TR,TL,BR,BL,R,L,TSR,BSR"/>
-        <property key="labeling/preserveRotation" value="true"/>
-        <property key="labeling/previewBkgrdColor" value="#ffffff"/>
-        <property key="labeling/priority" value="5"/>
-        <property key="labeling/quadOffset" value="4"/>
-        <property key="labeling/repeatDistance" value="0"/>
-        <property key="labeling/repeatDistanceMapUnitScale" value="0,0,0,0,0,0"/>
-        <property key="labeling/repeatDistanceUnit" value="1"/>
-        <property key="labeling/reverseDirectionSymbol" value="false"/>
-        <property key="labeling/rightDirectionSymbol" value=">"/>
-        <property key="labeling/scaleMax" value="10000000"/>
-        <property key="labeling/scaleMin" value="1"/>
-        <property key="labeling/scaleVisibility" value="false"/>
-        <property key="labeling/shadowBlendMode" value="6"/>
-        <property key="labeling/shadowColorB" value="0"/>
-        <property key="labeling/shadowColorG" value="0"/>
-        <property key="labeling/shadowColorR" value="0"/>
-        <property key="labeling/shadowDraw" value="false"/>
-        <property key="labeling/shadowOffsetAngle" value="135"/>
-        <property key="labeling/shadowOffsetDist" value="1"/>
-        <property key="labeling/shadowOffsetGlobal" value="true"/>
-        <property key="labeling/shadowOffsetMapUnitScale" value="0,0,0,0,0,0"/>
-        <property key="labeling/shadowOffsetUnits" value="1"/>
-        <property key="labeling/shadowRadius" value="1.5"/>
-        <property key="labeling/shadowRadiusAlphaOnly" value="false"/>
-        <property key="labeling/shadowRadiusMapUnitScale" value="0,0,0,0,0,0"/>
-        <property key="labeling/shadowRadiusUnits" value="1"/>
-        <property key="labeling/shadowScale" value="100"/>
-        <property key="labeling/shadowTransparency" value="30"/>
-        <property key="labeling/shadowUnder" value="0"/>
-        <property key="labeling/shapeBlendMode" value="0"/>
-        <property key="labeling/shapeBorderColorA" value="255"/>
-        <property key="labeling/shapeBorderColorB" value="128"/>
-        <property key="labeling/shapeBorderColorG" value="128"/>
-        <property key="labeling/shapeBorderColorR" value="128"/>
-        <property key="labeling/shapeBorderWidth" value="0"/>
-        <property key="labeling/shapeBorderWidthMapUnitScale" value="0,0,0,0,0,0"/>
-        <property key="labeling/shapeBorderWidthUnits" value="1"/>
-        <property key="labeling/shapeDraw" value="false"/>
-        <property key="labeling/shapeFillColorA" value="255"/>
-        <property key="labeling/shapeFillColorB" value="255"/>
-        <property key="labeling/shapeFillColorG" value="255"/>
-        <property key="labeling/shapeFillColorR" value="255"/>
-        <property key="labeling/shapeJoinStyle" value="64"/>
-        <property key="labeling/shapeOffsetMapUnitScale" value="0,0,0,0,0,0"/>
-        <property key="labeling/shapeOffsetUnits" value="1"/>
-        <property key="labeling/shapeOffsetX" value="0"/>
-        <property key="labeling/shapeOffsetY" value="0"/>
-        <property key="labeling/shapeRadiiMapUnitScale" value="0,0,0,0,0,0"/>
-        <property key="labeling/shapeRadiiUnits" value="1"/>
-        <property key="labeling/shapeRadiiX" value="0"/>
-        <property key="labeling/shapeRadiiY" value="0"/>
-        <property key="labeling/shapeRotation" value="0"/>
-        <property key="labeling/shapeRotationType" value="0"/>
-        <property key="labeling/shapeSVGFile" value=""/>
-        <property key="labeling/shapeSizeMapUnitScale" value="0,0,0,0,0,0"/>
-        <property key="labeling/shapeSizeType" value="0"/>
-        <property key="labeling/shapeSizeUnits" value="1"/>
-        <property key="labeling/shapeSizeX" value="0"/>
-        <property key="labeling/shapeSizeY" value="0"/>
-        <property key="labeling/shapeTransparency" value="0"/>
-        <property key="labeling/shapeType" value="0"/>
-        <property key="labeling/substitutions" value="&lt;substitutions/>"/>
-        <property key="labeling/textColorA" value="255"/>
-        <property key="labeling/textColorB" value="0"/>
-        <property key="labeling/textColorG" value="0"/>
-        <property key="labeling/textColorR" value="0"/>
-        <property key="labeling/textTransp" value="0"/>
-        <property key="labeling/upsidedownLabels" value="0"/>
-        <property key="labeling/useSubstitutions" value="false"/>
-        <property key="labeling/wrapChar" value=""/>
-        <property key="labeling/xOffset" value="0"/>
-        <property key="labeling/yOffset" value="0"/>
-        <property key="labeling/zIndex" value="0"/>
-        <property key="variableNames"/>
-        <property key="variableValues"/>
-      </customproperties>
-      <blendMode>0</blendMode>
-      <featureBlendMode>0</featureBlendMode>
-      <layerTransparency>0</layerTransparency>
-      <displayfield>P_GESCHEID</displayfield>
-      <label>0</label>
-      <labelattributes>
-        <label fieldname="" text="Label"/>
-        <family fieldname="" name="MS Shell Dlg 2"/>
-        <size fieldname="" units="pt" value="12"/>
-        <bold fieldname="" on="0"/>
-        <italic fieldname="" on="0"/>
-        <underline fieldname="" on="0"/>
-        <strikeout fieldname="" on="0"/>
-        <color fieldname="" red="0" blue="0" green="0"/>
-        <x fieldname=""/>
-        <y fieldname=""/>
-        <offset x="0" y="0" units="pt" yfieldname="" xfieldname=""/>
-        <angle fieldname="" value="0" auto="0"/>
-        <alignment fieldname="" value="center"/>
-        <buffercolor fieldname="" red="255" blue="255" green="255"/>
-        <buffersize fieldname="" units="pt" value="1"/>
-        <bufferenabled fieldname="" on=""/>
-        <multilineenabled fieldname="" on=""/>
-        <selectedonly on=""/>
-      </labelattributes>
-      <annotationform>../../../../../../Dropbox/01MSC EPA/Q2/GEO1005</annotationform>
-      <aliases>
-        <alias field="BU_CODE" index="0" name=""/>
-        <alias field="BU_NAAM" index="1" name=""/>
-        <alias field="P_25_44_JR" index="2" name=""/>
-        <alias field="P_HH_M_K" index="3" name=""/>
-        <alias field="WOZ" index="4" name=""/>
-        <alias field="AF_KDV" index="5" name=""/>
-        <alias field="AF_BSO" index="6" name=""/>
-        <alias field="AF_TREINST" index="7" name=""/>
-        <alias field="25_44_NORM" index="8" name=""/>
-        <alias field="HH_MK_NORM" index="9" name=""/>
-        <alias field="WOZ_NORM" index="10" name=""/>
-        <alias field="KDV_NORM" index="11" name=""/>
-        <alias field="BSO_NORM" index="12" name=""/>
-        <alias field="TREIN_NORM" index="13" name=""/>
-        <alias field="B1" index="14" name=""/>
-        <alias field="B2" index="15" name=""/>
-        <alias field="B3" index="16" name=""/>
-        <alias field="B4" index="17" name=""/>
-        <alias field="Score" index="18" name=""/>
-      </aliases>
-      <excludeAttributesWMS/>
-      <excludeAttributesWFS/>
-      <attributeactions default="-1"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="&quot;Score&quot;" sortOrder="0">
-        <columns>
-          <column width="-1" hidden="0" type="field" name="BU_CODE"/>
-          <column width="-1" hidden="0" type="field" name="BU_NAAM"/>
-          <column width="-1" hidden="0" type="field" name="WK_CODE"/>
-          <column width="-1" hidden="0" type="field" name="GM_CODE"/>
-          <column width="-1" hidden="0" type="field" name="GM_NAAM"/>
-          <column width="-1" hidden="0" type="field" name="IND_WBI"/>
-          <column width="-1" hidden="0" type="field" name="WATER"/>
-          <column width="-1" hidden="0" type="field" name="POSTCODE"/>
-          <column width="-1" hidden="0" type="field" name="DEK_PERC"/>
-          <column width="-1" hidden="0" type="field" name="OAD"/>
-          <column width="-1" hidden="0" type="field" name="STED"/>
-          <column width="-1" hidden="0" type="field" name="AANT_INW"/>
-          <column width="-1" hidden="0" type="field" name="AANT_MAN"/>
-          <column width="-1" hidden="0" type="field" name="AANT_VROUW"/>
-          <column width="-1" hidden="0" type="field" name="P_00_14_JR"/>
-          <column width="-1" hidden="0" type="field" name="P_15_24_JR"/>
-          <column width="-1" hidden="0" type="field" name="P_25_44_JR"/>
-          <column width="-1" hidden="0" type="field" name="P_45_64_JR"/>
-          <column width="-1" hidden="0" type="field" name="P_65_EO_JR"/>
-          <column width="-1" hidden="0" type="field" name="P_ONGEHUWD"/>
-          <column width="-1" hidden="0" type="field" name="P_GEHUWD"/>
-          <column width="-1" hidden="0" type="field" name="P_GESCHEID"/>
-          <column width="-1" hidden="0" type="field" name="P_VERWEDUW"/>
-          <column width="-1" hidden="0" type="field" name="GEBOO_TOT"/>
-          <column width="-1" hidden="0" type="field" name="P_GEBOO"/>
-          <column width="-1" hidden="0" type="field" name="STERFT_TOT"/>
-          <column width="-1" hidden="0" type="field" name="P_STERFT"/>
-          <column width="-1" hidden="0" type="field" name="BEV_DICHTH"/>
-          <column width="-1" hidden="0" type="field" name="AANTAL_HH"/>
-          <column width="-1" hidden="0" type="field" name="P_EENP_HH"/>
-          <column width="-1" hidden="0" type="field" name="P_HH_Z_K"/>
-          <column width="-1" hidden="0" type="field" name="P_HH_M_K"/>
-          <column width="-1" hidden="0" type="field" name="GEM_HH_GR"/>
-          <column width="-1" hidden="0" type="field" name="P_WEST_AL"/>
-          <column width="-1" hidden="0" type="field" name="P_N_W_AL"/>
-          <column width="-1" hidden="0" type="field" name="P_MAROKKO"/>
-          <column width="-1" hidden="0" type="field" name="P_ANT_ARU"/>
-          <column width="-1" hidden="0" type="field" name="P_SURINAM"/>
-          <column width="-1" hidden="0" type="field" name="P_TURKIJE"/>
-          <column width="-1" hidden="0" type="field" name="P_OVER_NW"/>
-          <column width="-1" hidden="0" type="field" name="A_BED_A"/>
-          <column width="-1" hidden="0" type="field" name="A_BED_BF"/>
-          <column width="-1" hidden="0" type="field" name="A_BED_GI"/>
-          <column width="-1" hidden="0" type="field" name="A_BED_HJ"/>
-          <column width="-1" hidden="0" type="field" name="A_BED_KL"/>
-          <column width="-1" hidden="0" type="field" name="A_BED_MN"/>
-          <column width="-1" hidden="0" type="field" name="A_BED_RU"/>
-          <column width="-1" hidden="0" type="field" name="A_BEDV"/>
-          <column width="-1" hidden="0" type="field" name="WONINGEN"/>
-          <column width="-1" hidden="0" type="field" name="WOZ"/>
-          <column width="-1" hidden="0" type="field" name="P_1GEZW"/>
-          <column width="-1" hidden="0" type="field" name="P_MGEZW"/>
-          <column width="-1" hidden="0" type="field" name="P_WONT2000"/>
-          <column width="-1" hidden="0" type="field" name="P_WONV2000"/>
-          <column width="-1" hidden="0" type="field" name="AUTO_TOT"/>
-          <column width="-1" hidden="0" type="field" name="AUTO_HH"/>
-          <column width="-1" hidden="0" type="field" name="AUTO_LAND"/>
-          <column width="-1" hidden="0" type="field" name="BEDR_AUTO"/>
-          <column width="-1" hidden="0" type="field" name="MOTOR_2W"/>
-          <column width="-1" hidden="0" type="field" name="A_LFTJ6J"/>
-          <column width="-1" hidden="0" type="field" name="A_LFTO6J"/>
-          <column width="-1" hidden="0" type="field" name="A_BST_B"/>
-          <column width="-1" hidden="0" type="field" name="A_BST_NB"/>
-          <column width="-1" hidden="0" type="field" name="AF_ZIEK_I"/>
-          <column width="-1" hidden="0" type="field" name="AV5_ZIEK_I"/>
-          <column width="-1" hidden="0" type="field" name="AV10ZIEK_I"/>
-          <column width="-1" hidden="0" type="field" name="AV20ZIEK_I"/>
-          <column width="-1" hidden="0" type="field" name="AF_ZIEK_E"/>
-          <column width="-1" hidden="0" type="field" name="AV5_ZIEK_E"/>
-          <column width="-1" hidden="0" type="field" name="AV10ZIEK_E"/>
-          <column width="-1" hidden="0" type="field" name="AV20ZIEK_E"/>
-          <column width="-1" hidden="0" type="field" name="AF_SUPERM"/>
-          <column width="-1" hidden="0" type="field" name="AV1_SUPERM"/>
-          <column width="-1" hidden="0" type="field" name="AV3_SUPERM"/>
-          <column width="-1" hidden="0" type="field" name="AV5_SUPERM"/>
-          <column width="-1" hidden="0" type="field" name="AF_DAGLMD"/>
-          <column width="-1" hidden="0" type="field" name="AV1_DAGLMD"/>
-          <column width="-1" hidden="0" type="field" name="AV3_DAGLMD"/>
-          <column width="-1" hidden="0" type="field" name="AV5_DAGLMD"/>
-          <column width="-1" hidden="0" type="field" name="AF_WARENH"/>
-          <column width="-1" hidden="0" type="field" name="AV5_WARENH"/>
-          <column width="-1" hidden="0" type="field" name="AV10WARENH"/>
-          <column width="-1" hidden="0" type="field" name="AV20WARENH"/>
-          <column width="-1" hidden="0" type="field" name="AF_CAFE"/>
-          <column width="-1" hidden="0" type="field" name="AV1_CAFE"/>
-          <column width="-1" hidden="0" type="field" name="AV3_CAFE"/>
-          <column width="-1" hidden="0" type="field" name="AV5_CAFE"/>
-          <column width="-1" hidden="0" type="field" name="AF_CAFTAR"/>
-          <column width="-1" hidden="0" type="field" name="AV1_CAFTAR"/>
-          <column width="-1" hidden="0" type="field" name="AV3_CAFTAR"/>
-          <column width="-1" hidden="0" type="field" name="AV5_CAFTAR"/>
-          <column width="-1" hidden="0" type="field" name="AF_RESTAU"/>
-          <column width="-1" hidden="0" type="field" name="AV1_RESTAU"/>
-          <column width="-1" hidden="0" type="field" name="AV3_RESTAU"/>
-          <column width="-1" hidden="0" type="field" name="AV5_RESTAU"/>
-          <column width="-1" hidden="0" type="field" name="AF_HOTEL"/>
-          <column width="-1" hidden="0" type="field" name="AV5_HOTEL"/>
-          <column width="-1" hidden="0" type="field" name="AV10_HOTEL"/>
-          <column width="-1" hidden="0" type="field" name="AV20_HOTEL"/>
-          <column width="-1" hidden="0" type="field" name="AF_KDV"/>
-          <column width="-1" hidden="0" type="field" name="AV1_KDV"/>
-          <column width="-1" hidden="0" type="field" name="AV3_KDV"/>
-          <column width="-1" hidden="0" type="field" name="AV5_KDV"/>
-          <column width="-1" hidden="0" type="field" name="AF_BSO"/>
-          <column width="-1" hidden="0" type="field" name="AV1_BSO"/>
-          <column width="-1" hidden="0" type="field" name="AV3_BSO"/>
-          <column width="-1" hidden="0" type="field" name="AV5_BSO"/>
-          <column width="-1" hidden="0" type="field" name="AF_BRANDW"/>
-          <column width="-1" hidden="0" type="field" name="AF_OPRITH"/>
-          <column width="-1" hidden="0" type="field" name="AF_TREINST"/>
-          <column width="-1" hidden="0" type="field" name="AF_OVERST"/>
-          <column width="-1" hidden="0" type="field" name="AF_ZWEMB"/>
-          <column width="-1" hidden="0" type="field" name="AF_IJSBAAN"/>
-          <column width="-1" hidden="0" type="field" name="AF_BIBLIO"/>
-          <column width="-1" hidden="0" type="field" name="AF_BIOS"/>
-          <column width="-1" hidden="0" type="field" name="AV5_BIOS"/>
-          <column width="-1" hidden="0" type="field" name="AV10_BIOS"/>
-          <column width="-1" hidden="0" type="field" name="AV20_BIOS"/>
-          <column width="-1" hidden="0" type="field" name="AF_SAUNA"/>
-          <column width="-1" hidden="0" type="field" name="AF_ZONBNK"/>
-          <column width="-1" hidden="0" type="field" name="AF_ATTRAC"/>
-          <column width="-1" hidden="0" type="field" name="AV10ATTRAC"/>
-          <column width="-1" hidden="0" type="field" name="AV20ATTRAC"/>
-          <column width="-1" hidden="0" type="field" name="AV50ATTRAC"/>
-          <column width="-1" hidden="0" type="field" name="OPP_TOT"/>
-          <column width="-1" hidden="0" type="field" name="OPP_LAND"/>
-          <column width="-1" hidden="0" type="field" name="OPP_WATER"/>
-          <column width="-1" hidden="1" type="actions"/>
-        </columns>
-      </attributetableconfig>
-      <editform>../../../../../../Dropbox/01MSC EPA/Q2/GEO1005</editform>
-      <editforminit/>
-      <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../../../../../../Dropbox/01MSC EPA/Q2/GEO1005</editforminitfilepath>
-      <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
-"""
-QGIS forms can have a Python function that is called when the form is
-opened.
-
-Use this function to add extra logic to your forms.
-
-Enter the name of the function in the "Python Init function"
-field.
-An example follows:
-"""
-from qgis.PyQt.QtWidgets import QWidget
-
-def my_form_open(dialog, layer, feature):
-	geom = feature.geometry()
-	control = dialog.findChild(QWidget, "MyLineEdit")
-]]></editforminitcode>
-      <featformsuppress>0</featformsuppress>
-      <editorlayout>generatedlayout</editorlayout>
-      <widgets/>
-      <conditionalstyles>
-        <rowstyles/>
-        <fieldstyles/>
-      </conditionalstyles>
-      <defaults>
-        <default field="BU_CODE" expression=""/>
-        <default field="BU_NAAM" expression=""/>
-        <default field="P_25_44_JR" expression=""/>
-        <default field="P_HH_M_K" expression=""/>
-        <default field="WOZ" expression=""/>
-        <default field="AF_KDV" expression=""/>
-        <default field="AF_BSO" expression=""/>
-        <default field="AF_TREINST" expression=""/>
-        <default field="25_44_NORM" expression=""/>
-        <default field="HH_MK_NORM" expression=""/>
-        <default field="WOZ_NORM" expression=""/>
-        <default field="KDV_NORM" expression=""/>
-        <default field="BSO_NORM" expression=""/>
-        <default field="TREIN_NORM" expression=""/>
-        <default field="B1" expression=""/>
-        <default field="B2" expression=""/>
-        <default field="B3" expression=""/>
-        <default field="B4" expression=""/>
-        <default field="Score" expression=""/>
-      </defaults>
-      <previewExpression>COALESCE( "P_GESCHEID", '&lt;NULL>' )</previewExpression>
-    </maplayer>
   </projectlayers>
   <properties>
     <Variables>
@@ -1857,7 +1568,7 @@ def my_form_open(dialog, layer, feature):
         <value>NWB_2016_Rotterdam_train_stations_WO20171201121004971</value>
         <value>Rotterdam_Buurten_2016_copy20180109121344156</value>
         <value>Rotterdam_Buurten_2016_copy20180109121442918</value>
-        <value>WOZ_Rotterdam_2016_copy20171215123340833</value>
+        <value>Neighborhood_outlines20180109140229582</value>
       </LayerSnappingList>
       <LayerSnappingEnabledList type="QStringList">
         <value>disabled</value>
