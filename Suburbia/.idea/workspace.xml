@@ -2,25 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6b489d43-3b70-49c4-8125-1bd939938871" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/../.idea/vcs.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/Spatial/.idea/workspace.xml" afterPath="$PROJECT_DIR$/Spatial/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/Spatial/Makefile" afterPath="$PROJECT_DIR$/Spatial/Makefile" />
-      <change beforePath="$PROJECT_DIR$/Spatial/__init__.py" afterPath="$PROJECT_DIR$/Spatial/__init__.py" />
-      <change beforePath="$PROJECT_DIR$/Spatial/help/build/doctrees/environment.pickle" afterPath="$PROJECT_DIR$/Spatial/help/build/doctrees/environment.pickle" />
-      <change beforePath="$PROJECT_DIR$/Spatial/help/build/html/.buildinfo" afterPath="$PROJECT_DIR$/Spatial/help/build/html/.buildinfo" />
-      <change beforePath="$PROJECT_DIR$/Spatial/help/build/html/genindex.html" afterPath="$PROJECT_DIR$/Spatial/help/build/html/genindex.html" />
-      <change beforePath="$PROJECT_DIR$/Spatial/help/build/html/index.html" afterPath="$PROJECT_DIR$/Spatial/help/build/html/index.html" />
-      <change beforePath="$PROJECT_DIR$/Spatial/help/build/html/search.html" afterPath="$PROJECT_DIR$/Spatial/help/build/html/search.html" />
-      <change beforePath="$PROJECT_DIR$/Spatial/help/source/conf.py" afterPath="$PROJECT_DIR$/Spatial/help/source/conf.py" />
-      <change beforePath="$PROJECT_DIR$/Spatial/metadata.txt" afterPath="$PROJECT_DIR$/Spatial/metadata.txt" />
-      <change beforePath="$PROJECT_DIR$/Spatial/pb_tool.cfg" afterPath="$PROJECT_DIR$/Spatial/pb_tool.cfg" />
-      <change beforePath="$PROJECT_DIR$/Spatial/resources.py" afterPath="$PROJECT_DIR$/Spatial/resources.py" />
-      <change beforePath="$PROJECT_DIR$/Spatial/suburbia.py" afterPath="$PROJECT_DIR$/Spatial/suburbia.py" />
-      <change beforePath="$PROJECT_DIR$/Spatial/suburbia_dockwidget.py" afterPath="$PROJECT_DIR$/Spatial/suburbia_dockwidget.py" />
-      <change beforePath="$PROJECT_DIR$/Spatial/suburbia_dockwidget_base.ui" afterPath="$PROJECT_DIR$/Spatial/suburbia_dockwidget_base.ui" />
-      <change beforePath="$PROJECT_DIR$/Spatial/test/test_resources.py" afterPath="$PROJECT_DIR$/Spatial/test/test_resources.py" />
-      <change beforePath="$PROJECT_DIR$/Spatial/test/test_suburbia_dockwidget.py" afterPath="$PROJECT_DIR$/Spatial/test/test_suburbia_dockwidget.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -31,11 +13,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="suburbia_dockwidget.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Spatial/suburbia_dockwidget.py">
+      <file leaf-file-name="suburbia_search_tool_dockwidget.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MyPlugin/suburbia_search_tool_dockwidget.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="550">
-              <caret line="40" column="67" lean-forward="false" selection-start-line="40" selection-start-column="67" selection-end-line="40" selection-end-column="67" />
+            <state relative-caret-position="120">
+              <caret line="32" column="56" lean-forward="true" selection-start-line="32" selection-start-column="56" selection-end-line="32" selection-end-column="56" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pb_tool.cfg" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/MyPlugin/pb_tool.cfg">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="18" column="2" lean-forward="true" selection-start-line="18" selection-start-column="2" selection-end-line="18" selection-end-column="2" />
               <folding />
             </state>
           </provider>
@@ -81,7 +73,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -92,19 +83,20 @@
             <path>
               <item name="Suburbia" type="b2602c69:ProjectViewProjectNode" />
               <item name="Suburbia" type="462c0819:PsiDirectoryNode" />
-              <item name="Spatial" type="462c0819:PsiDirectoryNode" />
+              <item name="MyPlugin" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="preferences.externalTools" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/MyPlugin" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -138,7 +130,7 @@
       <PathMappingSettings>
         <option name="pathMappings">
           <list>
-            <mapping local-root="$PROJECT_DIR$/Spatial" remote-root="C:/Users/vette/.qgis2/python/plugins/Spatial" />
+            <mapping local-root="$PROJECT_DIR$/MyPlugin" remote-root="C:/Users/vette/.qgis2/python/plugins/MyPlugin" />
           </list>
         </option>
       </PathMappingSettings>
@@ -167,17 +159,17 @@
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32913387" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32913387" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24304539" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24304539" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -198,6 +190,14 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Spatial/suburbia_dockwidget.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Spatial/suburbia_dockwidget.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -287,8 +287,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Spatial/suburbia_dockwidget.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
+        <state relative-caret-position="312">
           <caret line="40" column="67" lean-forward="false" selection-start-line="40" selection-start-column="67" selection-end-line="40" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MyPlugin/suburbia_search_tool_dockwidget.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="32" column="56" lean-forward="true" selection-start-line="32" selection-start-column="56" selection-end-line="32" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MyPlugin/pb_tool.cfg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="2" lean-forward="true" selection-start-line="18" selection-start-column="2" selection-end-line="18" selection-end-column="2" />
           <folding />
         </state>
       </provider>
