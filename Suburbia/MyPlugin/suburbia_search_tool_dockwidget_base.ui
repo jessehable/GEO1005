@@ -16,7 +16,7 @@
   <widget class="QWidget" name="widget">
    <layout class="QVBoxLayout" name="verticalLayout">
     <item>
-     <widget class="QGraphicsView" name="graphicsView_2"/>
+     <widget class="QGraphicsView" name="SuburbiaLogo"/>
     </item>
     <item>
      <widget class="QTabWidget" name="Tabs">
@@ -24,7 +24,7 @@
        <string notr="true"/>
       </property>
       <property name="currentIndex">
-       <number>0</number>
+       <number>1</number>
       </property>
       <widget class="QWidget" name="TabTerms">
        <attribute name="title">
@@ -32,74 +32,80 @@
        </attribute>
        <layout class="QGridLayout" name="gridLayout_3">
         <item row="1" column="0">
-         <widget class="QLabel" name="TermsGuide">
-          <property name="text">
-           <string>Explanation</string>
-          </property>
-         </widget>
-        </item>
-        <item row="3" column="0">
-         <layout class="QGridLayout" name="gridLayout_6">
+         <layout class="QGridLayout" name="LayoutTerms">
           <item row="0" column="1">
-           <widget class="QLineEdit" name="lineEdit_2"/>
+           <widget class="QLineEdit" name="NameField"/>
           </item>
           <item row="3" column="0">
-           <widget class="QLabel" name="label_4">
+           <widget class="QLabel" name="EducationLevel">
             <property name="text">
              <string>Education Level</string>
             </property>
            </widget>
           </item>
           <item row="2" column="0">
-           <widget class="QLabel" name="label_3">
+           <widget class="QLabel" name="GenderLabel">
             <property name="text">
              <string>Gender</string>
             </property>
            </widget>
           </item>
           <item row="4" column="1">
-           <widget class="QCheckBox" name="checkBox">
+           <widget class="QCheckBox" name="ShareButton">
             <property name="text">
-             <string>YAS!</string>
+             <string>Agree!</string>
             </property>
            </widget>
           </item>
           <item row="0" column="0">
-           <widget class="QLabel" name="label_2">
+           <widget class="QLabel" name="NameLabel">
             <property name="text">
              <string>Name</string>
             </property>
            </widget>
           </item>
           <item row="1" column="0">
-           <widget class="QLabel" name="label">
+           <widget class="QLabel" name="AgeLabel">
             <property name="text">
              <string>Age</string>
             </property>
            </widget>
           </item>
           <item row="4" column="0">
-           <widget class="QLabel" name="label_5">
+           <widget class="QLabel" name="ShareLabel">
             <property name="text">
              <string>I agree to share my information</string>
             </property>
            </widget>
           </item>
           <item row="1" column="1">
-           <widget class="QSpinBox" name="spinBox"/>
+           <widget class="QSpinBox" name="AgeField"/>
           </item>
           <item row="2" column="1">
-           <widget class="QSpinBox" name="spinBox_2"/>
+           <widget class="QSpinBox" name="GenderField"/>
           </item>
           <item row="3" column="1">
-           <widget class="QSpinBox" name="spinBox_3"/>
+           <widget class="QSpinBox" name="EducationField"/>
           </item>
          </layout>
         </item>
-        <item row="4" column="0">
-         <widget class="QCommandLinkButton" name="commandLinkButton_2">
+        <item row="2" column="0">
+         <widget class="QPushButton" name="ConfirmTermsButton">
           <property name="text">
-           <string>Confirm</string>
+           <string>Confirm!</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QTextBrowser" name="InfoTerms">
+          <property name="html">
+           <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'.SF NS Text'; font-size:13pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;In order to use Suburbia, we require you to share some information with the municipality of Rotterdam. We use it for urban planning related research and do not share it with third parties, advertisement agencies etc. &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:12pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Please fill in below and confirm!&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
           </property>
          </widget>
         </item>
@@ -110,40 +116,29 @@
         <string>Preferences</string>
        </attribute>
        <layout class="QGridLayout" name="gridLayout_2">
-        <item row="0" column="0">
-         <widget class="QLabel" name="PreferencesGuide">
+        <item row="2" column="0">
+         <widget class="QPushButton" name="ExploreButton">
           <property name="text">
-           <string>Explanation</string>
+           <string>Explore!</string>
           </property>
          </widget>
         </item>
         <item row="1" column="0">
-         <layout class="QGridLayout" name="gridLayout">
-          <item row="6" column="2">
-           <widget class="QPushButton" name="pushButton">
+         <layout class="QGridLayout" name="LayoutPreferences">
+          <item row="7" column="2">
+           <widget class="QPushButton" name="LocateButton">
             <property name="text">
              <string>Locate!</string>
             </property>
            </widget>
           </item>
-          <item row="4" column="2">
-           <widget class="QLCDNumber" name="lcdNumber_3"/>
+          <item row="5" column="2">
+           <widget class="QLCDNumber" name="PriorityIndicator3"/>
           </item>
-          <item row="2" column="2">
-           <widget class="QLCDNumber" name="lcdNumber"/>
+          <item row="3" column="2">
+           <widget class="QLCDNumber" name="PriorityIndicator1"/>
           </item>
-          <item row="6" column="1">
-           <layout class="QHBoxLayout" name="horizontalLayout">
-            <item>
-             <widget class="QLineEdit" name="lineEdit">
-              <property name="text">
-               <string/>
-              </property>
-             </widget>
-            </item>
-           </layout>
-          </item>
-          <item row="2" column="1">
+          <item row="3" column="1">
            <widget class="QSlider" name="SliderIndicator1">
             <property name="maximum">
              <number>5</number>
@@ -153,7 +148,7 @@
             </property>
            </widget>
           </item>
-          <item row="5" column="1">
+          <item row="6" column="1">
            <widget class="QSlider" name="SliderIndicator4">
             <property name="maximum">
              <number>5</number>
@@ -163,7 +158,7 @@
             </property>
            </widget>
           </item>
-          <item row="4" column="1">
+          <item row="5" column="1">
            <widget class="QSlider" name="SliderIndicator3">
             <property name="maximum">
              <number>5</number>
@@ -173,21 +168,14 @@
             </property>
            </widget>
           </item>
-          <item row="3" column="0">
+          <item row="4" column="0">
            <widget class="QLabel" name="LabelIndicator2">
             <property name="text">
              <string>Child Friendly?</string>
             </property>
            </widget>
           </item>
-          <item row="0" column="1">
-           <widget class="QLabel" name="LabelPriority">
-            <property name="text">
-             <string>Priority</string>
-            </property>
-           </widget>
-          </item>
-          <item row="3" column="1">
+          <item row="4" column="1">
            <widget class="QSlider" name="SliderIndicator2">
             <property name="maximum">
              <number>5</number>
@@ -197,6 +185,43 @@
             </property>
            </widget>
           </item>
+          <item row="6" column="0">
+           <widget class="QLabel" name="LabelIndicator4">
+            <property name="text">
+             <string>Affordability?</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="0">
+           <widget class="QLabel" name="LabelIndicator1">
+            <property name="text">
+             <string>Simliar People?</string>
+            </property>
+           </widget>
+          </item>
+          <item row="7" column="0">
+           <widget class="QLabel" name="LabelPostalCode">
+            <property name="text">
+             <string>Digits Postal Code </string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="2">
+           <widget class="QLCDNumber" name="PriorityIndicator2"/>
+          </item>
+          <item row="6" column="2">
+           <widget class="QLCDNumber" name="PriorityIndicator4"/>
+          </item>
+          <item row="5" column="0">
+           <widget class="QLabel" name="LabelIndicator3">
+            <property name="text">
+             <string>Accessibility?</string>
+            </property>
+           </widget>
+          </item>
+          <item row="7" column="1">
+           <widget class="QLineEdit" name="EnterPostalCode"/>
+          </item>
           <item row="1" column="0" colspan="2">
            <widget class="Line" name="line">
             <property name="orientation">
@@ -204,65 +229,123 @@
             </property>
            </widget>
           </item>
-          <item row="0" column="0">
+          <item row="1" column="2">
+           <widget class="Line" name="line_2">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="2">
+           <widget class="QLabel" name="LabelPriority">
+            <property name="text">
+             <string>Priority</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
            <widget class="QLabel" name="LabelIndicator">
             <property name="text">
              <string>Indicator</string>
             </property>
            </widget>
           </item>
-          <item row="5" column="0">
-           <widget class="QLabel" name="LabelIndicator4">
-            <property name="text">
-             <string>Affordability?</string>
-            </property>
-           </widget>
-          </item>
-          <item row="2" column="0">
-           <widget class="QLabel" name="LabelIndicator1">
-            <property name="text">
-             <string>Simliar Peeps?</string>
-            </property>
-           </widget>
-          </item>
-          <item row="6" column="0">
-           <widget class="QLabel" name="LabelPostalCode">
-            <property name="text">
-             <string>Postal Code of House</string>
-            </property>
-           </widget>
-          </item>
-          <item row="3" column="2">
-           <widget class="QLCDNumber" name="lcdNumber_2"/>
-          </item>
-          <item row="5" column="2">
-           <widget class="QLCDNumber" name="lcdNumber_4"/>
-          </item>
-          <item row="4" column="0">
-           <widget class="QLabel" name="LabelIndicator3">
-            <property name="text">
-             <string>Accessibility?</string>
-            </property>
-           </widget>
-          </item>
          </layout>
-        </item>
-        <item row="2" column="0">
-         <widget class="QPushButton" name="pushButton_2">
-          <property name="text">
-           <string>Explore!</string>
-          </property>
-         </widget>
         </item>
        </layout>
       </widget>
-      <widget class="QWidget" name="TabVisualization">
+      <widget class="QWidget" name="TabMetrics">
        <attribute name="title">
         <string>Visualization</string>
        </attribute>
        <layout class="QGridLayout" name="gridLayout_4">
         <item row="0" column="0">
-         <widget class="QGraphicsView" name="graphicsView"/>
+         <layout class="QGridLayout" name="LayoutMetrics">
+          <item row="4" column="0">
+           <widget class="QLabel" name="M_LabelIdicator1">
+            <property name="text">
+             <string>Similar neighbors</string>
+            </property>
+           </widget>
+          </item>
+          <item row="7" column="0">
+           <widget class="QLabel" name="M_LabelIndicator4">
+            <property name="text">
+             <string>Affordability</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="1">
+           <widget class="QProgressBar" name="BarIndicator1">
+            <property name="value">
+             <number>24</number>
+            </property>
+           </widget>
+          </item>
+          <item row="6" column="1">
+           <widget class="QProgressBar" name="BarIndicator3">
+            <property name="value">
+             <number>24</number>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="1">
+           <widget class="QLabel" name="DisplayNeighborhoodName">
+            <property name="text">
+             <string>DisplayNeighborhoodName</string>
+            </property>
+           </widget>
+          </item>
+          <item row="8" column="1">
+           <widget class="QLabel" name="AdjustPreferencesLabel">
+            <property name="text">
+             <string>Adjust preferences</string>
+            </property>
+           </widget>
+          </item>
+          <item row="6" column="0">
+           <widget class="QLabel" name="M_LabelIndicator3">
+            <property name="text">
+             <string>Accessibility</string>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="1">
+           <widget class="QProgressBar" name="BarIndicator2">
+            <property name="value">
+             <number>24</number>
+            </property>
+           </widget>
+          </item>
+          <item row="8" column="0">
+           <widget class="QToolButton" name="AdjustPreferencesButton">
+            <property name="text">
+             <string>...</string>
+            </property>
+           </widget>
+          </item>
+          <item row="7" column="1">
+           <widget class="QProgressBar" name="BarIndicator4">
+            <property name="value">
+             <number>24</number>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="0">
+           <widget class="QLabel" name="M_LabelIndicator2">
+            <property name="text">
+             <string>Child friendly</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="0">
+           <widget class="QLabel" name="Neighborhood">
+            <property name="text">
+             <string>Neighborhood:</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
         </item>
        </layout>
       </widget>
