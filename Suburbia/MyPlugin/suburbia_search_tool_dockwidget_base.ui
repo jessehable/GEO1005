@@ -16,6 +16,9 @@
   <widget class="QWidget" name="widget">
    <layout class="QVBoxLayout" name="verticalLayout">
     <item>
+     <widget class="QGraphicsView" name="graphicsView_2"/>
+    </item>
+    <item>
      <widget class="QTabWidget" name="Tabs">
       <property name="styleSheet">
        <string notr="true"/>
@@ -40,23 +43,10 @@
           <item row="0" column="1">
            <widget class="QLineEdit" name="lineEdit_2"/>
           </item>
-          <item row="2" column="1">
-           <widget class="QSpinBox" name="spinBox_2"/>
-          </item>
           <item row="3" column="0">
            <widget class="QLabel" name="label_4">
             <property name="text">
-             <string>Ecuation Level</string>
-            </property>
-           </widget>
-          </item>
-          <item row="1" column="1">
-           <widget class="QSpinBox" name="spinBox">
-            <property name="minimum">
-             <number>1</number>
-            </property>
-            <property name="maximum">
-             <number>120</number>
+             <string>Education Level</string>
             </property>
            </widget>
           </item>
@@ -95,15 +85,14 @@
             </property>
            </widget>
           </item>
+          <item row="1" column="1">
+           <widget class="QSpinBox" name="spinBox"/>
+          </item>
+          <item row="2" column="1">
+           <widget class="QSpinBox" name="spinBox_2"/>
+          </item>
           <item row="3" column="1">
-           <widget class="QSpinBox" name="spinBox_3">
-            <property name="value">
-             <number>0</number>
-            </property>
-            <property name="displayIntegerBase" stdset="0">
-             <number>7</number>
-            </property>
-           </widget>
+           <widget class="QSpinBox" name="spinBox_3"/>
           </item>
          </layout>
         </item>
@@ -130,19 +119,25 @@
         </item>
         <item row="1" column="0">
          <layout class="QGridLayout" name="gridLayout">
+          <item row="6" column="2">
+           <widget class="QPushButton" name="pushButton">
+            <property name="text">
+             <string>Locate!</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="2">
+           <widget class="QLCDNumber" name="lcdNumber_3"/>
+          </item>
+          <item row="2" column="2">
+           <widget class="QLCDNumber" name="lcdNumber"/>
+          </item>
           <item row="6" column="1">
            <layout class="QHBoxLayout" name="horizontalLayout">
             <item>
              <widget class="QLineEdit" name="lineEdit">
               <property name="text">
                <string/>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QPushButton" name="pushButton">
-              <property name="text">
-               <string>Locate!</string>
               </property>
              </widget>
             </item>
@@ -181,14 +176,7 @@
           <item row="3" column="0">
            <widget class="QLabel" name="LabelIndicator2">
             <property name="text">
-             <string>Indicator2</string>
-            </property>
-           </widget>
-          </item>
-          <item row="4" column="0">
-           <widget class="QLabel" name="LabelIndicator3">
-            <property name="text">
-             <string>Indicator3</string>
+             <string>Child Friendly?</string>
             </property>
            </widget>
           </item>
@@ -226,14 +214,14 @@
           <item row="5" column="0">
            <widget class="QLabel" name="LabelIndicator4">
             <property name="text">
-             <string>Indicator4</string>
+             <string>Affordability?</string>
             </property>
            </widget>
           </item>
           <item row="2" column="0">
            <widget class="QLabel" name="LabelIndicator1">
             <property name="text">
-             <string>Indicator1</string>
+             <string>Simliar Peeps?</string>
             </property>
            </widget>
           </item>
@@ -241,6 +229,19 @@
            <widget class="QLabel" name="LabelPostalCode">
             <property name="text">
              <string>Postal Code of House</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="2">
+           <widget class="QLCDNumber" name="lcdNumber_2"/>
+          </item>
+          <item row="5" column="2">
+           <widget class="QLCDNumber" name="lcdNumber_4"/>
+          </item>
+          <item row="4" column="0">
+           <widget class="QLabel" name="LabelIndicator3">
+            <property name="text">
+             <string>Accessibility?</string>
             </property>
            </widget>
           </item>
@@ -259,6 +260,11 @@
        <attribute name="title">
         <string>Visualization</string>
        </attribute>
+       <layout class="QGridLayout" name="gridLayout_4">
+        <item row="0" column="0">
+         <widget class="QGraphicsView" name="graphicsView"/>
+        </item>
+       </layout>
       </widget>
      </widget>
     </item>
