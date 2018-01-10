@@ -57,8 +57,8 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
         # http://qt-project.org/doc/qt-4.8/designer-using-a-ui-file.html
         # #widgets-and-dialogs-with-auto-connect
         self.setupUi(self)
-        self.TabPreferences.setTabEnable(False)
-        self.TabMetrics.setTabEnable(False)
+        self.TabPreferences.setEnabled(False)
+        self.TabMetrics.setEnabled(False)
 
         # define globals
         self.iface = iface
@@ -78,6 +78,7 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
         self.ButtonConfirm.clicked.connect(self.Confirm)
         self.ButtonExplore.clicked.connect(self.Explore)
         self.ButtonLocate.clicked.connect(self.Locate)
+        self.ButtonAdjustPreferences.clicked.connect(self.Confirm)
 
 
 
@@ -96,9 +97,10 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
 #######
 
     def Confirm(self):
-        if self.ButtonAgree.checked:
-            self.TabTerms.setTabEnable(False)
-            self.TabPreferences.setTabEnable(True)
+        if self.ButtonAgree.isChecked():
+            self.TabTerms.setEnabled(False)
+            self.TabPreferences.setEnabled(True)
+            self.TabMetrics.setEnabled(False)
 
 
 
@@ -107,8 +109,8 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
         self.pref[1] = self.SliderChild.value()
         self.pref[2] = self.SliderAccess.value()
         self.pref[3] = self.SliderAfford.value()
-        self.setTabEnable(0,False)
-        self.setTabEnable(2,True)
+        self.TabPreferences.setEnabled(False)
+        self.TabMetrics.setEnabled(True)
 
     def Locate(self):
         if not self.EnterPostalCode == "":
@@ -116,8 +118,8 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
             self.pref[1] = self.SliderChild.value()
             self.pref[2] = self.SliderAccess.value()
             self.pref[3] = self.SliderAfford.value()
-            self.TabPreferences.setTabEnable(False)
-            self.TabMetrics.setTabEnable(True)
+            self.TabPreferences.setEnabled(False)
+            self.TabMetrics.setEnabled(True)
 
 
 

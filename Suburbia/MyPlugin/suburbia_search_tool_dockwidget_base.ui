@@ -318,7 +318,7 @@ p, li { white-space: pre-wrap; }
            </widget>
           </item>
           <item row="8" column="0">
-           <widget class="QToolButton" name="AdjustPreferencesButton">
+           <widget class="QToolButton" name="ButtonAdjustPreferences">
             <property name="text">
              <string>...</string>
             </property>
