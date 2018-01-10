@@ -24,7 +24,7 @@
        <string notr="true"/>
       </property>
       <property name="currentIndex">
-       <number>1</number>
+       <number>2</number>
       </property>
       <widget class="QWidget" name="TabTerms">
        <attribute name="title">
@@ -51,7 +51,7 @@
            </widget>
           </item>
           <item row="4" column="1">
-           <widget class="QCheckBox" name="ShareButton">
+           <widget class="QCheckBox" name="ButtonAgree">
             <property name="text">
              <string>Agree!</string>
             </property>
@@ -90,7 +90,7 @@
          </layout>
         </item>
         <item row="2" column="0">
-         <widget class="QPushButton" name="ConfirmTermsButton">
+         <widget class="QPushButton" name="ButtonConfirm">
           <property name="text">
            <string>Confirm!</string>
           </property>
@@ -102,10 +102,10 @@
            <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'.SF NS Text'; font-size:13pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;In order to use Suburbia, we require you to share some information with the municipality of Rotterdam. We use it for urban planning related research and do not share it with third parties, advertisement agencies etc. &lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:12pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Please fill in below and confirm!&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'.SF NS Text'; font-size:12pt;&quot;&gt;In order to use Suburbia, we require you to share some information with the municipality of Rotterdam. We use it for urban planning related research and do not share it with third parties, advertisement agencies etc. &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'.SF NS Text'; font-size:12pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'.SF NS Text'; font-size:12pt;&quot;&gt;Please fill in below and confirm!&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
           </property>
          </widget>
         </item>
@@ -117,7 +117,7 @@ p, li { white-space: pre-wrap; }
        </attribute>
        <layout class="QGridLayout" name="gridLayout_2">
         <item row="2" column="0">
-         <widget class="QPushButton" name="ExploreButton">
+         <widget class="QPushButton" name="ButtonExplore">
           <property name="text">
            <string>Explore!</string>
           </property>
@@ -126,7 +126,7 @@ p, li { white-space: pre-wrap; }
         <item row="1" column="0">
          <layout class="QGridLayout" name="LayoutPreferences">
           <item row="7" column="2">
-           <widget class="QPushButton" name="LocateButton">
+           <widget class="QPushButton" name="ButtonLocate">
             <property name="text">
              <string>Locate!</string>
             </property>
@@ -139,7 +139,7 @@ p, li { white-space: pre-wrap; }
            <widget class="QLCDNumber" name="PriorityIndicator1"/>
           </item>
           <item row="3" column="1">
-           <widget class="QSlider" name="SliderIndicator1">
+           <widget class="QSlider" name="SliderPeople">
             <property name="maximum">
              <number>5</number>
             </property>
@@ -149,7 +149,7 @@ p, li { white-space: pre-wrap; }
            </widget>
           </item>
           <item row="6" column="1">
-           <widget class="QSlider" name="SliderIndicator4">
+           <widget class="QSlider" name="SliderAfford">
             <property name="maximum">
              <number>5</number>
             </property>
@@ -159,7 +159,7 @@ p, li { white-space: pre-wrap; }
            </widget>
           </item>
           <item row="5" column="1">
-           <widget class="QSlider" name="SliderIndicator3">
+           <widget class="QSlider" name="SliderAccess">
             <property name="maximum">
              <number>5</number>
             </property>
@@ -176,7 +176,7 @@ p, li { white-space: pre-wrap; }
            </widget>
           </item>
           <item row="4" column="1">
-           <widget class="QSlider" name="SliderIndicator2">
+           <widget class="QSlider" name="SliderChild">
             <property name="maximum">
              <number>5</number>
             </property>
@@ -230,7 +230,7 @@ p, li { white-space: pre-wrap; }
            </widget>
           </item>
           <item row="1" column="2">
-           <widget class="Line" name="line_2">
+           <widget class="Line" name="LinePostCode">
             <property name="orientation">
              <enum>Qt::Horizontal</enum>
             </property>
