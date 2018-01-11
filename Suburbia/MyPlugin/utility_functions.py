@@ -232,13 +232,13 @@ def getFieldValues(layer, fieldname, null=True, selection=False):
         if null:
             for feature in features:
                 attributes.append(feature.attribute(fieldname))
-                ids.append(feature.id())
+
         else:
             for feature in features:
                 val = feature.attribute(fieldname)
                 if val != NULL:
                     attributes.append(val)
-                    ids.append(feature.id())
+
     return attributes, ids
 
 

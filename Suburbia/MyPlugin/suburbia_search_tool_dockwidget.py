@@ -123,22 +123,31 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
         display_settings = {}
         # define the interval type and number of intervals
         # EqualInterval = 0; Quantile  = 1; Jenks = 2; StdDev = 3; Pretty = 4;
-        display_settings['interval_type'] = 0
-        display_settings['intervals'] = 5
+        display_settings['interval_type'] = 1
+        display_settings['intervals'] = 10
         # define the line width
         display_settings['line_width'] = 0.5
-        ramp = QgsVectorGradientColorRampV2(QtGui.QColor(0, 0, 255, 255), QtGui.QColor(255, 0, 0, 255), False)
+        ramp = QgsVectorGradientColorRampV2(QtGui.QColor(0, 255, 0, 255), QtGui.QColor(255, 0, 0, 255), False)
         # any other stops for intermediate colours for greater control. can be edited or skipped
         ramp.setStops([QgsGradientStop(0.25, QtGui.QColor(0, 255, 255, 255)),
                        QgsGradientStop(0.5, QtGui.QColor(0, 255, 0, 255)),
                        QgsGradientStop(0.75, QtGui.QColor(255, 255, 0, 255))])
         display_settings['ramp'] = ramp
 
-        uf.updateRenderer(layer_ui, attribute_ui, display_settings)
+        # call the update renderer function
+        renderer = uf.updateRenderer(layer_ui, attribute_ui, display_settings)
+        # update the canvas
+        if renderer:
+            layer_ui.setRendererV2(renderer)
+            layer_ui.triggerRepaint()
+            self.iface.legendInterface().refreshLayerSymbology(layer_ui)
+            self.canvas.refresh()
 
-#######
+    #######
 #    Analysis functions
 #######
+
+
 
     def Confirm(self):
         if self.ButtonAgree.isChecked():
@@ -149,7 +158,6 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
 
     def Explore(self):
 
-        layer_explore=  uf.getLegendLayerByName(self.iface, "Rotterdam_Selection")
         self.pref[0] = self.SliderPeople.value()
         self.pref[1] = self.SliderChild.value()
         self.pref[2] = self.SliderAccess.value()
@@ -158,14 +166,17 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
         self.TabMetrics.setEnabled(True)
         self.Tabs.setCurrentIndex(2)
 
+        layer_explore = uf.getLegendLayerByName(self.iface, "Rotterdam_Selection")
+
         uf.updateField(layer_explore,'B1', self.SliderPeople.value())
         uf.updateField(layer_explore, 'B2', self.SliderChild.value())
         uf.updateField(layer_explore, 'B3', self.SliderAccess.value())
-        uf.updateField(layer_explore, 'Score', self.SliderAfford.value())
+        uf.updateField(layer_explore, 'B4', self.SliderAfford.value())
 
-        #uf.updateField(layer_explore, 'Score', 'B2')
-        #self.displayContinuousStyle(layer_explore,'Score')
-        uf.reloadLayer(layer_explore)
+        self.determineScore(layer_explore)
+
+        self.displayContinuousStyle(layer_explore,'Score')
+
 
     def Locate(self):
         if not self.EnterPostalCode == "":
@@ -176,6 +187,25 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
             self.TabPreferences.setEnabled(False)
             self.TabMetrics.setEnabled(True)
             self.Tabs.setCurrentIndex(2)
+
+    def determineScore(self, layer):
+        res = False
+        if layer:
+            provider = layer.dataProvider()
+            caps = provider.capabilities()
+            if caps & QgsVectorDataProvider.AddAttributes:
+                layer.startEditing()
+                for feature in layer.getFeatures():
+                    feature['B1'] = feature['B1'] * feature['25_44_Norm']
+                    feature['B2'] = feature['B2'] * ((feature['KDV_NORM'])+(feature['BSO_NORM']))
+                    feature['B3'] = feature['B3'] * (feature['TREIN_NORM'])
+                    feature['B4'] = feature['B4'] * (feature['WOZ_NORM'])
+                    feature['Score'] = feature['B1']+ feature['B2'] + feature['B3'] + feature['B4']
+                    layer.updateFeature(feature)
+
+                layer.commitChanges()
+            res = True
+        return res
 
 
 
