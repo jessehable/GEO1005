@@ -86,10 +86,9 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
         self.ButtonLocate.clicked.connect(self.Locate)
         self.ButtonAdjustPreferences.clicked.connect(self.Confirm)
 
-        #setup logo
+        #setup GUI features
         self.SuburbiaLogo.setPixmap(QtGui.QPixmap(self.plugin_dir + '/graphics/SuburbiaLogo.png'))
 
-        #setup
         self.FieldGender.addItems([
             self.tr('Male'),
             self.tr('Female'),
@@ -100,6 +99,12 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
             self.tr('College'),
             self.tr('University'), ])
 
+        self.SliderPeople.valueChanged.connect(self.setPrioritynumbers)
+        self.SliderChild.valueChanged.connect(self.setPrioritynumbers)
+        self.SliderAccess.valueChanged.connect(self.setPrioritynumbers)
+        self.SliderAfford.valueChanged.connect(self.setPrioritynumbers)
+
+
 
     def closeEvent(self, event):
         self.closingPlugin.emit()
@@ -108,7 +113,11 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
 #######
 #    Visulisation
 #######
-
+    def setPrioritynumbers(self):
+        self.PriorityPeople.setNum(self.SliderPeople.value())
+        self.PriorityChild.setNum(self.SliderChild.value())
+        self.PriorityAccess.setNum(self.SliderAccess.value())
+        self.PriorityAfford.setNum(self.SliderAfford.value())
 #######
 #    Analysis functions
 #######
