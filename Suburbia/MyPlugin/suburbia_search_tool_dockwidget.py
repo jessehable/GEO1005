@@ -30,14 +30,9 @@ from qgis.core import *
 from qgis.networkanalysis import *
 from qgis.gui import *
 
-
-import numpy
-import matplotlib.pyplot as plt
-from matplotlib.backends.backend_qt4agg import FigureCanvasQTAgg as FigureCanvas
-from matplotlib.figure import Figure
-import math as m
-
 import os.path
+
+from . import utility_functions as uf
 
 
 FORM_CLASS, _ = uic.loadUiType(os.path.join(
@@ -47,6 +42,9 @@ FORM_CLASS, _ = uic.loadUiType(os.path.join(
 class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
 
     closingPlugin = pyqtSignal()
+
+    updateAttribute = QtCore.pyqtSignal(str)
+
 
     def __init__(self, iface, parent=None):
         """Constructor."""
@@ -64,14 +62,14 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
         self.iface = iface
         self.pref =[0,0,0,0]
         self.plugin_dir = os.path.dirname(__file__)
+        self.canvas = self.iface.mapCanvas()
 
         #data
+        self.iface.projectRead.connect(self.updateLayers)
         self.loadDataRotterdam()
-
         self.layers = self.iface.legendInterface().layers()
         self.layer_list = []
         for layer in self.layers:
-            print
             self.layer_list.append(layer.name())
 
         #input
@@ -126,7 +124,7 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
 #######
 #   Data functions
 #######
-    def loadDataRotterdam(self):
+    def loadDataRotterdamsadas(self):
         try:
             data_path = os.path.join(os.path.dirname(__file__), 'sampledata','2018-01-09_Suburbia_2016_v3.qgs')
         except:
@@ -134,12 +132,32 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
         self.iface.addProject(data_path)
         self.updateLayers()
 
+    def loadDataRotterdam(self, filename=""):
+        scenario_open = False
+        scenario_file = os.path.join(os.path.dirname(__file__), 'sampledata', '2018-01-09_Suburbia_2016_v3.qgs')
+        # check if file exists
+        if os.path.isfile(scenario_file):
+            self.iface.addProject(scenario_file)
+            scenario_open = True
+        else:
+            last_dir = uf.getLastDir("SDSS")
+            new_file = QtGui.QFileDialog.getOpenFileName(self, "", last_dir, "(*.qgs)")
+            if new_file:
+                self.iface.addProject(unicode(new_file))
+                scenario_open = True
+        if scenario_open:
+            self.updateLayers()
 
     def updateLayers(self):
-        self.layers = self.iface.legendInterface().layers()
-        self.layer_list = []
-        for layer in self.layers:
-            self.layer_list.append(layer.name())
+        layers = uf.getLegendLayers(self.iface, 'all', 'all')
+        self.selectLayerCombo.clear()
+        if layers:
+            layer_names = uf.getLayersListNames(layers)
+            self.selectLayerCombo.addItems(layer_names)
+            self.setSelectedLayer()
+        else:
+            self.selectAttributeCombo.clear()
+            self.clearChart()
 
     def baseAttributes(self):
         # get summary of the attribute
