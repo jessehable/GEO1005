@@ -124,7 +124,7 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
         self.PriorityAccess.setNum(self.SliderAccess.value())
         self.PriorityAfford.setNum(self.SliderAfford.value())
 
-    def displayContinuousStyle(self, attribute, layer):
+    def displayContinuousStyle(self,layer_ui,attribute_ui):
         # ramp
         display_settings = {}
         # define the interval type and number of intervals
@@ -140,7 +140,7 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
                        QgsGradientStop(0.75, QtGui.QColor(255, 255, 0, 255))])
         display_settings['ramp'] = ramp
 
-        uf.updateRenderer(layer, attribute, display_settings)
+        uf.updateRenderer(layer_ui, attribute_ui, display_settings)
 
 #######
 #    Analysis functions
@@ -164,12 +164,14 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
         self.TabPreferences.setEnabled(False)
         self.TabMetrics.setEnabled(True)
 
-        uf.updateField(layer_explore,'B1', self.SliderPeople.value())
+        uf.updateField(self.layers.name,'B1', self.SliderPeople.value())
         uf.updateField(layer_explore, 'B2', self.SliderChild.value())
         uf.updateField(layer_explore, 'B3', self.SliderAccess.value())
         uf.updateField(layer_explore, 'Score', self.SliderAfford.value())
 
         #uf.updateField(layer_explore, 'Score', 'B2')
+        #self.displayContinuousStyle(layer_explore,'Score')
+        uf.reloadLayer("Rotterdam_Selection")
 
     def Locate(self):
         if not self.EnterPostalCode == "":
@@ -203,7 +205,7 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
             self.updateLayers()
 
     def updateLayers(self):
-        layers = uf.getLegendLayers(self.iface, 'all', 'all')
+        layers = uf.getLegendLayers(self.iface)
         if layers:
             layer_names = uf.getLayersListNames(layers)
             self.setSelectedLayer()
