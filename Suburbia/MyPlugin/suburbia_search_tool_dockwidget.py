@@ -74,8 +74,6 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
 
         #data
         self.loadDataRotterdam()
-        self.iface.projectRead.connect(self.updateLayers)
-        self.iface.newProjectCreated.connect(self.updateLayers)
         self.layers = self.iface.legendInterface().layers()
 
         #input
@@ -164,14 +162,14 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
         self.TabPreferences.setEnabled(False)
         self.TabMetrics.setEnabled(True)
 
-        uf.updateField(self.layers.name,'B1', self.SliderPeople.value())
+        uf.updateField(layer_explore,'B1', self.SliderPeople.value())
         uf.updateField(layer_explore, 'B2', self.SliderChild.value())
         uf.updateField(layer_explore, 'B3', self.SliderAccess.value())
         uf.updateField(layer_explore, 'Score', self.SliderAfford.value())
 
         #uf.updateField(layer_explore, 'Score', 'B2')
         #self.displayContinuousStyle(layer_explore,'Score')
-        uf.reloadLayer("Rotterdam_Selection")
+        uf.reloadLayer(layer_explore)
 
     def Locate(self):
         if not self.EnterPostalCode == "":
@@ -201,38 +199,16 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
             if new_file:
                 self.iface.addProject(unicode(new_file))
                 scenario_open = True
-        if scenario_open:
-            self.updateLayers()
 
-    def updateLayers(self):
-        layers = uf.getLegendLayers(self.iface)
-        if layers:
-            layer_names = uf.getLayersListNames(layers)
-            self.setSelectedLayer()
-        else:
-            self.clearChart()
 
-    def baseAttributes(self):
-        # get summary of the attribute
-        layer = uf.getLegendLayerByName(self.iface, "Rotterdam_gridStatistics")
-        summary = []
-        self.scenarioAttributes["Rotterdam"] = summary
-        # send this to the table
-        self.clearTable()
-        self.updateTable()
 
-    def setSelectedLayer(self):
-        layer_name = "2018-01-09_Rotterdam Selection"
-        layer = uf.getLegendLayerByName(self.iface, layer_name)
-        self.updateAttributes(layer)
 
-    def updateAttributes(self, layer):
-        if layer:
-            fields = uf.getNumericFieldNames(layer)
 
-            if fields:
-                # send list to the report list window
-                print
+
+
+
+
+
 
 
 
