@@ -86,6 +86,9 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
 
         #setup GUI features
         self.SuburbiaLogo.setPixmap(QtGui.QPixmap(self.plugin_dir + '/graphics/SuburbiaLogo.png'))
+        self.LogoPreferences.setPixmap(QtGui.QPixmap(self.plugin_dir + '/graphics/002-settings.png'))
+        self.LogoTerms.setPixmap(QtGui.QPixmap(self.plugin_dir + '/graphics/003-success.png'))
+        self.LogoMetrics.setPixmap(QtGui.QPixmap(self.plugin_dir + '/graphics/001-chart.png'))
 
         self.FieldGender.addItems([
             self.tr('Male'),
@@ -111,7 +114,7 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
         event.accept()
 
 #######
-#    Visulisation
+#    Vizualisation
 #######
     def setPrioritynumbers(self):
         self.PriorityPeople.setNum(self.SliderPeople.value())
