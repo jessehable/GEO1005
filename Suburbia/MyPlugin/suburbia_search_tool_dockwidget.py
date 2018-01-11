@@ -106,6 +106,8 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
 
 
 
+
+
     def closeEvent(self, event):
         self.closingPlugin.emit()
         event.accept()
@@ -118,6 +120,25 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
         self.PriorityChild.setNum(self.SliderChild.value())
         self.PriorityAccess.setNum(self.SliderAccess.value())
         self.PriorityAfford.setNum(self.SliderAfford.value())
+
+    def displayContinuousStyle(self, attribute, layer):
+        # ramp
+        display_settings = {}
+        # define the interval type and number of intervals
+        # EqualInterval = 0; Quantile  = 1; Jenks = 2; StdDev = 3; Pretty = 4;
+        display_settings['interval_type'] = 0
+        display_settings['intervals'] = 5
+        # define the line width
+        display_settings['line_width'] = 0.5
+        ramp = QgsVectorGradientColorRampV2(QtGui.QColor(0, 0, 255, 255), QtGui.QColor(255, 0, 0, 255), False)
+        # any other stops for intermediate colours for greater control. can be edited or skipped
+        ramp.setStops([QgsGradientStop(0.25, QtGui.QColor(0, 255, 255, 255)),
+                       QgsGradientStop(0.5, QtGui.QColor(0, 255, 0, 255)),
+                       QgsGradientStop(0.75, QtGui.QColor(255, 255, 0, 255))])
+        display_settings['ramp'] = ramp
+
+        uf.updateRenderer(layer, attribute, display_settings)
+
 #######
 #    Analysis functions
 #######
@@ -131,12 +152,21 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
 
 
     def Explore(self):
+
+        layer_explore=  uf.getLegendLayerByName(self.iface, "Rotterdam_Selection")
         self.pref[0] = self.SliderPeople.value()
         self.pref[1] = self.SliderChild.value()
         self.pref[2] = self.SliderAccess.value()
         self.pref[3] = self.SliderAfford.value()
         self.TabPreferences.setEnabled(False)
         self.TabMetrics.setEnabled(True)
+
+        uf.updateField(layer_explore,'B1', self.SliderPeople.value())
+        uf.updateField(layer_explore, 'B2', self.SliderChild.value())
+        uf.updateField(layer_explore, 'B3', self.SliderAccess.value())
+        uf.updateField(layer_explore, 'Score', self.SliderAfford.value())
+
+        #uf.updateField(layer_explore, 'Score', 'B2')
 
     def Locate(self):
         if not self.EnterPostalCode == "":
@@ -187,18 +217,20 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
         self.updateTable()
 
     def setSelectedLayer(self):
-        layer_name = "BU_NAAM"
+        layer_name = "2018-01-09_Rotterdam Selection"
         layer = uf.getLegendLayerByName(self.iface, layer_name)
         self.updateAttributes(layer)
 
     def updateAttributes(self, layer):
         if layer:
-            self.clearReport()
-            self.clearChart()
-            fields = uf.getFieldNames(layer)
+            fields = uf.getNumericFieldNames(layer)
+
             if fields:
                 # send list to the report list window
-                self.updateReport(fields)
+                print
+
+
+
 
 
 

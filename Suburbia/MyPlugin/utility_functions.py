@@ -267,10 +267,9 @@ def updateField(layer, name, expression):
         caps = provider.capabilities()
         if caps & QgsVectorDataProvider.AddAttributes:
             #field = layer.fieldNameIndex(name)
-            calc = QgsExpression(expression)
+            value = expression
             layer.startEditing()
             for feature in layer.getFeatures():
-                value = calc.evaluate(feature)
                 feature[name] = value
                 layer.updateFeature(feature)
                 #layer.changeAttributeValue(feature.id(), field, value)
