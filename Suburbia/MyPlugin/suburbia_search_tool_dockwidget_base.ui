@@ -58,7 +58,7 @@
        <string notr="true"/>
       </property>
       <property name="currentIndex">
-       <number>2</number>
+       <number>1</number>
       </property>
       <widget class="QWidget" name="TabTerms">
        <attribute name="title">
@@ -165,7 +165,7 @@
         <item row="1" column="0">
          <layout class="QGridLayout" name="LayoutPreferences">
           <item row="6" column="2">
-           <widget class="QLabel" name="PriotityAfford">
+           <widget class="QLabel" name="PriorityAfford">
             <property name="text">
              <string/>
             </property>
@@ -263,10 +263,10 @@
             </property>
            </widget>
           </item>
-          <item row="1" column="2">
-           <widget class="Line" name="LinePostCode">
-            <property name="orientation">
-             <enum>Qt::Horizontal</enum>
+          <item row="2" column="2">
+           <widget class="QLabel" name="LabelPriority">
+            <property name="text">
+             <string>Priority</string>
             </property>
            </widget>
           </item>
@@ -298,17 +298,17 @@
             </property>
            </widget>
           </item>
-          <item row="2" column="2">
-           <widget class="QLabel" name="LabelPriority">
-            <property name="text">
-             <string>Priority</string>
-            </property>
-           </widget>
-          </item>
           <item row="0" column="1">
            <widget class="QLabel" name="LogoPreferences">
             <property name="text">
              <string>TextLabel</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="2">
+           <widget class="Line" name="LinePostCode">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
             </property>
            </widget>
           </item>
@@ -402,17 +402,17 @@
           </item>
          </layout>
         </item>
-        <item row="1" column="0">
-         <widget class="Line" name="line_3">
-          <property name="orientation">
-           <enum>Qt::Horizontal</enum>
-          </property>
-         </widget>
-        </item>
         <item row="0" column="0">
          <widget class="QLabel" name="LogoMetrics">
           <property name="text">
            <string>TextLabel</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="Line" name="line_3">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
           </property>
          </widget>
         </item>
