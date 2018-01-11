@@ -78,8 +78,6 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
         self.iface.newProjectCreated.connect(self.updateLayers)
         self.layers = self.iface.legendInterface().layers()
 
-
-
         #input
         self.ButtonConfirm.clicked.connect(self.Confirm)
         self.ButtonExplore.clicked.connect(self.Explore)
@@ -103,6 +101,8 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
         self.SliderChild.valueChanged.connect(self.setPrioritynumbers)
         self.SliderAccess.valueChanged.connect(self.setPrioritynumbers)
         self.SliderAfford.valueChanged.connect(self.setPrioritynumbers)
+
+        #self.EnterPostalCode.setValidator(QIntValidator(3000, 3089, this))
 
 
 
