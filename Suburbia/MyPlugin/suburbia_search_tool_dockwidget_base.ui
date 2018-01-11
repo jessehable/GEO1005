@@ -159,6 +159,13 @@ p, li { white-space: pre-wrap; }
         </item>
         <item row="1" column="0">
          <layout class="QGridLayout" name="LayoutPreferences">
+          <item row="6" column="2">
+           <widget class="QLabel" name="PriotityAfford">
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
           <item row="7" column="2">
            <widget class="QPushButton" name="ButtonLocate">
             <property name="text">
@@ -258,10 +265,10 @@ p, li { white-space: pre-wrap; }
             </property>
            </widget>
           </item>
-          <item row="2" column="2">
-           <widget class="QLabel" name="LabelPriority">
+          <item row="5" column="2">
+           <widget class="QLabel" name="PriorityAccess">
             <property name="text">
-             <string>Priority</string>
+             <string/>
             </property>
            </widget>
           </item>
@@ -286,17 +293,10 @@ p, li { white-space: pre-wrap; }
             </property>
            </widget>
           </item>
-          <item row="5" column="2">
-           <widget class="QLabel" name="PriorityAccess">
+          <item row="2" column="2">
+           <widget class="QLabel" name="LabelPriority">
             <property name="text">
-             <string/>
-            </property>
-           </widget>
-          </item>
-          <item row="6" column="2">
-           <widget class="QLabel" name="PriorityAfford">
-            <property name="text">
-             <string/>
+             <string>Priority</string>
             </property>
            </widget>
           </item>
@@ -306,7 +306,7 @@ p, li { white-space: pre-wrap; }
       </widget>
       <widget class="QWidget" name="TabMetrics">
        <attribute name="title">
-        <string>Visualization</string>
+        <string>Metrics</string>
        </attribute>
        <layout class="QGridLayout" name="gridLayout_4">
         <item row="0" column="0">
