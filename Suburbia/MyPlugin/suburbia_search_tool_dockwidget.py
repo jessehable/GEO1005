@@ -63,8 +63,10 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
         # http://qt-project.org/doc/qt-4.8/designer-using-a-ui-file.html
         # #widgets-and-dialogs-with-auto-connect
         self.setupUi(self)
+        self.Tabs.setCurrentIndex(0)
         self.TabPreferences.setEnabled(False)
         self.TabMetrics.setEnabled(False)
+
 
         # define globals
         self.iface = iface
@@ -76,12 +78,6 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
         self.loadDataRotterdam()
         self.layers = self.iface.legendInterface().layers()
 
-        #input
-        self.ButtonConfirm.clicked.connect(self.Confirm)
-        self.ButtonExplore.clicked.connect(self.Explore)
-        self.ButtonLocate.clicked.connect(self.Locate)
-        self.ButtonAdjustPreferences.clicked.connect(self.Confirm)
-
         #setup GUI features
         self.SuburbiaLogo.setPixmap(QtGui.QPixmap(self.plugin_dir + '/graphics/SuburbiaLogo.png'))
         self.LogoPreferences.setPixmap(QtGui.QPixmap(self.plugin_dir + '/graphics/002-settings.png'))
@@ -89,21 +85,39 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
         self.LogoMetrics.setPixmap(QtGui.QPixmap(self.plugin_dir + '/graphics/001-chart.png'))
 
         self.FieldGender.addItems([
+            self.tr('...'),
             self.tr('Male'),
             self.tr('Female'),
             self.tr('Other'), ])
 
         self.FieldEducation.addItems([
+            self.tr('...'),
             self.tr('High School'),
             self.tr('College'),
             self.tr('University'), ])
 
+        ### setup GUI signals
+        #Terms
+        self.ButtonConfirm.setEnabled(False)
+        self.FieldName.textChanged.connect(self.EnableButtonConfirm)
+        self.FieldAge.valueChanged.connect(self.EnableButtonConfirm)
+        self.FieldGender.activated.connect(self.EnableButtonConfirm)
+        self.FieldEducation.activated.connect(self.EnableButtonConfirm)
+        self.ButtonAgree.clicked.connect(self.EnableButtonConfirm)
+        self.ButtonConfirm.clicked.connect(self.Confirm)
+
+        #Preferences
         self.SliderPeople.valueChanged.connect(self.setPrioritynumbers)
         self.SliderChild.valueChanged.connect(self.setPrioritynumbers)
         self.SliderAccess.valueChanged.connect(self.setPrioritynumbers)
         self.SliderAfford.valueChanged.connect(self.setPrioritynumbers)
 
-        self.Tabs.setCurrentIndex(0)
+
+        self.ButtonExplore.clicked.connect(self.Explore)
+        self.ButtonLocate.clicked.connect(self.Locate)
+
+        #Metrics
+        self.ButtonAdjustPreferences.clicked.connect(self.Confirm)
 
     def closeEvent(self, event):
         self.closingPlugin.emit()
@@ -140,11 +154,20 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
 #    Analysis functions
 #######
 
+    def EnableButtonConfirm(self):
+        if self.ButtonAgree.isChecked() == True:
+            if self.FieldName.isModified() == True:
+                if self.FieldAge.value() != 0:
+                    if self.FieldGender.currentIndex() != 0:
+                        if self.FieldEducation.currentIndex() != 0:
+                            self.ButtonConfirm.setEnabled(True)
+        else:
+            self.ButtonConfirm.setEnabled(False)
+
     def Confirm(self):
-        if self.ButtonAgree.isChecked():
-            self.TabTerms.setEnabled(False)
-            self.TabPreferences.setEnabled(True)
-            self.Tabs.setCurrentIndex(1)
+        self.TabTerms.setEnabled(False)
+        self.TabPreferences.setEnabled(True)
+        self.Tabs.setCurrentIndex(1)
 
 
     def Explore(self):
