@@ -103,11 +103,7 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
         self.SliderAccess.valueChanged.connect(self.setPrioritynumbers)
         self.SliderAfford.valueChanged.connect(self.setPrioritynumbers)
 
-        #self.EnterPostalCode.setValidator(QIntValidator(3000, 3089, this))
-
-
-
-
+        self.Tabs.setCurrentIndex(0)
 
     def closeEvent(self, event):
         self.closingPlugin.emit()
@@ -148,8 +144,7 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
         if self.ButtonAgree.isChecked():
             self.TabTerms.setEnabled(False)
             self.TabPreferences.setEnabled(True)
-            self.TabMetrics.setEnabled(False)
-
+            self.Tabs.setCurrentIndex(1)
 
 
     def Explore(self):
@@ -161,6 +156,7 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
         self.pref[3] = self.SliderAfford.value()
         self.TabPreferences.setEnabled(False)
         self.TabMetrics.setEnabled(True)
+        self.Tabs.setCurrentIndex(2)
 
         uf.updateField(layer_explore,'B1', self.SliderPeople.value())
         uf.updateField(layer_explore, 'B2', self.SliderChild.value())
@@ -179,6 +175,7 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
             self.pref[3] = self.SliderAfford.value()
             self.TabPreferences.setEnabled(False)
             self.TabMetrics.setEnabled(True)
+            self.Tabs.setCurrentIndex(2)
 
 
 
