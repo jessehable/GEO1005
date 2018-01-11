@@ -160,8 +160,6 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
     #######
 #    Analysis functions
 #######
-
-<<<<<<< HEAD
     def EnableButtonConfirm(self):
         if self.ButtonAgree.isChecked() == True:
             if self.FieldName.isModified() == True:
@@ -171,9 +169,7 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
                             self.ButtonConfirm.setEnabled(True)
         else:
             self.ButtonConfirm.setEnabled(False)
-=======
 
->>>>>>> df8b8b837b209a2d150fafc921d2e3c74959d90e
 
     def Confirm(self):
         self.TabTerms.setEnabled(False)
