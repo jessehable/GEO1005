@@ -10,7 +10,6 @@
         copyright            : (C) 2015 by Jorge Gil, TU Delft
         email                : j.a.lopesgil@tudelft.nl
  ***************************************************************************/
-
 /***************************************************************************
  *                                                                         *
  *   This program is free software; you can redistribute it and/or modify  *
@@ -30,6 +29,12 @@ import numpy as np
 import math
 import os.path
 
+try:
+    import networkx as nx
+    has_networkx = True
+except ImportError, e:
+    has_networkx = False
+
 
 #
 # Layer functions
@@ -42,6 +47,7 @@ def getLegendLayers(iface, geom='all', provider='all'):
     :param provider: string
     :return: list QgsVectorLayer
     """
+    print 'getlegendlayers.........'
     layers_list = []
     for layer in iface.legendInterface().layers():
         add_layer = False
@@ -51,6 +57,7 @@ def getLegendLayers(iface, geom='all', provider='all'):
                     add_layer = True
         if add_layer:
             layers_list.append(layer)
+    print 'getlegendlayersfinished.........'
     return layers_list
 
 
@@ -151,10 +158,10 @@ def fieldExists(layer, name):
 
 
 def getFieldNames(layer):
-    field_names = []
+    fields_list = []
     if layer and layer.dataProvider():
-        field_names = [field.name() for field in layer.dataProvider().fields()]
-    return field_names
+        fields_list = [field.name() for field in layer.dataProvider().fields()]
+    return fields_list
 
 
 def getNumericFields(layer, type='all'):
@@ -270,8 +277,6 @@ def updateField(layer, name, expression):
             layer.commitChanges()
             res = True
     return res
-
-
 #
 # Feature functions
 #
@@ -373,14 +378,6 @@ def getAllFeatureIds(layer):
     return ids
 
 
-def getAllFeatureValues(layer, name):
-    values = []
-    if layer:
-        features = layer.getFeatures()
-        values = [feature.attribute(name) for feature in features]
-    return values
-
-
 def getAllFeatureSymbols(layer):
     symbols = {}
     if layer:
@@ -480,7 +477,6 @@ def updateRenderer(layer, attribute, settings):
     """
     Creates a renderer for the layer based on this, and applies it
     The renderer uses GradientColourRamp to calculate the symbol colours
-
     @param layer: the selected QgsVectorLayer object
     """
     geometry = layer.geometryType()
@@ -616,11 +612,39 @@ def calculateServiceArea(graph, tied_points, origin, cutoff, impedance=0):
             i = 0
             while i < len(cost):
                 if cost[i] <= cutoff and tree[i] != -1:
-                    points[str(i)]=((graph.vertex(i).point()),cost)
+                    points[str(i)]=((graph.vertex(i).point()),cost[i])
+                    print points[str(i)]
                 i += 1
 
     return points
 
+def calculateStationDistance(graph, tied_points, cutoff, impedance=0):
+    points = []
+    for from_point in tied_points:
+        print "volgende node"
+        # analyse graph
+        if graph:
+            from_id = graph.findVertex(from_point)
+            (tree, cost) = QgsGraphAnalyzer.dijkstra(graph, from_id, impedance)
+            i = 0
+            while i < len(cost):
+                if cost[i] <= cutoff and tree[i] != -1:
+                    points.append((graph.vertex(i).point(),cost[i]))
+                i += 1
+
+    # sort the points
+    for point in tied_points:
+        points.append((point,0.0))
+    points = sorted(points, key = lambda x : (x[0][0],x[0][1],x[1]))
+
+    # filter out unique points with lowest cost
+    unique_points = []
+    unique_points.append(points[0])
+    for i in range(1,len(points)-1):
+        if not points[i][0] == points[i-1][0]:
+            unique_points.append(points[i])
+
+    return unique_points
 
 #
 # General functions
@@ -628,7 +652,7 @@ def calculateServiceArea(graph, tied_points, origin, cutoff, impedance=0):
 def getLastDir(tool_name=''):
     path = ''
     settings = QtCore.QSettings(tool_name,"")
-    path = settings.value("lastUsedDir",str(""))
+    settings.value("lastUsedDir",str(""))
     return path
 
 
@@ -694,6 +718,44 @@ def createIndex(layer):
         return None
 
 
+#------------------------------
+# General database functions
+#------------------------------
+def getDBLayerConnection(layer):
+    provider = layer.providerType()
+    uri = QgsDataSourceURI(layer.dataProvider().dataSourceUri())
+    if provider == 'spatialite':
+        path = uri.database()
+        connection_object = getSpatialiteConnection(path)
+    elif provider == 'postgres':
+        connection_object = pgsql.connect(uri.connectionInfo().encode('utf-8'))
+    else:
+        connection_object = None
+    return connection_object
+
+
+def getSpatialiteConnection(path):
+    try:
+        connection=sqlite.connect(path)
+    except sqlite.OperationalError, error:
+        #pop_up_error("Unable to connect to selected database: \n %s" % error)
+        connection = None
+    return connection
+
+
+def getDBLayerTableName(layer):
+    uri = QgsDataSourceURI(layer.dataProvider().dataSourceUri())
+    return uri.table()
+
+
+def getDBLayerGeometryColumn(layer):
+    uri = QgsDataSourceURI(layer.dataProvider().dataSourceUri())
+    return uri.geometryColumn()
+
+
+def getDBLayerPrimaryKey(layer):
+    uri = QgsDataSourceURI(layer.dataProvider().dataSourceUri())
+    return uri.key()
 
 
 #------------------------------
@@ -782,7 +844,7 @@ def createTempLayerFull(name, srid, attributes, types, values, coords):
             pass
         # add attribute values
         feat.setAttributes(list(val))
-        features.append(feat);
+        features.append(feat)
     # add the features to the layer
     try:
         provider.addFeatures(features)
@@ -792,7 +854,7 @@ def createTempLayerFull(name, srid, attributes, types, values, coords):
     vlayer.commitChanges()
     vlayer.updateExtents()
     if not vlayer.isValid():
-        print "Layer failed to create!"
+        print "Layer failed to load!"
         return None
     return vlayer
 
@@ -949,4 +1011,3 @@ def addShapeFileAttributes(layer, attributes, types, values):
             if res:
                 layer.updateFields()
     return res
-

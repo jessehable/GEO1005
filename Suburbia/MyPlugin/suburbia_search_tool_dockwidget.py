@@ -32,6 +32,14 @@ from qgis.gui import *
 
 import os.path
 
+import resources
+
+import os
+import os.path
+import random
+import csv
+import time
+
 from . import utility_functions as uf
 
 
@@ -65,12 +73,12 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
         self.canvas = self.iface.mapCanvas()
 
         #data
-        self.iface.projectRead.connect(self.updateLayers)
         self.loadDataRotterdam()
+        self.iface.projectRead.connect(self.updateLayers)
+        self.iface.newProjectCreated.connect(self.updateLayers)
         self.layers = self.iface.legendInterface().layers()
-        self.layer_list = []
-        for layer in self.layers:
-            self.layer_list.append(layer.name())
+
+
 
         #input
         self.ButtonConfirm.clicked.connect(self.Confirm)
@@ -124,13 +132,6 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
 #######
 #   Data functions
 #######
-    def loadDataRotterdamsadas(self):
-        try:
-            data_path = os.path.join(os.path.dirname(__file__), 'sampledata','2018-01-09_Suburbia_2016_v3.qgs')
-        except:
-            self.errorOccurs()
-        self.iface.addProject(data_path)
-        self.updateLayers()
 
     def loadDataRotterdam(self, filename=""):
         scenario_open = False
@@ -150,13 +151,10 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
 
     def updateLayers(self):
         layers = uf.getLegendLayers(self.iface, 'all', 'all')
-        self.selectLayerCombo.clear()
         if layers:
             layer_names = uf.getLayersListNames(layers)
-            self.selectLayerCombo.addItems(layer_names)
             self.setSelectedLayer()
         else:
-            self.selectAttributeCombo.clear()
             self.clearChart()
 
     def baseAttributes(self):
@@ -167,4 +165,20 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
         # send this to the table
         self.clearTable()
         self.updateTable()
+
+    def setSelectedLayer(self):
+        layer_name = "BU_NAAM"
+        layer = uf.getLegendLayerByName(self.iface, layer_name)
+        self.updateAttributes(layer)
+
+    def updateAttributes(self, layer):
+        if layer:
+            self.clearReport()
+            self.clearChart()
+            fields = uf.getFieldNames(layer)
+            if fields:
+                # send list to the report list window
+                self.updateReport(fields)
+
+
 
