@@ -80,8 +80,19 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
         self.ButtonLocate.clicked.connect(self.Locate)
         self.ButtonAdjustPreferences.clicked.connect(self.Confirm)
 
+        #setup logo
+        self.SuburbiaLogo.setPixmap(QtGui.QPixmap(self.plugin_dir + '/graphics/SuburbiaLogo.png'))
 
+        #setup
+        self.FieldGender.addItems([
+            self.tr('Male'),
+            self.tr('Female'),
+            self.tr('Other'), ])
 
+        self.FieldEducation.addItems([
+            self.tr('High School'),
+            self.tr('College'),
+            self.tr('University'), ])
 
 
     def closeEvent(self, event):
