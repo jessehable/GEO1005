@@ -197,6 +197,7 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
     def Confirm(self):
         self.TabTerms.setEnabled(False)
         self.TabPreferences.setEnabled(True)
+        # self.SaveUserPreferences
         self.Tabs.setCurrentIndex(1)
 
 
@@ -270,6 +271,11 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
             if new_file:
                 self.iface.addProject(unicode(new_file))
                 scenario_open = True
+
+########
+#   Urban planning functions
+    # Save user characteristics
+    #def SaveUserPreferences(self):
 
 
 
