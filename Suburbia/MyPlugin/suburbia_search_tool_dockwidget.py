@@ -111,10 +111,7 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
         self.FieldEducation.activated.connect(self.EnableButtonConfirm)
         self.ButtonAgree.clicked.connect(self.EnableButtonConfirm)
         self.ButtonConfirm.clicked.connect(self.Confirm)
-<<<<<<< HEAD
         self.ButtonConfirm.clicked.connect(self.SaveUserInfo)
-=======
->>>>>>> 56ac2955be21adb5817fc1a2131858b4017c942f
         self.InfoTerms.clicked.connect(self.OpenInfoTerms)
 
         #Preferences
@@ -251,7 +248,6 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
 
 
     def Locate(self):
-<<<<<<< HEAD
 
         self.pref[0] = self.SliderPeople.value()
         self.pref[1] = self.SliderChild.value()
@@ -281,7 +277,6 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
 
 
 
-=======
         if not self.EnterPostalCode == "":
             self.pref[0] = self.SliderPeople.value()
             self.pref[1] = self.SliderChild.value()
@@ -290,7 +285,7 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
             self.TabPreferences.setEnabled(False)
             self.TabMetrics.setEnabled(True)
             self.Tabs.setCurrentIndex(2)
->>>>>>> 56ac2955be21adb5817fc1a2131858b4017c942f
+
 
     def determineScore(self, layer):
         res = False
