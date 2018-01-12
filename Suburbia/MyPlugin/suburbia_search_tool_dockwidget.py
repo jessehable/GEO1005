@@ -32,6 +32,9 @@ from qgis.gui import *
 
 import os.path
 
+# matplotlib for the charts
+from matplotlib.backends.backend_qt4agg import FigureCanvasQTAgg as FigureCanvas
+from matplotlib.figure import Figure
 import resources
 
 import os
@@ -119,6 +122,18 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
         #Metrics
         self.ButtonAdjustPreferences.clicked.connect(self.Confirm)
 
+        #Explore
+
+        self.pointTool = QgsMapToolEmitPoint(self.canvas)
+
+        self.pointTool.canvasClicked.connect(self.display_point)
+
+        self.canvas.setMapTool(self.pointTool)
+
+
+
+
+
     def closeEvent(self, event):
         self.closingPlugin.emit()
         event.accept()
@@ -157,7 +172,15 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
             self.iface.legendInterface().refreshLayerSymbology(layer_ui)
             self.canvas.refresh()
 
-    #######
+    def show(self,feature):
+        self.
+        self..setNum(feature[1])
+        self..setNum(feature[8])
+        self..setNum(feature[6])
+        self..setNum(feature[7])
+        self..setNum(feature[4])
+
+#######
 #    Analysis functions
 #######
     def EnableButtonConfirm(self):
@@ -227,6 +250,44 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
                 layer.commitChanges()
             res = True
         return res
+
+
+    def display_point(self,point):
+
+        coords = "Map Coordinates: {:.4f}, {:.4f}".format(point.x(), point.y())
+
+        print coords
+        shortestDistance = float("inf")
+        closestFeatureId = 0
+
+        layer = uf.getLegendLayerByName(self.iface, "Rotterdam_Selection")
+
+        if str(layer) != "None":
+            pPnt = QgsGeometry.fromPoint(QgsPoint(point.x(), point.y()))
+            feats = [feat for feat in layer.getFeatures()]
+            for feat in feats:
+                if pPnt.within(feat.geometry()):
+                    closestFeatureId = feat.id()
+                    break
+
+            testlength = str(closestFeatureId)
+
+        if len(testlength) > 0:
+            fid = closestFeatureId
+            iterator = layer.getFeatures(QgsFeatureRequest().setFilterFid(fid))
+            featuree = next(iterator)
+            attrs = featuree.attributes()
+            self.show(attrs)
+            parishName = (attrs[1])
+
+
+
+        else:
+            parishName = None
+
+        print parishName
+
+
 
 
 
