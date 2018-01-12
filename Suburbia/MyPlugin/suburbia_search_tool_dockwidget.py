@@ -129,14 +129,7 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
         self.InfoMetrics.clicked.connect(self.OpenInfoMetrics)
         self.ButtonNewUser.clicked.connect(self.NewUser)
 
-    def OpenInfoTerms(self):
-        webbrowser.open('https://github.com/TUdent/2016_Group-3_TOD_checker/wiki', new=2)
 
-    def OpenInfoPreferences(self):
-        webbrowser.open('https://github.com/TUdent/2016_Group-3_TOD_checker/wiki', new=2)
-
-    def OpenInfoMetrics(self):
-        webbrowser.open('https://github.com/TUdent/2016_Group-3_TOD_checker/wiki', new=2)
 
 
         #Explore
@@ -146,9 +139,6 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
         self.pointTool.canvasClicked.connect(self.display_point)
 
         self.canvas.setMapTool(self.pointTool)
-
-
-
 
 
     def closeEvent(self, event):
@@ -164,6 +154,16 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
 #######
 #    Vizualisation
 #######
+
+    def OpenInfoTerms(self):
+        webbrowser.open('https://github.com/TUdent/2016_Group-3_TOD_checker/wiki', new=2)
+
+    def OpenInfoPreferences(self):
+        webbrowser.open('https://github.com/TUdent/2016_Group-3_TOD_checker/wiki', new=2)
+
+    def OpenInfoMetrics(self):
+        webbrowser.open('https://github.com/TUdent/2016_Group-3_TOD_checker/wiki', new=2)
+
     def setPrioritynumbers(self):
         self.PriorityPeople.setNum(self.SliderPeople.value())
         self.PriorityChild.setNum(self.SliderChild.value())
@@ -196,12 +196,12 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
             self.canvas.refresh()
 
     def showresults(self,feature):
-        self.progressBar.setProgress(feature[18])
-        self.DispplayNeighborhoodName.setNum(feature[1])
-        self.ValuePeople.setNum(feature[8])
-        self.ValueChild.setNum(feature[6])
-        self.ValueAccess.setNum(feature[7])
-        self.ValueAfford.setNum(feature[4])
+        self.progressBar.setValue(int(feature[18]))
+        self.DisplayNeighborhoodName.setText(str(feature[1]))
+        self.ValuePeople.setNum(int(feature[8]))
+        self.ValueChild.setNum(int(feature[6]))
+        self.ValueAccess.setNum(int(feature[7]))
+        self.ValueAfford.setNum(int(feature[4]))
 
 #######
 #    Analysis functions
