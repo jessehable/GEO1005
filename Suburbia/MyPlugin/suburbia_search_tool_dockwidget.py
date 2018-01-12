@@ -76,6 +76,7 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
         self.pref =[0,0,0,0]
         self.plugin_dir = os.path.dirname(__file__)
         self.canvas = self.iface.mapCanvas()
+        self.userdata = []
 
         #data
         self.loadDataRotterdam()
@@ -129,17 +130,14 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
         self.ButtonAdjustPreferences.clicked.connect(self.Confirm)
         self.InfoMetrics.clicked.connect(self.OpenInfoMetrics)
         self.ButtonNewUser.clicked.connect(self.NewUser)
-
-
-
+        self.ButtonSaveUserInfo.clicked.connect(self.CreateUrbanPlanningCSV)
 
         #Explore
 
         self.pointTool = QgsMapToolEmitPoint(self.canvas)
-
         self.pointTool.canvasClicked.connect(self.display_point)
-
         self.canvas.setMapTool(self.pointTool)
+
 
 
     def closeEvent(self, event):
@@ -226,9 +224,26 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
     def Confirm(self):
         self.TabTerms.setEnabled(False)
         self.TabPreferences.setEnabled(True)
-        # self.SaveUserPreferences
         self.Tabs.setCurrentIndex(1)
+        name = self.FieldName.text()
+        age = self.FieldAge.text()
+        gender = self.FieldGender.currentText()
+        education = self.FieldEducation.currentText()
+        new_row = [name,age,gender,education]
+        self.userdata.append(new_row)
 
+    #def SaveUserInfo(self):
+        # open csv file for writing
+        #writer = csv.writer(open(unicode(path_csv)))
+        #new_row=[]
+        #new_row.append(self.FieldName.text())
+        #ew_row.append(self.FieldAge.text())
+        #writer.writerow(new_row)
+
+
+        #file = open(unicode(path),'w')
+        #file.write(age)
+        #file.close()
 
     def Explore(self):
 
@@ -279,6 +294,7 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
         print
         feat
         self.showresults(feat)
+
 
     def determineScore(self, layer):
         res = False
@@ -378,9 +394,22 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
 
 ########
 #   Urban planning functions
+    #Save user characteristics
+
+    def CreateUrbanPlanningCSV(self):
+        path_csv = QtGui.QFileDialog.getSaveFileName(self, 'Save File', '', 'CSV(*.csv)')
+
+        if path_csv:
+            with open(unicode(path_csv), 'wb') as stream:
+                # open csv file for writing
+                writer = csv.writer(stream)
+                header= ['Name','Age','Gender','Education']
+                writer.writerow(header)
+                for i in self.userdata:
+                    writer.writerow(i)
+
     # Save user characteristics
     #def SaveUserPreferences(self):
-
 
 
 
