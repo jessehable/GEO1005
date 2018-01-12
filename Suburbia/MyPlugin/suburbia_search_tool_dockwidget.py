@@ -104,14 +104,14 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
 
         ### setup GUI signals
         #Terms
-        #self.ButtonConfirm.setEnabled(False)
+        self.ButtonConfirm.setEnabled(False)
         self.FieldName.textChanged.connect(self.EnableButtonConfirm)
         self.FieldAge.valueChanged.connect(self.EnableButtonConfirm)
         self.FieldGender.activated.connect(self.EnableButtonConfirm)
         self.FieldEducation.activated.connect(self.EnableButtonConfirm)
         self.ButtonAgree.clicked.connect(self.EnableButtonConfirm)
         self.ButtonConfirm.clicked.connect(self.Confirm)
-        #self.ButtonConfirm.clicked.connect(self.SaveUserInfo)
+        self.ButtonConfirm.clicked.connect(self.SaveUserInfo)
         self.InfoTerms.clicked.connect(self.OpenInfoTerms)
 
         #Preferences
@@ -123,7 +123,7 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
 
 
         self.ButtonExplore.clicked.connect(self.Explore)
-        self.ButtonLocate.clicked.connect(self.Locate)
+        #self.ButtonLocate.clicked.connect(self.Locate)
 
         #Metrics
         self.ButtonAdjustPreferences.clicked.connect(self.Confirm)
@@ -253,16 +253,33 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
 
 
     def Locate(self):
-        if not self.EnterPostalCode == "":
-            self.pref[0] = self.SliderPeople.value()
-            self.pref[1] = self.SliderChild.value()
-            self.pref[2] = self.SliderAccess.value()
-            self.pref[3] = self.SliderAfford.value()
-            self.TabPreferences.setEnabled(False)
-            self.TabMetrics.setEnabled(True)
-            self.Tabs.setCurrentIndex(2)
 
-            as  
+        self.pref[0] = self.SliderPeople.value()
+        self.pref[1] = self.SliderChild.value()
+        self.pref[2] = self.SliderAccess.value()
+        self.pref[3] = self.SliderAfford.value()
+        self.TabPreferences.setEnabled(False)
+        self.TabMetrics.setEnabled(True)
+        self.Tabs.setCurrentIndex(2)
+
+        postalcode = self.spinBox.value()
+
+        layer_explore = uf.getLegendLayerByName(self.iface, "Rotterdam_Selection")
+
+        uf.updateField(layer_explore, 'B1', self.SliderPeople.value())
+        uf.updateField(layer_explore, 'B2', self.SliderChild.value())
+        uf.updateField(layer_explore, 'B3', self.SliderAccess.value())
+        uf.updateField(layer_explore, 'B4', self.SliderAfford.value())
+
+        self.determineScore(layer_explore)
+        print uf.getFieldNames(layer_explore)
+        self.displayContinuousStyle(layer_explore, 'Score')
+        expr = QgsExpression("\"POSTCODE_I\"='{}'".format(postalcode))
+        feat = uf.getFeaturesByExpression(layer_explore, expr)
+        print feat
+        self.showresults(feat)
+
+
 
 
 
