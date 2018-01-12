@@ -32,6 +32,9 @@ from qgis.gui import *
 
 import os.path
 
+# matplotlib for the charts
+from matplotlib.backends.backend_qt4agg import FigureCanvasQTAgg as FigureCanvas
+from matplotlib.figure import Figure
 import resources
 import webbrowser
 
@@ -126,14 +129,16 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
         self.InfoMetrics.clicked.connect(self.OpenInfoMetrics)
         self.ButtonNewUser.clicked.connect(self.NewUser)
 
-    def OpenInfoTerms(self):
-        webbrowser.open('https://github.com/TUdent/2016_Group-3_TOD_checker/wiki', new=2)
 
-    def OpenInfoPreferences(self):
-        webbrowser.open('https://github.com/TUdent/2016_Group-3_TOD_checker/wiki', new=2)
 
-    def OpenInfoMetrics(self):
-        webbrowser.open('https://github.com/TUdent/2016_Group-3_TOD_checker/wiki', new=2)
+
+        #Explore
+
+        self.pointTool = QgsMapToolEmitPoint(self.canvas)
+
+        self.pointTool.canvasClicked.connect(self.display_point)
+
+        self.canvas.setMapTool(self.pointTool)
 
 
     def closeEvent(self, event):
@@ -149,6 +154,16 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
 #######
 #    Vizualisation
 #######
+
+    def OpenInfoTerms(self):
+        webbrowser.open('https://github.com/TUdent/2016_Group-3_TOD_checker/wiki', new=2)
+
+    def OpenInfoPreferences(self):
+        webbrowser.open('https://github.com/TUdent/2016_Group-3_TOD_checker/wiki', new=2)
+
+    def OpenInfoMetrics(self):
+        webbrowser.open('https://github.com/TUdent/2016_Group-3_TOD_checker/wiki', new=2)
+
     def setPrioritynumbers(self):
         self.PriorityPeople.setNum(self.SliderPeople.value())
         self.PriorityChild.setNum(self.SliderChild.value())
@@ -180,7 +195,15 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
             self.iface.legendInterface().refreshLayerSymbology(layer_ui)
             self.canvas.refresh()
 
-    #######
+    def showresults(self,feature):
+        self.progressBar.setValue(int(feature[18]))
+        self.DisplayNeighborhoodName.setText(str(feature[1]))
+        self.ValuePeople.setNum(int(feature[8]))
+        self.ValueChild.setNum(int(feature[6]))
+        self.ValueAccess.setNum(int(feature[7]))
+        self.ValueAfford.setNum(int(feature[4]))
+
+#######
 #    Analysis functions
 #######
     def EnableButtonConfirm(self):
@@ -251,6 +274,44 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
                 layer.commitChanges()
             res = True
         return res
+
+
+    def display_point(self,point):
+
+        coords = "Map Coordinates: {:.4f}, {:.4f}".format(point.x(), point.y())
+
+        print coords
+        shortestDistance = float("inf")
+        closestFeatureId = 0
+
+        layer = uf.getLegendLayerByName(self.iface, "Rotterdam_Selection")
+
+        if str(layer) != "None":
+            pPnt = QgsGeometry.fromPoint(QgsPoint(point.x(), point.y()))
+            feats = [feat for feat in layer.getFeatures()]
+            for feat in feats:
+                if pPnt.within(feat.geometry()):
+                    closestFeatureId = feat.id()
+                    break
+
+            testlength = str(closestFeatureId)
+
+        if len(testlength) > 0:
+            fid = closestFeatureId
+            iterator = layer.getFeatures(QgsFeatureRequest().setFilterFid(fid))
+            featuree = next(iterator)
+            attrs = featuree.attributes()
+            self.showresults(attrs)
+            parishName = (attrs[1])
+
+
+
+        else:
+            parishName = None
+
+        print parishName
+
+
 
 
 
