@@ -195,13 +195,13 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
             self.iface.legendInterface().refreshLayerSymbology(layer_ui)
             self.canvas.refresh()
 
-    def show(self,feature):
-        self.
-        self..setNum(feature[1])
-        self..setNum(feature[8])
-        self..setNum(feature[6])
-        self..setNum(feature[7])
-        self..setNum(feature[4])
+    def showresults(self,feature):
+        self.progressBar.setProgress(feature[18])
+        self.DispplayNeighborhoodName.setNum(feature[1])
+        self.ValuePeople.setNum(feature[8])
+        self.ValueChild.setNum(feature[6])
+        self.ValueAccess.setNum(feature[7])
+        self.ValueAfford.setNum(feature[4])
 
 #######
 #    Analysis functions
@@ -300,7 +300,7 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
             iterator = layer.getFeatures(QgsFeatureRequest().setFilterFid(fid))
             featuree = next(iterator)
             attrs = featuree.attributes()
-            self.show(attrs)
+            self.showresults(attrs)
             parishName = (attrs[1])
 
 
