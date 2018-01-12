@@ -104,13 +104,14 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
 
         ### setup GUI signals
         #Terms
-        self.ButtonConfirm.setEnabled(False)
+        #self.ButtonConfirm.setEnabled(False)
         self.FieldName.textChanged.connect(self.EnableButtonConfirm)
         self.FieldAge.valueChanged.connect(self.EnableButtonConfirm)
         self.FieldGender.activated.connect(self.EnableButtonConfirm)
         self.FieldEducation.activated.connect(self.EnableButtonConfirm)
         self.ButtonAgree.clicked.connect(self.EnableButtonConfirm)
         self.ButtonConfirm.clicked.connect(self.Confirm)
+        #self.ButtonConfirm.clicked.connect(self.SaveUserInfo)
         self.InfoTerms.clicked.connect(self.OpenInfoTerms)
 
         #Preferences
@@ -323,20 +324,29 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
         scenario_open = False
         scenario_file = os.path.join(os.path.dirname(__file__), 'sampledata', '2018-01-09_Suburbia_2016_v3.qgs')
         # check if file exists
-        if os.path.isfile(scenario_file):
-            self.iface.addProject(scenario_file)
-            scenario_open = True
-        else:
-            last_dir = uf.getLastDir("SDSS")
-            new_file = QtGui.QFileDialog.getOpenFileName(self, "", last_dir, "(*.qgs)")
-            if new_file:
-                self.iface.addProject(unicode(new_file))
-                scenario_open = True
 
 ########
 #   Urban planning functions
-    # Save user characteristics
-    #def SaveUserPreferences(self):
+    #Save user characteristics
+    def SaveUserInfo(self):
+        path = QtGui.QFileDialog.getSaveFileName(self, 'Save File', '', 'CSV(*.csv)')
+
+        if path:
+            with open(unicode(path), 'wb') as stream:
+                # open csv file for writing
+                writer = csv.writer(stream)
+                new_row = []
+                new_row.append(self.FieldName.text())
+                new_row.append(self.FieldAge.text())
+                writer.writerow(new_row)
+
+
+        #file = open(unicode(path),'w')
+        #file.write(age)
+        #file.close()
+
+
+
 
 
 
