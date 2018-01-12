@@ -112,7 +112,6 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
         self.FieldEducation.activated.connect(self.EnableButtonConfirm)
         self.ButtonAgree.clicked.connect(self.EnableButtonConfirm)
         self.ButtonConfirm.clicked.connect(self.Confirm)
-        self.ButtonConfirm.clicked.connect(self.SaveUserInfo)
         self.InfoTerms.clicked.connect(self.OpenInfoTerms)
 
         #Preferences
@@ -301,12 +300,6 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
             self.TabMetrics.setEnabled(True)
             self.Tabs.setCurrentIndex(2)
 
-<<<<<<< HEAD
-
-
-=======
->>>>>>> 5785cdc7645d0194cef68a626b2c2e33109b4a59
-
     def determineScore(self, layer):
         res = False
         if layer:
@@ -386,8 +379,7 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
 
 ########
 #   Urban planning functions
-<<<<<<< HEAD
-    #Save user characteristics
+
 
     def CreateUrbanPlanningCSV(self):
         path_csv = QtGui.QFileDialog.getSaveFileName(self, 'Save File', '', 'CSV(*.csv)')
@@ -400,7 +392,7 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
                 writer.writerow(header)
                 for i in self.userdata:
                     writer.writerow(i)
-=======
+
     # Save user characteristics
     #def SaveUserPreferences(self):
 
@@ -414,8 +406,6 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
 
 
 
-
->>>>>>> 5785cdc7645d0194cef68a626b2c2e33109b4a59
 
 
 
