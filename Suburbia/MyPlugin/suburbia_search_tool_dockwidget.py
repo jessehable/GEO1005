@@ -294,21 +294,6 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
         feat
         self.showresults(feat)
 
-
-<<<<<<< HEAD
-
-
-        if not self.EnterPostalCode == "":
-            self.pref[0] = self.SliderPeople.value()
-            self.pref[1] = self.SliderChild.value()
-            self.pref[2] = self.SliderAccess.value()
-            self.pref[3] = self.SliderAfford.value()
-            self.TabPreferences.setEnabled(False)
-            self.TabMetrics.setEnabled(True)
-            self.Tabs.setCurrentIndex(2)
-
-=======
->>>>>>> 827f8352142958b6aa8275524555807b397ec18d
     def determineScore(self, layer):
         res = False
         if layer:
@@ -407,11 +392,6 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
 
 ########
 #   Urban planning functions
-<<<<<<< HEAD
-
-=======
-    #Save user characteristics
->>>>>>> 827f8352142958b6aa8275524555807b397ec18d
 
     def CreateUrbanPlanningCSV(self):
         path_csv = QtGui.QFileDialog.getSaveFileName(self, 'Save File', '', 'CSV(*.csv)')
