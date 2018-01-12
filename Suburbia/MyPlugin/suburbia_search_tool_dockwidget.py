@@ -36,6 +36,7 @@ import os.path
 from matplotlib.backends.backend_qt4agg import FigureCanvasQTAgg as FigureCanvas
 from matplotlib.figure import Figure
 import resources
+import webbrowser
 
 import os
 import os.path
@@ -70,7 +71,6 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
         self.TabPreferences.setEnabled(False)
         self.TabMetrics.setEnabled(False)
 
-
         # define globals
         self.iface = iface
         self.pref =[0,0,0,0]
@@ -86,6 +86,9 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
         self.LogoPreferences.setPixmap(QtGui.QPixmap(self.plugin_dir + '/graphics/002-settings.png'))
         self.LogoTerms.setPixmap(QtGui.QPixmap(self.plugin_dir + '/graphics/003-success.png'))
         self.LogoMetrics.setPixmap(QtGui.QPixmap(self.plugin_dir + '/graphics/001-chart.png'))
+        self.InfoTerms.setIcon(QtGui.QIcon(self.plugin_dir + '/graphics/info.png'))
+        self.InfoPreferences.setIcon(QtGui.QIcon(self.plugin_dir + '/graphics/info.png'))
+        self.InfoMetrics.setIcon(QtGui.QIcon(self.plugin_dir + '/graphics/info.png'))
 
         self.FieldGender.addItems([
             self.tr('...'),
@@ -108,12 +111,14 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
         self.FieldEducation.activated.connect(self.EnableButtonConfirm)
         self.ButtonAgree.clicked.connect(self.EnableButtonConfirm)
         self.ButtonConfirm.clicked.connect(self.Confirm)
+        self.InfoTerms.clicked.connect(self.OpenInfoTerms)
 
         #Preferences
         self.SliderPeople.valueChanged.connect(self.setPrioritynumbers)
         self.SliderChild.valueChanged.connect(self.setPrioritynumbers)
         self.SliderAccess.valueChanged.connect(self.setPrioritynumbers)
         self.SliderAfford.valueChanged.connect(self.setPrioritynumbers)
+        self.InfoPreferences.clicked.connect(self.OpenInfoPreferences)
 
 
         self.ButtonExplore.clicked.connect(self.Explore)
@@ -121,6 +126,18 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
 
         #Metrics
         self.ButtonAdjustPreferences.clicked.connect(self.Confirm)
+        self.InfoMetrics.clicked.connect(self.OpenInfoMetrics)
+        self.ButtonNewUser.clicked.connect(self.NewUser)
+
+    def OpenInfoTerms(self):
+        webbrowser.open('https://github.com/TUdent/2016_Group-3_TOD_checker/wiki', new=2)
+
+    def OpenInfoPreferences(self):
+        webbrowser.open('https://github.com/TUdent/2016_Group-3_TOD_checker/wiki', new=2)
+
+    def OpenInfoMetrics(self):
+        webbrowser.open('https://github.com/TUdent/2016_Group-3_TOD_checker/wiki', new=2)
+
 
         #Explore
 
@@ -137,6 +154,12 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
     def closeEvent(self, event):
         self.closingPlugin.emit()
         event.accept()
+
+    def NewUser(self):
+        self.TabTerms.setEnabled(True)
+        self.Tabs.setCurrentIndex(0)
+        self.TabPreferences.setEnabled(False)
+        self.TabMetrics.setEnabled(False)
 
 #######
 #    Vizualisation
