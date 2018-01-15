@@ -298,15 +298,12 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
         uf.updateField(layer_explore, 'B4', self.SliderAfford.value())
 
         self.determineScore(layer_explore)
-        uf.getFieldNames(layer_explore)
         self.displayContinuousStyle(layer_explore, 'Score')
-        expr = "\"BU_NAAM\"=Capelsebrug"
-        print(expr)
-        expr2 = QgsExpression(expr)
-        print(expr2)
-        feat = layer_explore.getFeatures(QgsFeatureRequest(expr2))
-        print(feat)
-        #self.showresults(feat)
+
+        feat = uf.selectFeaturesByListValues(layer_explore, "BU_NAAM", subburbe)
+        att = feat.attributes()
+        print att[8]
+        self.showresults(att)
 
     def determineScore(self, layer):
         res = False
