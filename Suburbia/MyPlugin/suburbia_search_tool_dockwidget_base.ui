@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>434</width>
+    <width>458</width>
     <height>562</height>
    </rect>
   </property>
@@ -58,11 +58,11 @@
        <string notr="true"/>
       </property>
       <property name="currentIndex">
-       <number>0</number>
+       <number>2</number>
       </property>
       <widget class="QWidget" name="TabTerms">
        <attribute name="title">
-        <string>Terms</string>
+        <string>Registration</string>
        </attribute>
        <layout class="QGridLayout" name="gridLayout_3">
         <item row="2" column="0">
@@ -308,14 +308,7 @@
            </widget>
           </item>
           <item row="5" column="1">
-           <widget class="QSpinBox" name="spinBox">
-            <property name="minimum">
-             <number>3000</number>
-            </property>
-            <property name="maximum">
-             <number>3099</number>
-            </property>
-           </widget>
+           <widget class="QComboBox" name="SelectionNeighborhood"/>
           </item>
          </layout>
         </item>
@@ -485,16 +478,16 @@
            </widget>
           </item>
           <item row="8" column="1">
-           <widget class="QPushButton" name="ButtonNewUser">
+           <widget class="QPushButton" name="ButtonFavorite">
             <property name="text">
-             <string>New User</string>
+             <string>Favorite!</string>
             </property>
            </widget>
           </item>
           <item row="8" column="2">
            <widget class="QPushButton" name="ButtonSaveUserInfo">
             <property name="text">
-             <string>Save</string>
+             <string>Save Favorites</string>
             </property>
            </widget>
           </item>
