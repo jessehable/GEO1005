@@ -92,6 +92,7 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
         self.InfoTerms.setIcon(QtGui.QIcon(self.plugin_dir + '/graphics/info.png'))
         self.InfoPreferences.setIcon(QtGui.QIcon(self.plugin_dir + '/graphics/info.png'))
         self.InfoMetrics.setIcon(QtGui.QIcon(self.plugin_dir + '/graphics/info.png'))
+        self.ButtonPrivacyStatement.setIcon(QtGui.QIcon(self.plugin_dir + '/graphics/info.png'))
 
         self.FieldGender.addItems([
             self.tr('...'),
@@ -109,7 +110,7 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
             (uf.getLegendLayerByName(self.iface, "Rotterdam_Selection")), "BU_NAAM")[0]))
 
         ### setup GUI signals
-        #Terms
+        #Registration
         self.ButtonConfirm.setEnabled(False)
         self.FieldName.textChanged.connect(self.EnableButtonConfirm)
         self.FieldAge.valueChanged.connect(self.EnableButtonConfirm)
@@ -118,6 +119,7 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
         self.ButtonAgree.clicked.connect(self.EnableButtonConfirm)
         self.ButtonConfirm.clicked.connect(self.Confirm)
         self.InfoTerms.clicked.connect(self.OpenInfoTerms)
+        self.ButtonPrivacyStatement.clicked.connect(self.OpenInfoPrivacyStatement)
 
         #Preferences
         self.SliderPeople.valueChanged.connect(self.setPrioritynumbers)
@@ -131,6 +133,7 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
         self.ButtonLocate.clicked.connect(self.Locate)
 
         #Metrics
+        self.Legend.setPixmap(QtGui.QPixmap(self.plugin_dir + '/graphics/Match_icon.png'))
         self.ButtonAdjustPreferences.clicked.connect(self.Confirm)
         self.InfoMetrics.clicked.connect(self.OpenInfoMetrics)
         self.ButtonFavorite.clicked.connect(self.AddFavorite)
@@ -160,7 +163,7 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
 #    Vizualisation
 #######
 
-    def OpenInfoTerms(self):
+    def OpenInfoPrivacyStatement(self):
         webbrowser.open('https://github.com/jessehable/GEO1005_2017_G12_Suburbia/wiki/8.-Privacy-Statement', new=2)
 
     def OpenInfoPreferences(self):
@@ -168,6 +171,9 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
 
     def OpenInfoMetrics(self):
         webbrowser.open('https://github.com/jessehable/GEO1005_2017_G12_Suburbia/wiki/3.-Data-component', new=2)
+
+    def OpenInfoTerms(self):
+        webbrowser.open('https://github.com/jessehable/GEO1005_2017_G12_Suburbia/wiki/1.-Quick-Start-Guide', new=2)
 
     def setPrioritynumbers(self):
         self.PriorityPeople.setNum(self.SliderPeople.value())
@@ -283,8 +289,7 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
         self.TabMetrics.setEnabled(True)
         self.Tabs.setCurrentIndex(2)
 
-        subburbe = self.spinBox.value()
-
+        subburbe = self.SelectionNeighborhood.currentText()
         layer_explore = uf.getLegendLayerByName(self.iface, "Rotterdam_Selection")
 
         uf.updateField(layer_explore, 'B1', self.SliderPeople.value())
@@ -295,10 +300,13 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
         self.determineScore(layer_explore)
         uf.getFieldNames(layer_explore)
         self.displayContinuousStyle(layer_explore, 'Score')
-        expr = "\"BU_NAAM\"='{}'".format(subburbe)
-        feat = uf.getFeaturesByExpression(layer_explore, expr)
-        print(feat[0])
-        self.showresults(feat)
+        expr = "\"BU_NAAM\"=Capelsebrug"
+        print(expr)
+        expr2 = QgsExpression(expr)
+        print(expr2)
+        feat = layer_explore.getFeatures(QgsFeatureRequest(expr2))
+        print(feat)
+        #self.showresults(feat)
 
     def determineScore(self, layer):
         res = False
