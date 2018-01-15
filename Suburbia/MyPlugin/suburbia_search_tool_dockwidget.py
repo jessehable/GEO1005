@@ -30,6 +30,7 @@ from qgis.core import *
 from qgis.networkanalysis import *
 from qgis.gui import *
 from qgis.gui import QgsMapToolEmitPoint
+from PyQt4.QtGui import QColor
 import os.path
 
 # matplotlib for the charts
@@ -302,9 +303,9 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
 
         feat = uf.selectFeaturesByListValues(layer_explore, "BU_NAAM", subburbe)
         att = feat.attributes()
-        h = QgsHighlight(iface.mapCanvas(), feat.geometry(), layer_explore)
+        h = QgsHighlight(self.iface.mapCanvas(), feat.geometry(), layer_explore)
 
-        
+
         h.setColor(QColor(255, 0, 0, 255))
         h.setWidth(15)
         h.setFillColor(QColor(255, 255, 255, 0))
