@@ -336,13 +336,13 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
         coords = "Map Coordinates: {:.4f}, {:.4f}".format(point.x(), point.y())
 
         print coords
-        shortestDistance = float("inf")
         closestFeatureId = 0
+
 
         layer = uf.getLegendLayerByName(self.iface, "Rotterdam_Selection")
 
         if str(layer) != "None":
-            pPnt = QgsGeometry.fromPoint(QgsPoint(point.x(), point.y()))
+            pPnt = QgsGeometry.fromPoint(point)
             feats = [feat for feat in layer.getFeatures()]
             for feat in feats:
                 if pPnt.within(feat.geometry()):
