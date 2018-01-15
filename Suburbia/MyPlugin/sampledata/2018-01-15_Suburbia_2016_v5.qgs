@@ -932,7 +932,7 @@ def my_form_open(dialog, layer, feature):
         <ymax>450000</ymax>
       </extent>
       <id>TOP50raster_37O_201620180115202051554</id>
-      <datasource>../../../../../../Downloads/TOP50raster_37O/TOP50raster-37O-2016.tif</datasource>
+      <datasource>../sampledata/TOP50raster-37O-2016.tif</datasource>
       <keywordList>
         <value></value>
       </keywordList>
