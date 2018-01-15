@@ -31,6 +31,7 @@ from qgis.networkanalysis import *
 from qgis.gui import *
 from qgis.gui import QgsMapToolEmitPoint
 from PyQt4.QtGui import QColor
+from qgis.gui import QgsHighlight
 import os.path
 
 # matplotlib for the charts
@@ -209,22 +210,22 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
 
     def showresults(self, feature):
 
-        if feature[18]:
-            if float(feature[9]) + float(feature[8]) == 0.0:
-                per_een = 0.0
-            else:
-                per_een = (feature[14] / ((float(feature[9]) + float(feature[8])) / 2))
 
-            per_twee = ((1 - feature[15]) / (((feature[11])+ ( feature[12])) / 2))
-            per_drie = ((1 - feature[16]) / (feature[13]))
-            if (feature[10]) == 0:
-                per_vier = 0
-            else:
-                per_vier = ((1 - feature[17]) / (feature[10]))
+        if float(feature[9]) + float(feature[8]) == 0.0:
+            per_een = 0.0
+        else:
+            per_een = (feature[14] / ((float(feature[9]) + float(feature[8])) / 2))
 
-            percentage = (per_een + per_twee + per_drie + per_vier)/ 100
-            progres = (feature[18] / percentage)
-            self.progressBar.setValue(progres)
+        per_twee = ((1 - feature[15]) / (((feature[11])+ ( feature[12])) / 2))
+        per_drie = ((1 - feature[16]) / (feature[13]))
+        if (feature[10]) == 0:
+            per_vier = 0
+        else:
+            per_vier = ((1 - feature[17]) / (feature[10]))
+
+        percentage = (per_een + per_twee + per_drie + per_vier)/ 100
+        progres = (feature[18] / percentage)
+        self.progressBar.setValue(progres)
 
         self.DisplayNeighborhoodName.setText(str(feature[1]))
         self.ValuePeople.setNum(feature[8] * 100)
@@ -303,12 +304,7 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
 
         feat = uf.selectFeaturesByListValues(layer_explore, "BU_NAAM", subburbe)
         att = feat.attributes()
-        h = QgsHighlight(self.iface.mapCanvas(), feat.geometry(), layer_explore)
 
-
-        h.setColor(QColor(255, 0, 0, 255))
-        h.setWidth(15)
-        h.setFillColor(QColor(255, 255, 255, 0))
         self.showresults(att)
 
     def determineScore(self, layer):
@@ -376,14 +372,14 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
             featuree = next(iterator)
             attrs = featuree.attributes()
             self.showresults(attrs)
-            parishName = (attrs[1])
+
 
 
 
         else:
             parishName = None
 
-        print parishName
+
 
 
 
@@ -393,7 +389,7 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
 
     def loadDataRotterdam(self, filename=""):
         scenario_open = False
-        scenario_file = os.path.join(os.path.dirname(__file__), 'sampledata', '2018-01-15_Suburbia_2016_v7.qgs')
+        scenario_file = os.path.join(os.path.dirname(__file__), 'sampledata', '2018-01-15_Suburbia_2016_v5.qgs')
         # check if file exists
         if os.path.isfile(scenario_file):
             self.iface.addProject(scenario_file)
