@@ -336,28 +336,36 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
 
         print
         coords
-        closestFeatureId = -1
+        shortestDistance = float("inf")
+        closestFeatureId = 0
 
         layer = uf.getLegendLayerByName(self.iface, "Rotterdam_Selection")
 
         if str(layer) != "None":
-            pPnt = QgsGeometry.fromPoint(point)
+            pPnt = QgsGeometry.fromPoint(QgsPoint(point.x(), point.y()))
             feats = [feat for feat in layer.getFeatures()]
             for feat in feats:
-                if feat.geometry().contains(pPnt):
+                if pPnt.within(feat.geometry()):
                     closestFeatureId = feat.id()
                     break
 
             testlength = str(closestFeatureId)
 
-        if testlength != -1:
+        if len(testlength) > 0:
             fid = closestFeatureId
             iterator = layer.getFeatures(QgsFeatureRequest().setFilterFid(fid))
-            featuree = iterator
+            featuree = next(iterator)
             attrs = featuree.attributes()
             self.showresults(attrs)
+            parishName = (attrs[1])
+
+
+
         else:
-            print "hoi"
+            parishName = None
+
+        print
+        parishName
 
 
 
