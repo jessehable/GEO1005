@@ -91,6 +91,7 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
         self.InfoTerms.setIcon(QtGui.QIcon(self.plugin_dir + '/graphics/info.png'))
         self.InfoPreferences.setIcon(QtGui.QIcon(self.plugin_dir + '/graphics/info.png'))
         self.InfoMetrics.setIcon(QtGui.QIcon(self.plugin_dir + '/graphics/info.png'))
+        self.ButtonPrivacyStatement.setIcon(QtGui.QIcon(self.plugin_dir + '/graphics/info.png'))
 
         self.FieldGender.addItems([
             self.tr('...'),
@@ -269,8 +270,7 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
         self.TabMetrics.setEnabled(True)
         self.Tabs.setCurrentIndex(2)
 
-        subburbe = self.spinBox.value()
-
+        subburbe = self.SelectionNeighborhood.currentText()
         layer_explore = uf.getLegendLayerByName(self.iface, "Rotterdam_Selection")
 
         uf.updateField(layer_explore, 'B1', self.SliderPeople.value())
@@ -281,10 +281,13 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
         self.determineScore(layer_explore)
         uf.getFieldNames(layer_explore)
         self.displayContinuousStyle(layer_explore, 'Score')
-        expr = "\"BU_NAAM\"='{}'".format(subburbe)
-        feat = uf.getFeaturesByExpression(layer_explore, expr)
-        print(feat[0])
-        self.showresults(feat)
+        expr = "\"BU_NAAM\"=Capelsebrug"
+        print(expr)
+        expr2 = QgsExpression(expr)
+        print(expr2)
+        feat = layer_explore.getFeatures(QgsFeatureRequest(expr2))
+        print(feat)
+        #self.showresults(feat)
 
     def determineScore(self, layer):
         res = False
