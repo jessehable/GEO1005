@@ -77,6 +77,7 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
         self.plugin_dir = os.path.dirname(__file__)
         self.canvas = self.iface.mapCanvas()
         self.userdata = []
+        self.iface.actionMapTips().trigger()
 
         #data
         self.loadDataRotterdam()
@@ -211,6 +212,8 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
         self.ValueAccess.setNum((feature[7] * 1000))
         self.ValueAfford.setNum((feature[4] * 1000))
 
+
+
 #######
 #    Analysis functions
 #######
@@ -326,15 +329,14 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
 
         coords = "Map Coordinates: {:.4f}, {:.4f}".format(point.x(), point.y())
 
-        print
-        coords
+        print coords
         shortestDistance = float("inf")
         closestFeatureId = 0
 
         layer = uf.getLegendLayerByName(self.iface, "Rotterdam_Selection")
-
+        coords = QgsPoint(point.x(), point.y())
         if str(layer) != "None":
-            pPnt = QgsGeometry.fromPoint(QgsPoint(point.x(), point.y()))
+            pPnt = QgsGeometry.fromPoint(coords)
             feats = [feat for feat in layer.getFeatures()]
             for feat in feats:
                 if pPnt.within(feat.geometry()):
@@ -343,7 +345,7 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
 
             testlength = str(closestFeatureId)
 
-        if len(testlength) > 0:
+        if testlength > 0:
             fid = closestFeatureId
             iterator = layer.getFeatures(QgsFeatureRequest().setFilterFid(fid))
             featuree = next(iterator)
@@ -356,8 +358,7 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
         else:
             parishName = None
 
-        print
-        parishName
+        print parishName
 
 
 
