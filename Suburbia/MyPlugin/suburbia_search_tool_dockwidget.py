@@ -103,6 +103,16 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
             self.tr('College'),
             self.tr('University'), ])
 
+        #items = list(uf.getFieldValues(
+        #    (uf.getLegendLayerByName(self.iface, "Rotterdam_Selection"))
+        #    , "BU_NAAM"))
+        #for i in items:
+        self.SelectionNeighborhood.addItems([self.tr('hoi')])
+
+
+
+
+
         ### setup GUI signals
         #Terms
         self.ButtonConfirm.setEnabled(False)
@@ -267,8 +277,11 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
 
         self.determineScore(layer_explore)
 
+<<<<<<< HEAD
         self.displayContinuousStyle(layer_explore,'Score')
 
+=======
+>>>>>>> 7972ffbe4f0118585b483611fc30de5c13c4ddd1
     def Locate(self):
 
         self.pref[0] = self.SliderPeople.value()
@@ -424,6 +437,8 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
           #      writer.writerow(header)
            #     for i in self.userdata:
             #        writer.writerow(i)
+
+
 
 
 

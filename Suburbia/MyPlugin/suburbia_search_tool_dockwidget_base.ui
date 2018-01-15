@@ -275,7 +275,7 @@
           <item row="5" column="0">
            <widget class="QLabel" name="LabelPostalCode">
             <property name="text">
-             <string>Digits Postal Code </string>
+             <string>Neighborhood</string>
             </property>
            </widget>
           </item>

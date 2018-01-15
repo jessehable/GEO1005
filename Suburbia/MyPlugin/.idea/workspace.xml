@@ -2,11 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6ec731d3-a0f1-4b78-ad4b-860124d88074" name="Default" comment="">
+<<<<<<< HEAD
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/help/build/doctrees/environment.pickle" afterPath="$PROJECT_DIR$/help/build/doctrees/environment.pickle" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/help/build/doctrees/index.doctree" afterPath="$PROJECT_DIR$/help/build/doctrees/index.doctree" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/help/build/html/_static/pygments.css" afterPath="$PROJECT_DIR$/help/build/html/_static/pygments.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/suburbia_search_tool_dockwidget.py" afterPath="$PROJECT_DIR$/suburbia_search_tool_dockwidget.py" />
+=======
+<<<<<<< HEAD
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/suburbia_search_tool_dockwidget.py" afterPath="$PROJECT_DIR$/suburbia_search_tool_dockwidget.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/suburbia_search_tool_dockwidget_base.ui" afterPath="$PROJECT_DIR$/suburbia_search_tool_dockwidget_base.ui" />
+=======
+      <change beforePath="$PROJECT_DIR$/suburbia_search_tool_dockwidget.py" afterPath="$PROJECT_DIR$/suburbia_search_tool_dockwidget.py" />
+      <change beforePath="$PROJECT_DIR$/utility_functions.py" afterPath="$PROJECT_DIR$/utility_functions.py" />
+>>>>>>> d4e07f5802e3751dc1452eea363b24c6a676e4fc
+>>>>>>> 7972ffbe4f0118585b483611fc30de5c13c4ddd1
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,6 +30,7 @@
       <file leaf-file-name="suburbia_search_tool_dockwidget.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/suburbia_search_tool_dockwidget.py">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="316">
               <caret line="125" column="55" lean-forward="true" selection-start-line="125" selection-start-column="55" selection-end-line="125" selection-end-column="55" />
               <folding>
@@ -27,6 +38,32 @@
                 <marker date="1515768805078" expanded="true" signature="1794:14555" ph="..." />
                 <marker date="1515768805078" expanded="true" signature="14551:14555" ph="..." />
                 <marker date="1515768805078" expanded="true" signature="14554:14555" ph="..." />
+=======
+<<<<<<< HEAD
+            <state relative-caret-position="354">
+              <caret line="110" column="61" lean-forward="true" selection-start-line="110" selection-start-column="61" selection-end-line="110" selection-end-column="61" />
+              <folding>
+                <element signature="e#1140#1149#0" expanded="true" />
+                <marker date="1516027159738" expanded="true" signature="1794:11182" ph="..." />
+=======
+            <state relative-caret-position="221">
+              <caret line="287" column="39" lean-forward="true" selection-start-line="287" selection-start-column="39" selection-end-line="287" selection-end-column="39" />
+              <folding>
+                <element signature="e#1140#1149#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="utility_functions.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/utility_functions.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1175">
+              <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+              <folding>
+                <element signature="e#1169#1200#0" expanded="true" />
+>>>>>>> d4e07f5802e3751dc1452eea363b24c6a676e4fc
+>>>>>>> 7972ffbe4f0118585b483611fc30de5c13c4ddd1
               </folding>
             </state>
           </provider>
@@ -45,6 +82,21 @@
       <find>SaveUserInfo</find>
       <find>confirm</find>
       <find>userdata</find>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+      <find>favorite</find>
+      <find>update</find>
+      <find>updatelo</find>
+      <find>github</find>
+      <find>layer</find>
+      <find>uf</find>
+      <find>naam</find>
+=======
+      <find>getfiel</find>
+      <find>Locate</find>
+>>>>>>> d4e07f5802e3751dc1452eea363b24c6a676e4fc
+>>>>>>> 7972ffbe4f0118585b483611fc30de5c13c4ddd1
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -227,9 +279,16 @@
           <caret line="206" column="22" lean-forward="true" selection-start-line="206" selection-start-column="22" selection-end-line="206" selection-end-column="22" />
           <folding>
             <element signature="e#1140#1149#0" expanded="true" />
+<<<<<<< HEAD
             <marker date="1515768805078" expanded="true" signature="1794:14555" ph="..." />
             <marker date="1515768805078" expanded="true" signature="14551:14555" ph="..." />
             <marker date="1515768805078" expanded="true" signature="14554:14555" ph="..." />
+=======
+<<<<<<< HEAD
+            <marker date="1516027159738" expanded="true" signature="1794:11182" ph="..." />
+=======
+>>>>>>> d4e07f5802e3751dc1452eea363b24c6a676e4fc
+>>>>>>> 7972ffbe4f0118585b483611fc30de5c13c4ddd1
           </folding>
         </state>
       </provider>
@@ -240,9 +299,16 @@
           <caret line="86" column="32" lean-forward="false" selection-start-line="86" selection-start-column="32" selection-end-line="86" selection-end-column="32" />
           <folding>
             <element signature="e#1140#1149#0" expanded="true" />
+<<<<<<< HEAD
             <marker date="1515768805078" expanded="true" signature="1794:14555" ph="..." />
             <marker date="1515768805078" expanded="true" signature="14551:14555" ph="..." />
             <marker date="1515768805078" expanded="true" signature="14554:14555" ph="..." />
+=======
+<<<<<<< HEAD
+            <marker date="1516027159738" expanded="true" signature="1794:11182" ph="..." />
+=======
+>>>>>>> d4e07f5802e3751dc1452eea363b24c6a676e4fc
+>>>>>>> 7972ffbe4f0118585b483611fc30de5c13c4ddd1
           </folding>
         </state>
       </provider>
@@ -260,9 +326,16 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#1140#1149#0" expanded="true" />
+<<<<<<< HEAD
             <marker date="1515768805078" expanded="true" signature="1794:14555" ph="..." />
             <marker date="1515768805078" expanded="true" signature="14551:14555" ph="..." />
             <marker date="1515768805078" expanded="true" signature="14554:14555" ph="..." />
+=======
+<<<<<<< HEAD
+            <marker date="1516027159738" expanded="true" signature="1794:11182" ph="..." />
+=======
+>>>>>>> d4e07f5802e3751dc1452eea363b24c6a676e4fc
+>>>>>>> 7972ffbe4f0118585b483611fc30de5c13c4ddd1
           </folding>
         </state>
       </provider>
@@ -273,9 +346,16 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#1140#1149#0" expanded="true" />
+<<<<<<< HEAD
             <marker date="1515768805078" expanded="true" signature="1794:14555" ph="..." />
             <marker date="1515768805078" expanded="true" signature="14551:14555" ph="..." />
             <marker date="1515768805078" expanded="true" signature="14554:14555" ph="..." />
+=======
+<<<<<<< HEAD
+            <marker date="1516027159738" expanded="true" signature="1794:11182" ph="..." />
+=======
+>>>>>>> d4e07f5802e3751dc1452eea363b24c6a676e4fc
+>>>>>>> 7972ffbe4f0118585b483611fc30de5c13c4ddd1
           </folding>
         </state>
       </provider>
@@ -286,9 +366,16 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#1140#1149#0" expanded="true" />
+<<<<<<< HEAD
             <marker date="1515768805078" expanded="true" signature="1794:14555" ph="..." />
             <marker date="1515768805078" expanded="true" signature="14551:14555" ph="..." />
             <marker date="1515768805078" expanded="true" signature="14554:14555" ph="..." />
+=======
+<<<<<<< HEAD
+            <marker date="1516027159738" expanded="true" signature="1794:11182" ph="..." />
+=======
+>>>>>>> d4e07f5802e3751dc1452eea363b24c6a676e4fc
+>>>>>>> 7972ffbe4f0118585b483611fc30de5c13c4ddd1
           </folding>
         </state>
       </provider>
@@ -306,9 +393,16 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#1140#1149#0" expanded="true" />
+<<<<<<< HEAD
             <marker date="1515768805078" expanded="true" signature="1794:14555" ph="..." />
             <marker date="1515768805078" expanded="true" signature="14551:14555" ph="..." />
             <marker date="1515768805078" expanded="true" signature="14554:14555" ph="..." />
+=======
+<<<<<<< HEAD
+            <marker date="1516027159738" expanded="true" signature="1794:11182" ph="..." />
+=======
+>>>>>>> d4e07f5802e3751dc1452eea363b24c6a676e4fc
+>>>>>>> 7972ffbe4f0118585b483611fc30de5c13c4ddd1
           </folding>
         </state>
       </provider>
@@ -326,9 +420,16 @@
           <caret line="87" column="0" lean-forward="false" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
           <folding>
             <element signature="e#1140#1149#0" expanded="true" />
+<<<<<<< HEAD
             <marker date="1515768805078" expanded="true" signature="1794:14555" ph="..." />
             <marker date="1515768805078" expanded="true" signature="14551:14555" ph="..." />
             <marker date="1515768805078" expanded="true" signature="14554:14555" ph="..." />
+=======
+<<<<<<< HEAD
+            <marker date="1516027159738" expanded="true" signature="1794:11182" ph="..." />
+=======
+>>>>>>> d4e07f5802e3751dc1452eea363b24c6a676e4fc
+>>>>>>> 7972ffbe4f0118585b483611fc30de5c13c4ddd1
           </folding>
         </state>
       </provider>
@@ -346,9 +447,16 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#1140#1149#0" expanded="true" />
+<<<<<<< HEAD
             <marker date="1515768805078" expanded="true" signature="1794:14555" ph="..." />
             <marker date="1515768805078" expanded="true" signature="14551:14555" ph="..." />
             <marker date="1515768805078" expanded="true" signature="14554:14555" ph="..." />
+=======
+<<<<<<< HEAD
+            <marker date="1516027159738" expanded="true" signature="1794:11182" ph="..." />
+=======
+>>>>>>> d4e07f5802e3751dc1452eea363b24c6a676e4fc
+>>>>>>> 7972ffbe4f0118585b483611fc30de5c13c4ddd1
           </folding>
         </state>
       </provider>
@@ -366,9 +474,16 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#1140#1149#0" expanded="true" />
+<<<<<<< HEAD
             <marker date="1515768805078" expanded="true" signature="1794:14555" ph="..." />
             <marker date="1515768805078" expanded="true" signature="14551:14555" ph="..." />
             <marker date="1515768805078" expanded="true" signature="14554:14555" ph="..." />
+=======
+<<<<<<< HEAD
+            <marker date="1516027159738" expanded="true" signature="1794:11182" ph="..." />
+=======
+>>>>>>> d4e07f5802e3751dc1452eea363b24c6a676e4fc
+>>>>>>> 7972ffbe4f0118585b483611fc30de5c13c4ddd1
           </folding>
         </state>
       </provider>
@@ -394,9 +509,16 @@
           <caret line="87" column="32" lean-forward="true" selection-start-line="87" selection-start-column="32" selection-end-line="87" selection-end-column="32" />
           <folding>
             <element signature="e#1140#1149#0" expanded="true" />
+<<<<<<< HEAD
             <marker date="1515768805078" expanded="true" signature="1794:14555" ph="..." />
             <marker date="1515768805078" expanded="true" signature="14551:14555" ph="..." />
             <marker date="1515768805078" expanded="true" signature="14554:14555" ph="..." />
+=======
+<<<<<<< HEAD
+            <marker date="1516027159738" expanded="true" signature="1794:11182" ph="..." />
+=======
+>>>>>>> d4e07f5802e3751dc1452eea363b24c6a676e4fc
+>>>>>>> 7972ffbe4f0118585b483611fc30de5c13c4ddd1
           </folding>
         </state>
       </provider>
@@ -407,9 +529,16 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#1140#1149#0" expanded="true" />
+<<<<<<< HEAD
             <marker date="1515768805078" expanded="true" signature="1794:14555" ph="..." />
             <marker date="1515768805078" expanded="true" signature="14551:14555" ph="..." />
             <marker date="1515768805078" expanded="true" signature="14554:14555" ph="..." />
+=======
+<<<<<<< HEAD
+            <marker date="1516027159738" expanded="true" signature="1794:11182" ph="..." />
+=======
+>>>>>>> d4e07f5802e3751dc1452eea363b24c6a676e4fc
+>>>>>>> 7972ffbe4f0118585b483611fc30de5c13c4ddd1
           </folding>
         </state>
       </provider>
@@ -427,9 +556,16 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#1140#1149#0" expanded="true" />
+<<<<<<< HEAD
             <marker date="1515768805078" expanded="true" signature="1794:14555" ph="..." />
             <marker date="1515768805078" expanded="true" signature="14551:14555" ph="..." />
             <marker date="1515768805078" expanded="true" signature="14554:14555" ph="..." />
+=======
+<<<<<<< HEAD
+            <marker date="1516027159738" expanded="true" signature="1794:11182" ph="..." />
+=======
+>>>>>>> d4e07f5802e3751dc1452eea363b24c6a676e4fc
+>>>>>>> 7972ffbe4f0118585b483611fc30de5c13c4ddd1
           </folding>
         </state>
       </provider>
@@ -468,9 +604,16 @@
           <caret line="175" column="13" lean-forward="false" selection-start-line="175" selection-start-column="13" selection-end-line="175" selection-end-column="13" />
           <folding>
             <element signature="e#1140#1149#0" expanded="true" />
+<<<<<<< HEAD
             <marker date="1515768805078" expanded="true" signature="1794:14555" ph="..." />
             <marker date="1515768805078" expanded="true" signature="14551:14555" ph="..." />
             <marker date="1515768805078" expanded="true" signature="14554:14555" ph="..." />
+=======
+<<<<<<< HEAD
+            <marker date="1516027159738" expanded="true" signature="1794:11182" ph="..." />
+=======
+>>>>>>> d4e07f5802e3751dc1452eea363b24c6a676e4fc
+>>>>>>> 7972ffbe4f0118585b483611fc30de5c13c4ddd1
           </folding>
         </state>
       </provider>
@@ -481,9 +624,16 @@
           <caret line="86" column="32" lean-forward="false" selection-start-line="86" selection-start-column="32" selection-end-line="86" selection-end-column="32" />
           <folding>
             <element signature="e#1140#1149#0" expanded="true" />
+<<<<<<< HEAD
             <marker date="1515768805078" expanded="true" signature="1794:14555" ph="..." />
             <marker date="1515768805078" expanded="true" signature="14551:14555" ph="..." />
             <marker date="1515768805078" expanded="true" signature="14554:14555" ph="..." />
+=======
+<<<<<<< HEAD
+            <marker date="1516027159738" expanded="true" signature="1794:11182" ph="..." />
+=======
+>>>>>>> d4e07f5802e3751dc1452eea363b24c6a676e4fc
+>>>>>>> 7972ffbe4f0118585b483611fc30de5c13c4ddd1
           </folding>
         </state>
       </provider>
@@ -501,9 +651,16 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#1140#1149#0" expanded="true" />
+<<<<<<< HEAD
             <marker date="1515768805078" expanded="true" signature="1794:14555" ph="..." />
             <marker date="1515768805078" expanded="true" signature="14551:14555" ph="..." />
             <marker date="1515768805078" expanded="true" signature="14554:14555" ph="..." />
+=======
+<<<<<<< HEAD
+            <marker date="1516027159738" expanded="true" signature="1794:11182" ph="..." />
+=======
+>>>>>>> d4e07f5802e3751dc1452eea363b24c6a676e4fc
+>>>>>>> 7972ffbe4f0118585b483611fc30de5c13c4ddd1
           </folding>
         </state>
       </provider>
@@ -514,9 +671,16 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#1140#1149#0" expanded="true" />
+<<<<<<< HEAD
             <marker date="1515768805078" expanded="true" signature="1794:14555" ph="..." />
             <marker date="1515768805078" expanded="true" signature="14551:14555" ph="..." />
             <marker date="1515768805078" expanded="true" signature="14554:14555" ph="..." />
+=======
+<<<<<<< HEAD
+            <marker date="1516027159738" expanded="true" signature="1794:11182" ph="..." />
+=======
+>>>>>>> d4e07f5802e3751dc1452eea363b24c6a676e4fc
+>>>>>>> 7972ffbe4f0118585b483611fc30de5c13c4ddd1
           </folding>
         </state>
       </provider>
@@ -527,9 +691,16 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#1140#1149#0" expanded="true" />
+<<<<<<< HEAD
             <marker date="1515768805078" expanded="true" signature="1794:14555" ph="..." />
             <marker date="1515768805078" expanded="true" signature="14551:14555" ph="..." />
             <marker date="1515768805078" expanded="true" signature="14554:14555" ph="..." />
+=======
+<<<<<<< HEAD
+            <marker date="1516027159738" expanded="true" signature="1794:11182" ph="..." />
+=======
+>>>>>>> d4e07f5802e3751dc1452eea363b24c6a676e4fc
+>>>>>>> 7972ffbe4f0118585b483611fc30de5c13c4ddd1
           </folding>
         </state>
       </provider>
@@ -547,9 +718,16 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#1140#1149#0" expanded="true" />
+<<<<<<< HEAD
             <marker date="1515768805078" expanded="true" signature="1794:14555" ph="..." />
             <marker date="1515768805078" expanded="true" signature="14551:14555" ph="..." />
             <marker date="1515768805078" expanded="true" signature="14554:14555" ph="..." />
+=======
+<<<<<<< HEAD
+            <marker date="1516027159738" expanded="true" signature="1794:11182" ph="..." />
+=======
+>>>>>>> d4e07f5802e3751dc1452eea363b24c6a676e4fc
+>>>>>>> 7972ffbe4f0118585b483611fc30de5c13c4ddd1
           </folding>
         </state>
       </provider>
@@ -567,9 +745,16 @@
           <caret line="87" column="0" lean-forward="false" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
           <folding>
             <element signature="e#1140#1149#0" expanded="true" />
+<<<<<<< HEAD
             <marker date="1515768805078" expanded="true" signature="1794:14555" ph="..." />
             <marker date="1515768805078" expanded="true" signature="14551:14555" ph="..." />
             <marker date="1515768805078" expanded="true" signature="14554:14555" ph="..." />
+=======
+<<<<<<< HEAD
+            <marker date="1516027159738" expanded="true" signature="1794:11182" ph="..." />
+=======
+>>>>>>> d4e07f5802e3751dc1452eea363b24c6a676e4fc
+>>>>>>> 7972ffbe4f0118585b483611fc30de5c13c4ddd1
           </folding>
         </state>
       </provider>
@@ -587,9 +772,16 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#1140#1149#0" expanded="true" />
+<<<<<<< HEAD
             <marker date="1515768805078" expanded="true" signature="1794:14555" ph="..." />
             <marker date="1515768805078" expanded="true" signature="14551:14555" ph="..." />
             <marker date="1515768805078" expanded="true" signature="14554:14555" ph="..." />
+=======
+<<<<<<< HEAD
+            <marker date="1516027159738" expanded="true" signature="1794:11182" ph="..." />
+=======
+>>>>>>> d4e07f5802e3751dc1452eea363b24c6a676e4fc
+>>>>>>> 7972ffbe4f0118585b483611fc30de5c13c4ddd1
           </folding>
         </state>
       </provider>
@@ -607,9 +799,16 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#1140#1149#0" expanded="true" />
+<<<<<<< HEAD
             <marker date="1515768805078" expanded="true" signature="1794:14555" ph="..." />
             <marker date="1515768805078" expanded="true" signature="14551:14555" ph="..." />
             <marker date="1515768805078" expanded="true" signature="14554:14555" ph="..." />
+=======
+<<<<<<< HEAD
+            <marker date="1516027159738" expanded="true" signature="1794:11182" ph="..." />
+=======
+>>>>>>> d4e07f5802e3751dc1452eea363b24c6a676e4fc
+>>>>>>> 7972ffbe4f0118585b483611fc30de5c13c4ddd1
           </folding>
         </state>
       </provider>
@@ -635,9 +834,16 @@
           <caret line="87" column="32" lean-forward="true" selection-start-line="87" selection-start-column="32" selection-end-line="87" selection-end-column="32" />
           <folding>
             <element signature="e#1140#1149#0" expanded="true" />
+<<<<<<< HEAD
             <marker date="1515768805078" expanded="true" signature="1794:14555" ph="..." />
             <marker date="1515768805078" expanded="true" signature="14551:14555" ph="..." />
             <marker date="1515768805078" expanded="true" signature="14554:14555" ph="..." />
+=======
+<<<<<<< HEAD
+            <marker date="1516027159738" expanded="true" signature="1794:11182" ph="..." />
+=======
+>>>>>>> d4e07f5802e3751dc1452eea363b24c6a676e4fc
+>>>>>>> 7972ffbe4f0118585b483611fc30de5c13c4ddd1
           </folding>
         </state>
       </provider>
@@ -648,9 +854,16 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#1140#1149#0" expanded="true" />
+<<<<<<< HEAD
             <marker date="1515768805078" expanded="true" signature="1794:14555" ph="..." />
             <marker date="1515768805078" expanded="true" signature="14551:14555" ph="..." />
             <marker date="1515768805078" expanded="true" signature="14554:14555" ph="..." />
+=======
+<<<<<<< HEAD
+            <marker date="1516027159738" expanded="true" signature="1794:11182" ph="..." />
+=======
+>>>>>>> d4e07f5802e3751dc1452eea363b24c6a676e4fc
+>>>>>>> 7972ffbe4f0118585b483611fc30de5c13c4ddd1
           </folding>
         </state>
       </provider>
@@ -668,9 +881,16 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#1140#1149#0" expanded="true" />
+<<<<<<< HEAD
             <marker date="1515768805078" expanded="true" signature="1794:14555" ph="..." />
             <marker date="1515768805078" expanded="true" signature="14551:14555" ph="..." />
             <marker date="1515768805078" expanded="true" signature="14554:14555" ph="..." />
+=======
+<<<<<<< HEAD
+            <marker date="1516027159738" expanded="true" signature="1794:11182" ph="..." />
+=======
+>>>>>>> d4e07f5802e3751dc1452eea363b24c6a676e4fc
+>>>>>>> 7972ffbe4f0118585b483611fc30de5c13c4ddd1
           </folding>
         </state>
       </provider>
@@ -698,6 +918,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/suburbia_search_tool_dockwidget.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="316">
           <caret line="125" column="55" lean-forward="true" selection-start-line="125" selection-start-column="55" selection-end-line="125" selection-end-column="55" />
           <folding>
@@ -705,6 +926,20 @@
             <marker date="1515768805078" expanded="true" signature="1794:14555" ph="..." />
             <marker date="1515768805078" expanded="true" signature="14551:14555" ph="..." />
             <marker date="1515768805078" expanded="true" signature="14554:14555" ph="..." />
+=======
+<<<<<<< HEAD
+        <state relative-caret-position="354">
+          <caret line="110" column="61" lean-forward="true" selection-start-line="110" selection-start-column="61" selection-end-line="110" selection-end-column="61" />
+          <folding>
+            <element signature="e#1140#1149#0" expanded="true" />
+            <marker date="1516027159738" expanded="true" signature="1794:11182" ph="..." />
+=======
+        <state relative-caret-position="221">
+          <caret line="287" column="39" lean-forward="true" selection-start-line="287" selection-start-column="39" selection-end-line="287" selection-end-column="39" />
+          <folding>
+            <element signature="e#1140#1149#0" expanded="true" />
+>>>>>>> d4e07f5802e3751dc1452eea363b24c6a676e4fc
+>>>>>>> 7972ffbe4f0118585b483611fc30de5c13c4ddd1
           </folding>
         </state>
       </provider>
