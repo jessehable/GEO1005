@@ -279,7 +279,7 @@ def updateField(layer, name, expression):
 #
 # Feature functions
 #
-def getFeaturesByListValues(layer, name, values=list):
+def getFeaturesByListValues(layer, name, values):
     features = {}
     if layer:
         if fieldExists(layer, name):
@@ -287,8 +287,8 @@ def getFeaturesByListValues(layer, name, values=list):
             iterator = layer.getFeatures(request)
             for feature in iterator:
                 att = feature.attribute(name)
-                if att in values:
-                    features[feature.id()] = att
+                if att == values:
+                    features[feature.id()] = feature
     return features
 
 
