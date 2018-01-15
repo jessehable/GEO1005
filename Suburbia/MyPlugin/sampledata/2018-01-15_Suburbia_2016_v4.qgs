@@ -105,7 +105,7 @@
   <projectlayers>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
       <id>2018_01_09_Rotterdam_Selection20180109162946265</id>
-      <datasource>../../Mijn documenten/Github/GEO1005_2017_G12_Suburbia/Suburbia/MyPlugin/sampledata/2018-01-09_Rotterdam Selection.shp</datasource>
+      <datasource>../sampledata/2018-01-09_Rotterdam Selection.shp</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -626,7 +626,7 @@ def my_form_open(dialog, layer, feature):
     </maplayer>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Line" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
       <id>Neighborhood_outlines20180109140229582</id>
-      <datasource>../../Mijn documenten/Github/GEO1005_2017_G12_Suburbia/Suburbia/MyPlugin/sampledata/Neighborhood outlines.shp</datasource>
+      <datasource>../sampledata/Neighborhood outlines.shp</datasource>
       <keywordList>
         <value></value>
       </keywordList>

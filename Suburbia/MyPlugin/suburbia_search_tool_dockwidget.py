@@ -190,11 +190,11 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
         display_settings['intervals'] = 20
         # define the line width
         display_settings['line_width'] = 0.5
-        ramp = QgsVectorGradientColorRampV2(QtGui.QColor(0, 255, 0, 255), QtGui.QColor(255, 0, 0, 255), False)
+        ramp = QgsVectorGradientColorRampV2(QtGui.QColor(255, 0, 0, 255), QtGui.QColor(0, 255, 0, 255), False)
         # any other stops for intermediate colours for greater control. can be edited or skipped
-        ramp.setStops([QgsGradientStop(0.25, QtGui.QColor(0, 255, 255, 255)),
-                       QgsGradientStop(0.5, QtGui.QColor(0, 255, 0, 255)),
-                       QgsGradientStop(0.75, QtGui.QColor(255, 255, 0, 255))])
+        ramp.setStops([QgsGradientStop(0.25, QtGui.QColor(255, 0,0, 255)),
+                       QgsGradientStop(0.5, QtGui.QColor(255, 255, 0, 255)),
+                       QgsGradientStop(0.75, QtGui.QColor(0, 255, 0, 255))])
         display_settings['ramp'] = ramp
 
         # call the update renderer function
