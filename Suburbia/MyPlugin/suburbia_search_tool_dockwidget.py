@@ -76,6 +76,7 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
         self.pref =[0,0,0,0]
         self.plugin_dir = os.path.dirname(__file__)
         self.canvas = self.iface.mapCanvas()
+        self.userdata = []
 
         #data
         self.loadDataRotterdam()
@@ -109,9 +110,6 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
         self.SelectionNeighborhood.addItems([self.tr('hoi')])
 
 
-
-
-
         ### setup GUI signals
         #Terms
         self.ButtonConfirm.setEnabled(False)
@@ -137,7 +135,10 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
         #Metrics
         self.ButtonAdjustPreferences.clicked.connect(self.Confirm)
         self.InfoMetrics.clicked.connect(self.OpenInfoMetrics)
-        self.ButtonNewUser.clicked.connect(self.NewUser)
+        self.ButtonFavorite.clicked.connect(self.AddFavorite)
+        self.ButtonFavorite.clicked.connect(self.UpdateLogMunicipality)
+        self.ButtonSaveUserInfo.clicked.connect(self.ExportFavoritesCSV)
+
 
 
 
@@ -405,8 +406,52 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
 
 ########
 #   Urban planning functions
-    # Save user characteristics
-    #def SaveUserPreferences(self):
+    def AddFavorite(self):
+        a = self.DisplayNeighborhoodName.text()
+        b = self.ValuePeople.text()
+        c = self.ValueChild.text()
+        d = self.ValueAccess.text()
+        e = self.ValueAfford.text()
+        self.userdata.append([a,b,c,d,e])
+
+    def UpdateLogMunicipality(self):
+        with open(self.plugin_dir + '/municipality/log_municipality.csv', 'a') as fd:
+            writer = csv.writer(fd)
+            # Determine values of the row to be added
+            age = self.FieldAge.text()
+            gender = self.FieldGender.currentText()
+            education = self.FieldEducation.currentText()
+            pref_people = self.SliderPeople.value()
+            pref_child = self.SliderChild.value()
+            pref_access = self.SliderAccess.value()
+            pref_afford = self.SliderAfford.value()
+            neighborhood = self.DisplayNeighborhoodName.text()
+            people = self.ValuePeople.text()
+            child = self.ValueChild.text()
+            access = self.ValueAccess.text()
+            afford = self.ValueAfford.text()
+            munic_new_row = [age,
+                       gender,
+                       education,
+                       pref_people,
+                       pref_child,
+                       pref_access,
+                       pref_afford,
+                       neighborhood,
+                       people,child,access,afford]
+            # Ten add the row
+            writer.writerow(munic_new_row)
+
+
+    def ExportFavoritesCSV(self):
+        path_csv = QtGui.QFileDialog.getSaveFileName(self, 'Save File', '', 'CSV(*.csv)')
+        # create csv with favotires
+        if path_csv:
+            with open(unicode(path_csv), 'wb') as stream:
+                # open csv file for writing
+                writer = csv.writer(stream)
+                for i in self.userdata:
+                    writer.writerow(i)
 
 
 
