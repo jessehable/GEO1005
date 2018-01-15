@@ -29,7 +29,7 @@ from PyQt4 import QtGui, QtCore, uic
 from qgis.core import *
 from qgis.networkanalysis import *
 from qgis.gui import *
-
+from qgis.gui import QgsMapToolEmitPoint
 import os.path
 
 # matplotlib for the charts
@@ -77,7 +77,8 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
         self.plugin_dir = os.path.dirname(__file__)
         self.canvas = self.iface.mapCanvas()
         self.userdata = []
-        self.iface.actionMapTips().trigger()
+
+
 
         #data
         self.loadDataRotterdam()
@@ -242,6 +243,7 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
 
     def Explore(self):
 
+
         self.pref[0] = self.SliderPeople.value()
         self.pref[1] = self.SliderChild.value()
         self.pref[2] = self.SliderAccess.value()
@@ -328,12 +330,12 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
             res = True
         return res
 
-    def display_point(self, point):
+    def display_point(self,point):
 
         coords = "Map Coordinates: {:.4f}, {:.4f}".format(point.x(), point.y())
 
         print coords
-        shortestDistance = float("inf")
+
         closestFeatureId = 0
 
         layer = uf.getLegendLayerByName(self.iface, "Rotterdam_Selection")
@@ -371,7 +373,7 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
 
     def loadDataRotterdam(self, filename=""):
         scenario_open = False
-        scenario_file = os.path.join(os.path.dirname(__file__), 'sampledata', '2018-01-15_Suburbia_2016_v4.qgs')
+        scenario_file = os.path.join(os.path.dirname(__file__), 'sampledata', '2018-01-15_Suburbia_2016_v5.qgs')
         # check if file exists
         if os.path.isfile(scenario_file):
             self.iface.addProject(scenario_file)
@@ -431,21 +433,5 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
                 writer = csv.writer(stream)
                 for i in self.userdata:
                     writer.writerow(i)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
