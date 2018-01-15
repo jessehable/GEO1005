@@ -209,9 +209,7 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
     def showresults(self, feature):
 
         if feature[18]:
-            percentage = (((feature[14] / ((feature[9] + feature[8]) / 2)) + (
-                    feature[15] / (((1 - feature[11]) + (1 - feature[12]) / 2))) + (feature[16] / (1 - feature[13])) + (
-                                   feature[17] / (1 - feature[10]))) / 100)
+            percentage = (((feature[14] / ((feature[9] + feature[8]) / 2)) + (feature[15] / (((1 - feature[11]) + (1 - feature[12]) / 2))) + (feature[16] / (1 - feature[13])) + (feature[17] / (1 - feature[10]))) / 100)
             progres = (feature[18] / percentage)
             self.progressBar.setValue(progres)
 
@@ -283,6 +281,7 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
         uf.updateField(layer_explore, 'B4', self.SliderAfford.value())
 
         self.determineScore(layer_explore)
+        self.displayContinuousStyle(layer_explore, 'Score')
 
     def Locate(self):
 
@@ -345,6 +344,7 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
                     feature['Score'] = feature['B1'] + feature['B2'] + feature['B3'] + feature['B4']
                     layer.updateFeature(feature)
 
+
                 layer.commitChanges()
             res = True
         return res
@@ -362,29 +362,23 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
         if str(layer) != "None":
             pPnt = QgsGeometry.fromPoint(point)
             feats = [feat for feat in layer.getFeatures()]
-            print
-            feats[1]
             for feat in feats:
                 if feat.geometry().contains(pPnt):
                     closestFeatureId = feat.id()
                     break
 
             testlength = str(closestFeatureId)
-            print
-            testlength
 
         if testlength != -1:
             fid = closestFeatureId
             iterator = layer.getFeatures(QgsFeatureRequest().setFilterFid(fid))
-            featuree = next(iterator)
+            featuree = iterator
             attrs = featuree.attributes()
             self.showresults(attrs)
-            parishName = (attrs[1])
         else:
-            parishName = None
+            print "hoi"
 
-        print
-        parishName
+
 
     #######
 #   Data functions
