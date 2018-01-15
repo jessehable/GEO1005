@@ -110,7 +110,7 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
             (uf.getLegendLayerByName(self.iface, "Rotterdam_Selection")), "BU_NAAM")[0]))
 
         ### setup GUI signals
-        #Terms
+        #Registration
         self.ButtonConfirm.setEnabled(False)
         self.FieldName.textChanged.connect(self.EnableButtonConfirm)
         self.FieldAge.valueChanged.connect(self.EnableButtonConfirm)
@@ -133,6 +133,7 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
         self.ButtonLocate.clicked.connect(self.Locate)
 
         #Metrics
+        self.Legend.setPixmap(QtGui.QPixmap(self.plugin_dir + '/graphics/Match_icon.png'))
         self.ButtonAdjustPreferences.clicked.connect(self.Confirm)
         self.InfoMetrics.clicked.connect(self.OpenInfoMetrics)
         self.ButtonFavorite.clicked.connect(self.AddFavorite)
