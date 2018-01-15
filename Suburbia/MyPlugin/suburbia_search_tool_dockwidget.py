@@ -187,7 +187,7 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
         # define the interval type and number of intervals
         # EqualInterval = 0; Quantile  = 1; Jenks = 2; StdDev = 3; Pretty = 4;
         display_settings['interval_type'] = 1
-        display_settings['intervals'] = 10
+        display_settings['intervals'] = 20
         # define the line width
         display_settings['line_width'] = 0.5
         ramp = QgsVectorGradientColorRampV2(QtGui.QColor(0, 255, 0, 255), QtGui.QColor(255, 0, 0, 255), False)
@@ -367,7 +367,7 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
 
     def loadDataRotterdam(self, filename=""):
         scenario_open = False
-        scenario_file = os.path.join(os.path.dirname(__file__), 'sampledata', '2018-01-09_Suburbia_2016_v3.qgs')
+        scenario_file = os.path.join(os.path.dirname(__file__), 'sampledata', '2018-01-15_Suburbia_2016_v4.qgs')
         # check if file exists
         if os.path.isfile(scenario_file):
             self.iface.addProject(scenario_file)
