@@ -123,7 +123,7 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
 
 
         self.ButtonExplore.clicked.connect(self.Explore)
-        #self.ButtonLocate.clicked.connect(self.Locate)
+        self.ButtonLocate.clicked.connect(self.Locate)
 
         #Metrics
         self.ButtonAdjustPreferences.clicked.connect(self.Confirm)
@@ -269,7 +269,7 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
         self.TabMetrics.setEnabled(True)
         self.Tabs.setCurrentIndex(2)
 
-        postalcode = self.spinBox.value()
+        subburbe = self.spinBox.value()
 
         layer_explore = uf.getLegendLayerByName(self.iface, "Rotterdam_Selection")
 
@@ -279,13 +279,11 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
         uf.updateField(layer_explore, 'B4', self.SliderAfford.value())
 
         self.determineScore(layer_explore)
-        print
         uf.getFieldNames(layer_explore)
         self.displayContinuousStyle(layer_explore, 'Score')
-        expr = QgsExpression("\"POSTCODE_I\"='{}'".format(postalcode))
+        expr = "\"BU_NAAM\"='{}'".format(subburbe)
         feat = uf.getFeaturesByExpression(layer_explore, expr)
-        print
-        feat
+        print(feat[0])
         self.showresults(feat)
 
     def determineScore(self, layer):
