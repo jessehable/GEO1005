@@ -136,31 +136,28 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
         self.ButtonAdjustPreferences.clicked.connect(self.Confirm)
         self.InfoMetrics.clicked.connect(self.OpenInfoMetrics)
         self.ButtonFavorite.clicked.connect(self.AddFavorite)
+<<<<<<< HEAD
         self.ButtonFavorite.clicked.connect(self.UpdateLogMunicipality)
         self.ButtonSaveUserInfo.clicked.connect(self.ExportFavoritesCSV)
 
 
 
 
+=======
+        self.ButtonSaveUserInfo.clicked.connect(self.ExportFavoritesCSV)
+>>>>>>> 69924cbfa6496e3818a3e6d50f214db31b0ec24f
 
         #Explore
 
         self.pointTool = QgsMapToolEmitPoint(self.canvas)
-
         self.pointTool.canvasClicked.connect(self.display_point)
-
         self.canvas.setMapTool(self.pointTool)
+
 
 
     def closeEvent(self, event):
         self.closingPlugin.emit()
         event.accept()
-
-    def NewUser(self):
-        self.TabTerms.setEnabled(True)
-        self.Tabs.setCurrentIndex(0)
-        self.TabPreferences.setEnabled(False)
-        self.TabMetrics.setEnabled(False)
 
 #######
 #    Vizualisation
@@ -206,20 +203,18 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
             self.iface.legendInterface().refreshLayerSymbology(layer_ui)
             self.canvas.refresh()
 
-    def showresults(self, feature):
+    def showresults(self,feature):
 
         if feature[18]:
-            percentage = (((feature[14] / ((feature[9] + feature[8]) / 2)) + (
-                    feature[15] / (((1 - feature[11]) + (1 - feature[12]) / 2))) + (feature[16] / (1 - feature[13])) + (
-                                   feature[17] / (1 - feature[10]))) / 100)
-            progres = (feature[18] / percentage)
+            percentage = (((feature[14]/((feature[9]+feature[8])/2))+(feature[15]/(((1-feature[11])+(1-feature[12])/2)))+(feature[16]/(1-feature[13]))+(feature[17]/(1-feature[10])))/100)
+            progres =(feature[18]/percentage)
             self.progressBar.setValue(progres)
 
         self.DisplayNeighborhoodName.setText(str(feature[1]))
-        self.ValuePeople.setNum(feature[8] * 100)
-        self.ValueChild.setNum((feature[6] * 1000))
-        self.ValueAccess.setNum((feature[7] * 1000))
-        self.ValueAfford.setNum((feature[4] * 1000))
+        self.ValuePeople.setNum(feature[8]*100)
+        self.ValueChild.setNum((feature[6]*1000))
+        self.ValueAccess.setNum((feature[7]*1000))
+        self.ValueAfford.setNum((feature[4]*1000))
 
 #######
 #    Analysis functions
@@ -234,6 +229,7 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
         else:
             self.ButtonConfirm.setEnabled(False)
 
+
     def Confirm(self):
         self.TabTerms.setEnabled(False)
         self.TabPreferences.setEnabled(True)
@@ -246,24 +242,27 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
                   'average housing price (euro)']
         self.userdata.append(header)
 
-        # name = self.FieldName.text()
-        # age = self.FieldAge.text()
-        # gender = self.FieldGender.currentText()
-        # education = self.FieldEducation.currentText()
-        # new_row = [name,age,gender,education]
-        # self.userdata.append(new_row)
 
-    # def SaveUserInfo(self):
-    # open csv file for writing
-    # writer = csv.writer(open(unicode(path_csv)))
-    # new_row=[]
-    # new_row.append(self.FieldName.text())
-    # ew_row.append(self.FieldAge.text())
-    # writer.writerow(new_row)
 
-    # file = open(unicode(path),'w')
-    # file.write(age)
-    # file.close()
+        #name = self.FieldName.text()
+        #age = self.FieldAge.text()
+        #gender = self.FieldGender.currentText()
+        #education = self.FieldEducation.currentText()
+        #new_row = [name,age,gender,education]
+        #self.userdata.append(new_row)
+
+    #def SaveUserInfo(self):
+        # open csv file for writing
+        #writer = csv.writer(open(unicode(path_csv)))
+        #new_row=[]
+        #new_row.append(self.FieldName.text())
+        #ew_row.append(self.FieldAge.text())
+        #writer.writerow(new_row)
+
+
+        #file = open(unicode(path),'w')
+        #file.write(age)
+        #file.close()
 
     def Explore(self):
 
@@ -277,13 +276,18 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
 
         layer_explore = uf.getLegendLayerByName(self.iface, "Rotterdam_Selection")
 
-        uf.updateField(layer_explore, 'B1', self.SliderPeople.value())
+        uf.updateField(layer_explore,'B1', self.SliderPeople.value())
         uf.updateField(layer_explore, 'B2', self.SliderChild.value())
         uf.updateField(layer_explore, 'B3', self.SliderAccess.value())
         uf.updateField(layer_explore, 'B4', self.SliderAfford.value())
 
         self.determineScore(layer_explore)
 
+<<<<<<< HEAD
+        self.displayContinuousStyle(layer_explore,'Score')
+
+=======
+>>>>>>> 7972ffbe4f0118585b483611fc30de5c13c4ddd1
     def Locate(self):
 
         self.pref[0] = self.SliderPeople.value()
@@ -349,44 +353,47 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
             res = True
         return res
 
-    def display_point(self, point):
+
+    def display_point(self,point):
 
         coords = "Map Coordinates: {:.4f}, {:.4f}".format(point.x(), point.y())
 
-        print
-        coords
-        closestFeatureId = -1
+        print coords
+        closestFeatureId = 0
+
 
         layer = uf.getLegendLayerByName(self.iface, "Rotterdam_Selection")
 
         if str(layer) != "None":
             pPnt = QgsGeometry.fromPoint(point)
             feats = [feat for feat in layer.getFeatures()]
-            print
-            feats[1]
             for feat in feats:
-                if feat.geometry().contains(pPnt):
+                if pPnt.within(feat.geometry()):
                     closestFeatureId = feat.id()
                     break
 
             testlength = str(closestFeatureId)
-            print
-            testlength
 
-        if testlength != -1:
+        if len(testlength) > 0:
             fid = closestFeatureId
             iterator = layer.getFeatures(QgsFeatureRequest().setFilterFid(fid))
             featuree = next(iterator)
             attrs = featuree.attributes()
             self.showresults(attrs)
             parishName = (attrs[1])
+
+
+
         else:
             parishName = None
 
-        print
-        parishName
+        print parishName
 
-    #######
+
+
+
+
+#######
 #   Data functions
 #######
 
@@ -414,6 +421,7 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
         e = self.ValueAfford.text()
         self.userdata.append([a,b,c,d,e])
 
+<<<<<<< HEAD
     def UpdateLogMunicipality(self):
         with open(self.plugin_dir + '/municipality/log_municipality.csv', 'a') as fd:
             writer = csv.writer(fd)
@@ -443,6 +451,8 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
             writer.writerow(munic_new_row)
 
 
+=======
+>>>>>>> 69924cbfa6496e3818a3e6d50f214db31b0ec24f
     def ExportFavoritesCSV(self):
         path_csv = QtGui.QFileDialog.getSaveFileName(self, 'Save File', '', 'CSV(*.csv)')
         # create csv with favotires
@@ -452,6 +462,23 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
                 writer = csv.writer(stream)
                 for i in self.userdata:
                     writer.writerow(i)
+<<<<<<< HEAD
+=======
+
+    # adjustments needed
+    #def CreateUrbanPlanningCSV(self):
+
+
+     #   if path_csv:
+      #      with open(unicode(path_csv), 'wb') as stream:
+       #         # open csv file for writing
+        #        writer = csv.writer(stream)
+         #       header= ['Name','Age','Gender','Education']
+          #      writer.writerow(header)
+           #     for i in self.userdata:
+            #        writer.writerow(i)
+
+>>>>>>> 69924cbfa6496e3818a3e6d50f214db31b0ec24f
 
 
 
