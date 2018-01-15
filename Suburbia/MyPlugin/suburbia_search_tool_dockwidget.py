@@ -119,7 +119,7 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
         self.ButtonAgree.clicked.connect(self.EnableButtonConfirm)
         self.ButtonConfirm.clicked.connect(self.Confirm)
         self.InfoTerms.clicked.connect(self.OpenInfoTerms)
-        self.ButtonPrivacyStatement(self.OpenInfoPrivacyStatement)
+        self.ButtonPrivacyStatement.clicked.connect(self.OpenInfoPrivacyStatement)
 
         #Preferences
         self.SliderPeople.valueChanged.connect(self.setPrioritynumbers)
