@@ -76,7 +76,6 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
         self.pref =[0,0,0,0]
         self.plugin_dir = os.path.dirname(__file__)
         self.canvas = self.iface.mapCanvas()
-        self.userdata = []
 
         #data
         self.loadDataRotterdam()
@@ -128,20 +127,29 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
         #Metrics
         self.ButtonAdjustPreferences.clicked.connect(self.Confirm)
         self.InfoMetrics.clicked.connect(self.OpenInfoMetrics)
-        self.ButtonFavorite.clicked.connect(self.AddFavorite)
-        self.ButtonSaveUserInfo.clicked.connect(self.ExportFavoritesCSV)
+        self.ButtonNewUser.clicked.connect(self.NewUser)
+
+
+
 
         #Explore
 
         self.pointTool = QgsMapToolEmitPoint(self.canvas)
-        self.pointTool.canvasClicked.connect(self.display_point)
-        self.canvas.setMapTool(self.pointTool)
 
+        self.pointTool.canvasClicked.connect(self.display_point)
+
+        self.canvas.setMapTool(self.pointTool)
 
 
     def closeEvent(self, event):
         self.closingPlugin.emit()
         event.accept()
+
+    def NewUser(self):
+        self.TabTerms.setEnabled(True)
+        self.Tabs.setCurrentIndex(0)
+        self.TabPreferences.setEnabled(False)
+        self.TabMetrics.setEnabled(False)
 
 #######
 #    Vizualisation
@@ -188,17 +196,12 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
             self.canvas.refresh()
 
     def showresults(self,feature):
-
-        if feature[18]:
-            percentage = (((feature[14]/((feature[9]+feature[8])/2))+(feature[15]/(((1-feature[11])+(1-feature[12])/2)))+(feature[16]/(1-feature[13]))+(feature[17]/(1-feature[10])))/100)
-            progres =(feature[18]/percentage)
-            self.progressBar.setValue(progres)
-
+        self.progressBar.setValue(int(feature[18]))
         self.DisplayNeighborhoodName.setText(str(feature[1]))
-        self.ValuePeople.setNum(feature[8]*100)
-        self.ValueChild.setNum((feature[6]*1000))
-        self.ValueAccess.setNum((feature[7]*1000))
-        self.ValueAfford.setNum((feature[4]*1000))
+        self.ValuePeople.setNum(int(feature[8]))
+        self.ValueChild.setNum(int(feature[6]))
+        self.ValueAccess.setNum(int(feature[7]))
+        self.ValueAfford.setNum(int(feature[4]))
 
 #######
 #    Analysis functions
@@ -217,36 +220,9 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
     def Confirm(self):
         self.TabTerms.setEnabled(False)
         self.TabPreferences.setEnabled(True)
+        # self.SaveUserPreferences
         self.Tabs.setCurrentIndex(1)
-        # Whenever user confirms, the header off the later exported savefavorites csv is added.
-        header = ['Neighborhood',
-                  'Similar People (%)',
-                  'average distance to child care (m)',
-                  'average distance to trainstation (m)',
-                  'average housing price (euro)']
-        self.userdata.append(header)
 
-
-
-        #name = self.FieldName.text()
-        #age = self.FieldAge.text()
-        #gender = self.FieldGender.currentText()
-        #education = self.FieldEducation.currentText()
-        #new_row = [name,age,gender,education]
-        #self.userdata.append(new_row)
-
-    #def SaveUserInfo(self):
-        # open csv file for writing
-        #writer = csv.writer(open(unicode(path_csv)))
-        #new_row=[]
-        #new_row.append(self.FieldName.text())
-        #ew_row.append(self.FieldAge.text())
-        #writer.writerow(new_row)
-
-
-        #file = open(unicode(path),'w')
-        #file.write(age)
-        #file.close()
 
     def Explore(self):
 
@@ -269,32 +245,16 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
 
         self.displayContinuousStyle(layer_explore,'Score')
 
+
     def Locate(self):
-
-        self.pref[0] = self.SliderPeople.value()
-        self.pref[1] = self.SliderChild.value()
-        self.pref[2] = self.SliderAccess.value()
-        self.pref[3] = self.SliderAfford.value()
-        self.TabPreferences.setEnabled(False)
-        self.TabMetrics.setEnabled(True)
-        self.Tabs.setCurrentIndex(2)
-
-        subburbe = self.spinBox.value()
-
-        layer_explore = uf.getLegendLayerByName(self.iface, "Rotterdam_Selection")
-
-        uf.updateField(layer_explore, 'B1', self.SliderPeople.value())
-        uf.updateField(layer_explore, 'B2', self.SliderChild.value())
-        uf.updateField(layer_explore, 'B3', self.SliderAccess.value())
-        uf.updateField(layer_explore, 'B4', self.SliderAfford.value())
-
-        self.determineScore(layer_explore)
-        uf.getFieldNames(layer_explore)
-        self.displayContinuousStyle(layer_explore, 'Score')
-        expr = "\"BU_NAAM\"='{}'".format(subburbe)
-        feat = uf.getFeaturesByExpression(layer_explore, expr)
-        print(feat[0])
-        self.showresults(feat)
+        if not self.EnterPostalCode == "":
+            self.pref[0] = self.SliderPeople.value()
+            self.pref[1] = self.SliderChild.value()
+            self.pref[2] = self.SliderAccess.value()
+            self.pref[3] = self.SliderAfford.value()
+            self.TabPreferences.setEnabled(False)
+            self.TabMetrics.setEnabled(True)
+            self.Tabs.setCurrentIndex(2)
 
     def determineScore(self, layer):
         res = False
@@ -304,30 +264,11 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
             if caps & QgsVectorDataProvider.AddAttributes:
                 layer.startEditing()
                 for feature in layer.getFeatures():
-                    feature['B1'] = feature['B1'] * ((feature['25_44_Norm'] + feature['HH_MK_NORM']) / 2)
-                    if feature['KDV_NORM'] != 0.0 and feature['BSO_NORM'] != 0.0:
-                        feature['B2'] = feature['B2'] * (
-                                (((1 - feature['KDV_NORM'])) + ((1 - feature['BSO_NORM']))) / 2)
-                    else:
-                        if feature['KDV_NORM'] != 0.0 and feature['BSO_NORM'] == 0.0:
-                            feature['B2'] = feature['B2'] * (((1 - feature['KDV_NORM'])))
-                        else:
-                            if feature['KDV_NORM'] == 0 and feature['BSO_NORM'] != 0.0:
-                                feature['B2'] = feature['B2'] * (((1 - feature['BSO_NORM'])))
-                            else:
-                                feature['B2'] = 0
-
-                    if feature['TREIN_NORM'] != 0:
-                        feature['B3'] = feature['B3'] * (1 - feature['TREIN_NORM'])
-                    else:
-                        feature['B3'] = 0
-
-                    if feature['WOZ_NORM'] != 0:
-                        feature['B4'] = feature['B4'] * (1 - feature['WOZ_NORM'])
-                    else:
-                        feature['B4'] = 0
-
-                    feature['Score'] = feature['B1'] + feature['B2'] + feature['B3'] + feature['B4']
+                    feature['B1'] = feature['B1'] * feature['25_44_Norm']
+                    feature['B2'] = feature['B2'] * ((feature['KDV_NORM'])+(feature['BSO_NORM']))
+                    feature['B3'] = feature['B3'] * (feature['TREIN_NORM'])
+                    feature['B4'] = feature['B4'] * (feature['WOZ_NORM'])
+                    feature['Score'] = feature['B1']+ feature['B2'] + feature['B3'] + feature['B4']
                     layer.updateFeature(feature)
 
                 layer.commitChanges()
@@ -340,13 +281,17 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
         coords = "Map Coordinates: {:.4f}, {:.4f}".format(point.x(), point.y())
 
         print coords
+<<<<<<< HEAD
         closestFeatureId = -1
-
+=======
+        shortestDistance = float("inf")
+        closestFeatureId = 0
+>>>>>>> b5b21b52cc68afb3c1cfd84bb738aa3660206510
 
         layer = uf.getLegendLayerByName(self.iface, "Rotterdam_Selection")
 
         if str(layer) != "None":
-            pPnt = QgsGeometry.fromPoint(point)
+            pPnt = QgsGeometry.fromPoint(QgsPoint(point.x(), point.y()))
             feats = [feat for feat in layer.getFeatures()]
             print feats[1]
             for feat in feats:
@@ -393,37 +338,8 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
 
 ########
 #   Urban planning functions
-    def AddFavorite(self):
-        a = self.DisplayNeighborhoodName.text()
-        b = self.ValuePeople.text()
-        c = self.ValueChild.text()
-        d = self.ValueAccess.text()
-        e = self.ValueAfford.text()
-        self.userdata.append([a,b,c,d,e])
-
-    def ExportFavoritesCSV(self):
-        path_csv = QtGui.QFileDialog.getSaveFileName(self, 'Save File', '', 'CSV(*.csv)')
-        # create csv with favotires
-        if path_csv:
-            with open(unicode(path_csv), 'wb') as stream:
-                # open csv file for writing
-                writer = csv.writer(stream)
-                for i in self.userdata:
-                    writer.writerow(i)
-
-    # adjustments needed
-    #def CreateUrbanPlanningCSV(self):
-
-
-     #   if path_csv:
-      #      with open(unicode(path_csv), 'wb') as stream:
-       #         # open csv file for writing
-        #        writer = csv.writer(stream)
-         #       header= ['Name','Age','Gender','Education']
-          #      writer.writerow(header)
-           #     for i in self.userdata:
-            #        writer.writerow(i)
-
+    # Save user characteristics
+    #def SaveUserPreferences(self):
 
 
 
