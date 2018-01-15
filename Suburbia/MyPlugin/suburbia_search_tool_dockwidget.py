@@ -244,25 +244,6 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
                   'average housing price (euro)']
         self.userdata.append(header)
 
-        # name = self.FieldName.text()
-        # age = self.FieldAge.text()
-        # gender = self.FieldGender.currentText()
-        # education = self.FieldEducation.currentText()
-        # new_row = [name,age,gender,education]
-        # self.userdata.append(new_row)
-
-    # def SaveUserInfo(self):
-    # open csv file for writing
-    # writer = csv.writer(open(unicode(path_csv)))
-    # new_row=[]
-    # new_row.append(self.FieldName.text())
-    # ew_row.append(self.FieldAge.text())
-    # writer.writerow(new_row)
-
-    # file = open(unicode(path),'w')
-    # file.write(age)
-    # file.close()
-
     def Explore(self):
 
         self.pref[0] = self.SliderPeople.value()
