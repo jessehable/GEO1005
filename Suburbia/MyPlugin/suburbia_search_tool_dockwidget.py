@@ -304,7 +304,7 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
         att = feat.attributes()
         h = QgsHighlight(iface.mapCanvas(), feat.geometry(), layer_explore)
 
-        # set highlight symbol properties
+        
         h.setColor(QColor(255, 0, 0, 255))
         h.setWidth(15)
         h.setFillColor(QColor(255, 255, 255, 0))
