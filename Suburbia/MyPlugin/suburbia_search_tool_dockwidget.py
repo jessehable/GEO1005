@@ -103,12 +103,8 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
             self.tr('College'),
             self.tr('University'), ])
 
-        #items = list(uf.getFieldValues(
-        #    (uf.getLegendLayerByName(self.iface, "Rotterdam_Selection"))
-        #    , "BU_NAAM"))
-        #for i in items:
-        self.SelectionNeighborhood.addItems([self.tr('hoi')])
-
+        self.SelectionNeighborhood.addItems(sorted(uf.getFieldValues(
+            (uf.getLegendLayerByName(self.iface, "Rotterdam_Selection")), "BU_NAAM")[0]))
 
         ### setup GUI signals
         #Terms
@@ -139,10 +135,6 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
         self.ButtonFavorite.clicked.connect(self.UpdateLogMunicipality)
         self.ButtonSaveUserInfo.clicked.connect(self.ExportFavoritesCSV)
 
-
-
-
-
         #Explore
 
         self.pointTool = QgsMapToolEmitPoint(self.canvas)
@@ -167,13 +159,13 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
 #######
 
     def OpenInfoTerms(self):
-        webbrowser.open('https://github.com/TUdent/2016_Group-3_TOD_checker/wiki', new=2)
+        webbrowser.open('https://github.com/jessehable/GEO1005_2017_G12_Suburbia/wiki/8.-Privacy-Statement', new=2)
 
     def OpenInfoPreferences(self):
-        webbrowser.open('https://github.com/TUdent/2016_Group-3_TOD_checker/wiki', new=2)
+        webbrowser.open('https://github.com/jessehable/GEO1005_2017_G12_Suburbia/wiki/4.-SDSS-Concept', new=2)
 
     def OpenInfoMetrics(self):
-        webbrowser.open('https://github.com/TUdent/2016_Group-3_TOD_checker/wiki', new=2)
+        webbrowser.open('https://github.com/jessehable/GEO1005_2017_G12_Suburbia/wiki/3.-Data-component', new=2)
 
     def setPrioritynumbers(self):
         self.PriorityPeople.setNum(self.SliderPeople.value())
