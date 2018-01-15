@@ -3,17 +3,17 @@
   <title></title>
   <autotransaction active="0"/>
   <evaluateDefaultValues active="0"/>
-  <layer-tree-group expanded="1" checked="Qt::Checked" name="">
+  <layer-tree-group expanded="1" checked="Qt::PartiallyChecked" name="">
     <customproperties/>
-    <layer-tree-group expanded="1" checked="Qt::Checked" name="Maps">
+    <layer-tree-group expanded="1" checked="Qt::PartiallyChecked" name="Maps">
       <customproperties/>
-      <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="Neighborhood_outlines20180109140229582" source="/Users/jessehable/.qgis2/python/plugins/MyPlugin/sampledata/Neighborhood outlines.shp" name="Neighborhood outlines">
+      <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Unchecked" id="Neighborhood_outlines20180109140229582" source="D:\User\Mijn documenten\Github\GEO1005_2017_G12_Suburbia\Suburbia\MyPlugin\sampledata\Neighborhood outlines.dbf" name="Neighborhood outlines">
         <customproperties/>
       </layer-tree-layer>
-      <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="2018_01_09_Rotterdam_Selection20180109162946265" source="/Users/jessehable/.qgis2/python/plugins/MyPlugin/sampledata/2018-01-09_Rotterdam Selection.shp" name="Rotterdam_Selection">
+      <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="2018_01_09_Rotterdam_Selection20180109162946265" source="D:\User\Mijn documenten\Github\GEO1005_2017_G12_Suburbia\Suburbia\MyPlugin\sampledata\2018-01-09_Rotterdam Selection.shp" name="Rotterdam_Selection">
         <customproperties/>
       </layer-tree-layer>
-      <layer-tree-layer expanded="1" providerKey="gdal" checked="Qt::Checked" id="OpenStreetMap20171215111738261" source="&lt;GDAL_WMS>&#xd;&#xa;  &lt;Service name=&quot;TMS&quot;>&#xd;&#xa;    &lt;ServerUrl>http://tile.openstreetmap.org/${z}/${x}/${y}.png&lt;/ServerUrl>&#xd;&#xa;  &lt;/Service>&#xd;&#xa;  &lt;DataWindow>&#xd;&#xa;    &lt;UpperLeftX>-20037508.34&lt;/UpperLeftX>&#xd;&#xa;    &lt;UpperLeftY>20037508.34&lt;/UpperLeftY>&#xd;&#xa;    &lt;LowerRightX>20037508.34&lt;/LowerRightX>&#xd;&#xa;    &lt;LowerRightY>-20037508.34&lt;/LowerRightY>&#xd;&#xa;    &lt;TileLevel>19&lt;/TileLevel>&#xd;&#xa;    &lt;TileCountX>1&lt;/TileCountX>&#xd;&#xa;    &lt;TileCountY>1&lt;/TileCountY>&#xd;&#xa;    &lt;YOrigin>top&lt;/YOrigin>&#xd;&#xa;  &lt;/DataWindow>&#xd;&#xa;  &lt;Projection>EPSG:3857&lt;/Projection>&#xd;&#xa;  &lt;BlockSizeX>256&lt;/BlockSizeX>&#xd;&#xa;  &lt;BlockSizeY>256&lt;/BlockSizeY>&#xd;&#xa;  &lt;BandsCount>3&lt;/BandsCount>&#xd;&#xa;  &lt;Cache />&#xd;&#xa;&lt;/GDAL_WMS>&#xd;&#xa;" name="OpenStreetMap">
+      <layer-tree-layer expanded="1" providerKey="gdal" checked="Qt::Checked" id="OpenStreetMap20171215111738261" source="&lt;GDAL_WMS>&#xd;&#xd;&#xa;  &lt;Service name=&quot;TMS&quot;>&#xd;&#xd;&#xa;    &lt;ServerUrl>http://tile.openstreetmap.org/${z}/${x}/${y}.png&lt;/ServerUrl>&#xd;&#xd;&#xa;  &lt;/Service>&#xd;&#xd;&#xa;  &lt;DataWindow>&#xd;&#xd;&#xa;    &lt;UpperLeftX>-20037508.34&lt;/UpperLeftX>&#xd;&#xd;&#xa;    &lt;UpperLeftY>20037508.34&lt;/UpperLeftY>&#xd;&#xd;&#xa;    &lt;LowerRightX>20037508.34&lt;/LowerRightX>&#xd;&#xd;&#xa;    &lt;LowerRightY>-20037508.34&lt;/LowerRightY>&#xd;&#xd;&#xa;    &lt;TileLevel>19&lt;/TileLevel>&#xd;&#xd;&#xa;    &lt;TileCountX>1&lt;/TileCountX>&#xd;&#xd;&#xa;    &lt;TileCountY>1&lt;/TileCountY>&#xd;&#xd;&#xa;    &lt;YOrigin>top&lt;/YOrigin>&#xd;&#xd;&#xa;  &lt;/DataWindow>&#xd;&#xd;&#xa;  &lt;Projection>EPSG:3857&lt;/Projection>&#xd;&#xd;&#xa;  &lt;BlockSizeX>256&lt;/BlockSizeX>&#xd;&#xd;&#xa;  &lt;BlockSizeY>256&lt;/BlockSizeY>&#xd;&#xd;&#xa;  &lt;BandsCount>3&lt;/BandsCount>&#xd;&#xd;&#xa;  &lt;Cache />&#xd;&#xd;&#xa;&lt;/GDAL_WMS>&#xd;&#xd;&#xa;" name="OpenStreetMap">
         <customproperties/>
       </layer-tree-layer>
     </layer-tree-group>
@@ -22,16 +22,16 @@
   <mapcanvas>
     <units>meters</units>
     <extent>
-      <xmin>481946.35503060556948185</xmin>
-      <ymin>6773206.23772124946117401</ymin>
-      <xmax>508253.41119834780693054</xmax>
-      <ymax>6798491.81611664593219757</ymax>
+      <xmin>484550.57027330482378602</xmin>
+      <ymin>6780512.05590572860091925</ymin>
+      <xmax>510857.62644104706123471</xmax>
+      <ymax>6805797.63430112507194281</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>1</projections>
     <destinationsrs>
       <spatialrefsys>
-        <proj4>+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext  +no_defs</proj4>
+        <proj4>+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs</proj4>
         <srsid>3857</srsid>
         <srid>3857</srid>
         <authid>EPSG:3857</authid>
@@ -84,10 +84,10 @@
     </custom-order>
   </layer-tree-canvas>
   <legend updateDrawingOrder="true">
-    <legendgroup open="true" checked="Qt::Checked" name="Maps">
-      <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Neighborhood outlines" showFeatureCount="0">
+    <legendgroup open="true" checked="Qt::PartiallyChecked" name="Maps">
+      <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Neighborhood outlines" showFeatureCount="0">
         <filegroup open="true" hidden="false">
-          <legendlayerfile isInOverview="0" layerid="Neighborhood_outlines20180109140229582" visible="1"/>
+          <legendlayerfile isInOverview="0" layerid="Neighborhood_outlines20180109140229582" visible="0"/>
         </filegroup>
       </legendlayer>
       <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Rotterdam_Selection" showFeatureCount="0">
@@ -102,17 +102,84 @@
       </legendlayer>
     </legendgroup>
   </legend>
+  <Composer title="legend" visible="1">
+    <Composition resizeToContentsMarginLeft="0" snapping="0" showPages="1" guidesVisible="1" resizeToContentsMarginTop="0" worldFileMap="{8d1391e9-fa90-4bcb-880e-3d473f900026}" alignmentSnap="1" printResolution="300" paperWidth="297" gridVisible="0" snapGridOffsetX="0" smartGuides="1" snapGridOffsetY="0" resizeToContentsMarginRight="0" snapTolerancePixels="5" printAsRaster="0" generateWorldFile="0" paperHeight="210" numPages="1" snapGridResolution="10" resizeToContentsMarginBottom="0">
+      <symbol alpha="1" clip_to_extent="1" type="fill" name="">
+        <layer pass="0" class="SimpleFill" locked="0">
+          <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
+          <prop k="color" v="255,255,255,255"/>
+          <prop k="joinstyle" v="miter"/>
+          <prop k="offset" v="0,0"/>
+          <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+          <prop k="offset_unit" v="MM"/>
+          <prop k="outline_color" v="0,0,0,255"/>
+          <prop k="outline_style" v="no"/>
+          <prop k="outline_width" v="0.26"/>
+          <prop k="outline_width_unit" v="MM"/>
+          <prop k="style" v="solid"/>
+        </layer>
+      </symbol>
+      <ComposerLegend symbolWidth="7" title="Legend" rasterBorderWidth="0" titleAlignment="1" map="0" wmsLegendWidth="50" rasterBorderColor="0,0,0,255" wrapChar="" fontColor="#000000" legendFilterByAtlas="0" columnCount="1" wmsLegendHeight="25" columnSpace="2" symbolHeight="4" equalColumnWidth="0" resizeToContents="1" splitLayer="0" boxSpace="2" rasterBorder="1">
+        <styles>
+          <style marginBottom="2" name="title">
+            <styleFont description="MS Shell Dlg 2,20,-1,5,75,0,0,0,0,0" style=""/>
+          </style>
+          <style marginTop="2" name="group">
+            <styleFont description="MS Shell Dlg 2,14,-1,5,50,0,0,0,0,0" style=""/>
+          </style>
+          <style marginTop="2" name="subgroup">
+            <styleFont description="MS Shell Dlg 2,12,-1,5,50,0,0,0,0,0" style=""/>
+          </style>
+          <style marginTop="2" name="symbol">
+            <styleFont description="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" style=""/>
+          </style>
+          <style marginTop="2" marginLeft="2" name="symbolLabel">
+            <styleFont description="MS Shell Dlg 2,12,-1,5,50,0,0,0,0,0" style=""/>
+          </style>
+        </styles>
+        <ComposerItem pagey="131.247" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="0" y="131.247" visibility="1" zValue="8" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="54.6" outlineWidth="0.3" excludeFromExports="0" uuid="{19573186-c107-4201-9d34-401333e56ebf}" height="73.8" itemRotation="0" frame="false" pagex="0">
+          <FrameColor alpha="255" red="0" blue="0" green="0"/>
+          <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+          <customproperties/>
+        </ComposerItem>
+      </ComposerLegend>
+      <ComposerMap followPreset="false" mapRotation="0" keepLayerSet="false" followPresetName="" id="0" previewMode="Cache" drawCanvasItems="true">
+        <Extent ymin="6772428.46945548057556152" xmin="479617.26114196347771212" ymax="6804390.43890111055225134" xmax="524909.34106728807091713"/>
+        <LayerSet/>
+        <Grid/>
+        <AtlasMap scalingMode="2" atlasDriven="0" margin="0.10000000000000001"/>
+        <ComposerItem pagey="-1" page="1" id="" lastValidViewScaleFactor="1.93529" positionMode="0" positionLock="false" x="0" y="-1" visibility="1" zValue="5" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="299" outlineWidth="0.3" excludeFromExports="0" uuid="{8d1391e9-fa90-4bcb-880e-3d473f900026}" height="211" itemRotation="0" frame="false" pagex="0">
+          <FrameColor alpha="255" red="0" blue="0" green="0"/>
+          <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+          <customproperties/>
+        </ComposerItem>
+      </ComposerMap>
+      <ComposerScaleBar lineCapStyle="square" style="Single Box" numMapUnitsPerScaleBarUnit="1000" segmentSizeMode="0" alignment="0" numSegments="4" segmentMillimeters="26.6601" lineJoinStyle="miter" minBarWidth="50" numUnitsPerSegment="2500" units="1" labelBarSpace="3" outlineWidth="0.3" numSegmentsLeft="2" maxBarWidth="150" height="3" boxContentSpace="1" mapId="0" unitLabel="km">
+        <scaleBarFont description="MS Shell Dlg 2,12,-1,5,50,0,0,0,0,0" style=""/>
+        <fillColor alpha="255" red="0" blue="0" green="0"/>
+        <fillColor2 alpha="255" red="255" blue="255" green="255"/>
+        <strokeColor alpha="255" red="0" blue="0" green="0"/>
+        <textColor alpha="255" red="0" blue="0" green="0"/>
+        <ComposerItem pagey="185.047" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="148.5" y="185.047" visibility="1" zValue="3" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="148.051" outlineWidth="0.3" excludeFromExports="0" uuid="{0b2b1ed7-afdc-4ef8-9a0d-8ce2b536732a}" height="20" itemRotation="0" frame="false" pagex="148.5">
+          <FrameColor alpha="255" red="0" blue="0" green="0"/>
+          <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+          <customproperties/>
+        </ComposerItem>
+      </ComposerScaleBar>
+      <customproperties/>
+    </Composition>
+  </Composer>
   <projectlayers>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
       <id>2018_01_09_Rotterdam_Selection20180109162946265</id>
-      <datasource>../../../../../../.qgis2/python/plugins/MyPlugin/sampledata/2018-01-09_Rotterdam Selection.shp</datasource>
+      <datasource>./2018-01-09_Rotterdam Selection.shp</datasource>
       <keywordList>
         <value></value>
       </keywordList>
       <layername>Rotterdam_Selection</layername>
       <srs>
         <spatialrefsys>
-          <proj4>+proj=sterea +lat_0=52.15616055555555 +lon_0=5.38763888888889 +k=0.9999079 +x_0=155000 +y_0=463000 +ellps=bessel +towgs84=565.417,50.3319,465.552,-0.398957,0.343988,-1.8774,4.0725 +units=m +no_defs</proj4>
+          <proj4>+proj=sterea +lat_0=52.15616055555555 +lon_0=5.38763888888889 +k=0.9999079 +x_0=155000 +y_0=463000 +ellps=bessel +towgs84=565.2369,50.0087,465.658,-0.406857,0.350733,-1.87035,4.0812 +units=m +no_defs</proj4>
           <srsid>2517</srsid>
           <srid>28992</srid>
           <authid>EPSG:28992</authid>
@@ -194,9 +261,91 @@
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
       </edittypes>
-      <renderer-v2 attr="Score" forceraster="0" symbollevels="0" type="graduatedSymbol" graduatedMethod="GraduatedColor" enableorderby="0">
-        <ranges/>
-        <symbols/>
+      <renderer-v2 attr="WOZ_NORM" forceraster="0" symbollevels="0" type="graduatedSymbol" graduatedMethod="GraduatedColor" enableorderby="0">
+        <ranges>
+          <range render="true" symbol="0" lower="0.000000000000000" upper="0.130000000000000" label=" 0.0 - 0.1 "/>
+          <range render="true" symbol="1" lower="0.130000000000000" upper="0.180000000000000" label=" 0.1 - 0.2 "/>
+          <range render="true" symbol="2" lower="0.180000000000000" upper="0.230000000000000" label=" 0.2 - 0.2 "/>
+          <range render="true" symbol="3" lower="0.230000000000000" upper="0.410000000000000" label=" 0.2 - 0.4 "/>
+          <range render="true" symbol="4" lower="0.410000000000000" upper="1.000000000000000" label=" 0.4 - 1.0 "/>
+        </ranges>
+        <symbols>
+          <symbol alpha="1" clip_to_extent="1" type="fill" name="0">
+            <layer pass="0" class="SimpleFill" locked="0">
+              <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="color" v="215,25,28,255"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0.26"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="style" v="solid"/>
+            </layer>
+          </symbol>
+          <symbol alpha="1" clip_to_extent="1" type="fill" name="1">
+            <layer pass="0" class="SimpleFill" locked="0">
+              <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="color" v="253,174,97,255"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0.26"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="style" v="solid"/>
+            </layer>
+          </symbol>
+          <symbol alpha="1" clip_to_extent="1" type="fill" name="2">
+            <layer pass="0" class="SimpleFill" locked="0">
+              <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="color" v="255,255,192,255"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0.26"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="style" v="solid"/>
+            </layer>
+          </symbol>
+          <symbol alpha="1" clip_to_extent="1" type="fill" name="3">
+            <layer pass="0" class="SimpleFill" locked="0">
+              <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="color" v="166,217,106,255"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0.26"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="style" v="solid"/>
+            </layer>
+          </symbol>
+          <symbol alpha="1" clip_to_extent="1" type="fill" name="4">
+            <layer pass="0" class="SimpleFill" locked="0">
+              <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="color" v="26,150,65,255"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0.26"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="style" v="solid"/>
+            </layer>
+          </symbol>
+        </symbols>
         <source-symbol>
           <symbol alpha="1" clip_to_extent="1" type="fill" name="0">
             <layer pass="0" class="SimpleFill" locked="0">
@@ -224,7 +373,7 @@
         <mode name="quantile"/>
         <rotation/>
         <sizescale scalemethod="diameter"/>
-        <labelformat format=" %1 - %2 " trimtrailingzeroes="false" decimalplaces="1"/>
+        <labelformat format=" %1 - %2 " trimtrailingzeroes="false" decimalplaces="3"/>
       </renderer-v2>
       <labeling type="simple"/>
       <customproperties>
@@ -254,7 +403,7 @@
         <property key="labeling/distMapUnitScale" value="0,0,0,0,0,0"/>
         <property key="labeling/drawLabels" value="false"/>
         <property key="labeling/enabled" value="false"/>
-        <property key="labeling/fieldName" value=""/>
+        <property key="labeling/fieldName" value="BU_CODE"/>
         <property key="labeling/fitInPolygonOnly" value="false"/>
         <property key="labeling/fontCapitals" value="0"/>
         <property key="labeling/fontFamily" value="MS Shell Dlg 2"/>
@@ -263,7 +412,7 @@
         <property key="labeling/fontLimitPixelSize" value="false"/>
         <property key="labeling/fontMaxPixelSize" value="10000"/>
         <property key="labeling/fontMinPixelSize" value="3"/>
-        <property key="labeling/fontSize" value="7.5"/>
+        <property key="labeling/fontSize" value="20"/>
         <property key="labeling/fontSizeInMapUnits" value="false"/>
         <property key="labeling/fontSizeMapUnitScale" value="0,0,0,0,0,0"/>
         <property key="labeling/fontStrikeout" value="false"/>
@@ -271,7 +420,7 @@
         <property key="labeling/fontWeight" value="50"/>
         <property key="labeling/fontWordSpacing" value="0"/>
         <property key="labeling/formatNumbers" value="false"/>
-        <property key="labeling/isExpression" value="true"/>
+        <property key="labeling/isExpression" value="false"/>
         <property key="labeling/labelOffsetInMapUnits" value="true"/>
         <property key="labeling/labelOffsetMapUnitScale" value="0,0,0,0,0,0"/>
         <property key="labeling/labelPerPart" value="false"/>
@@ -372,8 +521,14 @@
       </customproperties>
       <blendMode>0</blendMode>
       <featureBlendMode>0</featureBlendMode>
-      <layerTransparency>30</layerTransparency>
-      <displayfield>BU_CODE</displayfield>
+      <layerTransparency>28</layerTransparency>
+      <displayfield>&lt;div style="width:200;heigth:200">
+
+&lt;b> [% "BU_NAAM" %] &lt;/b> &lt;br> 
+&lt;b> Similair neighbors: &lt;/b> [% ("P_25_44_JR" +"P_HH_M_K")/2 %] %&lt;br> 
+&lt;b> Child friendliness: &lt;/b> [% ("AF_KDV"+"AF_BSO")/2 %] km to daycare&lt;br> 
+&lt;b> Acccessibility: &lt;/b> [% "AF_TREINST" %] km to train&lt;br> 
+&lt;b> Affordability: &lt;/b> [%( "WOZ"*1000) %] € &lt;br> </displayfield>
       <label>0</label>
       <labelattributes>
         <label fieldname="" text="Label"/>
@@ -532,14 +687,14 @@ def my_form_open(dialog, layer, feature):
     </maplayer>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Line" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
       <id>Neighborhood_outlines20180109140229582</id>
-      <datasource>../../../../../../.qgis2/python/plugins/MyPlugin/sampledata/Neighborhood outlines.shp</datasource>
+      <datasource>./Neighborhood outlines.dbf</datasource>
       <keywordList>
         <value></value>
       </keywordList>
       <layername>Neighborhood outlines</layername>
       <srs>
         <spatialrefsys>
-          <proj4>+proj=sterea +lat_0=52.15616055555555 +lon_0=5.38763888888889 +k=0.9999079 +x_0=155000 +y_0=463000 +ellps=bessel +towgs84=565.417,50.3319,465.552,-0.398957,0.343988,-1.8774,4.0725 +units=m +no_defs</proj4>
+          <proj4>+proj=sterea +lat_0=52.15616055555555 +lon_0=5.38763888888889 +k=0.9999079 +x_0=155000 +y_0=463000 +ellps=bessel +towgs84=565.2369,50.0087,465.658,-0.406857,0.350733,-1.87035,4.0812 +units=m +no_defs</proj4>
           <srsid>2517</srsid>
           <srid>28992</srid>
           <authid>EPSG:28992</authid>
@@ -641,11 +796,153 @@ def my_form_open(dialog, layer, feature):
         <sizescale scalemethod="diameter"/>
       </renderer-v2>
       <labeling type="simple"/>
-      <customproperties/>
+      <customproperties>
+        <property key="embeddedWidgets/count" value="0"/>
+        <property key="labeling" value="pal"/>
+        <property key="labeling/addDirectionSymbol" value="false"/>
+        <property key="labeling/angleOffset" value="0"/>
+        <property key="labeling/blendMode" value="0"/>
+        <property key="labeling/bufferBlendMode" value="0"/>
+        <property key="labeling/bufferColorA" value="255"/>
+        <property key="labeling/bufferColorB" value="255"/>
+        <property key="labeling/bufferColorG" value="255"/>
+        <property key="labeling/bufferColorR" value="255"/>
+        <property key="labeling/bufferDraw" value="false"/>
+        <property key="labeling/bufferJoinStyle" value="128"/>
+        <property key="labeling/bufferNoFill" value="false"/>
+        <property key="labeling/bufferSize" value="1"/>
+        <property key="labeling/bufferSizeInMapUnits" value="false"/>
+        <property key="labeling/bufferSizeMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/bufferTransp" value="0"/>
+        <property key="labeling/centroidInside" value="false"/>
+        <property key="labeling/centroidWhole" value="false"/>
+        <property key="labeling/decimals" value="3"/>
+        <property key="labeling/displayAll" value="false"/>
+        <property key="labeling/dist" value="0"/>
+        <property key="labeling/distInMapUnits" value="false"/>
+        <property key="labeling/distMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/drawLabels" value="false"/>
+        <property key="labeling/enabled" value="false"/>
+        <property key="labeling/fieldName" value="BU_NAAM"/>
+        <property key="labeling/fitInPolygonOnly" value="false"/>
+        <property key="labeling/fontCapitals" value="0"/>
+        <property key="labeling/fontFamily" value="MS Shell Dlg 2"/>
+        <property key="labeling/fontItalic" value="false"/>
+        <property key="labeling/fontLetterSpacing" value="0"/>
+        <property key="labeling/fontLimitPixelSize" value="false"/>
+        <property key="labeling/fontMaxPixelSize" value="10000"/>
+        <property key="labeling/fontMinPixelSize" value="3"/>
+        <property key="labeling/fontSize" value="8.25"/>
+        <property key="labeling/fontSizeInMapUnits" value="false"/>
+        <property key="labeling/fontSizeMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/fontStrikeout" value="false"/>
+        <property key="labeling/fontUnderline" value="false"/>
+        <property key="labeling/fontWeight" value="50"/>
+        <property key="labeling/fontWordSpacing" value="0"/>
+        <property key="labeling/formatNumbers" value="false"/>
+        <property key="labeling/isExpression" value="false"/>
+        <property key="labeling/labelOffsetInMapUnits" value="true"/>
+        <property key="labeling/labelOffsetMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/labelPerPart" value="false"/>
+        <property key="labeling/leftDirectionSymbol" value="&lt;"/>
+        <property key="labeling/limitNumLabels" value="false"/>
+        <property key="labeling/maxCurvedCharAngleIn" value="25"/>
+        <property key="labeling/maxCurvedCharAngleOut" value="-25"/>
+        <property key="labeling/maxNumLabels" value="2000"/>
+        <property key="labeling/mergeLines" value="false"/>
+        <property key="labeling/minFeatureSize" value="0"/>
+        <property key="labeling/multilineAlign" value="4294967295"/>
+        <property key="labeling/multilineHeight" value="1"/>
+        <property key="labeling/namedStyle" value="Normal"/>
+        <property key="labeling/obstacle" value="true"/>
+        <property key="labeling/obstacleFactor" value="1"/>
+        <property key="labeling/obstacleType" value="0"/>
+        <property key="labeling/offsetType" value="0"/>
+        <property key="labeling/placeDirectionSymbol" value="0"/>
+        <property key="labeling/placement" value="2"/>
+        <property key="labeling/placementFlags" value="10"/>
+        <property key="labeling/plussign" value="false"/>
+        <property key="labeling/predefinedPositionOrder" value="TR,TL,BR,BL,R,L,TSR,BSR"/>
+        <property key="labeling/preserveRotation" value="true"/>
+        <property key="labeling/previewBkgrdColor" value="#ffffff"/>
+        <property key="labeling/priority" value="5"/>
+        <property key="labeling/quadOffset" value="4"/>
+        <property key="labeling/repeatDistance" value="0"/>
+        <property key="labeling/repeatDistanceMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/repeatDistanceUnit" value="1"/>
+        <property key="labeling/reverseDirectionSymbol" value="false"/>
+        <property key="labeling/rightDirectionSymbol" value=">"/>
+        <property key="labeling/scaleMax" value="10000000"/>
+        <property key="labeling/scaleMin" value="1"/>
+        <property key="labeling/scaleVisibility" value="false"/>
+        <property key="labeling/shadowBlendMode" value="6"/>
+        <property key="labeling/shadowColorB" value="0"/>
+        <property key="labeling/shadowColorG" value="0"/>
+        <property key="labeling/shadowColorR" value="0"/>
+        <property key="labeling/shadowDraw" value="false"/>
+        <property key="labeling/shadowOffsetAngle" value="135"/>
+        <property key="labeling/shadowOffsetDist" value="1"/>
+        <property key="labeling/shadowOffsetGlobal" value="true"/>
+        <property key="labeling/shadowOffsetMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/shadowOffsetUnits" value="1"/>
+        <property key="labeling/shadowRadius" value="1.5"/>
+        <property key="labeling/shadowRadiusAlphaOnly" value="false"/>
+        <property key="labeling/shadowRadiusMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/shadowRadiusUnits" value="1"/>
+        <property key="labeling/shadowScale" value="100"/>
+        <property key="labeling/shadowTransparency" value="30"/>
+        <property key="labeling/shadowUnder" value="0"/>
+        <property key="labeling/shapeBlendMode" value="0"/>
+        <property key="labeling/shapeBorderColorA" value="255"/>
+        <property key="labeling/shapeBorderColorB" value="128"/>
+        <property key="labeling/shapeBorderColorG" value="128"/>
+        <property key="labeling/shapeBorderColorR" value="128"/>
+        <property key="labeling/shapeBorderWidth" value="0"/>
+        <property key="labeling/shapeBorderWidthMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/shapeBorderWidthUnits" value="1"/>
+        <property key="labeling/shapeDraw" value="false"/>
+        <property key="labeling/shapeFillColorA" value="255"/>
+        <property key="labeling/shapeFillColorB" value="255"/>
+        <property key="labeling/shapeFillColorG" value="255"/>
+        <property key="labeling/shapeFillColorR" value="255"/>
+        <property key="labeling/shapeJoinStyle" value="64"/>
+        <property key="labeling/shapeOffsetMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/shapeOffsetUnits" value="1"/>
+        <property key="labeling/shapeOffsetX" value="0"/>
+        <property key="labeling/shapeOffsetY" value="0"/>
+        <property key="labeling/shapeRadiiMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/shapeRadiiUnits" value="1"/>
+        <property key="labeling/shapeRadiiX" value="0"/>
+        <property key="labeling/shapeRadiiY" value="0"/>
+        <property key="labeling/shapeRotation" value="0"/>
+        <property key="labeling/shapeRotationType" value="0"/>
+        <property key="labeling/shapeSVGFile" value=""/>
+        <property key="labeling/shapeSizeMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/shapeSizeType" value="0"/>
+        <property key="labeling/shapeSizeUnits" value="1"/>
+        <property key="labeling/shapeSizeX" value="0"/>
+        <property key="labeling/shapeSizeY" value="0"/>
+        <property key="labeling/shapeTransparency" value="0"/>
+        <property key="labeling/shapeType" value="0"/>
+        <property key="labeling/substitutions" value="&lt;substitutions/>"/>
+        <property key="labeling/textColorA" value="255"/>
+        <property key="labeling/textColorB" value="0"/>
+        <property key="labeling/textColorG" value="0"/>
+        <property key="labeling/textColorR" value="0"/>
+        <property key="labeling/textTransp" value="0"/>
+        <property key="labeling/upsidedownLabels" value="0"/>
+        <property key="labeling/useSubstitutions" value="false"/>
+        <property key="labeling/wrapChar" value=""/>
+        <property key="labeling/xOffset" value="0"/>
+        <property key="labeling/yOffset" value="0"/>
+        <property key="labeling/zIndex" value="0"/>
+        <property key="variableNames"/>
+        <property key="variableValues"/>
+      </customproperties>
       <blendMode>0</blendMode>
       <featureBlendMode>0</featureBlendMode>
       <layerTransparency>0</layerTransparency>
-      <displayfield>BU_CODE</displayfield>
+      <displayfield>&lt;b> Name of Neighborhood: &lt;/b> [% "BU_NAAM" %] &lt;br></displayfield>
       <label>0</label>
       <labelattributes>
         <label fieldname="" text="Label"/>
@@ -667,6 +964,34 @@ def my_form_open(dialog, layer, feature):
         <multilineenabled fieldname="" on=""/>
         <selectedonly on=""/>
       </labelattributes>
+      <SingleCategoryDiagramRenderer diagramType="Histogram" sizeLegend="0" attributeLegend="1">
+        <DiagramCategory penColor="#000000" labelPlacementMethod="XHeight" penWidth="0" diagramOrientation="Up" sizeScale="0,0,0,0,0,0" minimumSize="0" barWidth="5" penAlpha="255" maxScaleDenominator="1e+08" backgroundColor="#ffffff" transparency="0" width="15" scaleDependency="Area" backgroundAlpha="255" angleOffset="1440" scaleBasedVisibility="0" enabled="0" height="15" lineSizeScale="0,0,0,0,0,0" sizeType="MM" lineSizeType="MM" minScaleDenominator="inf">
+          <fontProperties description="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" style=""/>
+        </DiagramCategory>
+        <symbol alpha="1" clip_to_extent="1" type="marker" name="sizeSymbol">
+          <layer pass="0" class="SimpleMarker" locked="0">
+            <prop k="angle" v="0"/>
+            <prop k="color" v="255,0,0,255"/>
+            <prop k="horizontal_anchor_point" v="1"/>
+            <prop k="joinstyle" v="bevel"/>
+            <prop k="name" v="circle"/>
+            <prop k="offset" v="0,0"/>
+            <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+            <prop k="offset_unit" v="MM"/>
+            <prop k="outline_color" v="0,0,0,255"/>
+            <prop k="outline_style" v="solid"/>
+            <prop k="outline_width" v="0"/>
+            <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+            <prop k="outline_width_unit" v="MM"/>
+            <prop k="scale_method" v="diameter"/>
+            <prop k="size" v="2"/>
+            <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+            <prop k="size_unit" v="MM"/>
+            <prop k="vertical_anchor_point" v="1"/>
+          </layer>
+        </symbol>
+      </SingleCategoryDiagramRenderer>
+      <DiagramLayerSettings yPosColumn="-1" showColumn="-1" linePlacementFlags="10" placement="2" dist="0" xPosColumn="-1" priority="0" obstacle="0" zIndex="0" showAll="1"/>
       <annotationform>/.qgis2/python/plugins/MyPlugin/sampledata</annotationform>
       <aliases>
         <alias field="BU_CODE" index="0" name=""/>
@@ -693,13 +1018,50 @@ def my_form_open(dialog, layer, feature):
       <excludeAttributesWFS/>
       <attributeactions default="-1"/>
       <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
-        <columns/>
+        <columns>
+          <column width="-1" hidden="0" type="field" name="BU_CODE"/>
+          <column width="-1" hidden="0" type="field" name="BU_NAAM"/>
+          <column width="-1" hidden="0" type="field" name="P_25_44_JR"/>
+          <column width="-1" hidden="0" type="field" name="P_HH_M_K"/>
+          <column width="-1" hidden="0" type="field" name="WOZ"/>
+          <column width="-1" hidden="0" type="field" name="AF_KDV"/>
+          <column width="-1" hidden="0" type="field" name="AF_BSO"/>
+          <column width="-1" hidden="0" type="field" name="AF_TREINST"/>
+          <column width="-1" hidden="0" type="field" name="25_44_NORM"/>
+          <column width="-1" hidden="0" type="field" name="HH_MK_NORM"/>
+          <column width="-1" hidden="0" type="field" name="WOZ_NORM"/>
+          <column width="-1" hidden="0" type="field" name="KDV_NORM"/>
+          <column width="-1" hidden="0" type="field" name="BSO_NORM"/>
+          <column width="-1" hidden="0" type="field" name="TREIN_NORM"/>
+          <column width="-1" hidden="0" type="field" name="B1"/>
+          <column width="-1" hidden="0" type="field" name="B2"/>
+          <column width="-1" hidden="0" type="field" name="B3"/>
+          <column width="-1" hidden="0" type="field" name="B4"/>
+          <column width="-1" hidden="0" type="field" name="Score"/>
+          <column width="-1" hidden="1" type="actions"/>
+        </columns>
       </attributetableconfig>
       <editform>/.qgis2/python/plugins/MyPlugin/sampledata</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
       <editforminitfilepath>/.qgis2/python/plugins/MyPlugin/sampledata</editforminitfilepath>
-      <editforminitcode><![CDATA[]]></editforminitcode>
+      <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
+"""
+QGIS forms can have a Python function that is called when the form is
+opened.
+
+Use this function to add extra logic to your forms.
+
+Enter the name of the function in the "Python Init function"
+field.
+An example follows:
+"""
+from qgis.PyQt.QtWidgets import QWidget
+
+def my_form_open(dialog, layer, feature):
+	geom = feature.geometry()
+	control = dialog.findChild(QWidget, "MyLineEdit")
+]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
       <widgets/>
@@ -738,26 +1100,26 @@ def my_form_open(dialog, layer, feature):
         <ymax>20037508.33999999985098839</ymax>
       </extent>
       <id>OpenStreetMap20171215111738261</id>
-      <datasource>&lt;GDAL_WMS>&#xd;
-  &lt;Service name="TMS">&#xd;
-    &lt;ServerUrl>http://tile.openstreetmap.org/${z}/${x}/${y}.png&lt;/ServerUrl>&#xd;
-  &lt;/Service>&#xd;
-  &lt;DataWindow>&#xd;
-    &lt;UpperLeftX>-20037508.34&lt;/UpperLeftX>&#xd;
-    &lt;UpperLeftY>20037508.34&lt;/UpperLeftY>&#xd;
-    &lt;LowerRightX>20037508.34&lt;/LowerRightX>&#xd;
-    &lt;LowerRightY>-20037508.34&lt;/LowerRightY>&#xd;
-    &lt;TileLevel>19&lt;/TileLevel>&#xd;
-    &lt;TileCountX>1&lt;/TileCountX>&#xd;
-    &lt;TileCountY>1&lt;/TileCountY>&#xd;
-    &lt;YOrigin>top&lt;/YOrigin>&#xd;
-  &lt;/DataWindow>&#xd;
-  &lt;Projection>EPSG:3857&lt;/Projection>&#xd;
-  &lt;BlockSizeX>256&lt;/BlockSizeX>&#xd;
-  &lt;BlockSizeY>256&lt;/BlockSizeY>&#xd;
-  &lt;BandsCount>3&lt;/BandsCount>&#xd;
-  &lt;Cache />&#xd;
-&lt;/GDAL_WMS>&#xd;
+      <datasource>&lt;GDAL_WMS>&#xd;&#xd;
+  &lt;Service name="TMS">&#xd;&#xd;
+    &lt;ServerUrl>http://tile.openstreetmap.org/${z}/${x}/${y}.png&lt;/ServerUrl>&#xd;&#xd;
+  &lt;/Service>&#xd;&#xd;
+  &lt;DataWindow>&#xd;&#xd;
+    &lt;UpperLeftX>-20037508.34&lt;/UpperLeftX>&#xd;&#xd;
+    &lt;UpperLeftY>20037508.34&lt;/UpperLeftY>&#xd;&#xd;
+    &lt;LowerRightX>20037508.34&lt;/LowerRightX>&#xd;&#xd;
+    &lt;LowerRightY>-20037508.34&lt;/LowerRightY>&#xd;&#xd;
+    &lt;TileLevel>19&lt;/TileLevel>&#xd;&#xd;
+    &lt;TileCountX>1&lt;/TileCountX>&#xd;&#xd;
+    &lt;TileCountY>1&lt;/TileCountY>&#xd;&#xd;
+    &lt;YOrigin>top&lt;/YOrigin>&#xd;&#xd;
+  &lt;/DataWindow>&#xd;&#xd;
+  &lt;Projection>EPSG:3857&lt;/Projection>&#xd;&#xd;
+  &lt;BlockSizeX>256&lt;/BlockSizeX>&#xd;&#xd;
+  &lt;BlockSizeY>256&lt;/BlockSizeY>&#xd;&#xd;
+  &lt;BandsCount>3&lt;/BandsCount>&#xd;&#xd;
+  &lt;Cache />&#xd;&#xd;
+&lt;/GDAL_WMS>&#xd;&#xd;
 </datasource>
       <keywordList>
         <value></value>
@@ -765,7 +1127,7 @@ def my_form_open(dialog, layer, feature):
       <layername>OpenStreetMap</layername>
       <srs>
         <spatialrefsys>
-          <proj4>+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext  +no_defs</proj4>
+          <proj4>+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs</proj4>
           <srsid>3857</srsid>
           <srid>3857</srid>
           <authid>EPSG:3857</authid>
@@ -790,7 +1152,7 @@ def my_form_open(dialog, layer, feature):
         <map-layer-style name=""/>
       </map-layer-style-manager>
       <pipe>
-        <rasterrenderer opacity="0.537255" alphaBand="0" blueBand="3" greenBand="2" type="multibandcolor" redBand="1">
+        <rasterrenderer opacity="0.65098" alphaBand="-1" blueBand="3" greenBand="2" type="multibandcolor" redBand="1">
           <rasterTransparency/>
         </rasterrenderer>
         <brightnesscontrast brightness="0" contrast="0"/>
