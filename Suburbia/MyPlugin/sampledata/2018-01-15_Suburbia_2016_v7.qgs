@@ -13,7 +13,7 @@
       <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="Neighborhood_outlines20180109140229582" source="D:/User/Mijn documenten/Github/GEO1005_2017_G12_Suburbia/Suburbia/MyPlugin/sampledata/Neighborhood outlines.shp" name="Neighborhood outlines">
         <customproperties/>
       </layer-tree-layer>
-      <layer-tree-layer expanded="1" providerKey="gdal" checked="Qt::Checked" id="Rotterdam_new20180115221125554" source="D:/User/Desktop/Rotterdam_new.tif" name="Rotterdam_new">
+      <layer-tree-layer expanded="1" providerKey="gdal" checked="Qt::Checked" id="Rotterdam_new20180115221125554" source="/sampledata/Rotterdam_new.tif" name="Rotterdam_new">
         <customproperties/>
       </layer-tree-layer>
     </layer-tree-group>
