@@ -1,5 +1,5 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis projectname="" version="2.18.14">
+<qgis projectname="" version="2.18.15">
   <title></title>
   <autotransaction active="0"/>
   <evaluateDefaultValues active="0"/>
@@ -7,13 +7,13 @@
     <customproperties/>
     <layer-tree-group expanded="1" checked="Qt::Checked" name="Maps">
       <customproperties/>
-      <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="Neighborhood_outlines20180109140229582" source="D:\User\Mijn documenten\Github\GEO1005_2017_G12_Suburbia\Suburbia\MyPlugin\sampledata\Neighborhood outlines.shp" name="Neighborhood outlines">
+      <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="Neighborhood_outlines20180109140229582" source="C:/Users/vette/OneDrive/Documents/GitHub/GEO1005_2017_G12_Suburbia/Suburbia/MyPlugin/sampledata/Neighborhood outlines.shp" name="Neighborhood outlines">
         <customproperties/>
       </layer-tree-layer>
-      <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="2018_01_09_Rotterdam_Selection20180109162946265" source="D:\User\Mijn documenten\Github\GEO1005_2017_G12_Suburbia\Suburbia\MyPlugin\sampledata\2018-01-09_Rotterdam Selection.shp" name="Rotterdam_Selection">
+      <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="2018_01_09_Rotterdam_Selection20180109162946265" source="C:/Users/vette/OneDrive/Documents/GitHub/GEO1005_2017_G12_Suburbia/Suburbia/MyPlugin/sampledata/2018-01-09_Rotterdam Selection.shp" name="Rotterdam_Selection">
         <customproperties/>
       </layer-tree-layer>
-      <layer-tree-layer expanded="1" providerKey="gdal" checked="Qt::Checked" id="OpenStreetMap20171215111738261" source="&lt;GDAL_WMS>&#xd;&#xd;&#xa;  &lt;Service name=&quot;TMS&quot;>&#xd;&#xd;&#xa;    &lt;ServerUrl>http://tile.openstreetmap.org/${z}/${x}/${y}.png&lt;/ServerUrl>&#xd;&#xd;&#xa;  &lt;/Service>&#xd;&#xd;&#xa;  &lt;DataWindow>&#xd;&#xd;&#xa;    &lt;UpperLeftX>-20037508.34&lt;/UpperLeftX>&#xd;&#xd;&#xa;    &lt;UpperLeftY>20037508.34&lt;/UpperLeftY>&#xd;&#xd;&#xa;    &lt;LowerRightX>20037508.34&lt;/LowerRightX>&#xd;&#xd;&#xa;    &lt;LowerRightY>-20037508.34&lt;/LowerRightY>&#xd;&#xd;&#xa;    &lt;TileLevel>19&lt;/TileLevel>&#xd;&#xd;&#xa;    &lt;TileCountX>1&lt;/TileCountX>&#xd;&#xd;&#xa;    &lt;TileCountY>1&lt;/TileCountY>&#xd;&#xd;&#xa;    &lt;YOrigin>top&lt;/YOrigin>&#xd;&#xd;&#xa;  &lt;/DataWindow>&#xd;&#xd;&#xa;  &lt;Projection>EPSG:3857&lt;/Projection>&#xd;&#xd;&#xa;  &lt;BlockSizeX>256&lt;/BlockSizeX>&#xd;&#xd;&#xa;  &lt;BlockSizeY>256&lt;/BlockSizeY>&#xd;&#xd;&#xa;  &lt;BandsCount>3&lt;/BandsCount>&#xd;&#xd;&#xa;  &lt;Cache />&#xd;&#xd;&#xa;&lt;/GDAL_WMS>&#xd;&#xd;&#xa;" name="OpenStreetMap">
+      <layer-tree-layer expanded="1" providerKey="gdal" checked="Qt::Checked" id="OpenStreetMap20171215111738261" source="&lt;GDAL_WMS>&#xd;&#xd;&#xd;&#xa;  &lt;Service name=&quot;TMS&quot;>&#xd;&#xd;&#xd;&#xa;    &lt;ServerUrl>http://tile.openstreetmap.org/${z}/${x}/${y}.png&lt;/ServerUrl>&#xd;&#xd;&#xd;&#xa;  &lt;/Service>&#xd;&#xd;&#xd;&#xa;  &lt;DataWindow>&#xd;&#xd;&#xd;&#xa;    &lt;UpperLeftX>-20037508.34&lt;/UpperLeftX>&#xd;&#xd;&#xd;&#xa;    &lt;UpperLeftY>20037508.34&lt;/UpperLeftY>&#xd;&#xd;&#xd;&#xa;    &lt;LowerRightX>20037508.34&lt;/LowerRightX>&#xd;&#xd;&#xd;&#xa;    &lt;LowerRightY>-20037508.34&lt;/LowerRightY>&#xd;&#xd;&#xd;&#xa;    &lt;TileLevel>19&lt;/TileLevel>&#xd;&#xd;&#xd;&#xa;    &lt;TileCountX>1&lt;/TileCountX>&#xd;&#xd;&#xd;&#xa;    &lt;TileCountY>1&lt;/TileCountY>&#xd;&#xd;&#xd;&#xa;    &lt;YOrigin>top&lt;/YOrigin>&#xd;&#xd;&#xd;&#xa;  &lt;/DataWindow>&#xd;&#xd;&#xd;&#xa;  &lt;Projection>EPSG:3857&lt;/Projection>&#xd;&#xd;&#xd;&#xa;  &lt;BlockSizeX>256&lt;/BlockSizeX>&#xd;&#xd;&#xd;&#xa;  &lt;BlockSizeY>256&lt;/BlockSizeY>&#xd;&#xd;&#xd;&#xa;  &lt;BandsCount>3&lt;/BandsCount>&#xd;&#xd;&#xd;&#xa;  &lt;Cache />&#xd;&#xd;&#xd;&#xa;&lt;/GDAL_WMS>&#xd;&#xd;&#xd;&#xa;" name="OpenStreetMap">
         <customproperties/>
       </layer-tree-layer>
     </layer-tree-group>
@@ -105,7 +105,7 @@
   <projectlayers>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
       <id>2018_01_09_Rotterdam_Selection20180109162946265</id>
-      <datasource>../sampledata/2018-01-09_Rotterdam Selection.shp</datasource>
+      <datasource>./2018-01-09_Rotterdam Selection.shp</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -194,7 +194,7 @@
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
       </edittypes>
-      <renderer-v2 attr="WOZ" forceraster="0" symbollevels="0" type="graduatedSymbol" graduatedMethod="GraduatedColor" enableorderby="0">
+      <renderer-v2 attr="Score" forceraster="0" symbollevels="0" type="graduatedSymbol" graduatedMethod="GraduatedColor" enableorderby="0">
         <ranges>
           <range render="true" symbol="0" lower="0.000000000000000" upper="92.600000000000009" label=" 0.0 - 92.6 "/>
           <range render="true" symbol="1" lower="92.600000000000009" upper="126.400000000000006" label=" 92.6 - 126.4 "/>
@@ -626,7 +626,7 @@ def my_form_open(dialog, layer, feature):
     </maplayer>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Line" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
       <id>Neighborhood_outlines20180109140229582</id>
-      <datasource>../sampledata/Neighborhood outlines.shp</datasource>
+      <datasource>./Neighborhood outlines.shp</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -832,26 +832,26 @@ def my_form_open(dialog, layer, feature):
         <ymax>20037508.33999999985098839</ymax>
       </extent>
       <id>OpenStreetMap20171215111738261</id>
-      <datasource>&lt;GDAL_WMS>&#xd;&#xd;
-  &lt;Service name="TMS">&#xd;&#xd;
-    &lt;ServerUrl>http://tile.openstreetmap.org/${z}/${x}/${y}.png&lt;/ServerUrl>&#xd;&#xd;
-  &lt;/Service>&#xd;&#xd;
-  &lt;DataWindow>&#xd;&#xd;
-    &lt;UpperLeftX>-20037508.34&lt;/UpperLeftX>&#xd;&#xd;
-    &lt;UpperLeftY>20037508.34&lt;/UpperLeftY>&#xd;&#xd;
-    &lt;LowerRightX>20037508.34&lt;/LowerRightX>&#xd;&#xd;
-    &lt;LowerRightY>-20037508.34&lt;/LowerRightY>&#xd;&#xd;
-    &lt;TileLevel>19&lt;/TileLevel>&#xd;&#xd;
-    &lt;TileCountX>1&lt;/TileCountX>&#xd;&#xd;
-    &lt;TileCountY>1&lt;/TileCountY>&#xd;&#xd;
-    &lt;YOrigin>top&lt;/YOrigin>&#xd;&#xd;
-  &lt;/DataWindow>&#xd;&#xd;
-  &lt;Projection>EPSG:3857&lt;/Projection>&#xd;&#xd;
-  &lt;BlockSizeX>256&lt;/BlockSizeX>&#xd;&#xd;
-  &lt;BlockSizeY>256&lt;/BlockSizeY>&#xd;&#xd;
-  &lt;BandsCount>3&lt;/BandsCount>&#xd;&#xd;
-  &lt;Cache />&#xd;&#xd;
-&lt;/GDAL_WMS>&#xd;&#xd;
+      <datasource>&lt;GDAL_WMS>&#xd;&#xd;&#xd;
+  &lt;Service name="TMS">&#xd;&#xd;&#xd;
+    &lt;ServerUrl>http://tile.openstreetmap.org/${z}/${x}/${y}.png&lt;/ServerUrl>&#xd;&#xd;&#xd;
+  &lt;/Service>&#xd;&#xd;&#xd;
+  &lt;DataWindow>&#xd;&#xd;&#xd;
+    &lt;UpperLeftX>-20037508.34&lt;/UpperLeftX>&#xd;&#xd;&#xd;
+    &lt;UpperLeftY>20037508.34&lt;/UpperLeftY>&#xd;&#xd;&#xd;
+    &lt;LowerRightX>20037508.34&lt;/LowerRightX>&#xd;&#xd;&#xd;
+    &lt;LowerRightY>-20037508.34&lt;/LowerRightY>&#xd;&#xd;&#xd;
+    &lt;TileLevel>19&lt;/TileLevel>&#xd;&#xd;&#xd;
+    &lt;TileCountX>1&lt;/TileCountX>&#xd;&#xd;&#xd;
+    &lt;TileCountY>1&lt;/TileCountY>&#xd;&#xd;&#xd;
+    &lt;YOrigin>top&lt;/YOrigin>&#xd;&#xd;&#xd;
+  &lt;/DataWindow>&#xd;&#xd;&#xd;
+  &lt;Projection>EPSG:3857&lt;/Projection>&#xd;&#xd;&#xd;
+  &lt;BlockSizeX>256&lt;/BlockSizeX>&#xd;&#xd;&#xd;
+  &lt;BlockSizeY>256&lt;/BlockSizeY>&#xd;&#xd;&#xd;
+  &lt;BandsCount>3&lt;/BandsCount>&#xd;&#xd;&#xd;
+  &lt;Cache />&#xd;&#xd;&#xd;
+&lt;/GDAL_WMS>&#xd;&#xd;&#xd;
 </datasource>
       <keywordList>
         <value></value>
