@@ -292,17 +292,18 @@ def getFeaturesByListValues(layer, name, values=list):
     return features
 
 
-def selectFeaturesByListValues(layer, name, values=list):
+def selectFeaturesByListValues(layer, name, value):
     features = []
     if layer:
         if fieldExists(layer, name):
-            request = QgsFeatureRequest().setSubsetOfAttributes([getFieldIndex(layer, name)])
-            iterator = layer.getFeatures(request)
+            iterator = layer.getFeatures()
             for feature in iterator:
                 att = feature.attribute(name)
-                if att in values:
-                    features.append(feature.id())
-            layer.select(features)
+                if att == value:
+                    feat = feature
+                    return feat
+
+
 
 
 def getFeaturesByRangeValues(layer, name, min, max):
