@@ -33,7 +33,7 @@ try:
     import networkx as nx
     has_networkx = True
 except ImportError, e:
-    has_networkx = False
+has_networkx = False
 
 
 #
