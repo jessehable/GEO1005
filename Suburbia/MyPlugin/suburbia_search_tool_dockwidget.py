@@ -387,7 +387,7 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
 
     def loadDataRotterdam(self, filename=""):
         scenario_open = False
-        scenario_file = os.path.join(os.path.dirname(__file__), 'sampledata', '2018-01-15_Suburbia_2016_v5.qgs')
+        scenario_file = os.path.join(os.path.dirname(__file__), 'sampledata', '2018-01-15_Suburbia_2016_v6.qgs')
         # check if file exists
         if os.path.isfile(scenario_file):
             self.iface.addProject(scenario_file)
