@@ -169,7 +169,7 @@
         <ymax>445396.52977774647297338</ymax>
       </extent>
       <id>Buurten_Rotterdam_Centrum_201620171215113720485</id>
-      <datasource>../../../../../../Dropbox/01MSC EPA/Q2/GEO1005/Buurten Rotterdam Centrum 2016.shp</datasource>
+      <datasource>Buurten Rotterdam Centrum 2016.shp</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -724,7 +724,7 @@ def my_form_open(dialog, layer, feature):
     </maplayer>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
       <id>NWB_2016_Rotterdam_train_stations_WO20171201121004971</id>
-      <datasource>../../../../../../Dropbox/01MSC EPA/Q2/GEO1005/Data/NWB_2016_Rotterdam_train_stations/NWB_2016_Rotterdam_train_stations_WO.dbf</datasource>
+      <datasource>NWB_2016_Rotterdam_train_stations_WO.dbf</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -921,7 +921,7 @@ def my_form_open(dialog, layer, feature):
     </maplayer>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
       <id>Rotterdam_Buurten_2016_copy20180109114430302</id>
-      <datasource>../../../../../../Dropbox/01MSC EPA/Q2/GEO1005/Buurten Rotterdam Centrum 2016.shp</datasource>
+      <datasource>Buurten Rotterdam Centrum 2016.shp</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -1363,7 +1363,7 @@ def my_form_open(dialog, layer, feature):
     </maplayer>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
       <id>Rotterdam_Centrum_RD_NEW20171215113116352</id>
-      <datasource>../../../../../../Dropbox/01MSC EPA/Q2/GEO1005/Rotterdam Centrum RD-NEW.shp</datasource>
+      <datasource>Rotterdam Centrum RD-NEW.shp</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -1480,7 +1480,7 @@ def my_form_open(dialog, layer, feature):
         <ymax>445396.52977774647297338</ymax>
       </extent>
       <id>WOZ_Rotterdam_2016_copy20171215123340833</id>
-      <datasource>../../../../../../Dropbox/01MSC EPA/Q2/GEO1005/Buurten Rotterdam Centrum 2016.shp</datasource>
+      <datasource>Buurten Rotterdam Centrum 2016.shp</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -1963,7 +1963,7 @@ def my_form_open(dialog, layer, feature):
     </maplayer>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
       <id>buurt_201520171221135510257</id>
-      <datasource>../../../../../../Dropbox/01MSC EPA/Q2/GEO1005/Data/buurt_2015/buurt_2015.shp</datasource>
+      <datasource>Data/buurt_2015/buurt_2015.shp</datasource>
       <keywordList>
         <value></value>
       </keywordList>
