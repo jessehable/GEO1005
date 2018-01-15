@@ -119,6 +119,7 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
         self.ButtonAgree.clicked.connect(self.EnableButtonConfirm)
         self.ButtonConfirm.clicked.connect(self.Confirm)
         self.InfoTerms.clicked.connect(self.OpenInfoTerms)
+        self.ButtonPrivacyStatement(self.OpenInfoPrivacyStatement)
 
         #Preferences
         self.SliderPeople.valueChanged.connect(self.setPrioritynumbers)
@@ -161,7 +162,7 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
 #    Vizualisation
 #######
 
-    def OpenInfoTerms(self):
+    def OpenInfoPrivacyStatement(self):
         webbrowser.open('https://github.com/jessehable/GEO1005_2017_G12_Suburbia/wiki/8.-Privacy-Statement', new=2)
 
     def OpenInfoPreferences(self):
@@ -169,6 +170,9 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
 
     def OpenInfoMetrics(self):
         webbrowser.open('https://github.com/jessehable/GEO1005_2017_G12_Suburbia/wiki/3.-Data-component', new=2)
+
+    def OpenInfoTerms(self):
+        webbrowser.open('https://github.com/jessehable/GEO1005_2017_G12_Suburbia/wiki/1.-Quick-Start-Guide', new=2)
 
     def setPrioritynumbers(self):
         self.PriorityPeople.setNum(self.SliderPeople.value())
