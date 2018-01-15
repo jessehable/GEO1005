@@ -128,8 +128,8 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
         #Metrics
         self.ButtonAdjustPreferences.clicked.connect(self.Confirm)
         self.InfoMetrics.clicked.connect(self.OpenInfoMetrics)
-        self.ButtonNewUser.clicked.connect(self.NewUser)
-        self.ButtonSaveUserInfo.clicked.connect(self.CreateUrbanPlanningCSV)
+        #self.ButtonFavorite.clicked.connect(self.AddFavorite)
+        self.ButtonSaveUserInfo.clicked.connect(self.ExportFavoritesCSV)
 
         #Explore
 
@@ -142,12 +142,6 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
     def closeEvent(self, event):
         self.closingPlugin.emit()
         event.accept()
-
-    def NewUser(self):
-        self.TabTerms.setEnabled(True)
-        self.Tabs.setCurrentIndex(0)
-        self.TabPreferences.setEnabled(False)
-        self.TabMetrics.setEnabled(False)
 
 #######
 #    Vizualisation
@@ -392,21 +386,38 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
 
 ########
 #   Urban planning functions
+    #def AddFavorite(self):
 
-    def CreateUrbanPlanningCSV(self):
+    def ExportFavoritesCSV(self):
         path_csv = QtGui.QFileDialog.getSaveFileName(self, 'Save File', '', 'CSV(*.csv)')
-
+        # create csv with favotires
         if path_csv:
             with open(unicode(path_csv), 'wb') as stream:
                 # open csv file for writing
                 writer = csv.writer(stream)
-                header= ['Name','Age','Gender','Education']
+                header= ['Neighborhood',
+                         'Similar People (%)',
+                         'average distance to child care (m)',
+                         'average distance to trainstation (m)'
+                         'average housing price (€)']
                 writer.writerow(header)
-                for i in self.userdata:
-                    writer.writerow(i)
+                #for i in self.userdata:
+                #    writer.writerow(i)'
 
-    # Save user characteristics
-    #def SaveUserPreferences(self):
+    # adjustments needed
+    #def CreateUrbanPlanningCSV(self):
+
+
+     #   if path_csv:
+      #      with open(unicode(path_csv), 'wb') as stream:
+       #         # open csv file for writing
+        #        writer = csv.writer(stream)
+         #       header= ['Name','Age','Gender','Education']
+          #      writer.writerow(header)
+           #     for i in self.userdata:
+            #        writer.writerow(i)
+
+
 
 
 
