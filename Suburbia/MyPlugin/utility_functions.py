@@ -332,13 +332,15 @@ def selectFeaturesByRangeValues(layer, name, min, max):
 
 
 def getFeaturesByExpression(layer, expression):
-    features = {}
+    request = QgsFeatureRequest().setFilterExpression(expression)
+    features = layer.getFeatures(request)
     if layer:
         request = QgsFeatureRequest().setFilterExpression(expression)
         iterator = layer.getFeatures(request)
         for feature in iterator:
             features[feature.id()] = feature.attributes()
-    return features
+            return features
+
 
 
 def selectFeaturesByExpression(layer, expression):

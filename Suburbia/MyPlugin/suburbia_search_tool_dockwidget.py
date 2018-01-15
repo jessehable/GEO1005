@@ -203,7 +203,19 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
     def showresults(self, feature):
 
         if feature[18]:
-            percentage = (((feature[14] / ((feature[9] + feature[8]) / 2)) + (feature[15] / (((1 - feature[11]) + (1 - feature[12]) / 2))) + (feature[16] / (1 - feature[13])) + (feature[17] / (1 - feature[10]))) / 100)
+            if float(feature[9]) + float(feature[8]) == 0.0:
+                per_een = 0.0
+            else:
+                per_een = (feature[14] / ((float(feature[9]) + float(feature[8])) / 2))
+
+            per_twee = ((1 - feature[15]) / (((feature[11])+ ( feature[12])) / 2))
+            per_drie = ((1 - feature[16]) / (feature[13]))
+            if (feature[10]) == 0:
+                per_vier = 0
+            else:
+                per_vier = ((1 - feature[17]) / (feature[10]))
+
+            percentage = (per_een + per_twee + per_drie + per_vier)/ 100
             progres = (feature[18] / percentage)
             self.progressBar.setValue(progres)
 
