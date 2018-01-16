@@ -382,7 +382,7 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
         else:
             parishName = None
 
-    #######
+#######
 #   Data functions
 #######
 
