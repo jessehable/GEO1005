@@ -7,13 +7,13 @@
     <customproperties/>
     <layer-tree-group expanded="1" checked="Qt::Checked" name="Maps">
       <customproperties/>
-      <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="Neighborhood_outlines20180109140229582" source="D:/User/Mijn documenten/Github/GEO1005_2017_G12_Suburbia/Suburbia/MyPlugin/sampledata/Neighborhood outlines.shp" name="Neighborhood outlines">
-        <customproperties/>
-      </layer-tree-layer>
       <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="2018_01_09_Rotterdam_Selection20180109162946265" source="D:/User/Mijn documenten/Github/GEO1005_2017_G12_Suburbia/Suburbia/MyPlugin/sampledata/2018-01-09_Rotterdam Selection.shp" name="Rotterdam_Selection">
         <customproperties/>
       </layer-tree-layer>
-      <layer-tree-layer expanded="0" providerKey="gdal" checked="Qt::Checked" id="TOP50raster_37O_201620180115202051554" source="D:/User/Downloads/TOP50raster_37O/TOP50raster-37O-2016.tif" name="TOP50raster-37O-2016">
+      <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="Neighborhood_outlines20180109140229582" source="D:/User/Mijn documenten/Github/GEO1005_2017_G12_Suburbia/Suburbia/MyPlugin/sampledata/Neighborhood outlines.shp" name="Neighborhood outlines">
+        <customproperties/>
+      </layer-tree-layer>
+      <layer-tree-layer expanded="1" providerKey="wms" checked="Qt::Checked" id="brtachtergrondkaartpastel20180116110534368" source="tileMatrixSet=EPSG:28992&amp;crs=EPSG:28992&amp;layers=brtachtergrondkaartpastel&amp;styles=default&amp;format=image/png&amp;url=https://geodata.nationaalgeoregister.nl/wmts?VERSION%3D1.0.0%26request%3DGetCapabilities" name="brtachtergrondkaartpastel">
         <customproperties/>
       </layer-tree-layer>
     </layer-tree-group>
@@ -22,10 +22,10 @@
   <mapcanvas>
     <units>meters</units>
     <extent>
-      <xmin>82727.71320087912317831</xmin>
-      <ymin>428247.07826555462088436</ymin>
-      <xmax>111316.89829841053870041</xmax>
-      <ymax>444173.60949685738887638</ymax>
+      <xmin>79031.35756814363412559</xmin>
+      <ymin>430030.74070829071570188</ymin>
+      <xmax>107730.86549850431038067</xmax>
+      <ymax>446109.57108615490142256</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>1</projections>
@@ -43,44 +43,52 @@
     </destinationsrs>
     <rendermaptile>0</rendermaptile>
     <layer_coordinate_transform_info>
+      <layer_coordinate_transform destAuthId="EPSG:28992" srcAuthId="EPSG:28992" srcDatumTransform="-1" destDatumTransform="-1" layerid="opentopoachtergrondkaart20180116110535111"/>
       <layer_coordinate_transform destAuthId="EPSG:28992" srcAuthId="EPSG:28992" srcDatumTransform="-1" destDatumTransform="-1" layerid="Neighborhood_outlines20180109140229582"/>
-      <layer_coordinate_transform destAuthId="EPSG:28992" srcAuthId="EPSG:28992" srcDatumTransform="-1" destDatumTransform="-1" layerid="Rotterdam_Selection_copy20180115195848189"/>
-      <layer_coordinate_transform destAuthId="EPSG:28992" srcAuthId="EPSG:3857" srcDatumTransform="-1" destDatumTransform="-1" layerid="OpenStreetMap20171215111738261"/>
+      <layer_coordinate_transform destAuthId="EPSG:28992" srcAuthId="EPSG:28992" srcDatumTransform="-1" destDatumTransform="-1" layerid="brtachtergrondkaartpastel20180116110534368"/>
+      <layer_coordinate_transform destAuthId="EPSG:28992" srcAuthId="EPSG:28992" srcDatumTransform="-1" destDatumTransform="-1" layerid="brtachtergrondkaart20180116110530041"/>
+      <layer_coordinate_transform destAuthId="EPSG:28992" srcAuthId="EPSG:3857" srcDatumTransform="-1" destDatumTransform="-1" layerid="OpenLayers_plugin_layer20180115221041454"/>
       <layer_coordinate_transform destAuthId="EPSG:28992" srcAuthId="EPSG:28992" srcDatumTransform="-1" destDatumTransform="-1" layerid="2018_01_09_Rotterdam_Selection20180109162946265"/>
-      <layer_coordinate_transform destAuthId="EPSG:28992" srcAuthId="EPSG:28992" srcDatumTransform="-1" destDatumTransform="-1" layerid="TOP50raster_37O_201620180115202051554"/>
-      <layer_coordinate_transform destAuthId="EPSG:28992" srcAuthId="EPSG:28992" srcDatumTransform="-1" destDatumTransform="-1" layerid="TOP100raster_17_201620180115201809754"/>
+      <layer_coordinate_transform destAuthId="EPSG:28992" srcAuthId="EPSG:28992" srcDatumTransform="-1" destDatumTransform="-1" layerid="bgtachtergrond20180116110535824"/>
+      <layer_coordinate_transform destAuthId="EPSG:28992" srcAuthId="EPSG:28992" srcDatumTransform="-1" destDatumTransform="-1" layerid="Rotterdam_new20180115221125554"/>
     </layer_coordinate_transform_info>
   </mapcanvas>
   <layer-tree-canvas>
     <custom-order enabled="0">
       <item>Neighborhood_outlines20180109140229582</item>
       <item>2018_01_09_Rotterdam_Selection20180109162946265</item>
-      <item>TOP50raster_37O_201620180115202051554</item>
+      <item>brtachtergrondkaartpastel20180116110534368</item>
     </custom-order>
   </layer-tree-canvas>
   <legend updateDrawingOrder="true">
     <legendgroup open="true" checked="Qt::Checked" name="Maps">
-      <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Neighborhood outlines" showFeatureCount="0">
-        <filegroup open="true" hidden="false">
-          <legendlayerfile isInOverview="0" layerid="Neighborhood_outlines20180109140229582" visible="1"/>
-        </filegroup>
-      </legendlayer>
       <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Rotterdam_Selection" showFeatureCount="0">
         <filegroup open="true" hidden="false">
           <legendlayerfile isInOverview="0" layerid="2018_01_09_Rotterdam_Selection20180109162946265" visible="1"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="TOP50raster-37O-2016" showFeatureCount="0">
-        <filegroup open="false" hidden="false">
-          <legendlayerfile isInOverview="0" layerid="TOP50raster_37O_201620180115202051554" visible="1"/>
+      <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Neighborhood outlines" showFeatureCount="0">
+        <filegroup open="true" hidden="false">
+          <legendlayerfile isInOverview="0" layerid="Neighborhood_outlines20180109140229582" visible="1"/>
+        </filegroup>
+      </legendlayer>
+      <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="brtachtergrondkaartpastel" showFeatureCount="0">
+        <filegroup open="true" hidden="false">
+          <legendlayerfile isInOverview="0" layerid="brtachtergrondkaartpastel20180116110534368" visible="1"/>
         </filegroup>
       </legendlayer>
     </legendgroup>
   </legend>
   <projectlayers>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+      <extent>
+        <xmin>85730.99583866739703808</xmin>
+        <ymin>430742.05999755859375</ymin>
+        <xmax>101032.59388056711759418</xmax>
+        <ymax>445396.52977774647297338</ymax>
+      </extent>
       <id>2018_01_09_Rotterdam_Selection20180109162946265</id>
-      <datasource>./2018-01-09_Rotterdam Selection.shp</datasource>
+      <datasource>../sampledata/Final/2018-01-09_Rotterdam Selection.shp</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -350,12 +358,24 @@
       <layerTransparency>30</layerTransparency>
       <displayfield>&lt;div style="width:250;height:100">
 
+
+
 &lt;b>&lt;i> [% "BU_NAAM" %] &lt;/b> &lt;/i> &lt;br>
 
+
+
 &lt;b>Similair Neighbors: &lt;/b> [% ("P_25_44_JR"+"P_HH_M_K")/2 %]  %&lt;br>
+
 &lt;b>Child Friendly: &lt;/b> [% ("AF_KDV"+"AF_BSO")/2 %] km to daycare &lt;br>
+
 &lt;b>Accessibility: &lt;/b> [% "AF_TREINST" %] km to train &lt;br>
+
 &lt;b>Affordability: &lt;/b>  [% ("WOZ"*1000) %]  € &lt;br>
+
+
+
+
+
 
 
 
@@ -518,8 +538,14 @@ def my_form_open(dialog, layer, feature):
       <previewExpression>COALESCE( "BU_CODE", '&lt;NULL>' )</previewExpression>
     </maplayer>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Line" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+      <extent>
+        <xmin>85730.99583866739703808</xmin>
+        <ymin>430742.05999755859375</ymin>
+        <xmax>101032.59388056711759418</xmax>
+        <ymax>445396.52977774647297338</ymax>
+      </extent>
       <id>Neighborhood_outlines20180109140229582</id>
-      <datasource>./Neighborhood outlines.shp</datasource>
+      <datasource>../sampledata/Final/Neighborhood outlines.shp</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -614,7 +640,7 @@ def my_form_open(dialog, layer, feature):
               <prop k="joinstyle" v="bevel"/>
               <prop k="line_color" v="215,49,157,255"/>
               <prop k="line_style" v="solid"/>
-              <prop k="line_width" v="1"/>
+              <prop k="line_width" v="0.5"/>
               <prop k="line_width_unit" v="MM"/>
               <prop k="offset" v="0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
@@ -799,6 +825,7 @@ def my_form_open(dialog, layer, feature):
       <SingleCategoryDiagramRenderer diagramType="Histogram" sizeLegend="0" attributeLegend="1">
         <DiagramCategory penColor="#000000" labelPlacementMethod="XHeight" penWidth="0" diagramOrientation="Up" sizeScale="0,0,0,0,0,0" minimumSize="0" barWidth="5" penAlpha="255" maxScaleDenominator="1e+08" backgroundColor="#ffffff" transparency="0" width="15" scaleDependency="Area" backgroundAlpha="255" angleOffset="1440" scaleBasedVisibility="0" enabled="0" height="15" lineSizeScale="0,0,0,0,0,0" sizeType="MM" lineSizeType="MM" minScaleDenominator="inf">
           <fontProperties description="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" style=""/>
+          <attribute field="" color="#000000" label=""/>
         </DiagramCategory>
         <symbol alpha="1" clip_to_extent="1" type="marker" name="sizeSymbol">
           <layer pass="0" class="SimpleMarker" locked="0">
@@ -924,19 +951,19 @@ def my_form_open(dialog, layer, feature):
       </defaults>
       <previewExpression></previewExpression>
     </maplayer>
-    <maplayer minimumScale="inf" maximumScale="1e+08" type="raster" hasScaleBasedVisibilityFlag="0">
+    <maplayer minimumScale="0" maximumScale="1e+08" type="raster" hasScaleBasedVisibilityFlag="0">
       <extent>
-        <xmin>80000</xmin>
-        <ymin>425000</ymin>
-        <xmax>100000</xmax>
-        <ymax>450000</ymax>
+        <xmin>-370406.08350015664473176</xmin>
+        <ymin>5169.00479109794832766</ymin>
+        <xmax>595401.90896393242292106</xmax>
+        <ymax>903401.92097183666191995</ymax>
       </extent>
-      <id>TOP50raster_37O_201620180115202051554</id>
-      <datasource>../sampledata/TOP50raster-37O-2016.tif</datasource>
+      <id>brtachtergrondkaartpastel20180116110534368</id>
+      <datasource>tileMatrixSet=EPSG:28992&amp;crs=EPSG:28992&amp;layers=brtachtergrondkaartpastel&amp;styles=default&amp;format=image/png&amp;url=https://geodata.nationaalgeoregister.nl/wmts?VERSION%3D1.0.0%26request%3DGetCapabilities</datasource>
       <keywordList>
         <value></value>
       </keywordList>
-      <layername>TOP50raster-37O-2016</layername>
+      <layername>brtachtergrondkaartpastel</layername>
       <srs>
         <spatialrefsys>
           <proj4>+proj=sterea +lat_0=52.15616055555555 +lon_0=5.38763888888889 +k=0.9999079 +x_0=155000 +y_0=463000 +ellps=bessel +towgs84=565.2369,50.0087,465.658,-0.406857,0.350733,-1.87035,4.0812 +units=m +no_defs</proj4>
@@ -950,10 +977,9 @@ def my_form_open(dialog, layer, feature):
         </spatialrefsys>
       </srs>
       <customproperties>
-        <property key="embeddedWidgets/count" value="0"/>
-        <property key="identify/format" value="Value"/>
+        <property key="identify/format" value="Undefined"/>
       </customproperties>
-      <provider>gdal</provider>
+      <provider>wms</provider>
       <noData>
         <noDataList bandNo="1" useSrcNoData="0"/>
       </noData>
@@ -961,269 +987,11 @@ def my_form_open(dialog, layer, feature):
         <map-layer-style name=""/>
       </map-layer-style-manager>
       <pipe>
-        <rasterrenderer opacity="1" alphaBand="-1" band="1" type="paletted">
+        <rasterrenderer opacity="1" alphaBand="-1" band="1" type="singlebandcolordata">
           <rasterTransparency/>
-          <colorPalette>
-            <paletteEntry value="0" color="#000000" label="0"/>
-            <paletteEntry value="1" color="#ffffff" label="1"/>
-            <paletteEntry value="2" color="#fffde9" label="2"/>
-            <paletteEntry value="3" color="#fffde8" label="3"/>
-            <paletteEntry value="4" color="#dbeab8" label="4"/>
-            <paletteEntry value="5" color="#dbeab7" label="5"/>
-            <paletteEntry value="6" color="#d4effc" label="6"/>
-            <paletteEntry value="7" color="#d4eefc" label="7"/>
-            <paletteEntry value="8" color="#a3cf62" label="8"/>
-            <paletteEntry value="9" color="#9ddcf9" label="9"/>
-            <paletteEntry value="10" color="#9ddcf8" label="10"/>
-            <paletteEntry value="11" color="#9cdcf8" label="11"/>
-            <paletteEntry value="12" color="#ed1c24" label="12"/>
-            <paletteEntry value="13" color="#ee1d25" label="13"/>
-            <paletteEntry value="14" color="#d12229" label="14"/>
-            <paletteEntry value="15" color="#d2232a" label="15"/>
-            <paletteEntry value="16" color="#a72c31" label="16"/>
-            <paletteEntry value="17" color="#b8282f" label="17"/>
-            <paletteEntry value="18" color="#a62b31" label="18"/>
-            <paletteEntry value="19" color="#a72c32" label="19"/>
-            <paletteEntry value="20" color="#231f20" label="20"/>
-            <paletteEntry value="21" color="#20141a" label="21"/>
-            <paletteEntry value="22" color="#1f141a" label="22"/>
-            <paletteEntry value="23" color="#1f131a" label="23"/>
-            <paletteEntry value="24" color="#a2238e" label="24"/>
-            <paletteEntry value="25" color="#ecdaea" label="25"/>
-            <paletteEntry value="26" color="#eddaeb" label="26"/>
-            <paletteEntry value="27" color="#ecd9ea" label="27"/>
-            <paletteEntry value="28" color="#7e6283" label="28"/>
-            <paletteEntry value="29" color="#7d6282" label="29"/>
-            <paletteEntry value="30" color="#7a62ab" label="30"/>
-            <paletteEntry value="31" color="#7962ab" label="31"/>
-            <paletteEntry value="32" color="#7961aa" label="32"/>
-            <paletteEntry value="33" color="#37363a" label="33"/>
-            <paletteEntry value="34" color="#00000c" label="34"/>
-            <paletteEntry value="35" color="#00000b" label="35"/>
-            <paletteEntry value="36" color="#000009" label="36"/>
-            <paletteEntry value="37" color="#000004" label="37"/>
-            <paletteEntry value="38" color="#000003" label="38"/>
-            <paletteEntry value="39" color="#363639" label="39"/>
-            <paletteEntry value="40" color="#00011e" label="40"/>
-            <paletteEntry value="41" color="#00021e" label="41"/>
-            <paletteEntry value="42" color="#808184" label="42"/>
-            <paletteEntry value="43" color="#000e23" label="43"/>
-            <paletteEntry value="44" color="#000f24" label="44"/>
-            <paletteEntry value="45" color="#000f1e" label="45"/>
-            <paletteEntry value="46" color="#161b20" label="46"/>
-            <paletteEntry value="47" color="#171c21" label="47"/>
-            <paletteEntry value="48" color="#808284" label="48"/>
-            <paletteEntry value="49" color="#bdbfc1" label="49"/>
-            <paletteEntry value="50" color="#bcbec0" label="50"/>
-            <paletteEntry value="51" color="#00101f" label="51"/>
-            <paletteEntry value="52" color="#005bab" label="52"/>
-            <paletteEntry value="53" color="#000f19" label="53"/>
-            <paletteEntry value="54" color="#161c20" label="54"/>
-            <paletteEntry value="55" color="#00101a" label="55"/>
-            <paletteEntry value="56" color="#001019" label="56"/>
-            <paletteEntry value="57" color="#d5effc" label="57"/>
-            <paletteEntry value="58" color="#009bdf" label="58"/>
-            <paletteEntry value="59" color="#001822" label="59"/>
-            <paletteEntry value="60" color="#001721" label="60"/>
-            <paletteEntry value="61" color="#9dddf9" label="61"/>
-            <paletteEntry value="62" color="#00aef0" label="62"/>
-            <paletteEntry value="63" color="#00aeef" label="63"/>
-            <paletteEntry value="64" color="#00adef" label="64"/>
-            <paletteEntry value="65" color="#0084b6" label="65"/>
-            <paletteEntry value="66" color="#0084b5" label="66"/>
-            <paletteEntry value="67" color="#001821" label="67"/>
-            <paletteEntry value="68" color="#00addd" label="68"/>
-            <paletteEntry value="69" color="#00accd" label="69"/>
-            <paletteEntry value="70" color="#00abcc" label="70"/>
-            <paletteEntry value="71" color="#00829b" label="71"/>
-            <paletteEntry value="72" color="#00819a" label="72"/>
-            <paletteEntry value="73" color="#00aab5" label="73"/>
-            <paletteEntry value="74" color="#001112" label="74"/>
-            <paletteEntry value="75" color="#001011" label="75"/>
-            <paletteEntry value="76" color="#00867d" label="76"/>
-            <paletteEntry value="77" color="#00867e" label="77"/>
-            <paletteEntry value="78" color="#00a76d" label="78"/>
-            <paletteEntry value="79" color="#1a5a41" label="79"/>
-            <paletteEntry value="80" color="#008049" label="80"/>
-            <paletteEntry value="81" color="#007f49" label="81"/>
-            <paletteEntry value="82" color="#00954e" label="82"/>
-            <paletteEntry value="83" color="#00954d" label="83"/>
-            <paletteEntry value="84" color="#00a550" label="84"/>
-            <paletteEntry value="85" color="#00a650" label="85"/>
-            <paletteEntry value="86" color="#001600" label="86"/>
-            <paletteEntry value="87" color="#001500" label="87"/>
-            <paletteEntry value="88" color="#001200" label="88"/>
-            <paletteEntry value="89" color="#000a00" label="89"/>
-            <paletteEntry value="90" color="#000900" label="90"/>
-            <paletteEntry value="91" color="#131a0d" label="91"/>
-            <paletteEntry value="92" color="#0e1800" label="92"/>
-            <paletteEntry value="93" color="#a4d063" label="93"/>
-            <paletteEntry value="94" color="#a4cf62" label="94"/>
-            <paletteEntry value="95" color="#a6ce39" label="95"/>
-            <paletteEntry value="96" color="#dceab8" label="96"/>
-            <paletteEntry value="97" color="#dbe9b7" label="97"/>
-            <paletteEntry value="98" color="#b3d234" label="98"/>
-            <paletteEntry value="99" color="#e2e419" label="99"/>
-            <paletteEntry value="100" color="#e2e319" label="100"/>
-            <paletteEntry value="101" color="#e3e41a" label="101"/>
-            <paletteEntry value="102" color="#1b1a00" label="102"/>
-            <paletteEntry value="103" color="#fff100" label="103"/>
-            <paletteEntry value="104" color="#fff200" label="104"/>
-            <paletteEntry value="105" color="#fffee9" label="105"/>
-            <paletteEntry value="106" color="#1c1a00" label="106"/>
-            <paletteEntry value="107" color="#1b1900" label="107"/>
-            <paletteEntry value="108" color="#fff8ad" label="108"/>
-            <paletteEntry value="109" color="#fff9ae" label="109"/>
-            <paletteEntry value="110" color="#fffcd5" label="110"/>
-            <paletteEntry value="111" color="#fffcd6" label="111"/>
-            <paletteEntry value="112" color="#fffbd5" label="112"/>
-            <paletteEntry value="113" color="#1f1c07" label="113"/>
-            <paletteEntry value="114" color="#a79938" label="114"/>
-            <paletteEntry value="115" color="#a79837" label="115"/>
-            <paletteEntry value="116" color="#a89938" label="116"/>
-            <paletteEntry value="117" color="#f5cf0f" label="117"/>
-            <paletteEntry value="118" color="#f5d00f" label="118"/>
-            <paletteEntry value="119" color="#f6d010" label="119"/>
-            <paletteEntry value="120" color="#f5d010" label="120"/>
-            <paletteEntry value="121" color="#b29c35" label="121"/>
-            <paletteEntry value="122" color="#b29c36" label="122"/>
-            <paletteEntry value="123" color="#b29b35" label="123"/>
-            <paletteEntry value="124" color="#d1ac2b" label="124"/>
-            <paletteEntry value="125" color="#d2ad2c" label="125"/>
-            <paletteEntry value="126" color="#d2ac2b" label="126"/>
-            <paletteEntry value="127" color="#201d14" label="127"/>
-            <paletteEntry value="128" color="#211e15" label="128"/>
-            <paletteEntry value="129" color="#dba627" label="129"/>
-            <paletteEntry value="130" color="#dca728" label="130"/>
-            <paletteEntry value="131" color="#dba628" label="131"/>
-            <paletteEntry value="132" color="#1d1400" label="132"/>
-            <paletteEntry value="133" color="#191100" label="133"/>
-            <paletteEntry value="134" color="#fcb017" label="134"/>
-            <paletteEntry value="135" color="#fcaf17" label="135"/>
-            <paletteEntry value="136" color="#fbaf17" label="136"/>
-            <paletteEntry value="137" color="#1a1100" label="137"/>
-            <paletteEntry value="138" color="#ceae77" label="138"/>
-            <paletteEntry value="139" color="#cfae78" label="139"/>
-            <paletteEntry value="140" color="#ceae78" label="140"/>
-            <paletteEntry value="141" color="#211e1a" label="141"/>
-            <paletteEntry value="142" color="#8b4e1f" label="142"/>
-            <paletteEntry value="143" color="#8b4d1f" label="143"/>
-            <paletteEntry value="144" color="#a76534" label="144"/>
-            <paletteEntry value="145" color="#a86635" label="145"/>
-            <paletteEntry value="146" color="#a76635" label="146"/>
-            <paletteEntry value="147" color="#221e1b" label="147"/>
-            <paletteEntry value="148" color="#bb6931" label="148"/>
-            <paletteEntry value="149" color="#ba6831" label="149"/>
-            <paletteEntry value="150" color="#b16733" label="150"/>
-            <paletteEntry value="151" color="#81614f" label="151"/>
-            <paletteEntry value="152" color="#826250" label="152"/>
-            <paletteEntry value="153" color="#fee8dd" label="153"/>
-            <paletteEntry value="154" color="#fde7dc" label="154"/>
-            <paletteEntry value="155" color="#100500" label="155"/>
-            <paletteEntry value="156" color="#fee7dd" label="156"/>
-            <paletteEntry value="157" color="#120500" label="157"/>
-            <paletteEntry value="158" color="#fab49b" label="158"/>
-            <paletteEntry value="159" color="#f9b49b" label="159"/>
-            <paletteEntry value="160" color="#110400" label="160"/>
-            <paletteEntry value="161" color="#fab49c" label="161"/>
-            <paletteEntry value="162" color="#f9b39b" label="162"/>
-            <paletteEntry value="163" color="#221815" label="163"/>
-            <paletteEntry value="164" color="#211715" label="164"/>
-            <paletteEntry value="165" color="#221816" label="165"/>
-            <paletteEntry value="166" color="#1c0400" label="166"/>
-            <paletteEntry value="167" color="#f15b40" label="167"/>
-            <paletteEntry value="168" color="#f05a3f" label="168"/>
-            <paletteEntry value="169" color="#221715" label="169"/>
-            <paletteEntry value="170" color="#220400" label="170"/>
-            <paletteEntry value="171" color="#210400" label="171"/>
-            <paletteEntry value="172" color="#1f0400" label="172"/>
-            <paletteEntry value="173" color="#110200" label="173"/>
-            <paletteEntry value="174" color="#1f0300" label="174"/>
-            <paletteEntry value="175" color="#1c0300" label="175"/>
-            <paletteEntry value="176" color="#1b0300" label="176"/>
-            <paletteEntry value="177" color="#150200" label="177"/>
-            <paletteEntry value="178" color="#120200" label="178"/>
-            <paletteEntry value="179" color="#210300" label="179"/>
-            <paletteEntry value="180" color="#140100" label="180"/>
-            <paletteEntry value="181" color="#220000" label="181"/>
-            <paletteEntry value="182" color="#200000" label="182"/>
-            <paletteEntry value="183" color="#1f0000" label="183"/>
-            <paletteEntry value="184" color="#1a0000" label="184"/>
-            <paletteEntry value="185" color="#170000" label="185"/>
-            <paletteEntry value="186" color="#120000" label="186"/>
-            <paletteEntry value="187" color="#110000" label="187"/>
-            <paletteEntry value="188" color="#0e0000" label="188"/>
-            <paletteEntry value="189" color="#0d0000" label="189"/>
-            <paletteEntry value="190" color="#0a0000" label="190"/>
-            <paletteEntry value="191" color="#090000" label="191"/>
-            <paletteEntry value="192" color="#060000" label="192"/>
-            <paletteEntry value="193" color="#050000" label="193"/>
-            <paletteEntry value="194" color="#030000" label="194"/>
-            <paletteEntry value="195" color="#232020" label="195"/>
-            <paletteEntry value="196" color="#f2f2f2" label="196"/>
-            <paletteEntry value="197" color="#ecf7fe" label="197"/>
-            <paletteEntry value="198" color="#67bd9d" label="198"/>
-            <paletteEntry value="199" color="#000000" label="199"/>
-            <paletteEntry value="200" color="#000000" label="200"/>
-            <paletteEntry value="201" color="#000000" label="201"/>
-            <paletteEntry value="202" color="#000000" label="202"/>
-            <paletteEntry value="203" color="#000000" label="203"/>
-            <paletteEntry value="204" color="#000000" label="204"/>
-            <paletteEntry value="205" color="#000000" label="205"/>
-            <paletteEntry value="206" color="#000000" label="206"/>
-            <paletteEntry value="207" color="#000000" label="207"/>
-            <paletteEntry value="208" color="#000000" label="208"/>
-            <paletteEntry value="209" color="#000000" label="209"/>
-            <paletteEntry value="210" color="#000000" label="210"/>
-            <paletteEntry value="211" color="#000000" label="211"/>
-            <paletteEntry value="212" color="#000000" label="212"/>
-            <paletteEntry value="213" color="#000000" label="213"/>
-            <paletteEntry value="214" color="#000000" label="214"/>
-            <paletteEntry value="215" color="#000000" label="215"/>
-            <paletteEntry value="216" color="#000000" label="216"/>
-            <paletteEntry value="217" color="#000000" label="217"/>
-            <paletteEntry value="218" color="#000000" label="218"/>
-            <paletteEntry value="219" color="#000000" label="219"/>
-            <paletteEntry value="220" color="#000000" label="220"/>
-            <paletteEntry value="221" color="#000000" label="221"/>
-            <paletteEntry value="222" color="#000000" label="222"/>
-            <paletteEntry value="223" color="#000000" label="223"/>
-            <paletteEntry value="224" color="#000000" label="224"/>
-            <paletteEntry value="225" color="#000000" label="225"/>
-            <paletteEntry value="226" color="#000000" label="226"/>
-            <paletteEntry value="227" color="#000000" label="227"/>
-            <paletteEntry value="228" color="#000000" label="228"/>
-            <paletteEntry value="229" color="#000000" label="229"/>
-            <paletteEntry value="230" color="#000000" label="230"/>
-            <paletteEntry value="231" color="#000000" label="231"/>
-            <paletteEntry value="232" color="#000000" label="232"/>
-            <paletteEntry value="233" color="#000000" label="233"/>
-            <paletteEntry value="234" color="#000000" label="234"/>
-            <paletteEntry value="235" color="#000000" label="235"/>
-            <paletteEntry value="236" color="#000000" label="236"/>
-            <paletteEntry value="237" color="#000000" label="237"/>
-            <paletteEntry value="238" color="#000000" label="238"/>
-            <paletteEntry value="239" color="#000000" label="239"/>
-            <paletteEntry value="240" color="#000000" label="240"/>
-            <paletteEntry value="241" color="#000000" label="241"/>
-            <paletteEntry value="242" color="#000000" label="242"/>
-            <paletteEntry value="243" color="#000000" label="243"/>
-            <paletteEntry value="244" color="#000000" label="244"/>
-            <paletteEntry value="245" color="#000000" label="245"/>
-            <paletteEntry value="246" color="#000000" label="246"/>
-            <paletteEntry value="247" color="#000000" label="247"/>
-            <paletteEntry value="248" color="#000000" label="248"/>
-            <paletteEntry value="249" color="#000000" label="249"/>
-            <paletteEntry value="250" color="#000000" label="250"/>
-            <paletteEntry value="251" color="#000000" label="251"/>
-            <paletteEntry value="252" color="#000000" label="252"/>
-            <paletteEntry value="253" color="#000000" label="253"/>
-            <paletteEntry value="254" color="#000000" label="254"/>
-            <paletteEntry value="255" color="#000000" label="255"/>
-          </colorPalette>
         </rasterrenderer>
-        <brightnesscontrast brightness="0" contrast="-5"/>
-        <huesaturation colorizeGreen="128" colorizeOn="0" colorizeRed="255" colorizeBlue="128" grayscaleMode="0" saturation="-20" colorizeStrength="100"/>
+        <brightnesscontrast brightness="0" contrast="0"/>
+        <huesaturation colorizeGreen="128" colorizeOn="0" colorizeRed="255" colorizeBlue="128" grayscaleMode="0" saturation="0" colorizeStrength="100"/>
         <rasterresampler maxOversampling="2"/>
       </pipe>
       <blendMode>0</blendMode>
@@ -1256,13 +1024,13 @@ def my_form_open(dialog, layer, feature):
       <DegreeFormat type="QString">MU</DegreeFormat>
     </PositionPrecision>
     <WCSUrl type="QString"></WCSUrl>
-    <WMSContactPhone type="QString"></WMSContactPhone>
     <WMSServiceCapabilities type="bool">false</WMSServiceCapabilities>
+    <WMSContactPhone type="QString"></WMSContactPhone>
     <WMSServiceAbstract type="QString"></WMSServiceAbstract>
     <WMSContactPosition type="QString"></WMSContactPosition>
     <WMSAddWktGeometry type="bool">false</WMSAddWktGeometry>
     <Measure>
-      <Ellipsoid type="QString">WGS84</Ellipsoid>
+      <Ellipsoid type="QString">bessel</Ellipsoid>
     </Measure>
     <WMSPrecision type="QString">8</WMSPrecision>
     <WMSSegmentizeFeatureInfoGeometry type="bool">false</WMSSegmentizeFeatureInfoGeometry>
@@ -1319,9 +1087,9 @@ def my_form_open(dialog, layer, feature):
       <filterByMap type="bool">false</filterByMap>
     </Legend>
     <SpatialRefSys>
-      <ProjectCRSProj4String type="QString">+proj=longlat +datum=WGS84 +no_defs</ProjectCRSProj4String>
-      <ProjectCrs type="QString">EPSG:4326</ProjectCrs>
-      <ProjectCRSID type="int">3452</ProjectCRSID>
+      <ProjectCRSProj4String type="QString">+proj=sterea +lat_0=52.15616055555555 +lon_0=5.38763888888889 +k=0.9999079 +x_0=155000 +y_0=463000 +ellps=bessel +towgs84=565.2369,50.0087,465.658,-0.406857,0.350733,-1.87035,4.0812 +units=m +no_defs</ProjectCRSProj4String>
+      <ProjectCrs type="QString">EPSG:28992</ProjectCrs>
+      <ProjectCRSID type="int">2517</ProjectCRSID>
       <ProjectionsEnabled type="int">1</ProjectionsEnabled>
     </SpatialRefSys>
     <DefaultStyles>
