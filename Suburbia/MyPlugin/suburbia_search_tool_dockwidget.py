@@ -211,7 +211,7 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
     def showresults(self, feature):
 
 
-        if float(feature[9]) + float(feature[8]) == 0.0:
+        if feature[9] + feature[8] == 0.0:
             per_een = 0.0
         else:
             per_een = (feature[14] / ((float(feature[9]) + float(feature[8])) / 2))
