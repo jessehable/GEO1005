@@ -409,7 +409,9 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
         c = self.ValueChild.text()
         d = self.ValueAccess.text()
         e = self.ValueAfford.text()
-        self.userdata.append([a,b,c,d,e])
+        to_add = [a,b,c,d,e]
+        if to_add not in self.userdata:
+            self.userdata.append(to_add)
 
     def UpdateLogMunicipality(self):
         with open(self.plugin_dir + '/municipality/log_municipality.csv', 'a') as fd:
