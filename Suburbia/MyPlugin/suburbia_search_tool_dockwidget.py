@@ -165,6 +165,7 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
 #    Vizualisation
 #######
 
+#   adding links to the information icons.
     def OpenInfoPrivacyStatement(self):
         webbrowser.open('https://github.com/jessehable/GEO1005_2017_G12_Suburbia/wiki/8.-Privacy-Statement', new=2)
 
@@ -373,15 +374,8 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
             attrs = featuree.attributes()
             self.showresults(attrs)
 
-
-
-
         else:
             parishName = None
-
-
-
-
 
     #######
 #   Data functions
@@ -402,16 +396,38 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
                 scenario_open = True
 
 ########
-#   Urban planning functions
+#   Urban planning functions for the user.
     def AddFavorite(self):
+        # define variables to add to the favorite list
         a = self.DisplayNeighborhoodName.text()
         b = self.ValuePeople.text()
         c = self.ValueChild.text()
         d = self.ValueAccess.text()
         e = self.ValueAfford.text()
         to_add = [a,b,c,d,e]
+        # check wether selection has not been saved as favorite yet.
         if to_add not in self.userdata:
             self.userdata.append(to_add)
+        else:
+            self.AlreayAddedPopup()
+
+    def AlreayAddedPopup(self):
+        msgBox = QtGui.QMessageBox()
+        msgBox.setText("Neighborhood already added!")
+        msgBox.setStandardButtons(QtGui.QMessageBox.Close)
+        msgBox.exec_()
+
+    def ExportFavoritesCSV(self):
+        path_csv = QtGui.QFileDialog.getSaveFileName(self, 'Save File', '', 'CSV(*.csv)')
+        # create csv with favotires
+        if path_csv:
+            with open(unicode(path_csv), 'wb') as stream:
+                # open csv file for writing
+                writer = csv.writer(stream)
+                for i in self.userdata:
+                    writer.writerow(i)
+
+#   Urban planning function for urban planner.
 
     def UpdateLogMunicipality(self):
         with open(self.plugin_dir + '/municipality/log_municipality.csv', 'a') as fd:
@@ -438,18 +454,10 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
                        pref_afford,
                        neighborhood,
                        people,child,access,afford]
-            # Ten add the row
+            # Ten add the row to the municipality.log
             writer.writerow(munic_new_row)
 
 
-    def ExportFavoritesCSV(self):
-        path_csv = QtGui.QFileDialog.getSaveFileName(self, 'Save File', '', 'CSV(*.csv)')
-        # create csv with favotires
-        if path_csv:
-            with open(unicode(path_csv), 'wb') as stream:
-                # open csv file for writing
-                writer = csv.writer(stream)
-                for i in self.userdata:
-                    writer.writerow(i)
+
 
 
