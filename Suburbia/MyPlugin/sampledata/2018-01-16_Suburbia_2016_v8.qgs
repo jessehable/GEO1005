@@ -7,7 +7,7 @@
     <customproperties/>
     <layer-tree-group expanded="1" checked="Qt::Checked" name="Maps">
       <customproperties/>
-      <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="2018_01_09_Rotterdam_Selection20180109162946265" source="D:/User/Mijn documenten/Github/GEO1005_2017_G12_Suburbia/Suburbia/MyPlugin/sampledata/2018-01-09_Rotterdam Selection.shp" name="Rotterdam_Selection">
+      <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="2018_01_09_Rotterdam_Selection20180109162946265" source="../sampledata/2018-01-09_Rotterdam Selection.shp" name="Rotterdam_Selection">
         <customproperties/>
       </layer-tree-layer>
       <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="Neighborhood_outlines20180109140229582" source="D:/User/Mijn documenten/Github/GEO1005_2017_G12_Suburbia/Suburbia/MyPlugin/sampledata/Neighborhood outlines.shp" name="Neighborhood outlines">
@@ -88,7 +88,7 @@
         <ymax>445396.52977774647297338</ymax>
       </extent>
       <id>2018_01_09_Rotterdam_Selection20180109162946265</id>
-      <datasource>../sampledata/Final/2018-01-09_Rotterdam Selection.shp</datasource>
+      <datasource>../sampledata/2018-01-09_Rotterdam Selection.shp</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -545,7 +545,7 @@ def my_form_open(dialog, layer, feature):
         <ymax>445396.52977774647297338</ymax>
       </extent>
       <id>Neighborhood_outlines20180109140229582</id>
-      <datasource>../sampledata/Final/Neighborhood outlines.shp</datasource>
+      <datasource>../sampledata/Neighborhood outlines.shp</datasource>
       <keywordList>
         <value></value>
       </keywordList>

@@ -9,15 +9,15 @@
 [general]
 name=Suburbia
 qgisMinimumVersion=2.0
-description=Green Housing Search
+description=Neighbourhood exploration of Rotterdam
 version=0.1
-author=Elias Vetter
+author=Elias Vetter, Jesse Hable, Mark Hupkens
 email=vetterelias@gmail.com
 
-about=more to come
+about=Welcome to the Suburbia wiki for the course Spatial Decision Support for Planning and Crisis Management (GEO1005) at Delft University of Technology.Suburbia aims to help Young Urban Professionals in finding the perfect neighborhood for them to settle down!
 
-tracker=github.com
-repository=github.com
+tracker=https://github.com/jessehable/GEO1005_2017_G12_Suburbia/wiki
+repository=https://github.com/jessehable/GEO1005_2017_G12_Suburbia
 # End of mandatory metadata
 
 # Recommended items:
