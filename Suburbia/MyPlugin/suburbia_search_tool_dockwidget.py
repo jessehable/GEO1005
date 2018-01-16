@@ -79,6 +79,7 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
         self.plugin_dir = os.path.dirname(__file__)
         self.canvas = self.iface.mapCanvas()
         self.userdata = []
+        self.h_list = []
 
 
 
@@ -232,6 +233,10 @@ class MyPluginDockWidget(QtGui.QDockWidget, FORM_CLASS):
         self.ValueChild.setNum((feature[6] * 1000))
         self.ValueAccess.setNum((feature[7] * 1000))
         self.ValueAfford.setNum((feature[4] * 1000))
+
+
+
+
 
 
 
